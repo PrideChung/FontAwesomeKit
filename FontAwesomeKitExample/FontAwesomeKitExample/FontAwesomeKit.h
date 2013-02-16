@@ -7,9 +7,7 @@
 @interface FontAwesomeKit : NSObject
 
 + (UIFont *)fontWithSize:(CGFloat)size;
-
-@end
-
++ (NSDictionary *)allIcons;
 
 #define FAKIconGlass @"\U0000f000" 
 #define FAKIconMusic @"\U0000f001" 
@@ -257,3 +255,6 @@
 #define FAKIconSpinner @"\U0000f110" 
 #define FAKIconCircle @"\U0000f111" 
 #define FAKIconReply @"\U0000f112" 
+
+
+@end

@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @property (weak, nonatomic) IBOutlet UILabel *facebookLabel;
 
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @end
 
 @implementation ViewController
@@ -49,6 +50,15 @@
 	self.facebookLabel.font = [FontAwesomeKit fontWithSize:36];
 	self.facebookLabel.textColor = [UIColor colorWithRed:0.231 green:0.349 blue:0.596 alpha:1.000];
 	
+	
+	// using Font-Awesome on UISegmentControl in Toolbar
+	UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:@[FAKIconArrowLeft, FAKIconArrowRight]];
+	
+	[segmentControl setSegmentedControlStyle:UISegmentedControlStyleBar];
+	[segmentControl setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]}
+									   forState:UIControlStateNormal];
+	
+	[self.toolbar setItems:@[[[UIBarButtonItem alloc] initWithCustomView:segmentControl]]];
 	
 	// using Font-Awesome on Tabbar
 	self.tabBarItem.title = FAKIconGithub;
