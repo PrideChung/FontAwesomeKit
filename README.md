@@ -22,14 +22,16 @@ Like using other custom fonts on iOS, you need to add `FontAwesome.otf` into you
 Then copy the `FontAwesomeKit.h` and `FontAwesomeKit.m` into your project, import `FontAwesomeKit.h` and it's ready to go.
 
 ###Example Usage
-	// using Font-Awesome on UIBarButtonItem
-	self.configBarButton.title = FAKIconCog;
-	[self.configBarButton setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]} forState:UIControlStateNormal];
-	
-	// using Font-Awesome on Tabbar
-	self.tabBarItem.title = FAKIconGithub;
-	[self.tabBarItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:36]} forState:UIControlStateNormal];
-	[self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -5)];
+```objective-c
+// using Font-Awesome on UIBarButtonItem
+self.configBarButton.title = FAKIconCog;
+[self.configBarButton setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]} forState:UIControlStateNormal];
+
+// using Font-Awesome on Tabbar
+self.tabBarItem.title = FAKIconGithub;
+[self.tabBarItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:36]} forState:UIControlStateNormal];
+[self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -5)];
+```
 
 It's quit simple, please check the example.
 
