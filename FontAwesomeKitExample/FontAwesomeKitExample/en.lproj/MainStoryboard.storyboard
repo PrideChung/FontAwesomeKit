@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="V65-Ls-Kue">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="V65-Ls-Kue">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - [github]-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtx-6y-2ON">
+                            <navigationBar contentMode="scaleToFill" id="qtx-6y-2ON">
+                                <rect key="frame" x="0.0" y="323" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="FontAwesome" id="qGs-RB-56I">
                                         <barButtonItem key="leftBarButtonItem" title="[config]" id="OCA-xR-aBH"/>
@@ -20,85 +21,92 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA9-kf-uR1">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="T2L-dF-hdk"/>
-                                    <constraint firstAttribute="width" constant="60" id="U3a-kX-faG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="[trash]">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dO-MY-aRO">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="7GJ-Jv-4lu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4dO-MY-aRO">
+                                <rect key="frame" x="213" y="60" width="68" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal" title="[twitter]">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Facebook]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yX-mQ-zvX">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="Xc5-qk-dGN"/>
-                                    <constraint firstAttribute="height" constant="42" id="aGn-6Z-g5H"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Facebook]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4yX-mQ-zvX">
+                                <rect key="frame" x="213" y="8" width="87" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-Mc-QPf">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Fxn-Mc-QPf">
+                                <rect key="frame" x="0.0" y="323" width="320" height="44"/>
                                 <items/>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="aT7-hD-Tjk">
+                                <rect key="frame" x="213" y="117" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Use on UILabel:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ckg-3V-0IX">
+                                <rect key="frame" x="20" y="20" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Use on UIButton:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9BQ-oW-M64">
+                                <rect key="frame" x="20" y="71" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Use on UIImageView:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="72J-cf-31H">
+                                <rect key="frame" x="20" y="126" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gradient icon:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dK9-EN-2dB">
+                                <rect key="frame" x="20" y="182" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="star" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L9l-pA-0KD">
+                                <rect key="frame" x="213" y="170" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CA9-kf-uR1" firstAttribute="baseline" secondItem="4dO-MY-aRO" secondAttribute="baseline" type="default" id="Ek3-qP-aRx"/>
-                            <constraint firstItem="4dO-MY-aRO" firstAttribute="leading" secondItem="CA9-kf-uR1" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="F9s-S5-dvm"/>
-                            <constraint firstItem="CA9-kf-uR1" firstAttribute="baseline" secondItem="4yX-mQ-zvX" secondAttribute="baseline" type="default" id="K1o-FF-EWP"/>
-                            <constraint firstItem="qtx-6y-2ON" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="KUO-U4-XG5"/>
-                            <constraint firstItem="4yX-mQ-zvX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QAH-NX-pXv"/>
-                            <constraint firstItem="Fxn-Mc-QPf" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Rha-S3-35M"/>
-                            <constraint firstItem="Fxn-Mc-QPf" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="b84-fU-nh9"/>
-                            <constraint firstItem="CA9-kf-uR1" firstAttribute="top" secondItem="3" secondAttribute="top" constant="64" id="bHE-nz-CXw"/>
-                            <constraint firstItem="4yX-mQ-zvX" firstAttribute="top" secondItem="4dO-MY-aRO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bQE-8K-eGC"/>
-                            <constraint firstItem="qtx-6y-2ON" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="dAP-wq-Cll"/>
-                            <constraint firstItem="Fxn-Mc-QPf" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="fDN-EB-Nib"/>
-                            <constraint firstItem="CA9-kf-uR1" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nND-2v-X5U"/>
-                            <constraint firstItem="4yX-mQ-zvX" firstAttribute="top" secondItem="CA9-kf-uR1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rBA-ts-5hQ"/>
-                            <constraint firstItem="4dO-MY-aRO" firstAttribute="top" secondItem="CA9-kf-uR1" secondAttribute="top" type="default" id="x7k-1I-1N2"/>
-                            <constraint firstItem="qtx-6y-2ON" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="znk-Yd-mFb"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="[github]" id="ovQ-tY-ToH"/>
+                    <navigationItem key="navigationItem" id="WVL-iz-dRY"/>
                     <connections>
                         <outlet property="configBarButton" destination="OCA-xR-aBH" id="QLC-WI-PgB"/>
                         <outlet property="facebookLabel" destination="4yX-mQ-zvX" id="ocT-Q2-Vgm"/>
+                        <outlet property="imageView" destination="aT7-hD-Tjk" id="g6p-dA-lbZ"/>
                         <outlet property="refreshBarButton" destination="f5b-cF-Tzi" id="oW0-nO-qDe"/>
+                        <outlet property="starLabel" destination="L9l-pA-0KD" id="tfi-bO-O7V"/>
                         <outlet property="toolbar" destination="Fxn-Mc-QPf" id="nKY-Y0-mDC"/>
-                        <outlet property="trashButton" destination="CA9-kf-uR1" id="Dmg-B7-fxD"/>
                         <outlet property="twitterButton" destination="4dO-MY-aRO" id="Eza-pn-xyw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523" y="42"/>
+            <point key="canvasLocation" x="1049" y="42"/>
         </scene>
-        <!--Icons Table View Controller - Item-->
+        <!--Icons Table View Controller - Icon Cheat Sheet-->
         <scene sceneID="FWF-1o-8vN">
             <objects>
                 <tableViewController id="14p-OX-7z5" customClass="IconsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wo3-di-g2b">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -109,12 +117,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-Ok-jyZ">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lpG-Ok-jyZ">
+                                            <rect key="frame" x="10" y="11" width="35" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7c-SC-3xh">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c7c-SC-3xh">
+                                            <rect key="frame" x="266" y="11" width="44" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,7 +139,7 @@
                             <outlet property="delegate" destination="14p-OX-7z5" id="M0s-Eh-EMh"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="aGq-4s-SvG"/>
+                    <tabBarItem key="tabBarItem" title="Icon Cheat Sheet" id="aGq-4s-SvG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOi-Lc-x7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +156,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="YHE-8q-mZB"/>
+                        <segue destination="Mbb-1b-88h" kind="relationship" relationship="viewControllers" id="YHE-8q-mZB"/>
                         <segue destination="14p-OX-7z5" kind="relationship" relationship="viewControllers" id="9Fz-Yj-kq6"/>
                     </connections>
                 </tabBarController>
@@ -154,22 +164,39 @@
             </objects>
             <point key="canvasLocation" x="37" y="48"/>
         </scene>
+        <!--Navigation Controller - Kitchen Sink-->
+        <scene sceneID="ATz-JG-eus">
+            <objects>
+                <navigationController id="Mbb-1b-88h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kitchen Sink" id="ovQ-tY-ToH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lUm-dW-B1q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="HWi-vo-FJi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cA-OW-yRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="42"/>
+        </scene>
     </scenes>
     <classes>
         <class className="IconsTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IconsTableViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="configBarButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="facebookLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="refreshBarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="starLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
-                <relationship kind="outlet" name="trashButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="twitterButton" candidateClass="UIButton"/>
             </relationships>
         </class>
@@ -177,6 +204,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

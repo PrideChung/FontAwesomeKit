@@ -21,11 +21,19 @@
 - (void)awakeFromNib
 {
 	[super awakeFromNib];
-	self.tabBarItem.title = FAKIconBookmark;
-	[self.tabBarItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:36]}
-								   forState:UIControlStateNormal];
-	[self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -5)];
 	
+	self.tabBarItem.title = @"Icon Cheat Sheet";
+	
+	UIImage *tabbarIcon = [FontAwesomeKit imageForIcon:FAKIconList
+											 imageSize:FAKImageSizeTabbar
+											  fontSize:29
+											attributes:nil];
+	self.tabBarItem.image = tabbarIcon;
+}
+
+- (void)viewDidLoad
+{
+	[super viewDidLoad];
 }
 
 #pragma mark - Table view data source
@@ -62,7 +70,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
 	NSString *iconKey = self.iconKeys[indexPath.row];

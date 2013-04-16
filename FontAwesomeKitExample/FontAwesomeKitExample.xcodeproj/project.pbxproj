@@ -18,9 +18,9 @@
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
 		CC44A87216CD9B3F0039E101 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC44A87016CD9B3F0039E101 /* MainStoryboard.storyboard */; };
 		CC44A87516CD9B3F0039E101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44A87416CD9B3F0039E101 /* ViewController.m */; };
-		CC44A87F16CD9B7E0039E101 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC44A87E16CD9B7D0039E101 /* FontAwesome.otf */; };
+		CC44BE2B1717006400272A61 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC44BE281717006400272A61 /* FontAwesome.otf */; };
+		CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44BE2A1717006400272A61 /* FontAwesomeKit.m */; };
 		CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */; };
-		CC766D1116D0171400D8FBF2 /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC766D1016D0171400D8FBF2 /* FontAwesomeKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +40,11 @@
 		CC44A87116CD9B3F0039E101 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CC44A87316CD9B3F0039E101 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC44A87416CD9B3F0039E101 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CC44A87E16CD9B7D0039E101 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		CC44BE281717006400272A61 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		CC44BE291717006400272A61 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		CC44BE2A1717006400272A61 /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
 		CC766D0C16D00D1000D8FBF2 /* IconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsTableViewController.h; sourceTree = "<group>"; };
 		CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsTableViewController.m; sourceTree = "<group>"; };
-		CC766D0F16D0171400D8FBF2 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
-		CC766D1016D0171400D8FBF2 /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +98,7 @@
 				CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */,
 				CC44A87316CD9B3F0039E101 /* ViewController.h */,
 				CC44A87416CD9B3F0039E101 /* ViewController.m */,
-				CC766D0F16D0171400D8FBF2 /* FontAwesomeKit.h */,
-				CC766D1016D0171400D8FBF2 /* FontAwesomeKit.m */,
-				CC44A87E16CD9B7D0039E101 /* FontAwesome.otf */,
+				CC44BE271717006400272A61 /* FontAwesomeKit */,
 				CC44A85F16CD9B3F0039E101 /* Supporting Files */,
 			);
 			path = FontAwesomeKitExample;
@@ -118,6 +116,16 @@
 				CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC44BE271717006400272A61 /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC44BE281717006400272A61 /* FontAwesome.otf */,
+				CC44BE291717006400272A61 /* FontAwesomeKit.h */,
+				CC44BE2A1717006400272A61 /* FontAwesomeKit.m */,
+			);
+			path = FontAwesomeKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +184,7 @@
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC44A87216CD9B3F0039E101 /* MainStoryboard.storyboard in Resources */,
-				CC44A87F16CD9B7E0039E101 /* FontAwesome.otf in Resources */,
+				CC44BE2B1717006400272A61 /* FontAwesome.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +199,7 @@
 				CC44A86916CD9B3F0039E101 /* AppDelegate.m in Sources */,
 				CC44A87516CD9B3F0039E101 /* ViewController.m in Sources */,
 				CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */,
-				CC766D1116D0171400D8FBF2 /* FontAwesomeKit.m in Sources */,
+				CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +250,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -266,7 +274,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -279,6 +287,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontAwesomeKitExample/FontAwesomeKitExample-Prefix.pch";
 				INFOPLIST_FILE = "FontAwesomeKitExample/FontAwesomeKitExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontAwesomeKitExample/FontAwesomeKitExample-Prefix.pch";
 				INFOPLIST_FILE = "FontAwesomeKitExample/FontAwesomeKitExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
