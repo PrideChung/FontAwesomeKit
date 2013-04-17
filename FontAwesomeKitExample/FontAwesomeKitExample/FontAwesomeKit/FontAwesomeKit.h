@@ -20,18 +20,26 @@ static NSString *const FAKImageAttributeFont = @"FAKImageAttributeFont";
 				 fontSize:(CGFloat)fontSize
 			   attributes:(NSDictionary *)attributes;
 
-+ (UIImage *)gradientImageWithSize:(CGSize)size
++ (UIImage *)linearGradientImageWithSize:(CGSize)size
 							colors:(NSArray *)colors;
 
-+ (UIImage *)gradientImageWithSize:(CGSize)size
++ (UIImage *)linearGradientImageWithSize:(CGSize)size
 							colors:(NSArray *)colors
 						 locations:(NSArray *)locations;
 
-+ (UIImage *)gradientImageWithSize:(CGSize)size
++ (UIImage *)linearGradientImageWithSize:(CGSize)size
 							colors:(NSArray *)colors
 						 locations:(NSArray *)locations
 						startPoint:(CGPoint)startPoint
 						  endPoint:(CGPoint)endPoint;
+
++ (UIImage *)radialGradientImageWithSize:(CGSize)size
+								  colors:(NSArray *)colors
+							   locations:(NSArray *)locations
+							 startCenter:(CGPoint)startCenter
+							 startRadius:(CGFloat)startRadius
+							   endCenter:(CGPoint)endCenter
+							   endRadius:(CGFloat)endRadius;
 
 // return all icon's macro key and unicode string
 + (NSDictionary *)allIcons;

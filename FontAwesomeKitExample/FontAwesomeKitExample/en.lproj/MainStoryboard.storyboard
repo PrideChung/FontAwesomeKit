@@ -12,15 +12,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" id="qtx-6y-2ON">
-                                <rect key="frame" x="0.0" y="323" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="FontAwesome" id="qGs-RB-56I">
-                                        <barButtonItem key="leftBarButtonItem" title="[config]" id="OCA-xR-aBH"/>
-                                        <barButtonItem key="rightBarButtonItem" title="[refresh]" id="f5b-cF-Tzi"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4dO-MY-aRO">
                                 <rect key="frame" x="213" y="60" width="68" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,15 +74,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Radial Gradient:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bfh-CR-4Qr">
+                                <rect key="frame" x="20" y="235" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dTg-sR-jP6">
+                                <rect key="frame" x="213" y="223" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="WVL-iz-dRY"/>
                     <connections>
-                        <outlet property="configBarButton" destination="OCA-xR-aBH" id="QLC-WI-PgB"/>
                         <outlet property="facebookLabel" destination="4yX-mQ-zvX" id="ocT-Q2-Vgm"/>
                         <outlet property="imageView" destination="aT7-hD-Tjk" id="g6p-dA-lbZ"/>
-                        <outlet property="refreshBarButton" destination="f5b-cF-Tzi" id="oW0-nO-qDe"/>
+                        <outlet property="okLabel" destination="dTg-sR-jP6" id="Mvh-jH-lao"/>
                         <outlet property="starLabel" destination="L9l-pA-0KD" id="tfi-bO-O7V"/>
                         <outlet property="toolbar" destination="Fxn-Mc-QPf" id="nKY-Y0-mDC"/>
                         <outlet property="twitterButton" destination="4dO-MY-aRO" id="Eza-pn-xyw"/>
@@ -191,10 +195,9 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="configBarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="commentLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="facebookLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="refreshBarButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="starLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
                 <relationship kind="outlet" name="twitterButton" candidateClass="UIButton"/>

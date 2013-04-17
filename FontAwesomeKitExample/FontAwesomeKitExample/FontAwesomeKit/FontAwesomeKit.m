@@ -15,7 +15,7 @@
 				imageSize:(CGSize)imageSize
 				 fontSize:(CGFloat)fontSize
 			   attributes:(NSDictionary *)attributes
-{ 
+{
 	UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
 	
 	// ---------- begin context ----------
@@ -51,7 +51,6 @@
 		[iconChar drawInRect:iconRect withFont:iconFont];
 	}
 	
-	
 	UIImage *iconImage = UIGraphicsGetImageFromCurrentImageContext();
 	
 	// ---------- end context ----------
@@ -60,81 +59,89 @@
 	return iconImage;
 }
 
-+ (UIImage *)gradientImageWithSize:(CGSize)size colors:(NSArray *)colors
+/**
+ Gradient Helpers
+ */
++ (CGGradientRef)gradientWithColors:(NSArray *)colors locations:(NSArray *)locations
 {
-	return [FontAwesomeKit gradientImageWithSize:size
-										  colors:colors
-									   locations:@[@0, @1]];
-}
-
-+ (UIImage *)gradientImageWithSize:(CGSize)size
-							colors:(NSArray *)colors
-						 locations:(NSArray *)locations
-{
-	CGPoint startPoint = CGPointMake(0, 0);
-	CGPoint endPoint = CGPointMake(0, size.height);
-	
-	return [FontAwesomeKit gradientImageWithSize:size
-										  colors:colors
-									   locations:locations
-									  startPoint:startPoint
-										endPoint:endPoint];
-}
-
-+ (UIImage *)gradientImageWithSize:(CGSize)size
-							colors:(NSArray *)colors
-						 locations:(NSArray *)locations
-						startPoint:(CGPoint)startPoint
-						  endPoint:(CGPoint)endPoint
-{
-	UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
-	// ---------- begin context ----------
-	
-	CGContextRef context = UIGraphicsGetCurrentContext();
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-
+	
 	CGFloat cLocations[[locations count]];
 	for (NSInteger i = 0; i < [locations count]; i++) {
 		cLocations[i] = ((NSNumber *)locations[i]).floatValue;
 	}
-	
-	CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
-	CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation);
-	UIImage *pattern = UIGraphicsGetImageFromCurrentImageContext();
-	
 	CGColorSpaceRelease(colorSpace);
+	return CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
+}
+
++ (UIImage *)linearGradientImageWithSize:(CGSize)size colors:(NSArray *)colors
+{
+	return [FontAwesomeKit linearGradientImageWithSize:size
+												colors:colors
+											 locations:@[@0, @1]];
+}
+
+
++ (UIImage *)linearGradientImageWithSize:(CGSize)size
+								  colors:(NSArray *)colors
+							   locations:(NSArray *)locations
+{
+	CGPoint startPoint = CGPointMake(0, 0);
+	CGPoint endPoint = CGPointMake(0, size.height);
+	
+	return [FontAwesomeKit linearGradientImageWithSize:size
+												colors:colors
+											 locations:locations
+											startPoint:startPoint
+											  endPoint:endPoint];
+}
+
++ (UIImage *)linearGradientImageWithSize:(CGSize)size
+								  colors:(NSArray *)colors
+							   locations:(NSArray *)locations
+							  startPoint:(CGPoint)startPoint
+								endPoint:(CGPoint)endPoint
+{
+	UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+	// ---------- begin context ----------
+	
+	CGGradientRef gradient = [self gradientWithColors:colors locations:locations];
+	CGContextDrawLinearGradient(UIGraphicsGetCurrentContext(), gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation);
+	UIImage *gradientImage = UIGraphicsGetImageFromCurrentImageContext();
+	
 	CGGradientRelease(gradient);
 	
 	// ---------- end context ----------
 	UIGraphicsEndImageContext();
 	
-	return pattern;
+	return gradientImage;
 }
 
-+ (void)setGradientInContext:(CGContextRef)context
++ (UIImage *)radialGradientImageWithSize:(CGSize)size
+					   colors:(NSArray *)colors
+					locations:(NSArray *)locations
+				  startCenter:(CGPoint)startCenter
+				  startRadius:(CGFloat)startRadius
+					endCenter:(CGPoint)endCenter
+					endRadius:(CGFloat)endRadius
 {
-	NSArray *locations = @[@0, @1];
-	CGPoint startPoint = CGPointMake(0, 0);
-	CGPoint endPoint = CGPointMake(0, 30);
-	NSArray *colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor];
-	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-
-	CGFloat cLocations[[locations count]];
-	for (NSInteger i = 0; i < [locations count]; i++) {
-		cLocations[i] = ((NSNumber *)locations[i]).floatValue;
-	}
+	UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+	// ---------- begin context ----------
 	
-	CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
-	CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation);
+	CGGradientRef gradient = [self gradientWithColors:colors locations:locations];
 	
-	CGColorSpaceRelease(colorSpace);
+	CGContextDrawRadialGradient(UIGraphicsGetCurrentContext(), gradient, startCenter, startRadius, endCenter, endRadius, kCGGradientDrawsBeforeStartLocation);
 	CGGradientRelease(gradient);
+	UIImage *gradientImage = UIGraphicsGetImageFromCurrentImageContext();
+	// ---------- end context ----------
+	UIGraphicsEndImageContext();
+	return gradientImage;
 }
 
 + (NSDictionary *)allIcons
 {
     return @{
-	@"FAKIconGlass" : @"\uf000",
+			 @"FAKIconGlass" : @"\uf000",
 	@"FAKIconMusic" : @"\uf001",
 	@"FAKIconSearch" : @"\uf002",
 	@"FAKIconEnvelope" : @"\uf003",

@@ -10,14 +10,13 @@
 #import "FontAwesomeKit.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *configBarButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshBarButton;
 @property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @property (weak, nonatomic) IBOutlet UILabel *facebookLabel;
 
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *starLabel;
+@property (weak, nonatomic) IBOutlet UILabel *okLabel;
 @end
 
 @implementation ViewController
@@ -36,15 +35,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 	
 	// using Font-Awesome on UIBarButtonItem
-	self.configBarButton.title = FAKIconCog;
-	[self.configBarButton setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
+	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:FAKIconCog
+																			 style:UIBarButtonItemStyleBordered
+																			target:nil
+																			action:nil];
+	[self.navigationItem.leftBarButtonItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
 										forState:UIControlStateNormal];
 	
-	self.refreshBarButton.title = FAKIconRefresh;
-	[self.refreshBarButton setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
+	
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:FAKIconRefresh
+																			  style:UIBarButtonItemStyleBordered
+																			 target:nil
+																			 action:nil];
+	[self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
 										 forState:UIControlStateNormal];
 	
 	
@@ -59,14 +64,6 @@
 	self.twitterButton.titleLabel.font = [FontAwesomeKit fontWithSize:36];
 	
 	
-	// using Font-Awesome on UISegmentControl in Toolbar
-	UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:@[FAKIconArrowLeft, FAKIconArrowRight]];
-	
-	[segmentControl setSegmentedControlStyle:UISegmentedControlStyleBar];
-	[segmentControl setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]}
-									   forState:UIControlStateNormal];
-	
-	[self.toolbar setItems:@[[[UIBarButtonItem alloc] initWithCustomView:segmentControl]]];
 	
 	//using Font-Awesome on UIImageView
 	NSDictionary *attr = @{FAKImageAttributeForegroundColor: [UIColor colorWithRed:208.0/255
@@ -80,25 +77,50 @@
 	
 	self.imageView.image = googleplusIcon;
 	
-	//using Font-Awesome on UIImageView with gradient color
+	//using Font-Awesome on UILabel with linear gradient color
 	NSArray *colors = @[(id)[UIColor colorWithHue:59.0/360 saturation:0.2 brightness:1.0 alpha:1.0].CGColor,
 					 (id)[UIColor colorWithHue:59.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-					 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.5 alpha:1.0].CGColor
+					 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor
 					 ];
 	
-	NSArray *locations = @[@0.2, @0.7, @1.0];
-	UIImage *gradientPattern = [FontAwesomeKit gradientImageWithSize:CGSizeMake(40, 40)
+	NSArray *locations = @[@0.2, @0.8, @1.0];
+	UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(37, 37)
 													  colors:colors
 												   locations:locations];
 	self.starLabel.text = FAKIconStar;
 	self.starLabel.font = [FontAwesomeKit fontWithSize:36];
 	self.starLabel.textColor = [UIColor colorWithPatternImage:gradientPattern];
 	
+	//using Font-Awesome on UILabel with radial gradient color
+	colors = @[(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
+			(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor,
+			];
 	
+	CGPoint centerPoint = CGPointMake(45.0/2 - 5, 45.0/2);
+	gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
+														   colors:colors
+														locations:locations
+													  startCenter:centerPoint
+													  startRadius:1.0
+														endCenter:centerPoint
+														endRadius:27];
+	self.okLabel.text = FAKIconOkSign;
+	self.okLabel.font = [FontAwesomeKit fontWithSize:40];
+	self.okLabel.textColor= [UIColor colorWithPatternImage:gradientPattern];
+	
+	// using Font-Awesome on UISegmentControl in Toolbar
+	UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:@[FAKIconArrowLeft, FAKIconArrowRight]];
+	
+	[segmentControl setSegmentedControlStyle:UISegmentedControlStyleBar];
+	[segmentControl setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]}
+									   forState:UIControlStateNormal];
+	
+	[self.toolbar setItems:@[[[UIBarButtonItem alloc] initWithCustomView:segmentControl]]];
 }
 
 - (void)viewDidUnload {
 	[self setStarLabel:nil];
+	[self setOkLabel:nil];
 	[super viewDidUnload];
 }
 @end
