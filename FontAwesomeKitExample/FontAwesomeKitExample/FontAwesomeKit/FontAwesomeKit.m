@@ -133,6 +133,7 @@
 	CGContextDrawRadialGradient(UIGraphicsGetCurrentContext(), gradient, startCenter, startRadius, endCenter, endRadius, kCGGradientDrawsBeforeStartLocation);
 	CGGradientRelease(gradient);
 	UIImage *gradientImage = UIGraphicsGetImageFromCurrentImageContext();
+	
 	// ---------- end context ----------
 	UIGraphicsEndImageContext();
 	return gradientImage;

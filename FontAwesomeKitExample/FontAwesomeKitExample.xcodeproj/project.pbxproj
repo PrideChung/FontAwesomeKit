@@ -17,7 +17,7 @@
 		CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86C16CD9B3F0039E101 /* Default@2x.png */; };
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
 		CC44A87216CD9B3F0039E101 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC44A87016CD9B3F0039E101 /* MainStoryboard.storyboard */; };
-		CC44A87516CD9B3F0039E101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44A87416CD9B3F0039E101 /* ViewController.m */; };
+		CC44A87516CD9B3F0039E101 /* KitchenSinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */; };
 		CC44BE2B1717006400272A61 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC44BE281717006400272A61 /* FontAwesome.otf */; };
 		CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44BE2A1717006400272A61 /* FontAwesomeKit.m */; };
 		CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */; };
@@ -38,8 +38,8 @@
 		CC44A86C16CD9B3F0039E101 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CC44A87116CD9B3F0039E101 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CC44A87316CD9B3F0039E101 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC44A87416CD9B3F0039E101 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC44A87316CD9B3F0039E101 /* KitchenSinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenSinkViewController.h; sourceTree = "<group>"; };
+		CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkViewController.m; sourceTree = "<group>"; };
 		CC44BE281717006400272A61 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		CC44BE291717006400272A61 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
 		CC44BE2A1717006400272A61 /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 				CC44A87016CD9B3F0039E101 /* MainStoryboard.storyboard */,
 				CC766D0C16D00D1000D8FBF2 /* IconsTableViewController.h */,
 				CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */,
-				CC44A87316CD9B3F0039E101 /* ViewController.h */,
-				CC44A87416CD9B3F0039E101 /* ViewController.m */,
+				CC44A87316CD9B3F0039E101 /* KitchenSinkViewController.h */,
+				CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */,
 				CC44BE271717006400272A61 /* FontAwesomeKit */,
 				CC44A85F16CD9B3F0039E101 /* Supporting Files */,
 			);
@@ -197,7 +197,7 @@
 			files = (
 				CC44A86516CD9B3F0039E101 /* main.m in Sources */,
 				CC44A86916CD9B3F0039E101 /* AppDelegate.m in Sources */,
-				CC44A87516CD9B3F0039E101 /* ViewController.m in Sources */,
+				CC44A87516CD9B3F0039E101 /* KitchenSinkViewController.m in Sources */,
 				CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */,
 				CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */,
 			);

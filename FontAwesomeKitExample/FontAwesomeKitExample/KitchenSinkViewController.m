@@ -6,10 +6,10 @@
 //  Copyright (c) 2013年 Pride Chung. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "KitchenSinkViewController.h"
 #import "FontAwesomeKit.h"
 
-@interface ViewController ()
+@interface KitchenSinkViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @property (weak, nonatomic) IBOutlet UILabel *facebookLabel;
 
@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *okLabel;
 @end
 
-@implementation ViewController
+@implementation KitchenSinkViewController
 
 - (void)awakeFromNib
 {
@@ -115,7 +115,7 @@
 	[segmentControl setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]}
 									   forState:UIControlStateNormal];
 	
-	[self.toolbar setItems:@[[[UIBarButtonItem alloc] initWithCustomView:segmentControl]]];
+	self.toolbar.items = @[[[UIBarButtonItem alloc] initWithCustomView:segmentControl]];
 }
 
 - (void)viewDidUnload {
