@@ -4,13 +4,7 @@ FontAwesomeKit
 Simple Font-Awesome Wrapper For iOS
 
 ###What is Font-Awesome
-[Font-Awesome](http://fortawesome.github.com/Font-Awesome/) is a set of iconic fonts, which used in Twitter Bootstrap.
-
-###Why need this kit
-Every time when you use Font-Awesome, you need to find out what's the char code for this icon. You can find an ["icon dictionary"](http://fortawesome.github.com/Font-Awesome/design.html) from Font-Awesome's homepage,but copying these icons into your code might not be a good idea since they are not standard Unicode character, and inputting these meaningless codes is painful and easy to make mistake, let FontAwesomeKit do that for you.
-
-###How does it work
-I wrote a Ruby script to analyze the ["icon dictionary"](http://fortawesome.github.com/Font-Awesome/design.html) I mentioned before and generated a bunch of string macros for you, so you can use these macros instead of inputting char code.
+[Font-Awesome](http://fortawesome.github.com/Font-Awesome/) is a set of iconic fonts used in Twitter Bootstrap.
 
 ###Installation
 Like using other custom fonts on iOS, you need to add `FontAwesome.otf` into you project first, if you never did that before, you might find these posts are helpful.
