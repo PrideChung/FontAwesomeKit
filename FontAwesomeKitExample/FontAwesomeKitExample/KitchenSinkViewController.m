@@ -80,8 +80,7 @@
 	//using Font-Awesome on UILabel with linear gradient color
 	NSArray *colors = @[(id)[UIColor colorWithHue:59.0/360 saturation:0.2 brightness:1.0 alpha:1.0].CGColor,
 					 (id)[UIColor colorWithHue:59.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-					 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor
-					 ];
+					 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor];
 	
 	NSArray *locations = @[@0.2, @0.8, @1.0];
 	UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(37, 37)
