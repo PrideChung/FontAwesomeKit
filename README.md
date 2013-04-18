@@ -1,7 +1,9 @@
 FontAwesomeKit
 ==============
 
-Simple Font-Awesome Wrapper For iOS
+Simple helper for using Font-Awesome on iOS.
+
+![image](https://raw.github.com/PrideChung/FontAwesomeKit/master/screenshot.png)
 
 ###What is Font-Awesome
 [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) is a set of iconic fonts used in Twitter Bootstrap.
