@@ -7,7 +7,7 @@
 Pod::Spec.new do |s|
   s.name         = "FontAwesomeKit"
   s.version      = "0.0.1"
-  s.summary      = "Simple helper for using Font-Awesome on iOS"
+  s.summary      = "Simple helper for using Font-Awesome on iOS."
   s.homepage     = "https://github.com/PrideChung/FontAwesomeKit"
   s.screenshots  = "https://raw.github.com/PrideChung/FontAwesomeKit/master/screenshot.png"
   s.license      = 'MIT'
