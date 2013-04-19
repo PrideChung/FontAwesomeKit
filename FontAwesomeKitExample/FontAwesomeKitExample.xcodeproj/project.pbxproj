@@ -20,6 +20,7 @@
 		CC44A87516CD9B3F0039E101 /* KitchenSinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */; };
 		CC44BE2B1717006400272A61 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC44BE281717006400272A61 /* FontAwesome.otf */; };
 		CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44BE2A1717006400272A61 /* FontAwesomeKit.m */; };
+		CC5349231721C9010072C49E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
 		CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		CC44BE281717006400272A61 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		CC44BE291717006400272A61 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
 		CC44BE2A1717006400272A61 /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
+		CC5349221721C9010072C49E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		CC766D0C16D00D1000D8FBF2 /* IconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsTableViewController.h; sourceTree = "<group>"; };
 		CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5349231721C9010072C49E /* CoreText.framework in Frameworks */,
 				CC44A85916CD9B3F0039E101 /* UIKit.framework in Frameworks */,
 				CC44A85B16CD9B3F0039E101 /* Foundation.framework in Frameworks */,
 				CC44A85D16CD9B3F0039E101 /* CoreGraphics.framework in Frameworks */,
@@ -64,6 +67,7 @@
 		CC44A84C16CD9B3F0039E101 = {
 			isa = PBXGroup;
 			children = (
+				CC5349221721C9010072C49E /* CoreText.framework */,
 				CC44A85E16CD9B3F0039E101 /* FontAwesomeKitExample */,
 				CC44A85716CD9B3F0039E101 /* Frameworks */,
 				CC44A85616CD9B3F0039E101 /* Products */,

@@ -8,6 +8,20 @@
 
 + (UIFont *)fontWithSize:(CGFloat)size
 {
+#ifndef __CTFONT__
+#warning Add CoreText framework to your project ,and import <CoreText/CoreText.h> ; Or Simply remove the auto registering code below, register FontAwesome.otf in your project's Info.plist manually.
+#else
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		NSURL * url = [[NSBundle mainBundle] URLForResource:@"FontAwesome" withExtension:@"otf"];
+		CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)url);
+		CGFontRef newFont = CGFontCreateWithDataProvider(fontDataProvider);
+		CGDataProviderRelease(fontDataProvider);
+		CFErrorRef error;
+		CTFontManagerRegisterGraphicsFont(newFont, &error);
+		CGFontRelease(newFont);
+	});
+#endif
 	return [UIFont fontWithName:@"FontAwesome" size:size];
 }
 
