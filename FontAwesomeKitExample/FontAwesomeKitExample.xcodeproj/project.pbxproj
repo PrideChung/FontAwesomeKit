@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC390BFE1722BD320049680B /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC390BFB1722BD320049680B /* FontAwesome.otf */; };
+		CC390BFF1722BD320049680B /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC390BFD1722BD320049680B /* FontAwesomeKit.m */; };
 		CC44A85916CD9B3F0039E101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85816CD9B3F0039E101 /* UIKit.framework */; };
 		CC44A85B16CD9B3F0039E101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85A16CD9B3F0039E101 /* Foundation.framework */; };
 		CC44A85D16CD9B3F0039E101 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85C16CD9B3F0039E101 /* CoreGraphics.framework */; };
@@ -18,13 +20,14 @@
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
 		CC44A87216CD9B3F0039E101 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC44A87016CD9B3F0039E101 /* MainStoryboard.storyboard */; };
 		CC44A87516CD9B3F0039E101 /* KitchenSinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */; };
-		CC44BE2B1717006400272A61 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC44BE281717006400272A61 /* FontAwesome.otf */; };
-		CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44BE2A1717006400272A61 /* FontAwesomeKit.m */; };
 		CC5349231721C9010072C49E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
 		CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC390BFB1722BD320049680B /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		CC390BFC1722BD320049680B /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		CC390BFD1722BD320049680B /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
 		CC44A85516CD9B3F0039E101 /* FontAwesomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontAwesomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC44A85816CD9B3F0039E101 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC44A85A16CD9B3F0039E101 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,9 +44,6 @@
 		CC44A87116CD9B3F0039E101 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CC44A87316CD9B3F0039E101 /* KitchenSinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenSinkViewController.h; sourceTree = "<group>"; };
 		CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkViewController.m; sourceTree = "<group>"; };
-		CC44BE281717006400272A61 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		CC44BE291717006400272A61 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
-		CC44BE2A1717006400272A61 /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
 		CC5349221721C9010072C49E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		CC766D0C16D00D1000D8FBF2 /* IconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsTableViewController.h; sourceTree = "<group>"; };
 		CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsTableViewController.m; sourceTree = "<group>"; };
@@ -64,10 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC390BFA1722BD320049680B /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC390BFB1722BD320049680B /* FontAwesome.otf */,
+				CC390BFC1722BD320049680B /* FontAwesomeKit.h */,
+				CC390BFD1722BD320049680B /* FontAwesomeKit.m */,
+			);
+			name = FontAwesomeKit;
+			path = ../FontAwesomeKit;
+			sourceTree = "<group>";
+		};
 		CC44A84C16CD9B3F0039E101 = {
 			isa = PBXGroup;
 			children = (
 				CC5349221721C9010072C49E /* CoreText.framework */,
+				CC390BFA1722BD320049680B /* FontAwesomeKit */,
 				CC44A85E16CD9B3F0039E101 /* FontAwesomeKitExample */,
 				CC44A85716CD9B3F0039E101 /* Frameworks */,
 				CC44A85616CD9B3F0039E101 /* Products */,
@@ -102,7 +114,6 @@
 				CC766D0D16D00D1000D8FBF2 /* IconsTableViewController.m */,
 				CC44A87316CD9B3F0039E101 /* KitchenSinkViewController.h */,
 				CC44A87416CD9B3F0039E101 /* KitchenSinkViewController.m */,
-				CC44BE271717006400272A61 /* FontAwesomeKit */,
 				CC44A85F16CD9B3F0039E101 /* Supporting Files */,
 			);
 			path = FontAwesomeKitExample;
@@ -120,16 +131,6 @@
 				CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CC44BE271717006400272A61 /* FontAwesomeKit */ = {
-			isa = PBXGroup;
-			children = (
-				CC44BE281717006400272A61 /* FontAwesome.otf */,
-				CC44BE291717006400272A61 /* FontAwesomeKit.h */,
-				CC44BE2A1717006400272A61 /* FontAwesomeKit.m */,
-			);
-			path = FontAwesomeKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +189,7 @@
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC44A87216CD9B3F0039E101 /* MainStoryboard.storyboard in Resources */,
-				CC44BE2B1717006400272A61 /* FontAwesome.otf in Resources */,
+				CC390BFE1722BD320049680B /* FontAwesome.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +204,7 @@
 				CC44A86916CD9B3F0039E101 /* AppDelegate.m in Sources */,
 				CC44A87516CD9B3F0039E101 /* KitchenSinkViewController.m in Sources */,
 				CC766D0E16D00D1000D8FBF2 /* IconsTableViewController.m in Sources */,
-				CC44BE2C1717006400272A61 /* FontAwesomeKit.m in Sources */,
+				CC390BFF1722BD320049680B /* FontAwesomeKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

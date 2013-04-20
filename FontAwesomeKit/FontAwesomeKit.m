@@ -8,6 +8,20 @@
 
 + (UIFont *)fontWithSize:(CGFloat)size
 {
+#ifndef __CTFONT__
+#warning Add CoreText framework to your project ,and import <CoreText/CoreText.h> ; Or Simply remove the auto registering code below, register FontAwesome.otf in your project's Info.plist manually.
+#else
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		NSURL * url = [[NSBundle mainBundle] URLForResource:@"FontAwesome" withExtension:@"otf"];
+		CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)url);
+		CGFontRef newFont = CGFontCreateWithDataProvider(fontDataProvider);
+		CGDataProviderRelease(fontDataProvider);
+		CFErrorRef error;
+		CTFontManagerRegisterGraphicsFont(newFont, &error);
+		CGFontRelease(newFont);
+	});
+#endif
 	return [UIFont fontWithName:@"FontAwesome" size:size];
 }
 
@@ -65,20 +79,27 @@
 + (CGGradientRef)gradientWithColors:(NSArray *)colors locations:(NSArray *)locations
 {
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+	CGGradientRef gradient;
 	
-	CGFloat cLocations[[locations count]];
-	for (NSInteger i = 0; i < [locations count]; i++) {
-		cLocations[i] = ((NSNumber *)locations[i]).floatValue;
+	if (locations) {
+		CGFloat cLocations[[locations count]];
+		for (NSInteger i = 0; i < [locations count]; i++) {
+			cLocations[i] = ((NSNumber *)locations[i]).floatValue;
+		}
+		gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
+	} else {
+		gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, NULL);
 	}
+	
 	CGColorSpaceRelease(colorSpace);
-	return CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
+	return gradient;
 }
 
 + (UIImage *)linearGradientImageWithSize:(CGSize)size colors:(NSArray *)colors
 {
 	return [FontAwesomeKit linearGradientImageWithSize:size
 												colors:colors
-											 locations:@[@0, @1]];
+											 locations:nil];
 }
 
 

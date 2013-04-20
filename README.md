@@ -92,18 +92,11 @@ gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
 ###Use gradient pattern image as Forgeground color on icon
 
 ```objective-c
-NSArray *githubColors = @[(id)[UIColor colorWithWhite:0.2 alpha:1.0].CGColor,
-					   (id)[UIColor colorWithWhite:0.1 alpha:1.0].CGColor,
-					   (id)[UIColor colorWithWhite:0.35 alpha:1.0].CGColor];
-NSArray *githubLocations = @[@0.2, @0.5, @1.0];
-UIImage *githubGradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
-																	  colors:githubColors
-																   locations:githubLocations];
-NSDictionary *githubAttr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:githubGradientPattern]};
-self.gradientImageView.image = [FontAwesomeKit imageForIcon:FAKIconGithub
-												  imageSize:CGSizeMake(45, 45)
-												   fontSize:45
-												 attributes:githubAttr];
+NSDictionary *attr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:gradientPattern]};
+UIImage *gradientIcon = [FontAwesomeKit imageForIcon:FAKIconGithub
+										   imageSize:CGSizeMake(45, 45)
+											fontSize:45
+										  attributes:githubAttr]; // Available attributes are listed below
 ```
 
 **Available attributes:** (Both are optional, use default value if you don't specify)
@@ -125,3 +118,6 @@ The value of this attribute is an UIColor object. Use this attribute to specify 
 ######FAKImageAttributeFont
 The value of this attribute is an UIFont object. Use this attribute to specify the icon font you want to use. You can pass the value to use another icon font.  
 *Default: Use FontAwesome*
+
+##License
+FontAwesomeKit is available under the MIT license. See the LICENSE file for more information.

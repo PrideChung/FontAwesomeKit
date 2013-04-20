@@ -21,17 +21,17 @@ static NSString *const FAKImageAttributeFont = @"FAKImageAttributeFont";
 			   attributes:(NSDictionary *)attributes;
 
 + (UIImage *)linearGradientImageWithSize:(CGSize)size
-							colors:(NSArray *)colors;
+								  colors:(NSArray *)colors;
 
 + (UIImage *)linearGradientImageWithSize:(CGSize)size
-							colors:(NSArray *)colors
-						 locations:(NSArray *)locations;
+								  colors:(NSArray *)colors
+							   locations:(NSArray *)locations;
 
 + (UIImage *)linearGradientImageWithSize:(CGSize)size
-							colors:(NSArray *)colors
-						 locations:(NSArray *)locations
-						startPoint:(CGPoint)startPoint
-						  endPoint:(CGPoint)endPoint;
+								  colors:(NSArray *)colors
+							   locations:(NSArray *)locations
+							  startPoint:(CGPoint)startPoint
+								endPoint:(CGPoint)endPoint;
 
 + (UIImage *)radialGradientImageWithSize:(CGSize)size
 								  colors:(NSArray *)colors
