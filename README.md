@@ -9,6 +9,10 @@ Simple helper for using Font-Awesome on iOS.
 [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) is a set of iconic fonts used in Twitter Bootstrap.
 
 ##Installation
+####Requirement
+- iOS 5.0 +
+- ARC enabled
+- CoreText framework
 
 ###via CocoaPods (recommended)
 
