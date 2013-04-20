@@ -27,8 +27,12 @@ Download source code, then drag the folder `FontAwesomeKit` into your project, a
 ###Using Font-Awesome on UIBarButtonItem
 
 ```objective-c
-self.configBarButton.title = FAKIconCog;
-[self.configBarButton setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]} forState:UIControlStateNormal];
+self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:FAKIconRefresh
+																		  style:UIBarButtonItemStyleBordered
+																		 target:nil
+																		 action:nil];
+[self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
+									 forState:UIControlStateNormal];
 ```
 
 ###Get an UIImage of an icon so you can use it on tabbar
@@ -51,9 +55,9 @@ NSArray *colors = @[(id)[UIColor colorWithHue:59.0/360 saturation:0.2 brightness
 				 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor];
 // Gradient stops, from 0.0 to 1.0, values must be monotonically increasing
 NSArray *locations = @[@0.2, @0.8, @1.0]; 
-UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(37, 37)
-																colors:colors
-															 locations:locations]; 
+UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
+																	colors:colors
+																 locations:locations];
 ```
 ####Related methods
 ```objective-c
