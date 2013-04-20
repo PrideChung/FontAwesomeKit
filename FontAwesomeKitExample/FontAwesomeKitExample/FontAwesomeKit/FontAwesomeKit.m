@@ -79,20 +79,27 @@
 + (CGGradientRef)gradientWithColors:(NSArray *)colors locations:(NSArray *)locations
 {
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+	CGGradientRef gradient;
 	
-	CGFloat cLocations[[locations count]];
-	for (NSInteger i = 0; i < [locations count]; i++) {
-		cLocations[i] = ((NSNumber *)locations[i]).floatValue;
+	if (locations) {
+		CGFloat cLocations[[locations count]];
+		for (NSInteger i = 0; i < [locations count]; i++) {
+			cLocations[i] = ((NSNumber *)locations[i]).floatValue;
+		}
+		gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
+	} else {
+		gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, NULL);
 	}
+	
 	CGColorSpaceRelease(colorSpace);
-	return CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, cLocations);
+	return gradient;
 }
 
 + (UIImage *)linearGradientImageWithSize:(CGSize)size colors:(NSArray *)colors
 {
 	return [FontAwesomeKit linearGradientImageWithSize:size
 												colors:colors
-											 locations:@[@0, @1]];
+											 locations:nil];
 }
 
 

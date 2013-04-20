@@ -10,11 +10,11 @@
 #import "FontAwesomeKit.h"
 
 @interface KitchenSinkViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @property (weak, nonatomic) IBOutlet UILabel *facebookLabel;
-
+@property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *gradientImageView;
 @property (weak, nonatomic) IBOutlet UILabel *starLabel;
 @property (weak, nonatomic) IBOutlet UILabel *okLabel;
 @end
@@ -55,7 +55,7 @@
 	
 	// using Font-Awesome on UILabel
 	self.facebookLabel.text = FAKIconFacebookSign;
-	self.facebookLabel.font = [FontAwesomeKit fontWithSize:36];
+	self.facebookLabel.font = [FontAwesomeKit fontWithSize:45];
 	self.facebookLabel.textColor = [UIColor colorWithRed:0.231 green:0.349 blue:0.596 alpha:1.000];
 	
 	// using Font-Awesome on UIButton
@@ -72,7 +72,7 @@
 																			 alpha:1.0]};
 	UIImage *googleplusIcon = [FontAwesomeKit imageForIcon:FAKIconGooglePlusSign
 											 imageSize:CGSizeMake(45, 45)
-											  fontSize:32
+											  fontSize:45
 											attributes:attr];
 	
 	self.imageView.image = googleplusIcon;
@@ -83,12 +83,29 @@
 					 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor];
 	
 	NSArray *locations = @[@0.2, @0.8, @1.0];
-	UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(37, 37)
-													  colors:colors
-												   locations:locations];
+	UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
+																	colors:colors
+																 locations:locations];
 	self.starLabel.text = FAKIconStar;
-	self.starLabel.font = [FontAwesomeKit fontWithSize:36];
+	self.starLabel.font = [FontAwesomeKit fontWithSize:45];
 	self.starLabel.textColor = [UIColor colorWithPatternImage:gradientPattern];
+	
+	//using gradient pattern image as Forgeground color of an icon
+	NSArray *githubColors = @[(id)[UIColor colorWithWhite:0.2 alpha:1.0].CGColor,
+						   (id)[UIColor colorWithWhite:0.1 alpha:1.0].CGColor,
+						   (id)[UIColor colorWithWhite:0.35 alpha:1.0].CGColor];
+	
+	
+	NSArray *githubLocations = @[@0.2, @0.5, @1.0];
+	UIImage *githubGradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
+																		  colors:githubColors
+																	   locations:githubLocations];
+	
+	NSDictionary *githubAttr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:githubGradientPattern]};
+	self.gradientImageView.image = [FontAwesomeKit imageForIcon:FAKIconGithub
+													  imageSize:CGSizeMake(45, 45)
+													   fontSize:45
+													 attributes:githubAttr];
 	
 	//using Font-Awesome on UILabel with radial gradient color
 	colors = @[(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
@@ -104,7 +121,7 @@
 														endCenter:centerPoint
 														endRadius:27];
 	self.okLabel.text = FAKIconOkSign;
-	self.okLabel.font = [FontAwesomeKit fontWithSize:40];
+	self.okLabel.font = [FontAwesomeKit fontWithSize:45];
 	self.okLabel.textColor= [UIColor colorWithPatternImage:gradientPattern];
 	
 	// using Font-Awesome on UISegmentControl in Toolbar
@@ -120,6 +137,7 @@
 - (void)viewDidUnload {
 	[self setStarLabel:nil];
 	[self setOkLabel:nil];
+	[self setGradientImageView:nil];
 	[super viewDidUnload];
 }
 @end
