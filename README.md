@@ -60,6 +60,7 @@ UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMak
 																 locations:locations];
 ```
 ####Related methods
+Gives you control about where to start and stop the gradient.  
 ```objective-c
 + (UIImage *)linearGradientImageWithSize:(CGSize)size
 								  colors:(NSArray *)colors
@@ -67,20 +68,18 @@ UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMak
 							  startPoint:(CGPoint)startPoint
 								endPoint:(CGPoint)endPoint;
 ```
-Gives you control about where to start and stop the gradient.
 
-
+Omit the locations parameter, the first color in colors is assigned to location 0, the last color in colors is assigned to location 1, and intervening colors are assigned locations that are at equal intervals in between.  
 ```objective-c
 + (UIImage *)linearGradientImageWithSize:(CGSize)size
 								  colors:(NSArray *)colors;
 ```
-Omit the locations parameter, the first color in colors is assigned to location 0, the last color in colors is assigned to location 1, and intervening colors are assigned locations that are at equal intervals in between.
+
 
 ###Get a radial gradient pattern image
 ```objective-c
 NSArray *colors = @[(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-		        (id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor,
-		];
+		        (id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor];
 CGPoint centerPoint = CGPointMake(45.0/2 - 5, 45.0/2);
 gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
 													   colors:colors // Gradient colors

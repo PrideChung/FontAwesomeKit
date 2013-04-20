@@ -109,8 +109,7 @@
 	
 	//using Font-Awesome on UILabel with radial gradient color
 	colors = @[(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-			(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor,
-			];
+			(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor];
 	
 	CGPoint centerPoint = CGPointMake(45.0/2 - 5, 45.0/2);
 	gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
