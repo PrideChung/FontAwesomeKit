@@ -84,7 +84,8 @@ CGPoint centerPoint = CGPointMake(45.0/2 - 5, 45.0/2);
 gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
 													   colors:colors // Gradient colors
 													locations:locations // Gradient stops
-												  startCenter:centerPoint // The coordinate that defines the center of the starting circle.												  startRadius:1.0 // The radius of the starting circle.
+												  startCenter:centerPoint // The coordinate that defines the center of the starting circle.
+												  startRadius:1.0 // The radius of the starting circle.
 													endCenter:centerPoint // The coordinate that defines the center of the ending circle.
 													endRadius:27]; // The radius of the ending circle.
 ```
@@ -117,7 +118,7 @@ The value of this attribute is an UIColor object. Use this attribute to specify 
 
 ######FAKImageAttributeFont
 The value of this attribute is an UIFont object. Use this attribute to specify the icon font you want to use. You can pass the value to use another icon font.  
-*Default: Use FontAwesome*
+*Default: Use FontAwesome.*
 
 ##License
 FontAwesomeKit is available under the MIT license. See the LICENSE file for more information.
