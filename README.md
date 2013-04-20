@@ -39,7 +39,7 @@ self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:
 
 ```objective-c
 UIImage *tabBarIcon = [FontAwesomeKit imageForIcon:FAKIconHeart
-										 imageSize:FAKImageSizeTabbar
+										 imageSize:CGSizeMake(30, 30)
 										  fontSize:29
 										attributes:nil];
 self.tabBarItem.image = tabBarIcon;
@@ -92,19 +92,18 @@ gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
 ###Use gradient pattern image as Forgeground color on icon
 
 ```objective-c
-	NSArray *githubColors = @[(id)[UIColor colorWithWhite:0.2 alpha:1.0].CGColor,
-						   (id)[UIColor colorWithWhite:0.1 alpha:1.0].CGColor,
-						   (id)[UIColor colorWithWhite:0.35 alpha:1.0].CGColor];
-	NSArray *githubLocations = @[@0.2, @0.5, @1.0];
-	UIImage *githubGradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
-																		  colors:githubColors
-																	   locations:githubLocations];
-	NSDictionary *githubAttr =@{FAKImageAttributeForegroundColor:[UIColor whiteColor],
-							 FAKImageAttributeBackgroundColor:[UIColor colorWithPatternImage:githubGradientPattern]};
-	self.gradientImageView.image = [FontAwesomeKit imageForIcon:FAKIconGithub
-													  imageSize:CGSizeMake(45, 45)
-													   fontSize:45
-													 attributes:githubAttr];
+NSArray *githubColors = @[(id)[UIColor colorWithWhite:0.2 alpha:1.0].CGColor,
+					   (id)[UIColor colorWithWhite:0.1 alpha:1.0].CGColor,
+					   (id)[UIColor colorWithWhite:0.35 alpha:1.0].CGColor];
+NSArray *githubLocations = @[@0.2, @0.5, @1.0];
+UIImage *githubGradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
+																	  colors:githubColors
+																   locations:githubLocations];
+NSDictionary *githubAttr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:githubGradientPattern]};
+self.gradientImageView.image = [FontAwesomeKit imageForIcon:FAKIconGithub
+												  imageSize:CGSizeMake(45, 45)
+												   fontSize:45
+												 attributes:githubAttr];
 ```
 
 **Available attributes:** (Both are optional, use default value if you don't specify)
