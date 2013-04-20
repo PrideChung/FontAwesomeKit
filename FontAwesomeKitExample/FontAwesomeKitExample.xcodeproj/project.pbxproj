@@ -78,7 +78,6 @@
 		CC44A84C16CD9B3F0039E101 = {
 			isa = PBXGroup;
 			children = (
-				CC5349221721C9010072C49E /* CoreText.framework */,
 				CC390BFA1722BD320049680B /* FontAwesomeKit */,
 				CC44A85E16CD9B3F0039E101 /* FontAwesomeKitExample */,
 				CC44A85716CD9B3F0039E101 /* Frameworks */,
@@ -97,6 +96,7 @@
 		CC44A85716CD9B3F0039E101 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC5349221721C9010072C49E /* CoreText.framework */,
 				CC44A85816CD9B3F0039E101 /* UIKit.framework */,
 				CC44A85A16CD9B3F0039E101 /* Foundation.framework */,
 				CC44A85C16CD9B3F0039E101 /* CoreGraphics.framework */,

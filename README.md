@@ -12,9 +12,7 @@ Simple helper for using Font-Awesome on iOS.
 
 ###via CocoaPods (recommended)
 
-Add this line in your Podfile, then run `pod update`
-
-`pod FontAwesomeKit`
+Add `pod FontAwesomeKit` to your Podfile, then run `pod update`
 
 ###Manully
 
