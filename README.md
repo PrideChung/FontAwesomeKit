@@ -10,6 +10,7 @@ Simple helper for using Font-Awesome on iOS.
 
 ##Installation
 ####Requirement
+- Xcode 4.5 +
 - iOS 5.0 +
 - ARC enabled
 - CoreText framework
