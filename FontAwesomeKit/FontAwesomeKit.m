@@ -41,6 +41,8 @@
 	UIColor *foregroundColor = attributes[FAKImageAttributeForegroundColor];
 	if (foregroundColor) {
 		[foregroundColor setFill];
+	} else {
+		[[UIColor blackColor] setFill];
 	}
 	
 	UIFont *iconFont = attributes[FAKImageAttributeFont];
@@ -50,7 +52,7 @@
 	
 	CGRect iconRect = [attributes[FAKImageAttributeRect] CGRectValue];
 	if (CGRectIsEmpty(iconRect)) {
-		CGFloat fontHeight = iconFont.pointSize;
+		CGFloat fontHeight = iconFont.lineHeight;
 		CGFloat yOffset = (imageSize.height - fontHeight) / 2.0;
 		iconRect = CGRectMake(0, yOffset, imageSize.width, fontHeight);
 		
