@@ -106,12 +106,12 @@ UIImage *gradientIcon = [FontAwesomeKit imageForIcon:FAKIconGithub
 **Available attributes:** (Both are optional, use default value if you don't specify)
 
 ######FAKImageAttributeRect
-The value of this attribute is a NSValue object containing a CGRect structure. You can wrap a CGRect structure into NSValue object like this:
+The value of this attribute is a NSValue object containing a CGRect structure, the icon will be draw in this CGRect. You can wrap a CGRect structure into NSValue object like this:
 `NSValue *rectValue = [NSValue valueWithCGRect:aCGRect];`  
 *Default: Center the icon in both directions.*
   
 ######FAKImageAttributeForegroundColor
-The value of this attribute is an UIColor object. Use this attribute to specify the color of the icon.
+The value of this attribute is an UIColor object. Use this attribute to specify the color of the icon.  
 *Default: Black color.*
 
 ######FAKImageAttributeBackgroundColor
