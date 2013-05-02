@@ -123,5 +123,14 @@ The value of this attribute is an UIColor object. Use this attribute to specify 
 The value of this attribute is an UIFont object. Use this attribute to specify the icon font you want to use. You can pass the value to use another icon font.  
 *Default: Use FontAwesome.*
 
+######FAKImageAttributeShadow
+The value of this attribute is an NSDictionary object. Use this attribute to specify the shadow you want to use.
+There are two required parameters & an optional one:
+- Shadow Offset (`FAKShadowAttributeOffset`) : Pass a `CGSize` wrapped into an `NSValue` (see `FAKImageAttributeRect`)
+- Shadow Blur (`FAKShadowAttributeBlur`) : Pass an `NSNumber` (for example `@(1.0f)`)
+- Shadow Color [optional] : Pass a `UIColor` (the default is Black)
+
+*Default: No Shadow.*
+
 ##License
 FontAwesomeKit is available under the MIT license. See the LICENSE file for more information.
