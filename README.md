@@ -128,7 +128,7 @@ The value of this attribute is an NSDictionary object. Use this attribute to spe
 There are two required parameters & an optional one:
 - Shadow Offset (`FAKShadowAttributeOffset`) : Pass a `CGSize` wrapped into an `NSValue` (see `FAKImageAttributeRect`)
 - Shadow Blur (`FAKShadowAttributeBlur`) : Pass an `NSNumber` (for example `@(1.0f)`)
-- Shadow Color [optional] : Pass a `UIColor` (the default is Black)
+- Shadow Color (`FAKShadowAttributeColor`) [optional] : Pass a `UIColor` (the default is Black)
 
 *Default: No Shadow.*
 
