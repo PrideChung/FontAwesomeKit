@@ -9,7 +9,7 @@ Simple helper for using Font-Awesome on iOS.
 [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) is a set of iconic fonts used in Twitter Bootstrap.
 
 ##Installation
-####Requirement
+####Requirements
 - Xcode 4.5 +
 - iOS 5.0 +
 - ARC enabled
@@ -131,6 +131,12 @@ There are two required parameters & an optional one:
 - Shadow Color (`FAKShadowAttributeColor`) [optional] : Pass a `UIColor` (the default is Black)
 
 *Default: No Shadow.*
+
+
+##Contributors
+- [alladinian](https://github.com/alladinian)
+
+[Contribute list](https://github.com/PrideChung/FontAwesomeKit/contributors)
 
 ##License
 FontAwesomeKit is available under the MIT license. See the LICENSE file for more information.
