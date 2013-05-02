@@ -49,6 +49,15 @@
 	if (!iconFont) {
 		iconFont = [FontAwesomeKit fontWithSize:fontSize];
 	}
+    
+    NSDictionary *shadow = attributes[FAKImageAttributeShadow];
+    if (shadow)
+    {
+        CGSize offset = [shadow[FAKShadowAttributeOffset] CGSizeValue];
+        CGFloat blur = [shadow[FAKShadowAttributeBlur] floatValue];
+        CGColorRef color = [shadow[FAKShadowAttributeColor] CGColor] ? [shadow[FAKShadowAttributeColor] CGColor] : [[UIColor blackColor] CGColor];
+        CGContextSetShadowWithColor(UIGraphicsGetCurrentContext(), offset, blur, color);
+    }
 	
 	CGRect iconRect = [attributes[FAKImageAttributeRect] CGRectValue];
 	if (CGRectIsEmpty(iconRect)) {

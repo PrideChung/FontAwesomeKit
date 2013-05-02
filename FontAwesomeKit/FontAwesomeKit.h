@@ -8,6 +8,10 @@ static NSString *const FAKImageAttributeRect = @"FAKImageAttributeRect";
 static NSString *const FAKImageAttributeForegroundColor = @"FAKImageAttributeForegroundColor";
 static NSString *const FAKImageAttributeBackgroundColor = @"FAKImageAttributeBackgroundColor";
 static NSString *const FAKImageAttributeFont = @"FAKImageAttributeFont";
+static NSString *const FAKImageAttributeShadow = @"FAKImageAttributeShadow";
+static NSString *const FAKShadowAttributeOffset = @"FAKImageAttributeShadowOffset";
+static NSString *const FAKShadowAttributeBlur = @"FAKImageAttributeShadowBlur";
+static NSString *const FAKShadowAttributeColor = @"FAKImageAttributeShadowColor";
 
 @interface FontAwesomeKit : NSObject
 
