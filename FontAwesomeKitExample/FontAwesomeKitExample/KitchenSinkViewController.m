@@ -65,11 +65,15 @@
 	
 	
 	
-	//using Font-Awesome on UIImageView
+	//using Font-Awesome on UIImageView with shadow
+	NSDictionary *shadowAttr = @{FAKShadowAttributeColor : [UIColor grayColor],
+							  FAKShadowAttributeOffset : [NSValue valueWithCGSize:CGSizeMake(2, 2)],
+							  FAKShadowAttributeBlur : @(2.0f)};
 	NSDictionary *attr = @{FAKImageAttributeForegroundColor: [UIColor colorWithRed:208.0/255
 																			 green:67.0/255
 																			  blue:41.0/255
-																			 alpha:1.0]};
+																			 alpha:1.0]
+						, FAKImageAttributeShadow : shadowAttr};
 	UIImage *googleplusIcon = [FontAwesomeKit imageForIcon:FAKIconGooglePlusSign
 											 imageSize:CGSizeMake(45, 45)
 											  fontSize:45
