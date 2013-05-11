@@ -17,7 +17,7 @@ Simple helper for using Font-Awesome on iOS.
 
 ###via CocoaPods (recommended)
 
-Add `pod FontAwesomeKit` to your Podfile, then run `pod update`
+Add `pod 'FontAwesomeKit'` to your Podfile, then run `pod update`
 
 ###Manully
 
@@ -132,6 +132,9 @@ There are two required parameters & an optional one:
 
 *Default: No Shadow.*
 
+##Change Log
+- 1.1.2 Add Font-Awesome 3.1.1 support. 54 new icon added.
+- 1.1.1 Add Shadows option while drawing icons on image.
 
 ##Contributors
 - [alladinian](https://github.com/alladinian)
