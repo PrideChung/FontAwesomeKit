@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC390BFE1722BD320049680B /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC390BFB1722BD320049680B /* FontAwesome.otf */; };
+		CC0AF27E173E8AB8005574A6 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC0AF27D173E8AB8005574A6 /* FontAwesome.otf */; };
 		CC390BFF1722BD320049680B /* FontAwesomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC390BFD1722BD320049680B /* FontAwesomeKit.m */; };
 		CC44A85916CD9B3F0039E101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85816CD9B3F0039E101 /* UIKit.framework */; };
 		CC44A85B16CD9B3F0039E101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85A16CD9B3F0039E101 /* Foundation.framework */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC390BFB1722BD320049680B /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		CC0AF27D173E8AB8005574A6 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		CC390BFC1722BD320049680B /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
 		CC390BFD1722BD320049680B /* FontAwesomeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeKit.m; sourceTree = "<group>"; };
 		CC44A85516CD9B3F0039E101 /* FontAwesomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontAwesomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +67,7 @@
 		CC390BFA1722BD320049680B /* FontAwesomeKit */ = {
 			isa = PBXGroup;
 			children = (
-				CC390BFB1722BD320049680B /* FontAwesome.otf */,
+				CC0AF27D173E8AB8005574A6 /* FontAwesome.otf */,
 				CC390BFC1722BD320049680B /* FontAwesomeKit.h */,
 				CC390BFD1722BD320049680B /* FontAwesomeKit.m */,
 			);
@@ -189,7 +189,7 @@
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC44A87216CD9B3F0039E101 /* MainStoryboard.storyboard in Resources */,
-				CC390BFE1722BD320049680B /* FontAwesome.otf in Resources */,
+				CC0AF27E173E8AB8005574A6 /* FontAwesome.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

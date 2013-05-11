@@ -9,7 +9,7 @@ require 'open-uri'
 
 macros = ''
 dictionary = ''
-doc = Nokogiri::HTML(open('http://fortawesome.github.com/Font-Awesome/design.html'))
+doc = Nokogiri::HTML(open('http://fortawesome.github.io/Font-Awesome/cheatsheet/'))
 doc.css('.container .row .span4 li').each do |span|
 
   # generate macros
@@ -22,7 +22,6 @@ doc.css('.container .row .span4 li').each do |span|
 end
 # puts dictionary
 dictionary = dictionary[0, dictionary.length-3] # remove the unnecessary comma and new line and indentaton for the last entry in dictionary
-
 
 puts " --- Macros ---- \n" + macros;
 puts "\n\n --- Dictionary Entries ---- \n" + dictionary;
