@@ -10,18 +10,20 @@ require 'open-uri'
 macros = ''
 dictionary = ''
 doc = Nokogiri::HTML(open('http://fortawesome.github.io/Font-Awesome/cheatsheet/'))
-doc.css('.container .row .span4 li').each do |span|
-
-  # generate macros
-  macroKey = 'FAK' << span.children[1].content.split('-').map {|str| str.strip.capitalize} .join
-  macroValue = '@"\u' << span.children[2].content.strip[4,4] << '"'
-  macros << "#define #{macroKey} #{macroValue} \n"
-
-  # generate fonts dictionary
-  dictionary << "@\"#{macroKey}\" : #{macroValue},\n\t"
+doc.css('.container>.row').each do |span|
+  # puts span.children.class
+  icons = span.children.select{ |e| e.class.to_s() == 'Nokogiri::XML::Element'}
+  icons.each do |icon| 
+    iconName = icon.children[2].content.strip.split('-').map {|str| str.strip.capitalize} .join
+    iconCode = icon.children[3].content[4,4]
+    macroKey = 'FAK' + iconName
+    macroValue = '@"\u' + iconCode + '"'
+    macros << "#define #{macroKey} #{macroValue} \n"
+    dictionary << "@\"#{macroKey}\" : #{macroValue},\n\t"
+  end
 end
-# puts dictionary
-dictionary = dictionary[0, dictionary.length-3] # remove the unnecessary comma and new line and indentaton for the last entry in dictionary
 
-puts " --- Macros ---- \n" + macros;
-puts "\n\n --- Dictionary Entries ---- \n" + dictionary;
+File.open("macros.txt", "w") { |file| file.write(macros) }
+File.open("dictionary.txt", "w") { |file| file.write(dictionary) }
+# puts " --- Macros ---- \n" + macros;
+# # puts "\n\n --- Dictionary Entries ---- \n" + dictionary;
