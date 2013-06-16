@@ -133,6 +133,7 @@ There are two required parameters & an optional one:
 *Default: No Shadow.*
 
 ##Change Log
+- 1.1.3 Add Font-Awesome 3.2 support 58 new icon added.
 - 1.1.2 Add Font-Awesome 3.1.1 support. 54 new icon added.
 - 1.1.1 Add Shadows option while drawing icons on image.
 
