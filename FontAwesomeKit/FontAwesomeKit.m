@@ -85,7 +85,7 @@
 /**
  Gradient Helpers
  */
-+ (CGGradientRef)gradientWithColors:(NSArray *)colors locations:(NSArray *)locations
++ (CGGradientRef)newGradientWithColors:(NSArray *)colors locations:(NSArray *)locations
 {
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 	CGGradientRef gradient;
@@ -135,7 +135,7 @@
 	UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
 	// ---------- begin context ----------
 	
-	CGGradientRef gradient = [self gradientWithColors:colors locations:locations];
+	CGGradientRef gradient = [self newGradientWithColors:colors locations:locations];
 	CGContextDrawLinearGradient(UIGraphicsGetCurrentContext(), gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation);
 	UIImage *gradientImage = UIGraphicsGetImageFromCurrentImageContext();
 	
@@ -158,7 +158,7 @@
 	UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
 	// ---------- begin context ----------
 	
-	CGGradientRef gradient = [self gradientWithColors:colors locations:locations];
+	CGGradientRef gradient = [self newGradientWithColors:colors locations:locations];
 	
 	CGContextDrawRadialGradient(UIGraphicsGetCurrentContext(), gradient, startCenter, startRadius, endCenter, endRadius, kCGGradientDrawsBeforeStartLocation);
 	CGGradientRelease(gradient);
