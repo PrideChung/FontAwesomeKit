@@ -17,9 +17,9 @@ Simple helper for using Font-Awesome on iOS.
 
 ###via CocoaPods (recommended)
 
-Add `pod 'FontAwesomeKit'` to your Podfile, then run `pod update`
+Add `pod 'FontAwesomeKit', '~> 1.1.4'` to your Podfile, then run `pod update`
 
-###Manully
+###Manually
 
 Download source code, then drag the folder `FontAwesomeKit` into your project, add CoreText framework to you project.
 
@@ -38,7 +38,7 @@ self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:
 									 forState:UIControlStateNormal];
 ```
 
-###Get an UIImage of an icon so you can use it on tabbar
+###Get an UIImage of an icon so you can use it on tab bar
 
 ```objective-c
 UIImage *tabBarIcon = [FontAwesomeKit imageForIcon:FAKIconHeart
@@ -93,7 +93,7 @@ gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
 													endRadius:27]; // The radius of the ending circle.
 ```
 
-###Use gradient pattern image as Forgeground color on icon
+###Use gradient pattern image as foreground color on icon
 
 ```objective-c
 NSDictionary *attr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:gradientPattern]};
@@ -133,14 +133,16 @@ There are two required parameters & an optional one:
 *Default: No Shadow.*
 
 ##Change Log
-- 1.1.3 Add Font-Awesome 3.2 support 58 new icon added.
+- 1.1.4 Update Font-Awesome's font file to 3.2.1, Bug fixes.
+- 1.1.3 Add Font-Awesome 3.2 support. 58 new icon added.
 - 1.1.2 Add Font-Awesome 3.1.1 support. 54 new icon added.
 - 1.1.1 Add Shadows option while drawing icons on image.
 
-##Contributors
+##[Contributors](https://github.com/PrideChung/FontAwesomeKit/contributors)
 - [alladinian](https://github.com/alladinian)
+- [Isak Sky](https://github.com/isaksky)
+- [Dominik Grygiel](https://github.com/dominikgrygiel)
 
-[Contribute list](https://github.com/PrideChung/FontAwesomeKit/contributors)
 
 ##License
-FontAwesomeKit is available under the MIT license. See the LICENSE file for more information.
+FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Please notice that Font-Awesome has it's own license agreement.
