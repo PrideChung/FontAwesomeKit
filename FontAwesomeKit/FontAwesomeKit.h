@@ -3,6 +3,7 @@
 //  FontAwesomeKitExample
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 static NSString *const FAKImageAttributeRect = @"FAKImageAttributeRect";
 static NSString *const FAKImageAttributeForegroundColor = @"FAKImageAttributeForegroundColor";
@@ -414,3 +415,4 @@ static NSString *const FAKShadowAttributeColor = @"FAKImageAttributeShadowColor"
 #define FAKIconVk @"\uf189"
 #define FAKIconWeibo @"\uf18a"
 #define FAKIconRenren @"\uf18b"
+
