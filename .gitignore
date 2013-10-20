@@ -16,3 +16,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+*.fakgen.h
+*.fakgen.m
+
+Pods/

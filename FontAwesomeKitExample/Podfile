@@ -1,0 +1,11 @@
+platform :ios, "6.0"
+
+target "FontAwesomeKitExample" do
+
+end
+
+target "FontAwesomeKitTests" do
+  pod 'OCHamcrest'
+  pod 'OCMockito'
+end
+

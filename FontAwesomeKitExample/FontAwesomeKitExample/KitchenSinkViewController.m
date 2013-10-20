@@ -1,146 +1,88 @@
-//
-//  ViewController.m
-//  FontAwesomeKitExample
-//
-//  Created by 钟 子豪 on 13-2-15.
-//  Copyright (c) 2013年 Pride Chung. All rights reserved.
-//
-
 #import "KitchenSinkViewController.h"
 #import "FontAwesomeKit.h"
 
 @interface KitchenSinkViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *facebookLabel;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
+@property (weak, nonatomic) IBOutlet UILabel *attributionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *twitterButton;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIImageView *gradientImageView;
-@property (weak, nonatomic) IBOutlet UILabel *starLabel;
-@property (weak, nonatomic) IBOutlet UILabel *okLabel;
+@property (weak, nonatomic) IBOutlet UIButton *githubButton;
+
 @end
 
 @implementation KitchenSinkViewController
 
 - (void)awakeFromNib
 {
-	// using Font-Awesome on tabBar image.
-	UIImage *tabBarIcon = [FontAwesomeKit imageForIcon:FAKIconHeart
-											 imageSize:FAKImageSizeTabbar
-											  fontSize:29
-											attributes:nil];
-	self.tabBarItem.image = tabBarIcon;
-	self.tabBarItem.title = @"Kitchen Sink";
+    self.tabBarItem.image = [[FAKFoundationIcons filterIconWithSize:30] imageWithSize:CGSizeMake(30, 30)];
+    self.tabBarItem.title = @"Kitchen Sink";
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	// using Font-Awesome on UIBarButtonItem
-	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:FAKIconCog
-																			 style:UIBarButtonItemStyleBordered
-																			target:nil
-																			action:nil];
-	[self.navigationItem.leftBarButtonItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
-										forState:UIControlStateNormal];
-	
-	
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:FAKIconRefresh
-																			  style:UIBarButtonItemStyleBordered
-																			 target:nil
-																			 action:nil];
-	[self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
-										 forState:UIControlStateNormal];
-	
-	
-	// using Font-Awesome on UILabel
-	self.facebookLabel.text = FAKIconFacebookSign;
-	self.facebookLabel.font = [FontAwesomeKit fontWithSize:45];
-	self.facebookLabel.textColor = [UIColor colorWithRed:0.231 green:0.349 blue:0.596 alpha:1.000];
-	
-	// using Font-Awesome on UIButton
-	[self.twitterButton setTitle:FAKIconTwitter forState:UIControlStateNormal];
-	[self.twitterButton setTitleColor:[UIColor colorWithRed:0.000 green:0.675 blue:0.933 alpha:1.000] forState:UIControlStateNormal];
-	self.twitterButton.titleLabel.font = [FontAwesomeKit fontWithSize:36];
-	
-	
-	
-	//using Font-Awesome on UIImageView with shadow
-	NSDictionary *shadowAttr = @{FAKShadowAttributeColor : [UIColor grayColor],
-							  FAKShadowAttributeOffset : [NSValue valueWithCGSize:CGSizeMake(2, 2)],
-							  FAKShadowAttributeBlur : @(2.0f)};
-	NSDictionary *attr = @{FAKImageAttributeForegroundColor: [UIColor colorWithRed:208.0/255
-																			 green:67.0/255
-																			  blue:41.0/255
-																			 alpha:1.0]
-						, FAKImageAttributeShadow : shadowAttr};
-	UIImage *googleplusIcon = [FontAwesomeKit imageForIcon:FAKIconGooglePlusSign
-											 imageSize:CGSizeMake(45, 45)
-											  fontSize:45
-											attributes:attr];
-	
-	self.imageView.image = googleplusIcon;
-	
-	//using Font-Awesome on UILabel with linear gradient color
-	NSArray *colors = @[(id)[UIColor colorWithHue:59.0/360 saturation:0.2 brightness:1.0 alpha:1.0].CGColor,
-					 (id)[UIColor colorWithHue:59.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-					 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor];
-	
-	NSArray *locations = @[@0.2, @0.8, @1.0];
-	UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
-																	colors:colors
-																 locations:locations];
-	self.starLabel.text = FAKIconStar;
-	self.starLabel.font = [FontAwesomeKit fontWithSize:45];
-	self.starLabel.textColor = [UIColor colorWithPatternImage:gradientPattern];
-	
-	//using gradient pattern image as Forgeground color of an icon
-	NSArray *githubColors = @[(id)[UIColor colorWithWhite:0.2 alpha:1.0].CGColor,
-						   (id)[UIColor colorWithWhite:0.1 alpha:1.0].CGColor,
-						   (id)[UIColor colorWithWhite:0.35 alpha:1.0].CGColor];
-	
-	
-	NSArray *githubLocations = @[@0.2, @0.5, @1.0];
-	UIImage *githubGradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
-																		  colors:githubColors
-																	   locations:githubLocations];
-	
-	NSDictionary *githubAttr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:githubGradientPattern]};
-	self.gradientImageView.image = [FontAwesomeKit imageForIcon:FAKIconGithub
-													  imageSize:CGSizeMake(45, 45)
-													   fontSize:45
-													 attributes:githubAttr];
-	
-	//using Font-Awesome on UILabel with radial gradient color
-	colors = @[(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-			(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor];
-	
-	CGPoint centerPoint = CGPointMake(45.0/2 - 5, 45.0/2);
-	gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
-														   colors:colors
-														locations:locations
-													  startCenter:centerPoint
-													  startRadius:1.0
-														endCenter:centerPoint
-														endRadius:27];
-	self.okLabel.text = FAKIconOkSign;
-	self.okLabel.font = [FontAwesomeKit fontWithSize:45];
-	self.okLabel.textColor= [UIColor colorWithPatternImage:gradientPattern];
-	
-	// using Font-Awesome on UISegmentControl in Toolbar
-	UISegmentedControl *segmentControl = [[UISegmentedControl alloc] initWithItems:@[FAKIconArrowLeft, FAKIconArrowRight]];
-	
-	[segmentControl setSegmentedControlStyle:UISegmentedControlStyleBar];
-	[segmentControl setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:24]}
-									   forState:UIControlStateNormal];
-	
-	self.toolbar.items = @[[[UIBarButtonItem alloc] initWithCustomView:segmentControl]];
+    
+    // UIBarbuttonItem
+    FAKFontAwesome *cogIcon = [FAKFontAwesome cogIconWithSize:20];
+    [cogIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
+    UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
+    cogIcon.iconFontSize = 15;
+    UIImage *leftLandscapeImage = [cogIcon imageWithSize:CGSizeMake(15, 15)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:leftImage
+                                                               landscapeImagePhone:leftLandscapeImage
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:nil
+                                                                            action:nil];
+    
+    FAKFontAwesome *refreshIcon = [FAKFontAwesome refreshIconWithSize:18];
+    [refreshIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
+    UIImage *rightImage = [refreshIcon imageWithSize:CGSizeMake(18, 18)];
+    refreshIcon.iconFontSize = 15;
+    UIImage *rightLandscapeImage = [refreshIcon imageWithSize:CGSizeMake(15, 15)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:rightImage
+                                                               landscapeImagePhone:rightLandscapeImage
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:nil
+                                                                            action:nil];
+    
+    // UISegmentedControl
+    FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
+    [starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
+    [self.segment setImage:[starIcon imageWithSize:CGSizeMake(15, 15)] forSegmentAtIndex:0];
+    
+    FAKFontAwesome *bookmarkIcon = [FAKFontAwesome bookmarkIconWithSize:15];
+    [bookmarkIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
+    [self.segment setImage:[bookmarkIcon imageWithSize:CGSizeMake(15, 15)] forSegmentAtIndex:1];
+
+    
+    // Mixed icons
+    NSMutableAttributedString *attributionMas = [[NSMutableAttributedString alloc] init];
+    [attributionMas appendAttributedString:[[FAKFontAwesome facebookIconWithSize:18] attributedString]];
+    [attributionMas appendAttributedString:[[FAKZocial amazonIconWithSize:18] attributedString]];
+    [attributionMas appendAttributedString:[[FAKZocial kloutIconWithSize:18] attributedString]];
+    [attributionMas appendAttributedString:[[NSAttributedString alloc] initWithString:@"       "]];
+    [attributionMas appendAttributedString:[[FAKFoundationIcons bitcoinIconWithSize:18] attributedString]];
+    [attributionMas appendAttributedString:[[FAKZocial ycombinatorIconWithSize:18] attributedString]];
+    
+    NSMutableParagraphStyle *paraStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    paraStyle.alignment = NSTextAlignmentCenter;
+    [attributionMas addAttribute:NSParagraphStyleAttributeName value:paraStyle range:NSMakeRange(0, [attributionMas length])];
+    self.attributionLabel.attributedText = attributionMas;
+    
+    
+    // Mixed icons and normal strings
+    FAKFontAwesome *twitterIcon = [FAKFontAwesome twitterIconWithSize:20];
+    [twitterIcon addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:58/255.0 green:215/255.0 blue:255/255.0 alpha:1.0]];
+    NSMutableAttributedString *twitterMas = [[twitterIcon attributedString] mutableCopy];
+    [twitterMas appendAttributedString:[[NSAttributedString alloc] initWithString:@"  @PrideChung" attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}]];
+    
+    FAKFontAwesome *githubIcon = [FAKFontAwesome githubAltIconWithSize:20];
+    [githubIcon addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor]];
+    NSMutableAttributedString *githubMas = [[githubIcon attributedString] mutableCopy];
+    [githubMas appendAttributedString:[[NSAttributedString alloc] initWithString:@"  @PrideChung" attributes:@{NSForegroundColorAttributeName: [UIColor blackColor]}]];
+
+    [self.twitterButton setAttributedTitle:twitterMas forState:UIControlStateNormal];
+    [self.githubButton setAttributedTitle:githubMas forState:UIControlStateNormal];
 }
 
-- (void)viewDidUnload {
-	[self setStarLabel:nil];
-	[self setOkLabel:nil];
-	[self setGradientImageView:nil];
-	[super viewDidUnload];
-}
 @end
