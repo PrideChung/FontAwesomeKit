@@ -1,4 +1,5 @@
 #import "FAKIcon.h"
+#import <CoreText/CoreText.h>
 
 @interface FAKIcon ()
 

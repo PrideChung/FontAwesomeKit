@@ -25,7 +25,7 @@
 		CC44A86B16CD9B3F0039E101 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86A16CD9B3F0039E101 /* Default.png */; };
 		CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86C16CD9B3F0039E101 /* Default@2x.png */; };
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
-		CC5349231721C9010072C49E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
+		CC6907F2181407B300FBC2E5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
 		CCF169AF180C6BF90028F7EB /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCF169AA180C6BF90028F7EB /* FontAwesome.otf */; };
 		CCF169BD180C6D8A0028F7EB /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF169BC180C6D8A0028F7EB /* FAKFontAwesome.m */; };
 		CCF169C0180C7D320028F7EB /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF169BF180C7D320028F7EB /* FAKIcon.m */; };
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5349231721C9010072C49E /* CoreText.framework in Frameworks */,
+				CC6907F2181407B300FBC2E5 /* CoreText.framework in Frameworks */,
 				CC44A85916CD9B3F0039E101 /* UIKit.framework in Frameworks */,
 				CC44A85B16CD9B3F0039E101 /* Foundation.framework in Frameworks */,
 				CC44A85D16CD9B3F0039E101 /* CoreGraphics.framework in Frameworks */,
