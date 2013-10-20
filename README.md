@@ -86,7 +86,7 @@ You can set a label's icon in one line of code: `self.label.attributedText = [st
 ### Drawing Images
 
 #### Basic Drawing
-Instead of getting the attributed string, you can draw the icon onto an image like this: `[starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
+Instead of getting the attributed string, you can draw the icon onto an image like this: `UIImage *iconImage = [starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
 
 #### Drawing Offset
 By default the icon will be centered horizontally and vertically. I believe it's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property for the icon, like this:
