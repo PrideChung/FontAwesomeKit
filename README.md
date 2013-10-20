@@ -105,17 +105,17 @@ By default the background is transparent. As the name implies, this property onl
 Some UI elements doesn't have an attributed string property, using images might be a better idea. Take UIBarButtonItem as an example.
 
 ```objective-c
-    FAKFontAwesome *cogIcon = [FAKFontAwesome cogIconWithSize:20];
-    [cogIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
-    UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
-    cogIcon.iconFontSize = 15;
-    UIImage *leftLandscapeImage = [cogIcon imageWithSize:CGSizeMake(15, 15)];
-    self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithImage:leftImage
-                       landscapeImagePhone:leftLandscapeImage
-                                     style:UIBarButtonItemStylePlain
-                                    target:nil
-                                    action:nil];
+FAKFontAwesome *cogIcon = [FAKFontAwesome cogIconWithSize:20];
+[cogIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
+UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
+cogIcon.iconFontSize = 15;
+UIImage *leftLandscapeImage = [cogIcon imageWithSize:CGSizeMake(15, 15)];
+self.navigationItem.leftBarButtonItem =
+[[UIBarButtonItem alloc] initWithImage:leftImage
+                   landscapeImagePhone:leftLandscapeImage
+                                 style:UIBarButtonItemStylePlain
+                                target:nil
+                                action:nil];
 ```
 
 Same idea can be applied to tab bar or segmented control.
