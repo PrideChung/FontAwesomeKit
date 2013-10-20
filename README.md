@@ -31,7 +31,7 @@ FontAwesomeKit now supports sub spec, only get the fonts you need.
 
 Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.
 
-Or select icon fonts by:  
+Or select icon fonts with:  
 
 `pod 'FontAwesomeKit/FontAwesome'`  
 `pod 'FontAwesomeKit/FoundationIcons'`  
@@ -54,7 +54,7 @@ FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
 FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
 FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];
 ```
-Now you can use these class methods and pass in the font size instead of finding an icon in constants. Corresponding icon fonts will automatically setup for you.
+Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
 
 ### Set Attribute for The Icon
 ```objective-c
@@ -89,7 +89,7 @@ You can set a label's icon in one line of code: `self.label.attributedText = [st
 Instead of getting the attributed string, you can draw the icon onto an image like this: `[starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
 
 #### Drawing Offset
-By default the icon will be centered horizontally and vertically. I believe it's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property on the icon, like this:
+By default the icon will be centered horizontally and vertically. I believe it's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property for the icon, like this:
 
 `starIcon.drawingPositionAdjustment = UIOffsetMake(2, 2);`
 
@@ -110,11 +110,12 @@ Some UI elements doesn't have an attributed string property, or not easy to set.
     UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
     cogIcon.iconFontSize = 15;
     UIImage *leftLandscapeImage = [cogIcon imageWithSize:CGSizeMake(15, 15)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:leftImage
-                                                               landscapeImagePhone:leftLandscapeImage
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:nil
-                                                                            action:nil];
+    self.navigationItem.leftBarButtonItem =
+    [[UIBarButtonItem alloc] initWithImage:leftImage
+                       landscapeImagePhone:leftLandscapeImage
+                                     style:UIBarButtonItemStylePlain
+                                    target:nil
+                                    action:nil];
 ```
 
 Same idea can be applied to tab bar or segmented control.
@@ -123,10 +124,10 @@ Same idea can be applied to tab bar or segmented control.
 Please clone the master repo and take a look at the example project, everything is in it, all public methods and properties are documented. Feel free to open an issue if you went into trouble.
 
 ## About Gradient Helpers
-If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I don't think they are useful. I've opened an issue for discussing, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
+If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussing, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
 
 ## About The Old Version
-As I promised I will keep it maintained, response to Font-Awesome new icon updates, but won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.0 version is a better choice.
+As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.0 version is a better choice.
 
 ##Change Log
 - 2.0.0 Major update, API changed, added support for new icon fonts.
