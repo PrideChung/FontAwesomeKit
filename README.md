@@ -91,7 +91,7 @@ These methods in fact are just shorthand versions for the standard `NSAttributed
 After you done setting attributes, you can get the attributed string by calling
 `[starIcon attributedString]`. 
 
-You can set a label's icon in one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
+You can set a label's icon with one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
 
 ### Drawing Images
 
