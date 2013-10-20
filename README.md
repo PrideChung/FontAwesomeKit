@@ -1,23 +1,46 @@
 FontAwesomeKit
 ==============
 
-Simple helper for using Font-Awesome on iOS.
+Icon font library for iOS.
 
-![image](https://raw.github.com/PrideChung/FontAwesomeKit/master/screenshot.png)
+![image](http://i3.minus.com/i9z1A0F0yOYB.png)
 
-##What is Font-Awesome
-[Font-Awesome](http://fortawesome.github.com/Font-Awesome/) is a set of iconic fonts used in Twitter Bootstrap.
+![image](http://i4.minus.com/iFFOQQHhplHLI.png)
+
+## Version 2.0 Notable Changes
+### Not Just Awesome. New Icon Fonts Added
+
+Currently FontAwesomeKit supports **3** different icon fonts.
+
+- [FontAwesome](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **361** icons
+- [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
+- [Zocial](http://zocial.smcllns.com/) Contains **42** social icons.
+
+### API Reforged, Take Advantage of NSAttributedString
+Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
 
 ##Installation
 ####Requirements
-- Xcode 4.5 +
-- iOS 5.0 +
+- Xcode 5
+- iOS 6.0 +
 - ARC enabled
 - CoreText framework
 
-###via CocoaPods (recommended)
+###via CocoaPods (Strongly Recommended)
+FontAwesomeKit now supports sub spec, only get the fonts you need.
 
-Add `pod 'FontAwesomeKit', '~> 1.1.4'` to your Podfile, then run `pod update`
+Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.
+
+Or select icon fonts by:  
+
+`pod 'FontAwesomeKit/FontAwesome'`  
+`pod 'FontAwesomeKit/FoundationIcons'`  
+`pod 'FontAwesomeKit/Zocial'`  
+
+Run `pod install` or `pod update` to install selected icon fonts.
+
+#####*important:*
+If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
 
 ###Manually
 
@@ -25,114 +48,88 @@ Download source code, then drag the folder `FontAwesomeKit` into your project, a
 
 ##Example Usage
 
+### Grap An Icon.
+```objective-c
+FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
+FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
+FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];
+```
+Now you can use these class methods and pass in the font size instead of finding an icon in constants. Corresponding icon fonts will automatically setup for you.
 
+### Set Attribute for The Icon
+```objective-c
+[starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor 
+whiteColor]];
+```
+`NSAttributedString` did all the magics behind the scene. So you can set those attributes supported by `NSAttributedString` to an icon. For all available attributes, see [NSAttributedString UIKit Additions Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)
 
-###Using Font-Awesome on UIBarButtonItem
+#####*important:*
+Some attributes are apparently makes no sense for icon fonts, like `NSLigatureAttributeName` and `NSKernAttributeName`. You should not set these attributes, otherwise you app may crush. And you should not set the value of `NSFontAttributeName`, if you want to change the size of an icon, set it's `iconFontSize` property instead.
+
+### Other Methods for Setting or Getting Attributes
+These methods in fact are just shorthand versions for the standard `NSAttributedString` API, should be pretty straightforward.
+
+`[starIcon setAttributes:attributes];` *Sets attributes with a dictionary, will override current attribute if there're different values for a same key.*
+
+`[starIcon removeAttribute:NSForegroundColorAttributeName];` *Removes an attribute by name.*
+
+`[starIcon attributes];` *Returns an dictionary contains the attribute values for the icon.*
+
+`[starIcon attribute:NSForegroundColorAttributeName];` *Returns the attribute value for a given key.*
+
+### Get The Attributed String
+After you done setting attributes, you can get the attributed string by calling
+`[starIcon attributedString]`. 
+
+You can set a label's icon in one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
+
+### Drawing Images
+
+#### Basic Drawing
+Instead of getting the attributed string, you can draw the icon onto an image like this: `[starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
+
+#### Drawing Offset
+By default the icon will be centered horizontally and vertically. I believe it's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property on the icon, like this:
+
+`starIcon.drawingPositionAdjustment = UIOffsetMake(2, 2);`
+
+#### Background Color
+You can set the background color for the image like this:
+
+`starIcon.drawingBackgroundColor = [UIColor blackColor];`
+
+By default the background is transparent. As the name implies, this property only takes effect while drawing on image.
+
+### For Those Controls Doesn't Support Attribute String
+
+Some UI elements doesn't have an attributed string property, or not easy to set. Using images might be a better idea. Take UIBarButtonItem as an example.
 
 ```objective-c
-self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:FAKIconRefresh
-																		  style:UIBarButtonItemStyleBordered
-																		 target:nil
-																		 action:nil];
-[self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{UITextAttributeFont:[FontAwesomeKit fontWithSize:20]}
-									 forState:UIControlStateNormal];
+    FAKFontAwesome *cogIcon = [FAKFontAwesome cogIconWithSize:20];
+    [cogIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
+    UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
+    cogIcon.iconFontSize = 15;
+    UIImage *leftLandscapeImage = [cogIcon imageWithSize:CGSizeMake(15, 15)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:leftImage
+                                                               landscapeImagePhone:leftLandscapeImage
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:nil
+                                                                            action:nil];
 ```
 
-###Get an UIImage of an icon so you can use it on tab bar
+Same idea can be applied to tab bar or segmented control.
 
-```objective-c
-UIImage *tabBarIcon = [FontAwesomeKit imageForIcon:FAKIconHeart
-										 imageSize:CGSizeMake(30, 30)
-										  fontSize:29
-										attributes:nil];
-self.tabBarItem.image = tabBarIcon;
-self.tabBarItem.title = @"Title you like";
-```
+### More Examples
+Please clone the master repo and take a look at the example project, everything is in it, all public methods and properties are documented. Feel free to open an issue if you went into trouble.
 
-###Get a linear gradient pattern image
+## About Gradient Helpers
+If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I don't think they are useful. I've opened an issue for discussing, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
 
-```objective-c
-// Notice that we use CGColor here like using CAGradientLayer
-NSArray *colors = @[(id)[UIColor colorWithHue:59.0/360 saturation:0.2 brightness:1.0 alpha:1.0].CGColor,
-				 (id)[UIColor colorWithHue:59.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-				 (id)[UIColor colorWithHue:59.0/360 saturation:0.8 brightness:0.8 alpha:1.0].CGColor];
-// Gradient stops, from 0.0 to 1.0, values must be monotonically increasing
-NSArray *locations = @[@0.2, @0.8, @1.0]; 
-UIImage *gradientPattern = [FontAwesomeKit linearGradientImageWithSize:CGSizeMake(45, 45)
-																	colors:colors
-																 locations:locations];
-```
-####Related methods
-Gives you control about where to start and stop the gradient.  
-```objective-c
-+ (UIImage *)linearGradientImageWithSize:(CGSize)size
-								  colors:(NSArray *)colors
-							   locations:(NSArray *)locations
-							  startPoint:(CGPoint)startPoint
-								endPoint:(CGPoint)endPoint;
-```
-
-Omit the locations parameter, the first color in colors is assigned to location 0, the last color in colors is assigned to location 1, and intervening colors are assigned locations that are at equal intervals in between.  
-```objective-c
-+ (UIImage *)linearGradientImageWithSize:(CGSize)size
-								  colors:(NSArray *)colors;
-```
-
-
-###Get a radial gradient pattern image
-```objective-c
-NSArray *colors = @[(id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:1.0 alpha:1.0].CGColor,
-		        (id)[UIColor colorWithHue:111.0/360 saturation:1.0 brightness:0.7 alpha:1.0].CGColor];
-CGPoint centerPoint = CGPointMake(45.0/2 - 5, 45.0/2);
-gradientPattern = [FontAwesomeKit radialGradientImageWithSize:CGSizeMake(45, 45)
-													   colors:colors // Gradient colors
-													locations:locations // Gradient stops
-												  startCenter:centerPoint // The coordinate that defines the center of the starting circle.
-												  startRadius:1.0 // The radius of the starting circle.
-													endCenter:centerPoint // The coordinate that defines the center of the ending circle.
-													endRadius:27]; // The radius of the ending circle.
-```
-
-###Use gradient pattern image as foreground color on icon
-
-```objective-c
-NSDictionary *attr =@{FAKImageAttributeForegroundColor:[UIColor colorWithPatternImage:gradientPattern]};
-UIImage *gradientIcon = [FontAwesomeKit imageForIcon:FAKIconGithub
-										   imageSize:CGSizeMake(45, 45)
-											fontSize:45
-										  attributes:githubAttr]; // Available attributes are listed below
-```
-
-**Available attributes:** (Both are optional, use default value if you don't specify)
-
-######FAKImageAttributeRect
-The value of this attribute is a NSValue object containing a CGRect structure, the icon will be draw in this CGRect. You can wrap a CGRect structure into NSValue object like this:
-`NSValue *rectValue = [NSValue valueWithCGRect:aCGRect];`  
-*Default: Center the icon in both directions.*
-  
-######FAKImageAttributeForegroundColor
-The value of this attribute is an UIColor object. Use this attribute to specify the color of the icon.  
-*Default: Black color.*
-
-######FAKImageAttributeBackgroundColor
-The value of this attribute is an UIColor object. Use this attribute to specify the color of the background area behind the icon.  
-*Default: Transparent color.*
-
-
-######FAKImageAttributeFont
-The value of this attribute is an UIFont object. Use this attribute to specify the icon font you want to use. You can pass the value to use another icon font.  
-*Default: Use FontAwesome.*
-
-######FAKImageAttributeShadow
-The value of this attribute is an NSDictionary object. Use this attribute to specify the shadow you want to use.
-There are two required parameters & an optional one:
-- Shadow Offset (`FAKShadowAttributeOffset`) : Pass a `CGSize` wrapped into an `NSValue` (see `FAKImageAttributeRect`)
-- Shadow Blur (`FAKShadowAttributeBlur`) : Pass an `NSNumber` (for example `@(1.0f)`)
-- Shadow Color (`FAKShadowAttributeColor`) [optional] : Pass a `UIColor` (the default is Black)
-
-*Default: No Shadow.*
+## About The Old Version
+As I promised I will keep it maintained, response to Font-Awesome new icon updates, but won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.0 version is a better choice.
 
 ##Change Log
+- 2.0.0 Major update, API changed, added support for new icon fonts.
 - 1.1.4 Update Font-Awesome's font file to 3.2.1, Bug fixes.
 - 1.1.3 Add Font-Awesome 3.2 support. 58 new icon added.
 - 1.1.2 Add Font-Awesome 3.1.1 support. 54 new icon added.
@@ -145,4 +142,4 @@ There are two required parameters & an optional one:
 
 
 ##License
-FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Please notice that Font-Awesome has it's own license agreement.
+FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Please notice that each icon font has it's own license agreement.
