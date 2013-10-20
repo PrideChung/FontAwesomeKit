@@ -45,9 +45,9 @@ Run `pod install` or `pod update` to install selected icon fonts.
 
 Or import icon fonts you installed with sub specs
 
-`#import FontAwesomeKit/FAKFontAwesome.h`
-`#import FontAwesomeKit/FAKFoundationIcons.h`
-`#import FontAwesomeKit/FAKZocial.h`
+`#import FontAwesomeKit/FAKFontAwesome.h`  
+`#import FontAwesomeKit/FAKFoundationIcons.h`  
+`#import FontAwesomeKit/FAKZocial.h`  
 
 #####*important:*
 If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
