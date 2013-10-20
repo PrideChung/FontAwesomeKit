@@ -20,7 +20,7 @@ Currently FontAwesomeKit supports **3** different icon fonts.
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
 
 ##Installation
-####Requirements
+### Requirements
 - Xcode 5
 - iOS 6.0 +
 - ARC enabled
