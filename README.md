@@ -26,7 +26,7 @@ Thanks to `NSAttributedString` the API is more clean and object oriented. All ha
 - ARC enabled
 - CoreText framework
 
-###via CocoaPods (Strongly Recommended)
+### Install with CocoaPods (Strongly Recommended)
 FontAwesomeKit now supports sub spec, only get the fonts you need.
 
 Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.
@@ -39,10 +39,20 @@ Or select icon fonts with:
 
 Run `pod install` or `pod update` to install selected icon fonts.
 
+#### Importing Headers
+
+`#import FontAwesomeKit/FontAwesomeKit.h` If you installed all available icon fonts.   
+
+Or import icon fonts you installed with sub specs
+
+`#import FontAwesomeKit/FAKFontAwesome.h`
+`#import FontAwesomeKit/FAKFoundationIcons.h`
+`#import FontAwesomeKit/FAKZocial.h`
+
 #####*important:*
 If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
 
-###Manually
+### Install Manually
 
 Download source code, then drag the folder `FontAwesomeKit` into your project, add CoreText framework to you project.
 
