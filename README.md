@@ -102,7 +102,7 @@ By default the background is transparent. As the name implies, this property onl
 
 ### For Those Controls Doesn't Support Attribute String
 
-Some UI elements doesn't have an attributed string property, or not easy to set. Using images might be a better idea. Take UIBarButtonItem as an example.
+Some UI elements doesn't have an attributed string property, using images might be a better idea. Take UIBarButtonItem as an example.
 
 ```objective-c
     FAKFontAwesome *cogIcon = [FAKFontAwesome cogIconWithSize:20];
