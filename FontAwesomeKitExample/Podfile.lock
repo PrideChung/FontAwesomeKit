@@ -1,31 +1,13 @@
 PODS:
-  - FontAwesomeKit (2.0.0):
-    - FontAwesomeKit/Core
-    - FontAwesomeKit/FontAwesome
-    - FontAwesomeKit/FoundationIcons
-    - FontAwesomeKit/Zocial
-  - FontAwesomeKit/Core (2.0.0)
-  - FontAwesomeKit/FontAwesome (2.0.0):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/FoundationIcons (2.0.0):
-    - FontAwesomeKit/Core
-  - FontAwesomeKit/Zocial (2.0.0):
-    - FontAwesomeKit/Core
   - OCHamcrest (3.0.0)
   - OCMockito (1.0.0):
     - OCHamcrest (~> 3.0)
 
 DEPENDENCIES:
-  - FontAwesomeKit (from `../`)
   - OCHamcrest
   - OCMockito
 
-EXTERNAL SOURCES:
-  FontAwesomeKit:
-    :path: ../
-
 SPEC CHECKSUMS:
-  FontAwesomeKit: 1602865862190724666a61c9fa915dd2bd76f313
   OCHamcrest: 739added27df87b26adb60ab5aa14b7e3cf58afe
   OCMockito: 8b6a244d7d81ba3cd2095bc357c20ae7b22c8977
 

@@ -1,7 +1,7 @@
 platform :ios, "6.0"
 
 target "FontAwesomeKitExample" do
-    pod 'FontAwesomeKit', :path => '../'
+
 end
 
 target "FontAwesomeKitTests" do
