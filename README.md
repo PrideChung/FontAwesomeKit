@@ -74,7 +74,7 @@ whiteColor]];
 `NSAttributedString` did all the magics behind the scene. So you can set those attributes supported by `NSAttributedString` to an icon. For all available attributes, see [NSAttributedString UIKit Additions Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)
 
 #####*important:*
-Some attributes are apparently makes no sense for icon fonts, like `NSLigatureAttributeName` and `NSKernAttributeName`. You should not set these attributes, otherwise you app may crash. And you should not set the value of `NSFontAttributeName`, if you want to change the size of an icon, set it's `iconFontSize` property instead.
+Some attributes apparently makes no sense for icon fonts, like `NSLigatureAttributeName` and `NSKernAttributeName`. You should not set these attributes, otherwise you app may crash. And you should not set the value of `NSFontAttributeName`, if you want to change the size of an icon, set it's `iconFontSize` property instead.
 
 ### Other Methods for Setting or Getting Attributes
 These methods in fact are just shorthand versions for the standard `NSAttributedString` API, should be pretty straightforward.
