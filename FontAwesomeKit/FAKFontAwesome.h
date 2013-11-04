@@ -70,7 +70,7 @@
 + (instancetype)pencilSquareOIconWithSize:(CGFloat)size;
 + (instancetype)shareSquareOIconWithSize:(CGFloat)size;
 + (instancetype)checkSquareOIconWithSize:(CGFloat)size;
-+ (instancetype)moveIconWithSize:(CGFloat)size;
++ (instancetype)arrowsIconWithSize:(CGFloat)size;
 + (instancetype)stepBackwardIconWithSize:(CGFloat)size;
 + (instancetype)fastBackwardIconWithSize:(CGFloat)size;
 + (instancetype)backwardIconWithSize:(CGFloat)size;
@@ -98,8 +98,8 @@
 + (instancetype)arrowUpIconWithSize:(CGFloat)size;
 + (instancetype)arrowDownIconWithSize:(CGFloat)size;
 + (instancetype)shareIconWithSize:(CGFloat)size;
-+ (instancetype)resizeFullIconWithSize:(CGFloat)size;
-+ (instancetype)resizeSmallIconWithSize:(CGFloat)size;
++ (instancetype)expandIconWithSize:(CGFloat)size;
++ (instancetype)compressIconWithSize:(CGFloat)size;
 + (instancetype)plusIconWithSize:(CGFloat)size;
 + (instancetype)minusIconWithSize:(CGFloat)size;
 + (instancetype)asteriskIconWithSize:(CGFloat)size;
@@ -121,8 +121,8 @@
 + (instancetype)shoppingCartIconWithSize:(CGFloat)size;
 + (instancetype)folderIconWithSize:(CGFloat)size;
 + (instancetype)folderOpenIconWithSize:(CGFloat)size;
-+ (instancetype)resizeVerticalIconWithSize:(CGFloat)size;
-+ (instancetype)resizeHorizontalIconWithSize:(CGFloat)size;
++ (instancetype)arrowsVIconWithSize:(CGFloat)size;
++ (instancetype)arrowsHIconWithSize:(CGFloat)size;
 + (instancetype)barChartOIconWithSize:(CGFloat)size;
 + (instancetype)twitterSquareIconWithSize:(CGFloat)size;
 + (instancetype)facebookSquareIconWithSize:(CGFloat)size;
@@ -170,8 +170,8 @@
 + (instancetype)tasksIconWithSize:(CGFloat)size;
 + (instancetype)filterIconWithSize:(CGFloat)size;
 + (instancetype)briefcaseIconWithSize:(CGFloat)size;
-+ (instancetype)fullscreenIconWithSize:(CGFloat)size;
-+ (instancetype)groupIconWithSize:(CGFloat)size;
++ (instancetype)arrowsAltIconWithSize:(CGFloat)size;
++ (instancetype)usersIconWithSize:(CGFloat)size;
 + (instancetype)linkIconWithSize:(CGFloat)size;
 + (instancetype)cloudIconWithSize:(CGFloat)size;
 + (instancetype)flaskIconWithSize:(CGFloat)size;
@@ -180,7 +180,7 @@
 + (instancetype)paperclipIconWithSize:(CGFloat)size;
 + (instancetype)floppyOIconWithSize:(CGFloat)size;
 + (instancetype)squareIconWithSize:(CGFloat)size;
-+ (instancetype)reorderIconWithSize:(CGFloat)size;
++ (instancetype)barsIconWithSize:(CGFloat)size;
 + (instancetype)listUlIconWithSize:(CGFloat)size;
 + (instancetype)listOlIconWithSize:(CGFloat)size;
 + (instancetype)strikethroughIconWithSize:(CGFloat)size;
@@ -223,8 +223,8 @@
 + (instancetype)coffeeIconWithSize:(CGFloat)size;
 + (instancetype)cutleryIconWithSize:(CGFloat)size;
 + (instancetype)fileTextOIconWithSize:(CGFloat)size;
-+ (instancetype)buildingIconWithSize:(CGFloat)size;
-+ (instancetype)hospitalIconWithSize:(CGFloat)size;
++ (instancetype)buildingOIconWithSize:(CGFloat)size;
++ (instancetype)hospitalOIconWithSize:(CGFloat)size;
 + (instancetype)ambulanceIconWithSize:(CGFloat)size;
 + (instancetype)medkitIconWithSize:(CGFloat)size;
 + (instancetype)fighterJetIconWithSize:(CGFloat)size;
@@ -252,8 +252,6 @@
 + (instancetype)githubAltIconWithSize:(CGFloat)size;
 + (instancetype)folderOIconWithSize:(CGFloat)size;
 + (instancetype)folderOpenOIconWithSize:(CGFloat)size;
-+ (instancetype)expandOIconWithSize:(CGFloat)size;
-+ (instancetype)collapseOIconWithSize:(CGFloat)size;
 + (instancetype)smileOIconWithSize:(CGFloat)size;
 + (instancetype)frownOIconWithSize:(CGFloat)size;
 + (instancetype)mehOIconWithSize:(CGFloat)size;
@@ -291,10 +289,10 @@
 + (instancetype)html5IconWithSize:(CGFloat)size;
 + (instancetype)css3IconWithSize:(CGFloat)size;
 + (instancetype)anchorIconWithSize:(CGFloat)size;
-+ (instancetype)unlockOIconWithSize:(CGFloat)size;
++ (instancetype)unlockAltIconWithSize:(CGFloat)size;
 + (instancetype)bullseyeIconWithSize:(CGFloat)size;
-+ (instancetype)ellipsisHorizontalIconWithSize:(CGFloat)size;
-+ (instancetype)ellipsisVerticalIconWithSize:(CGFloat)size;
++ (instancetype)ellipsisHIconWithSize:(CGFloat)size;
++ (instancetype)ellipsisVIconWithSize:(CGFloat)size;
 + (instancetype)rssSquareIconWithSize:(CGFloat)size;
 + (instancetype)playCircleIconWithSize:(CGFloat)size;
 + (instancetype)ticketIconWithSize:(CGFloat)size;
@@ -373,5 +371,5 @@
 + (instancetype)wheelchairIconWithSize:(CGFloat)size;
 + (instancetype)vimeoSquareIconWithSize:(CGFloat)size;
 + (instancetype)tryIconWithSize:(CGFloat)size;
-
++ (instancetype)plusSquareOIconWithSize:(CGFloat)size;
 @end

@@ -17,7 +17,6 @@
 }
 
 // Generated Code
-// Generated Code
 + (instancetype)glassIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf000" size:size];
@@ -353,7 +352,7 @@
     return [self iconWithCode:@"\uf046" size:size];
 }
 
-+ (instancetype)moveIconWithSize:(CGFloat)size
++ (instancetype)arrowsIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf047" size:size];
 }
@@ -493,12 +492,12 @@
     return [self iconWithCode:@"\uf064" size:size];
 }
 
-+ (instancetype)resizeFullIconWithSize:(CGFloat)size
++ (instancetype)expandIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf065" size:size];
 }
 
-+ (instancetype)resizeSmallIconWithSize:(CGFloat)size
++ (instancetype)compressIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf066" size:size];
 }
@@ -608,12 +607,12 @@
     return [self iconWithCode:@"\uf07c" size:size];
 }
 
-+ (instancetype)resizeVerticalIconWithSize:(CGFloat)size
++ (instancetype)arrowsVIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf07d" size:size];
 }
 
-+ (instancetype)resizeHorizontalIconWithSize:(CGFloat)size
++ (instancetype)arrowsHIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf07e" size:size];
 }
@@ -853,12 +852,12 @@
     return [self iconWithCode:@"\uf0b1" size:size];
 }
 
-+ (instancetype)fullscreenIconWithSize:(CGFloat)size
++ (instancetype)arrowsAltIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf0b2" size:size];
 }
 
-+ (instancetype)groupIconWithSize:(CGFloat)size
++ (instancetype)usersIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf0c0" size:size];
 }
@@ -903,7 +902,7 @@
     return [self iconWithCode:@"\uf0c8" size:size];
 }
 
-+ (instancetype)reorderIconWithSize:(CGFloat)size
++ (instancetype)barsIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf0c9" size:size];
 }
@@ -1118,12 +1117,12 @@
     return [self iconWithCode:@"\uf0f6" size:size];
 }
 
-+ (instancetype)buildingIconWithSize:(CGFloat)size
++ (instancetype)buildingOIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf0f7" size:size];
 }
 
-+ (instancetype)hospitalIconWithSize:(CGFloat)size
++ (instancetype)hospitalOIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf0f8" size:size];
 }
@@ -1261,16 +1260,6 @@
 + (instancetype)folderOpenOIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf115" size:size];
-}
-
-+ (instancetype)expandOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf116" size:size];
-}
-
-+ (instancetype)collapseOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf117" size:size];
 }
 
 + (instancetype)smileOIconWithSize:(CGFloat)size
@@ -1458,7 +1447,7 @@
     return [self iconWithCode:@"\uf13d" size:size];
 }
 
-+ (instancetype)unlockOIconWithSize:(CGFloat)size
++ (instancetype)unlockAltIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf13e" size:size];
 }
@@ -1468,12 +1457,12 @@
     return [self iconWithCode:@"\uf140" size:size];
 }
 
-+ (instancetype)ellipsisHorizontalIconWithSize:(CGFloat)size
++ (instancetype)ellipsisHIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf141" size:size];
 }
 
-+ (instancetype)ellipsisVerticalIconWithSize:(CGFloat)size
++ (instancetype)ellipsisVIconWithSize:(CGFloat)size
 {
     return [self iconWithCode:@"\uf142" size:size];
 }
@@ -1868,6 +1857,11 @@
     return [self iconWithCode:@"\uf195" size:size];
 }
 
++ (instancetype)plusSquareOIconWithSize:(CGFloat)size
+{
+    return [self iconWithCode:@"\uf196" size:size];
+}
+
 
 + (NSDictionary *)allIcons
 {
@@ -1939,7 +1933,7 @@
              @"\uf044" : @"pencilSquareO",
              @"\uf045" : @"shareSquareO",
              @"\uf046" : @"checkSquareO",
-             @"\uf047" : @"move",
+             @"\uf047" : @"arrows",
              @"\uf048" : @"stepBackward",
              @"\uf049" : @"fastBackward",
              @"\uf04a" : @"backward",
@@ -1967,8 +1961,8 @@
              @"\uf062" : @"arrowUp",
              @"\uf063" : @"arrowDown",
              @"\uf064" : @"share",
-             @"\uf065" : @"resizeFull",
-             @"\uf066" : @"resizeSmall",
+             @"\uf065" : @"expand",
+             @"\uf066" : @"compress",
              @"\uf067" : @"plus",
              @"\uf068" : @"minus",
              @"\uf069" : @"asterisk",
@@ -1990,8 +1984,8 @@
              @"\uf07a" : @"shoppingCart",
              @"\uf07b" : @"folder",
              @"\uf07c" : @"folderOpen",
-             @"\uf07d" : @"resizeVertical",
-             @"\uf07e" : @"resizeHorizontal",
+             @"\uf07d" : @"arrowsV",
+             @"\uf07e" : @"arrowsH",
              @"\uf080" : @"barChartO",
              @"\uf081" : @"twitterSquare",
              @"\uf082" : @"facebookSquare",
@@ -2039,8 +2033,8 @@
              @"\uf0ae" : @"tasks",
              @"\uf0b0" : @"filter",
              @"\uf0b1" : @"briefcase",
-             @"\uf0b2" : @"fullscreen",
-             @"\uf0c0" : @"group",
+             @"\uf0b2" : @"arrowsAlt",
+             @"\uf0c0" : @"users",
              @"\uf0c1" : @"link",
              @"\uf0c2" : @"cloud",
              @"\uf0c3" : @"flask",
@@ -2049,7 +2043,7 @@
              @"\uf0c6" : @"paperclip",
              @"\uf0c7" : @"floppyO",
              @"\uf0c8" : @"square",
-             @"\uf0c9" : @"reorder",
+             @"\uf0c9" : @"bars",
              @"\uf0ca" : @"listUl",
              @"\uf0cb" : @"listOl",
              @"\uf0cc" : @"strikethrough",
@@ -2092,8 +2086,8 @@
              @"\uf0f4" : @"coffee",
              @"\uf0f5" : @"cutlery",
              @"\uf0f6" : @"fileTextO",
-             @"\uf0f7" : @"building",
-             @"\uf0f8" : @"hospital",
+             @"\uf0f7" : @"buildingO",
+             @"\uf0f8" : @"hospitalO",
              @"\uf0f9" : @"ambulance",
              @"\uf0fa" : @"medkit",
              @"\uf0fb" : @"fighterJet",
@@ -2121,8 +2115,6 @@
              @"\uf113" : @"githubAlt",
              @"\uf114" : @"folderO",
              @"\uf115" : @"folderOpenO",
-             @"\uf116" : @"expandO",
-             @"\uf117" : @"collapseO",
              @"\uf118" : @"smileO",
              @"\uf119" : @"frownO",
              @"\uf11a" : @"mehO",
@@ -2160,10 +2152,10 @@
              @"\uf13b" : @"html5",
              @"\uf13c" : @"css3",
              @"\uf13d" : @"anchor",
-             @"\uf13e" : @"unlockO",
+             @"\uf13e" : @"unlockAlt",
              @"\uf140" : @"bullseye",
-             @"\uf141" : @"ellipsisHorizontal",
-             @"\uf142" : @"ellipsisVertical",
+             @"\uf141" : @"ellipsisH",
+             @"\uf142" : @"ellipsisV",
              @"\uf143" : @"rssSquare",
              @"\uf144" : @"playCircle",
              @"\uf145" : @"ticket",
@@ -2242,6 +2234,7 @@
              @"\uf193" : @"wheelchair",
              @"\uf194" : @"vimeoSquare",
              @"\uf195" : @"try",
+             @"\uf196" : @"plusSquareO",
              
              };
 }
