@@ -73,7 +73,7 @@
 {
     NSArray *keys = [[[FAKZocial allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKZocial iconWithCode:key size:50]];
+        [self.icons addObject:[FAKZocial iconWithCode:key size:40]];
     }
 }
 
