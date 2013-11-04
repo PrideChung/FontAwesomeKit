@@ -35,7 +35,8 @@ FontAwesomeKit now supports sub spec, only get the fonts you need.
 ~~Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.~~
 
 The pod spec for version 2.1.0 haven't been merged yet, use this instead.
-`pod 'FontAwesomeKit/IonIcons', :podspec => 'https://raw.github.com/PrideChung/FontAwesomeKit/master/FontAwesomeKit.podspec'`
+`pod 'FontAwesomeKit', :git => 'https://github.com/PrideChung/FontAwesomeKit.git'`
+
 
 Or select icon fonts with:  
 
