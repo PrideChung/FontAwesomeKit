@@ -32,7 +32,7 @@
         phoneIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"phone-gradient"]];
         [phoneIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
-        FAKFontAwesome *facetimeIcon = [FAKFontAwesome facetimeVideoIconWithSize:35];
+        FAKFontAwesome *facetimeIcon = [FAKFontAwesome videoCameraIconWithSize:35];
         facetimeIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"phone-gradient"]];
         [facetimeIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
