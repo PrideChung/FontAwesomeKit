@@ -6,5 +6,6 @@
 #import "FAKFontAwesome.h"
 #import "FAKFoundationIcons.h"
 #import "FAKZocial.h"
+#import "FAKIonIcons.h"
 
 #endif
