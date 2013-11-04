@@ -11,7 +11,7 @@ Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zo
 
 Currently FontAwesomeKit supports **4** different icon fonts.
 
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **361** icons
+- [FontAwesome](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **369** icons
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **42** social icons.
 - [ionicons](http://i.minus.com/ivKqhOLJLVvmJ.png) Contains **440** icons, lots of iOS 7 style hollow icons.
@@ -149,7 +149,7 @@ If you noticed, all gradient helpers are gone. I removed gradient helpers in the
 As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.x version is a better choice.
 
 ##Change Log
-- 2.1.0 Add Font-Awesome 4.0.1 support. Add ionicons support.
+- 2.1.0 Add Font-Awesome 4.0.2 support. Add ionicons support.
 - 2.0.0 Major update, API changed, added support for new icon fonts.
 - 1.1.4 Update Font-Awesome's font file to 3.2.1, Bug fixes.
 - 1.1.3 Add Font-Awesome 3.2 support. 58 new icon added.
