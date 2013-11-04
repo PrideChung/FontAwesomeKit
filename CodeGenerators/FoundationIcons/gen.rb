@@ -19,7 +19,7 @@ File.read("foundation-icons.css").each_line do |line|
   
   code = ''
   line.gsub(/".*"/) { |match| code = match[2..(match.length-2)] }
-  codes.push code
+  codes.push "\\u#{code}"
 end
 
 generator = CodeGenerator.new('Foundation', names, codes)
