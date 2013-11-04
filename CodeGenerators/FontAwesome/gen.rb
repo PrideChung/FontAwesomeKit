@@ -6,7 +6,7 @@ codes = []
 File.read("_variables.scss").each_line do |line| 
   parts = line.split(' ')
   name = parts[0]
-  name = name[1..(name.length) -2]
+  name = name['$fa-var-'.length..(name.length) -2]
   
   nameParts = name.split('-')
   nameParts = nameParts.each_with_index.map do |p, i|
@@ -21,7 +21,7 @@ File.read("_variables.scss").each_line do |line|
   
   code = parts[1]
   code = code[2..5]
-  codes.push code
+  codes.push "\\u#{code}"
 end
 
 generator = CodeGenerator.new('FontAwesome', names, codes)
