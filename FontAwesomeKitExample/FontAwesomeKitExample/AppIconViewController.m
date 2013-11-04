@@ -19,29 +19,29 @@
 - (NSArray *)appIcons
 {
     if (!_appIcons) {
-        FAKFoundationIcons *mailIcon = [FAKFoundationIcons mailIconWithSize:48];
+        FAKIonIcons *mailIcon = [FAKIonIcons ios7EmailIconWithSize:48];
         mailIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"mail-gradient"]];
         [mailIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
-        FAKFontAwesome *musicIcon = [FAKFontAwesome musicIconWithSize:40];
+        FAKIonIcons *musicIcon = [FAKIonIcons musicNoteIconWithSize:40];
         musicIcon.drawingPositionAdjustment = UIOffsetMake(-3, 0);
         musicIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"music-gradient"]];
         [musicIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
-        FAKFontAwesome *phoneIcon = [FAKFontAwesome phoneIconWithSize:40];
+        FAKIonIcons *phoneIcon = [FAKIonIcons ios7TelephoneIconWithSize:40];
         phoneIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"phone-gradient"]];
         [phoneIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
-        FAKFontAwesome *facetimeIcon = [FAKFontAwesome videoCameraIconWithSize:35];
+        FAKIonIcons *facetimeIcon = [FAKIonIcons ios7VideocamIconWithSize:40];
         facetimeIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"phone-gradient"]];
         [facetimeIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
-        FAKFontAwesome *messageIcon = [FAKFontAwesome commentIconWithSize:38];
+        FAKIonIcons *messageIcon = [FAKIonIcons ios7ChatboxesIconWithSize:40];
         messageIcon.drawingPositionAdjustment = UIOffsetMake(0, -2);
         messageIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"phone-gradient"]];
         [messageIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
         
-        FAKFoundationIcons *cameraIcon = [FAKFoundationIcons cameraIconWithSize:48];
+        FAKIonIcons *cameraIcon = [FAKIonIcons cameraIconWithSize:48];
         cameraIcon.drawingBackgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"camera-gradient"]];
         [cameraIcon addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithWhite:0.1 alpha:1.0]];
         
