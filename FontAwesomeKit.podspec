@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'FontAwesomeKit/FAKIcon.{h,m}'
   end
-  
+
   s.subspec 'FontAwesome' do |ss|
     ss.dependency 'FontAwesomeKit/Core'
     ss.source_files = 'FontAwesomeKit/FAKFontAwesome.{h,m}'
@@ -32,5 +32,11 @@ Pod::Spec.new do |s|
     ss.dependency 'FontAwesomeKit/Core'
     ss.source_files = 'FontAwesomeKit/FAKZocial.{h,m}'
     ss.resource  = 'FontAwesomeKit/zocial-regular-webfont.ttf'
+  end
+  
+  s.subspec 'IonIcons' do |ss|
+    ss.dependency 'FontAwesomeKit/Core'
+    ss.source_files = 'FontAwesomeKit/FAKIonIcons.{h,m}'
+    ss.resource  = 'FontAwesomeKit/ionicons.ttf'
   end
 end

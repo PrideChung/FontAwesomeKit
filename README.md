@@ -3,21 +3,25 @@ FontAwesomeKit
 
 Icon font library for iOS.
 
-![image](http://i3.minus.com/i9z1A0F0yOYB.png)
+![image](http://i.minus.com/i3vNn0fTwcJeI.png)
 
-![image](http://i4.minus.com/iFFOQQHhplHLI.png)
+![image](http://i.minus.com/ivKqhOLJLVvmJ.png)
 
-## Version 2.0 Notable Changes
+## Version 2.1 Notable Changes
 ### Not Just Awesome. New Icon Fonts Added
 
-Currently FontAwesomeKit supports **3** different icon fonts.
+Currently FontAwesomeKit supports **4** different icon fonts.
 
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **361** icons
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **42** social icons.
+- [ionicons](http://i.minus.com/ivKqhOLJLVvmJ.png) Contains **440** icons, lots of iOS 7 style hollow icons.
 
 ### API Reforged, Take Advantage of NSAttributedString
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
+
+### Notes on FontAwesome
+Please notice that FontAwesome has renamed lots of it's icons in the recent 4.0 release, make sure to change you code accordingly if you're using FontAwesomeKit 2.1 version.
 
 ##Installation
 ### Requirements
@@ -36,6 +40,7 @@ Or select icon fonts with:
 `pod 'FontAwesomeKit/FontAwesome'`  
 `pod 'FontAwesomeKit/FoundationIcons'`  
 `pod 'FontAwesomeKit/Zocial'`  
+`pod 'FontAwesomeKit/IonIcons'`  
 
 Run `pod install` or `pod update` to install selected icon fonts.
 
@@ -48,6 +53,7 @@ Or import icon fonts you installed with sub specs
 `#import FontAwesomeKit/FAKFontAwesome.h`  
 `#import FontAwesomeKit/FAKFoundationIcons.h`  
 `#import FontAwesomeKit/FAKZocial.h`  
+`#import FontAwesomeKit/FAKIonIcons.h`  
 
 #####*important:*
 If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
@@ -62,11 +68,12 @@ Download source code, then drag the folder `FontAwesomeKit` into your project, a
 ```objective-c
 FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
 FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
-FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];
+FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];  
+FAKIonIcons *mailIcon = [FAKIonIcons ios7EmailIconWithSize:48];
 ```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
 
-### Set Attribute for The Icon
+### Setting Attributes for Icon
 ```objective-c
 [starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor 
 whiteColor]];
@@ -91,9 +98,9 @@ These methods in fact are just shorthand versions for the standard `NSAttributed
 After you done setting attributes, you can get the attributed string by calling
 `[starIcon attributedString]`. 
 
-You can set a label's icon with one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
+So you can use the icon on a label with one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
 
-### Drawing Images
+### Drawing The Icon On Image
 
 #### Basic Drawing
 Instead of getting the attributed string, you can draw the icon onto an image like this: `UIImage *iconImage = [starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
@@ -110,7 +117,7 @@ You can set the background color for the image like this:
 
 By default the background is transparent. As the name implies, this property only takes effect while drawing on image.
 
-### For Those Controls Doesn't Support Attribute String
+### For Those Controls Doesn't Support Attributed String
 
 Some UI elements doesn't have an attributed string property, using images might be a better idea. Take UIBarButtonItem as an example.
 
@@ -134,12 +141,13 @@ Same idea can be applied to tab bar or segmented control.
 Please clone the master repo and take a look at the example project, everything is in it, all public methods and properties are documented. Feel free to open an issue if you went into trouble.
 
 ## About Gradient Helpers
-If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussing, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
+If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussion, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
 
 ## About The Old Version
 As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.0 version is a better choice.
 
 ##Change Log
+- 2.1.0 Add Font-Awesome 4.0.1 support. Add ionicons support.
 - 2.0.0 Major update, API changed, added support for new icon fonts.
 - 1.1.4 Update Font-Awesome's font file to 3.2.1, Bug fixes.
 - 1.1.3 Add Font-Awesome 3.2 support. 58 new icon added.
@@ -153,4 +161,6 @@ As I promised I will keep it maintained, response to Font-Awesome new icon updat
 
 
 ##License
-FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Please notice that each icon font has it's own license agreement.
+FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Attribution isn't required but is much appreciated.
+
+**Please notice that each icon font has it's own license agreement.**
