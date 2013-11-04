@@ -1,7 +1,6 @@
 FontAwesomeKit
 ==============
-
-Icon font library for iOS.
+Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons.
 
 ![image](http://i.minus.com/i3vNn0fTwcJeI.png)
 
@@ -33,7 +32,10 @@ Please notice that FontAwesome has renamed lots of it's icons in the recent 4.0 
 ### Install with CocoaPods (Strongly Recommended)
 FontAwesomeKit now supports sub spec, only get the fonts you need.
 
-Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.
+~~Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.~~
+
+The pod spec for version 2.1.0 haven't been merged yet, use this instead.
+`pod 'FontAwesomeKit/IonIcons', :podspec => 'https://raw.github.com/PrideChung/FontAwesomeKit/master/FontAwesomeKit.podspec'`
 
 Or select icon fonts with:  
 
@@ -100,13 +102,13 @@ After you done setting attributes, you can get the attributed string by calling
 
 So you can use the icon on a label with one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
 
-### Drawing The Icon On Image
+### Drawing The Icon on Image
 
 #### Basic Drawing
 Instead of getting the attributed string, you can draw the icon onto an image like this: `UIImage *iconImage = [starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
 
 #### Drawing Offset
-By default the icon will be centered horizontally and vertically. I believe it's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property for the icon, like this:
+By default the icon will be centered horizontally and vertically. I believe that's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property for the icon, like this:
 
 `starIcon.drawingPositionAdjustment = UIOffsetMake(2, 2);`
 
@@ -115,7 +117,7 @@ You can set the background color for the image like this:
 
 `starIcon.drawingBackgroundColor = [UIColor blackColor];`
 
-By default the background is transparent. As the name implies, this property only takes effect while drawing on image.
+By default the background is transparent. As the name implies, this property only takes effect while drawing on image. You can specify a gradient color to create a gradient background, check the example project for details.
 
 ### For Those Controls Doesn't Support Attributed String
 
@@ -144,7 +146,7 @@ Please clone the master repo and take a look at the example project, everything 
 If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussion, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
 
 ## About The Old Version
-As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.0 version is a better choice.
+As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.x version is a better choice.
 
 ##Change Log
 - 2.1.0 Add Font-Awesome 4.0.1 support. Add ionicons support.
