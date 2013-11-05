@@ -11,10 +11,10 @@ Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zo
 
 Currently FontAwesomeKit supports **4** different icon fonts.
 
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **369** icons
+- [FontAwesome 4.0.2](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **369** icons
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **42** social icons.
-- [ionicons](http://i.minus.com/ivKqhOLJLVvmJ.png) Contains **440** icons, lots of iOS 7 style hollow icons.
+- [ionicons 1.2.3](http://i.minus.com/ivKqhOLJLVvmJ.png) Contains **440** icons, lots of iOS 7 style hollow icons.
 
 ### API Reforged, Take Advantage of NSAttributedString
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
@@ -32,11 +32,7 @@ Please notice that FontAwesome has renamed lots of it's icons in the recent 4.0 
 ### Install with CocoaPods (Strongly Recommended)
 FontAwesomeKit now supports sub spec, only get the fonts you need.
 
-~~Add `pod 'FontAwesomeKit'` to Podfile to install all icon fonts.~~
-
-The pod spec for version 2.1.0 haven't been merged yet, use this instead.
-`pod 'FontAwesomeKit', :git => 'https://github.com/PrideChung/FontAwesomeKit.git'`
-
+Add `pod 'FontAwesomeKit', '~> 2.1.0'` to Podfile to install all icon fonts.
 
 Or select icon fonts with:  
 
@@ -84,7 +80,7 @@ whiteColor]];
 `NSAttributedString` did all the magics behind the scene. So you can set those attributes supported by `NSAttributedString` to an icon. For all available attributes, see [NSAttributedString UIKit Additions Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)
 
 #####*important:*
-Some attributes apparently makes no sense for icon fonts, like `NSLigatureAttributeName` and `NSKernAttributeName`. You should not set these attributes, otherwise you app may crash. And you should not set the value of `NSFontAttributeName`, if you want to change the size of an icon, set it's `iconFontSize` property instead.
+Some attributes apparently makes no sense for icon fonts, like `NSLigatureAttributeName` and `NSKernAttributeName`. You should not use these attributes, otherwise you app might crash. And you should not set the value of `NSFontAttributeName`, if you want to change the size of an icon, set it's `iconFontSize` property instead.
 
 ### Other Methods for Setting or Getting Attributes
 These methods in fact are just shorthand versions for the standard `NSAttributedString` API, should be pretty straightforward.
