@@ -5,7 +5,7 @@ codes = []
 
 File.read("ionicons.css").each_line do |line| 
   name = '' 
-  line.gsub(/(?<=icon-).*(?=:before)/i) { |match| name = match }
+  line.gsub(/(?<=ion-).*(?=:before)/i) { |match| name = match }
   nameParts = name.split('-')
   nameParts = nameParts.each_with_index.map do |p, i|
     if i < 1
