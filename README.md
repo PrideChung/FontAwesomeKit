@@ -146,6 +146,7 @@ If you noticed, all gradient helpers are gone. I removed gradient helpers in the
 As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.x version is a better choice.
 
 ##Change Log
+- 2.1.2 Add ionicons 1.3.5 support. Fixed a bug.
 - 2.1.1 Add Font-Awesome 4.0.3 and ionicons 1.3.4 support.
 - 2.1.0 Add Font-Awesome 4.0.2 support. Add ionicons support.
 - 2.0.0 Major update, API changed, added support for new icon fonts.
