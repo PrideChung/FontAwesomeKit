@@ -30,9 +30,9 @@
 		CC44A86B16CD9B3F0039E101 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86A16CD9B3F0039E101 /* Default.png */; };
 		CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86C16CD9B3F0039E101 /* Default@2x.png */; };
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
-		CC62DE071835BE0B00DF1810 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC62DE061835BE0B00DF1810 /* ionicons.ttf */; };
 		CC6907F2181407B300FBC2E5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
 		CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE426381827B6BA00B28889 /* FAKIonIcons.m */; };
+		CCEE20C9183F6024008D0AEC /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCEE20C8183F6024008D0AEC /* ionicons.ttf */; };
 		CCFF2D24180F23450003CFE3 /* FAKMockIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D23180F23450003CFE3 /* FAKMockIcon.m */; };
 		CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFF2D29181144E80003CFE3 /* Main.storyboard */; };
 		CCFF2D2D181148CD0003CFE3 /* AppIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D2C181148CD0003CFE3 /* AppIconCell.m */; };
@@ -90,9 +90,9 @@
 		CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CC4504DA37DD48B7BEE2C995 /* libPods-FontAwesomeKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5349221721C9010072C49E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		CC62DE061835BE0B00DF1810 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		CCE426371827B6BA00B28889 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
 		CCE426381827B6BA00B28889 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
+		CCEE20C8183F6024008D0AEC /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		CCF169C7180DCD9C0028F7EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CCFF2D22180F23450003CFE3 /* FAKMockIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMockIcon.h; sourceTree = "<group>"; };
 		CCFF2D23180F23450003CFE3 /* FAKMockIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMockIcon.m; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 				CC0334E918151CED00CFB044 /* FAKZocial.m */,
 				CC0334EB18151CED00CFB044 /* FontAwesomeKit.h */,
 				CC0334EC18151CED00CFB044 /* foundation-icons.ttf */,
+				CCEE20C8183F6024008D0AEC /* ionicons.ttf */,
 				CC11876218284A6700A1D5B5 /* FontAwesome.otf */,
-				CC62DE061835BE0B00DF1810 /* ionicons.ttf */,
 				CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */,
 			);
 			name = FontAwesomeKit;
@@ -367,7 +367,7 @@
 				CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */,
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
 				CC11876318284A6700A1D5B5 /* FontAwesome.otf in Resources */,
-				CC62DE071835BE0B00DF1810 /* ionicons.ttf in Resources */,
+				CCEE20C9183F6024008D0AEC /* ionicons.ttf in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC0334F418151CED00CFB044 /* zocial-regular-webfont.ttf in Resources */,
 				CCFF2D3418114C070003CFE3 /* Images.xcassets in Resources */,
