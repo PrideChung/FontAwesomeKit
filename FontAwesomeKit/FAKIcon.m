@@ -66,6 +66,11 @@
 
 - (void)setAttributes:(NSDictionary *)attrs;
 {
+    if (!attrs[NSFontAttributeName]) {
+        NSMutableDictionary *mutableAttrs = [attrs mutableCopy];
+        mutableAttrs[NSFontAttributeName] = self.iconFont;
+        attrs = [mutableAttrs copy];
+    }
     [self.mutableAttributedString setAttributes:attrs range:[self rangeForMutableAttributedText]] ;
 }
 

@@ -59,6 +59,7 @@
     NSDictionary *stringAttributes = [icon.mutableAttributedString attributesAtIndex:0 effectiveRange:NULL];
     assertThat(stringAttributes, hasKey(NSBackgroundColorAttributeName));
     assertThat(stringAttributes, hasKey(NSForegroundColorAttributeName));
+    assertThat(stringAttributes, hasKey(NSFontAttributeName));
 }
 
 - (void)testAddAttribute
