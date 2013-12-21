@@ -1,5 +1,69 @@
 .ion-alert:before {  content: "\f101"; }
 .ion-alert-circled:before {  content: "\f100"; }
+.ion-android-add:before {  content: "\f2c7"; }
+.ion-android-add-contact:before {  content: "\f2c6"; }
+.ion-android-alarm:before {  content: "\f2c8"; }
+.ion-android-archive:before {  content: "\f2c9"; }
+.ion-android-arrow-back:before {  content: "\f2ca"; }
+.ion-android-arrow-down-left:before {  content: "\f2cb"; }
+.ion-android-arrow-down-right:before {  content: "\f2cc"; }
+.ion-android-arrow-up-left:before {  content: "\f2cd"; }
+.ion-android-arrow-up-right:before {  content: "\f2ce"; }
+.ion-android-battery:before {  content: "\f2cf"; }
+.ion-android-book:before {  content: "\f2d0"; }
+.ion-android-calendar:before {  content: "\f2d1"; }
+.ion-android-call:before {  content: "\f2d2"; }
+.ion-android-camera:before {  content: "\f2d3"; }
+.ion-android-chat:before {  content: "\f2d4"; }
+.ion-android-checkmark:before {  content: "\f2d5"; }
+.ion-android-clock:before {  content: "\f2d6"; }
+.ion-android-close:before {  content: "\f2d7"; }
+.ion-android-contact:before {  content: "\f2d8"; }
+.ion-android-contacts:before {  content: "\f2d9"; }
+.ion-android-data:before {  content: "\f2da"; }
+.ion-android-developer:before {  content: "\f2db"; }
+.ion-android-display:before {  content: "\f2dc"; }
+.ion-android-download:before {  content: "\f2dd"; }
+.ion-android-dropdown:before {  content: "\f2de"; }
+.ion-android-earth:before {  content: "\f2df"; }
+.ion-android-folder:before {  content: "\f2e0"; }
+.ion-android-forums:before {  content: "\f2e1"; }
+.ion-android-friends:before {  content: "\f2e2"; }
+.ion-android-hand:before {  content: "\f2e3"; }
+.ion-android-image:before {  content: "\f2e4"; }
+.ion-android-inbox:before {  content: "\f2e5"; }
+.ion-android-information:before {  content: "\f2e6"; }
+.ion-android-keypad:before {  content: "\f2e7"; }
+.ion-android-lightbulb:before {  content: "\f2e8"; }
+.ion-android-locate:before {  content: "\f2e9"; }
+.ion-android-location:before {  content: "\f2ea"; }
+.ion-android-mail:before {  content: "\f2eb"; }
+.ion-android-microphone:before {  content: "\f2ec"; }
+.ion-android-mixer:before {  content: "\f2ed"; }
+.ion-android-more:before {  content: "\f2ee"; }
+.ion-android-note:before {  content: "\f2ef"; }
+.ion-android-playstore:before {  content: "\f2f0"; }
+.ion-android-printer:before {  content: "\f2f1"; }
+.ion-android-promotion:before {  content: "\f2f2"; }
+.ion-android-reminder:before {  content: "\f2f3"; }
+.ion-android-remove:before {  content: "\f2f4"; }
+.ion-android-search:before {  content: "\f2f5"; }
+.ion-android-send:before {  content: "\f2f6"; }
+.ion-android-settings:before {  content: "\f2f7"; }
+.ion-android-share:before {  content: "\f2f8"; }
+.ion-android-social:before {  content: "\f2fa"; }
+.ion-android-social-user:before {  content: "\f2f9"; }
+.ion-android-sort:before {  content: "\f2fb"; }
+.ion-android-star:before {  content: "\f2fc"; }
+.ion-android-stopwatch:before {  content: "\f2fd"; }
+.ion-android-storage:before {  content: "\f2fe"; }
+.ion-android-system-back:before {  content: "\f2ff"; }
+.ion-android-system-home:before {  content: "\f300"; }
+.ion-android-system-windows:before {  content: "\f301"; }
+.ion-android-timer:before {  content: "\f302"; }
+.ion-android-trash:before {  content: "\f303"; }
+.ion-android-volume:before {  content: "\f304"; }
+.ion-android-wifi:before {  content: "\f305"; }
 .ion-archive:before {  content: "\f102"; }
 .ion-arrow-down-a:before {  content: "\f103"; }
 .ion-arrow-down-b:before {  content: "\f104"; }
@@ -36,6 +100,7 @@
 .ion-bluetooth:before {  content: "\f116"; }
 .ion-bookmark:before {  content: "\f26b"; }
 .ion-briefcase:before {  content: "\f26c"; }
+.ion-bug:before {  content: "\f2be"; }
 .ion-calculator:before {  content: "\f26d"; }
 .ion-calendar:before {  content: "\f117"; }
 .ion-camera:before {  content: "\f118"; }
@@ -72,10 +137,12 @@
 .ion-document-text:before {  content: "\f12e"; }
 .ion-drag:before {  content: "\f130"; }
 .ion-earth:before {  content: "\f276"; }
+.ion-edit:before {  content: "\f2bf"; }
 .ion-egg:before {  content: "\f277"; }
 .ion-eject:before {  content: "\f131"; }
 .ion-email:before {  content: "\f132"; }
 .ion-eye:before {  content: "\f133"; }
+.ion-eye-disabled:before {  content: "\f306"; }
 .ion-female:before {  content: "\f278"; }
 .ion-filing:before {  content: "\f134"; }
 .ion-film-marker:before {  content: "\f135"; }
@@ -85,6 +152,7 @@
 .ion-flask:before {  content: "\f138"; }
 .ion-folder:before {  content: "\f139"; }
 .ion-fork:before {  content: "\f27a"; }
+.ion-fork-repo:before {  content: "\f2c0"; }
 .ion-forward:before {  content: "\f13a"; }
 .ion-game-controller-a:before {  content: "\f13b"; }
 .ion-game-controller-b:before {  content: "\f13c"; }
@@ -163,6 +231,8 @@
 .ion-ios7-cloud-upload:before {  content: "\f177"; }
 .ion-ios7-cloud-upload-outline:before {  content: "\f176"; }
 .ion-ios7-cloudy:before {  content: "\f17a"; }
+.ion-ios7-cloudy-night:before {  content: "\f308"; }
+.ion-ios7-cloudy-night-outline:before {  content: "\f307"; }
 .ion-ios7-cloudy-outline:before {  content: "\f179"; }
 .ion-ios7-cog:before {  content: "\f17c"; }
 .ion-ios7-cog-outline:before {  content: "\f17b"; }
@@ -264,7 +334,7 @@
 .ion-ios7-refresh:before {  content: "\f1d6"; }
 .ion-ios7-refresh-empty:before {  content: "\f1d4"; }
 .ion-ios7-refresh-outline:before {  content: "\f1d5"; }
-.ion-ios7-reload:before, .ion-ios7-reloading:before {  content: "\f28e"; }
+.ion-ios7-reload:before {  content: "\f28e"; }
 .ion-ios7-rewind:before {  content: "\f1d8"; }
 .ion-ios7-rewind-outline:before {  content: "\f1d7"; }
 .ion-ios7-search:before {  content: "\f1da"; }
@@ -273,6 +343,7 @@
 .ion-ios7-skipbackward-outline:before {  content: "\f1db"; }
 .ion-ios7-skipforward:before {  content: "\f1de"; }
 .ion-ios7-skipforward-outline:before {  content: "\f1dd"; }
+.ion-ios7-snowy:before {  content: "\f309"; }
 .ion-ios7-speedometer:before {  content: "\f290"; }
 .ion-ios7-speedometer-outline:before {  content: "\f28f"; }
 .ion-ios7-star:before {  content: "\f1e0"; }
@@ -316,15 +387,15 @@
 .ion-levels:before {  content: "\f298"; }
 .ion-lightbulb:before {  content: "\f299"; }
 .ion-link:before {  content: "\f1fe"; }
-.ion-load-a:before, .ion-loading-a:before {  content: "\f29a"; }
-.ion-load-b:before, .ion-loading-b:before {  content: "\f29b"; }
-.ion-load-c:before, .ion-loading-c:before {  content: "\f29c"; }
-.ion-load-d:before, .ion-loading-d:before {  content: "\f29d"; }
+.ion-load-a:before {  content: "\f29a"; }
+.ion-load-b:before {  content: "\f29b"; }
+.ion-load-c:before {  content: "\f29c"; }
+.ion-load-d:before {  content: "\f29d"; }
 .ion-location:before {  content: "\f1ff"; }
 .ion-locked:before {  content: "\f200"; }
 .ion-log-in:before {  content: "\f29e"; }
 .ion-log-out:before {  content: "\f29f"; }
-.ion-loop:before, .ion-looping:before {  content: "\f201"; }
+.ion-loop:before {  content: "\f201"; }
 .ion-magnet:before {  content: "\f2a0"; }
 .ion-male:before {  content: "\f2a1"; }
 .ion-man:before {  content: "\f202"; }
@@ -336,13 +407,16 @@
 .ion-minus:before {  content: "\f209"; }
 .ion-minus-circled:before {  content: "\f207"; }
 .ion-minus-round:before {  content: "\f208"; }
+.ion-model-s:before {  content: "\f2c1"; }
 .ion-monitor:before {  content: "\f20a"; }
 .ion-more:before {  content: "\f20b"; }
 .ion-music-note:before {  content: "\f20c"; }
 .ion-navicon:before {  content: "\f20e"; }
 .ion-navicon-round:before {  content: "\f20d"; }
 .ion-navigate:before {  content: "\f2a3"; }
+.ion-no-smoking:before {  content: "\f2c2"; }
 .ion-nuclear:before {  content: "\f2a4"; }
+.ion-paper-airplane:before {  content: "\f2c3"; }
 .ion-paperclip:before {  content: "\f20f"; }
 .ion-pause:before {  content: "\f210"; }
 .ion-person:before {  content: "\f213"; }
@@ -354,6 +428,7 @@
 .ion-pizza:before {  content: "\f2a8"; }
 .ion-plane:before {  content: "\f214"; }
 .ion-play:before {  content: "\f215"; }
+.ion-playstation:before {  content: "\f30a"; }
 .ion-plus:before {  content: "\f218"; }
 .ion-plus-circled:before {  content: "\f216"; }
 .ion-plus-round:before {  content: "\f217"; }
@@ -364,7 +439,7 @@
 .ion-printer:before {  content: "\f21a"; }
 .ion-radio-waves:before {  content: "\f2ac"; }
 .ion-record:before {  content: "\f21b"; }
-.ion-refresh:before, .ion-refreshing:before {  content: "\f21c"; }
+.ion-refresh:before {  content: "\f21c"; }
 .ion-reply:before {  content: "\f21e"; }
 .ion-reply-all:before {  content: "\f21d"; }
 .ion-search:before {  content: "\f21f"; }
@@ -389,6 +464,7 @@
 .ion-social-dropbox-outline:before {  content: "\f22e"; }
 .ion-social-facebook:before {  content: "\f231"; }
 .ion-social-facebook-outline:before {  content: "\f230"; }
+.ion-social-freebsd-devil:before {  content: "\f2c4"; }
 .ion-social-github:before {  content: "\f233"; }
 .ion-social-github-outline:before {  content: "\f232"; }
 .ion-social-googleplus:before {  content: "\f235"; }
@@ -407,6 +483,7 @@
 .ion-social-skype-outline:before {  content: "\f23e"; }
 .ion-social-tumblr:before {  content: "\f241"; }
 .ion-social-tumblr-outline:before {  content: "\f240"; }
+.ion-social-tux:before {  content: "\f2c5"; }
 .ion-social-twitter:before {  content: "\f243"; }
 .ion-social-twitter-outline:before {  content: "\f242"; }
 .ion-social-vimeo:before {  content: "\f245"; }
@@ -424,6 +501,7 @@
 .ion-spoon:before {  content: "\f2b4"; }
 .ion-star:before {  content: "\f24e"; }
 .ion-stats-bars:before {  content: "\f2b5"; }
+.ion-steam:before {  content: "\f30b"; }
 .ion-stop:before {  content: "\f24f"; }
 .ion-thermometer:before {  content: "\f2b6"; }
 .ion-thumbsdown:before {  content: "\f250"; }
@@ -444,3 +522,4 @@
 .ion-wineglass:before {  content: "\f2b9"; }
 .ion-woman:before {  content: "\f25d"; }
 .ion-wrench:before {  content: "\f2ba"; }
+.ion-xbox:before {  content: "\f30c"; }

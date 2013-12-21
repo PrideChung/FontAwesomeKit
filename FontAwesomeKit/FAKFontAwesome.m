@@ -17,1854 +17,377 @@
 }
 
 // Generated Code
-+ (instancetype)glassIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf000" size:size];
-}
-
-+ (instancetype)musicIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf001" size:size];
-}
-
-+ (instancetype)searchIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf002" size:size];
-}
-
-+ (instancetype)envelopeOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf003" size:size];
-}
-
-+ (instancetype)heartIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf004" size:size];
-}
-
-+ (instancetype)starIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf005" size:size];
-}
-
-+ (instancetype)starOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf006" size:size];
-}
-
-+ (instancetype)userIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf007" size:size];
-}
-
-+ (instancetype)filmIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf008" size:size];
-}
-
-+ (instancetype)thLargeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf009" size:size];
-}
-
-+ (instancetype)thIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf00a" size:size];
-}
-
-+ (instancetype)thListIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf00b" size:size];
-}
-
-+ (instancetype)checkIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf00c" size:size];
-}
-
-+ (instancetype)timesIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf00d" size:size];
-}
-
-+ (instancetype)searchPlusIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf00e" size:size];
-}
-
-+ (instancetype)searchMinusIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf010" size:size];
-}
-
-+ (instancetype)powerOffIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf011" size:size];
-}
-
-+ (instancetype)signalIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf012" size:size];
-}
-
-+ (instancetype)cogIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf013" size:size];
-}
-
-+ (instancetype)trashOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf014" size:size];
-}
-
-+ (instancetype)homeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf015" size:size];
-}
-
-+ (instancetype)fileOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf016" size:size];
-}
-
-+ (instancetype)clockOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf017" size:size];
-}
-
-+ (instancetype)roadIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf018" size:size];
-}
-
-+ (instancetype)downloadIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf019" size:size];
-}
-
-+ (instancetype)arrowCircleODownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf01a" size:size];
-}
-
-+ (instancetype)arrowCircleOUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf01b" size:size];
-}
-
-+ (instancetype)inboxIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf01c" size:size];
-}
-
-+ (instancetype)playCircleOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf01d" size:size];
-}
-
-+ (instancetype)repeatIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf01e" size:size];
-}
-
-+ (instancetype)refreshIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf021" size:size];
-}
-
-+ (instancetype)listAltIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf022" size:size];
-}
-
-+ (instancetype)lockIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf023" size:size];
-}
-
-+ (instancetype)flagIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf024" size:size];
-}
-
-+ (instancetype)headphonesIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf025" size:size];
-}
-
-+ (instancetype)volumeOffIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf026" size:size];
-}
-
-+ (instancetype)volumeDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf027" size:size];
-}
-
-+ (instancetype)volumeUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf028" size:size];
-}
-
-+ (instancetype)qrcodeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf029" size:size];
-}
-
-+ (instancetype)barcodeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf02a" size:size];
-}
-
-+ (instancetype)tagIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf02b" size:size];
-}
-
-+ (instancetype)tagsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf02c" size:size];
-}
-
-+ (instancetype)bookIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf02d" size:size];
-}
-
-+ (instancetype)bookmarkIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf02e" size:size];
-}
-
-+ (instancetype)printIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf02f" size:size];
-}
-
-+ (instancetype)cameraIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf030" size:size];
-}
-
-+ (instancetype)fontIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf031" size:size];
-}
-
-+ (instancetype)boldIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf032" size:size];
-}
-
-+ (instancetype)italicIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf033" size:size];
-}
-
-+ (instancetype)textHeightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf034" size:size];
-}
-
-+ (instancetype)textWidthIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf035" size:size];
-}
-
-+ (instancetype)alignLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf036" size:size];
-}
-
-+ (instancetype)alignCenterIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf037" size:size];
-}
-
-+ (instancetype)alignRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf038" size:size];
-}
-
-+ (instancetype)alignJustifyIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf039" size:size];
-}
-
-+ (instancetype)listIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf03a" size:size];
-}
-
-+ (instancetype)outdentIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf03b" size:size];
-}
-
-+ (instancetype)indentIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf03c" size:size];
-}
-
-+ (instancetype)videoCameraIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf03d" size:size];
-}
-
-+ (instancetype)pictureOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf03e" size:size];
-}
-
-+ (instancetype)pencilIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf040" size:size];
-}
-
-+ (instancetype)mapMarkerIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf041" size:size];
-}
-
-+ (instancetype)adjustIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf042" size:size];
-}
-
-+ (instancetype)tintIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf043" size:size];
-}
-
-+ (instancetype)pencilSquareOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf044" size:size];
-}
-
-+ (instancetype)shareSquareOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf045" size:size];
-}
-
-+ (instancetype)checkSquareOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf046" size:size];
-}
-
-+ (instancetype)arrowsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf047" size:size];
-}
-
-+ (instancetype)stepBackwardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf048" size:size];
-}
-
-+ (instancetype)fastBackwardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf049" size:size];
-}
-
-+ (instancetype)backwardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf04a" size:size];
-}
-
-+ (instancetype)playIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf04b" size:size];
-}
-
-+ (instancetype)pauseIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf04c" size:size];
-}
-
-+ (instancetype)stopIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf04d" size:size];
-}
-
-+ (instancetype)forwardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf04e" size:size];
-}
-
-+ (instancetype)fastForwardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf050" size:size];
-}
-
-+ (instancetype)stepForwardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf051" size:size];
-}
-
-+ (instancetype)ejectIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf052" size:size];
-}
-
-+ (instancetype)chevronLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf053" size:size];
-}
-
-+ (instancetype)chevronRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf054" size:size];
-}
-
-+ (instancetype)plusCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf055" size:size];
-}
-
-+ (instancetype)minusCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf056" size:size];
-}
-
-+ (instancetype)timesCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf057" size:size];
-}
-
-+ (instancetype)checkCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf058" size:size];
-}
-
-+ (instancetype)questionCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf059" size:size];
-}
-
-+ (instancetype)infoCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf05a" size:size];
-}
-
-+ (instancetype)crosshairsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf05b" size:size];
-}
-
-+ (instancetype)timesCircleOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf05c" size:size];
-}
-
-+ (instancetype)checkCircleOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf05d" size:size];
-}
-
-+ (instancetype)banIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf05e" size:size];
-}
-
-+ (instancetype)arrowLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf060" size:size];
-}
-
-+ (instancetype)arrowRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf061" size:size];
-}
-
-+ (instancetype)arrowUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf062" size:size];
-}
-
-+ (instancetype)arrowDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf063" size:size];
-}
-
-+ (instancetype)shareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf064" size:size];
-}
-
-+ (instancetype)expandIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf065" size:size];
-}
-
-+ (instancetype)compressIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf066" size:size];
-}
-
-+ (instancetype)plusIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf067" size:size];
-}
-
-+ (instancetype)minusIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf068" size:size];
-}
-
-+ (instancetype)asteriskIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf069" size:size];
-}
-
-+ (instancetype)exclamationCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf06a" size:size];
-}
-
-+ (instancetype)giftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf06b" size:size];
-}
-
-+ (instancetype)leafIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf06c" size:size];
-}
-
-+ (instancetype)fireIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf06d" size:size];
-}
-
-+ (instancetype)eyeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf06e" size:size];
-}
-
-+ (instancetype)eyeSlashIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf070" size:size];
-}
-
-+ (instancetype)exclamationTriangleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf071" size:size];
-}
-
-+ (instancetype)planeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf072" size:size];
-}
-
-+ (instancetype)calendarIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf073" size:size];
-}
-
-+ (instancetype)randomIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf074" size:size];
-}
-
-+ (instancetype)commentIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf075" size:size];
-}
-
-+ (instancetype)magnetIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf076" size:size];
-}
-
-+ (instancetype)chevronUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf077" size:size];
-}
-
-+ (instancetype)chevronDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf078" size:size];
-}
-
-+ (instancetype)retweetIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf079" size:size];
-}
-
-+ (instancetype)shoppingCartIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf07a" size:size];
-}
-
-+ (instancetype)folderIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf07b" size:size];
-}
-
-+ (instancetype)folderOpenIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf07c" size:size];
-}
-
-+ (instancetype)arrowsVIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf07d" size:size];
-}
-
-+ (instancetype)arrowsHIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf07e" size:size];
-}
-
-+ (instancetype)barChartOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf080" size:size];
-}
-
-+ (instancetype)twitterSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf081" size:size];
-}
-
-+ (instancetype)facebookSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf082" size:size];
-}
-
-+ (instancetype)cameraRetroIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf083" size:size];
-}
-
-+ (instancetype)keyIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf084" size:size];
-}
-
-+ (instancetype)cogsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf085" size:size];
-}
-
-+ (instancetype)commentsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf086" size:size];
-}
-
-+ (instancetype)thumbsOUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf087" size:size];
-}
-
-+ (instancetype)thumbsODownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf088" size:size];
-}
-
-+ (instancetype)starHalfIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf089" size:size];
-}
-
-+ (instancetype)heartOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf08a" size:size];
-}
-
-+ (instancetype)signOutIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf08b" size:size];
-}
-
-+ (instancetype)linkedinSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf08c" size:size];
-}
-
-+ (instancetype)thumbTackIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf08d" size:size];
-}
-
-+ (instancetype)externalLinkIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf08e" size:size];
-}
-
-+ (instancetype)signInIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf090" size:size];
-}
-
-+ (instancetype)trophyIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf091" size:size];
-}
-
-+ (instancetype)githubSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf092" size:size];
-}
-
-+ (instancetype)uploadIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf093" size:size];
-}
-
-+ (instancetype)lemonOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf094" size:size];
-}
-
-+ (instancetype)phoneIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf095" size:size];
-}
-
-+ (instancetype)squareOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf096" size:size];
-}
-
-+ (instancetype)bookmarkOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf097" size:size];
-}
-
-+ (instancetype)phoneSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf098" size:size];
-}
-
-+ (instancetype)twitterIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf099" size:size];
-}
-
-+ (instancetype)facebookIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf09a" size:size];
-}
-
-+ (instancetype)githubIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf09b" size:size];
-}
-
-+ (instancetype)unlockIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf09c" size:size];
-}
-
-+ (instancetype)creditCardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf09d" size:size];
-}
-
-+ (instancetype)rssIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf09e" size:size];
-}
-
-+ (instancetype)hddOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a0" size:size];
-}
-
-+ (instancetype)bullhornIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a1" size:size];
-}
-
-+ (instancetype)bellIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f3" size:size];
-}
-
-+ (instancetype)certificateIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a3" size:size];
-}
-
-+ (instancetype)handORightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a4" size:size];
-}
-
-+ (instancetype)handOLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a5" size:size];
-}
-
-+ (instancetype)handOUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a6" size:size];
-}
-
-+ (instancetype)handODownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a7" size:size];
-}
-
-+ (instancetype)arrowCircleLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a8" size:size];
-}
-
-+ (instancetype)arrowCircleRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a9" size:size];
-}
-
-+ (instancetype)arrowCircleUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0aa" size:size];
-}
-
-+ (instancetype)arrowCircleDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ab" size:size];
-}
-
-+ (instancetype)globeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ac" size:size];
-}
-
-+ (instancetype)wrenchIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ad" size:size];
-}
-
-+ (instancetype)tasksIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ae" size:size];
-}
-
-+ (instancetype)filterIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0b0" size:size];
-}
-
-+ (instancetype)briefcaseIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0b1" size:size];
-}
-
-+ (instancetype)arrowsAltIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0b2" size:size];
-}
-
-+ (instancetype)usersIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c0" size:size];
-}
-
-+ (instancetype)linkIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c1" size:size];
-}
-
-+ (instancetype)cloudIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c2" size:size];
-}
-
-+ (instancetype)flaskIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c3" size:size];
-}
-
-+ (instancetype)scissorsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c4" size:size];
-}
-
-+ (instancetype)filesOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c5" size:size];
-}
-
-+ (instancetype)paperclipIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c6" size:size];
-}
-
-+ (instancetype)floppyOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c7" size:size];
-}
-
-+ (instancetype)squareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c8" size:size];
-}
-
-+ (instancetype)barsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0c9" size:size];
-}
-
-+ (instancetype)listUlIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ca" size:size];
-}
-
-+ (instancetype)listOlIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0cb" size:size];
-}
-
-+ (instancetype)strikethroughIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0cc" size:size];
-}
-
-+ (instancetype)underlineIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0cd" size:size];
-}
-
-+ (instancetype)tableIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ce" size:size];
-}
-
-+ (instancetype)magicIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d0" size:size];
-}
-
-+ (instancetype)truckIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d1" size:size];
-}
-
-+ (instancetype)pinterestIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d2" size:size];
-}
-
-+ (instancetype)pinterestSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d3" size:size];
-}
-
-+ (instancetype)googlePlusSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d4" size:size];
-}
-
-+ (instancetype)googlePlusIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d5" size:size];
-}
-
-+ (instancetype)moneyIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d6" size:size];
-}
-
-+ (instancetype)caretDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d7" size:size];
-}
-
-+ (instancetype)caretUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d8" size:size];
-}
-
-+ (instancetype)caretLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0d9" size:size];
-}
-
-+ (instancetype)caretRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0da" size:size];
-}
-
-+ (instancetype)columnsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0db" size:size];
-}
-
-+ (instancetype)sortIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0dc" size:size];
-}
-
-+ (instancetype)sortAscIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0dd" size:size];
-}
-
-+ (instancetype)sortDescIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0de" size:size];
-}
-
-+ (instancetype)envelopeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e0" size:size];
-}
-
-+ (instancetype)linkedinIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e1" size:size];
-}
-
-+ (instancetype)undoIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e2" size:size];
-}
-
-+ (instancetype)gavelIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e3" size:size];
-}
-
-+ (instancetype)tachometerIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e4" size:size];
-}
-
-+ (instancetype)commentOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e5" size:size];
-}
-
-+ (instancetype)commentsOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e6" size:size];
-}
-
-+ (instancetype)boltIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e7" size:size];
-}
-
-+ (instancetype)sitemapIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e8" size:size];
-}
-
-+ (instancetype)umbrellaIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0e9" size:size];
-}
-
-+ (instancetype)clipboardIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ea" size:size];
-}
-
-+ (instancetype)lightbulbOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0eb" size:size];
-}
-
-+ (instancetype)exchangeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ec" size:size];
-}
-
-+ (instancetype)cloudDownloadIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ed" size:size];
-}
-
-+ (instancetype)cloudUploadIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0ee" size:size];
-}
-
-+ (instancetype)userMdIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f0" size:size];
-}
-
-+ (instancetype)stethoscopeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f1" size:size];
-}
-
-+ (instancetype)suitcaseIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f2" size:size];
-}
-
-+ (instancetype)bellOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0a2" size:size];
-}
-
-+ (instancetype)coffeeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f4" size:size];
-}
-
-+ (instancetype)cutleryIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f5" size:size];
-}
-
-+ (instancetype)fileTextOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f6" size:size];
-}
-
-+ (instancetype)buildingOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f7" size:size];
-}
-
-+ (instancetype)hospitalOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f8" size:size];
-}
-
-+ (instancetype)ambulanceIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0f9" size:size];
-}
-
-+ (instancetype)medkitIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0fa" size:size];
-}
-
-+ (instancetype)fighterJetIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0fb" size:size];
-}
-
-+ (instancetype)beerIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0fc" size:size];
-}
-
-+ (instancetype)hSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0fd" size:size];
-}
-
-+ (instancetype)plusSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf0fe" size:size];
-}
-
-+ (instancetype)angleDoubleLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf100" size:size];
-}
-
-+ (instancetype)angleDoubleRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf101" size:size];
-}
-
-+ (instancetype)angleDoubleUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf102" size:size];
-}
-
-+ (instancetype)angleDoubleDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf103" size:size];
-}
-
-+ (instancetype)angleLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf104" size:size];
-}
-
-+ (instancetype)angleRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf105" size:size];
-}
-
-+ (instancetype)angleUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf106" size:size];
-}
-
-+ (instancetype)angleDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf107" size:size];
-}
-
-+ (instancetype)desktopIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf108" size:size];
-}
-
-+ (instancetype)laptopIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf109" size:size];
-}
-
-+ (instancetype)tabletIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf10a" size:size];
-}
-
-+ (instancetype)mobileIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf10b" size:size];
-}
-
-+ (instancetype)circleOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf10c" size:size];
-}
-
-+ (instancetype)quoteLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf10d" size:size];
-}
-
-+ (instancetype)quoteRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf10e" size:size];
-}
-
-+ (instancetype)spinnerIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf110" size:size];
-}
-
-+ (instancetype)circleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf111" size:size];
-}
-
-+ (instancetype)replyIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf112" size:size];
-}
-
-+ (instancetype)githubAltIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf113" size:size];
-}
-
-+ (instancetype)folderOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf114" size:size];
-}
-
-+ (instancetype)folderOpenOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf115" size:size];
-}
-
-+ (instancetype)smileOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf118" size:size];
-}
-
-+ (instancetype)frownOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf119" size:size];
-}
-
-+ (instancetype)mehOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf11a" size:size];
-}
-
-+ (instancetype)gamepadIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf11b" size:size];
-}
-
-+ (instancetype)keyboardOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf11c" size:size];
-}
-
-+ (instancetype)flagOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf11d" size:size];
-}
-
-+ (instancetype)flagCheckeredIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf11e" size:size];
-}
-
-+ (instancetype)terminalIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf120" size:size];
-}
-
-+ (instancetype)codeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf121" size:size];
-}
-
-+ (instancetype)replyAllIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf122" size:size];
-}
-
-+ (instancetype)mailReplyAllIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf122" size:size];
-}
-
-+ (instancetype)starHalfOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf123" size:size];
-}
-
-+ (instancetype)locationArrowIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf124" size:size];
-}
-
-+ (instancetype)cropIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf125" size:size];
-}
-
-+ (instancetype)codeForkIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf126" size:size];
-}
-
-+ (instancetype)chainBrokenIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf127" size:size];
-}
-
-+ (instancetype)questionIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf128" size:size];
-}
-
-+ (instancetype)infoIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf129" size:size];
-}
-
-+ (instancetype)exclamationIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf12a" size:size];
-}
-
-+ (instancetype)superscriptIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf12b" size:size];
-}
-
-+ (instancetype)subscriptIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf12c" size:size];
-}
-
-+ (instancetype)eraserIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf12d" size:size];
-}
-
-+ (instancetype)puzzlePieceIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf12e" size:size];
-}
-
-+ (instancetype)microphoneIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf130" size:size];
-}
-
-+ (instancetype)microphoneSlashIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf131" size:size];
-}
-
-+ (instancetype)shieldIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf132" size:size];
-}
-
-+ (instancetype)calendarOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf133" size:size];
-}
-
-+ (instancetype)fireExtinguisherIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf134" size:size];
-}
-
-+ (instancetype)rocketIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf135" size:size];
-}
-
-+ (instancetype)maxcdnIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf136" size:size];
-}
-
-+ (instancetype)chevronCircleLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf137" size:size];
-}
-
-+ (instancetype)chevronCircleRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf138" size:size];
-}
-
-+ (instancetype)chevronCircleUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf139" size:size];
-}
-
-+ (instancetype)chevronCircleDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf13a" size:size];
-}
-
-+ (instancetype)html5IconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf13b" size:size];
-}
-
-+ (instancetype)css3IconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf13c" size:size];
-}
-
-+ (instancetype)anchorIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf13d" size:size];
-}
-
-+ (instancetype)unlockAltIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf13e" size:size];
-}
-
-+ (instancetype)bullseyeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf140" size:size];
-}
-
-+ (instancetype)ellipsisHIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf141" size:size];
-}
-
-+ (instancetype)ellipsisVIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf142" size:size];
-}
-
-+ (instancetype)rssSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf143" size:size];
-}
-
-+ (instancetype)playCircleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf144" size:size];
-}
-
-+ (instancetype)ticketIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf145" size:size];
-}
-
-+ (instancetype)minusSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf146" size:size];
-}
-
-+ (instancetype)minusSquareOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf147" size:size];
-}
-
-+ (instancetype)levelUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf148" size:size];
-}
-
-+ (instancetype)levelDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf149" size:size];
-}
-
-+ (instancetype)checkSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf14a" size:size];
-}
-
-+ (instancetype)pencilSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf14b" size:size];
-}
-
-+ (instancetype)externalLinkSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf14c" size:size];
-}
-
-+ (instancetype)shareSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf14d" size:size];
-}
-
-+ (instancetype)compassIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf14e" size:size];
-}
-
-+ (instancetype)caretSquareODownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf150" size:size];
-}
-
-+ (instancetype)caretSquareOUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf151" size:size];
-}
-
-+ (instancetype)caretSquareORightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf152" size:size];
-}
-
-+ (instancetype)eurIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf153" size:size];
-}
-
-+ (instancetype)gbpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf154" size:size];
-}
-
-+ (instancetype)usdIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf155" size:size];
-}
-
-+ (instancetype)inrIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf156" size:size];
-}
-
-+ (instancetype)jpyIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf157" size:size];
-}
-
-+ (instancetype)rubIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf158" size:size];
-}
-
-+ (instancetype)krwIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf159" size:size];
-}
-
-+ (instancetype)btcIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf15a" size:size];
-}
-
-+ (instancetype)fileIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf15b" size:size];
-}
-
-+ (instancetype)fileTextIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf15c" size:size];
-}
-
-+ (instancetype)sortAlphaAscIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf15d" size:size];
-}
-
-+ (instancetype)sortAlphaDescIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf15e" size:size];
-}
-
-+ (instancetype)sortAmountAscIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf160" size:size];
-}
-
-+ (instancetype)sortAmountDescIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf161" size:size];
-}
-
-+ (instancetype)sortNumericAscIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf162" size:size];
-}
-
-+ (instancetype)sortNumericDescIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf163" size:size];
-}
-
-+ (instancetype)thumbsUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf164" size:size];
-}
-
-+ (instancetype)thumbsDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf165" size:size];
-}
-
-+ (instancetype)youtubeSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf166" size:size];
-}
-
-+ (instancetype)youtubeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf167" size:size];
-}
-
-+ (instancetype)xingIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf168" size:size];
-}
-
-+ (instancetype)xingSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf169" size:size];
-}
-
-+ (instancetype)youtubePlayIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf16a" size:size];
-}
-
-+ (instancetype)dropboxIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf16b" size:size];
-}
-
-+ (instancetype)stackOverflowIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf16c" size:size];
-}
-
-+ (instancetype)instagramIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf16d" size:size];
-}
-
-+ (instancetype)flickrIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf16e" size:size];
-}
-
-+ (instancetype)adnIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf170" size:size];
-}
-
-+ (instancetype)bitbucketIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf171" size:size];
-}
-
-+ (instancetype)bitbucketSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf172" size:size];
-}
-
-+ (instancetype)tumblrIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf173" size:size];
-}
-
-+ (instancetype)tumblrSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf174" size:size];
-}
-
-+ (instancetype)longArrowDownIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf175" size:size];
-}
-
-+ (instancetype)longArrowUpIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf176" size:size];
-}
-
-+ (instancetype)longArrowLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf177" size:size];
-}
-
-+ (instancetype)longArrowRightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf178" size:size];
-}
-
-+ (instancetype)appleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf179" size:size];
-}
-
-+ (instancetype)windowsIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf17a" size:size];
-}
-
-+ (instancetype)androidIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf17b" size:size];
-}
-
-+ (instancetype)linuxIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf17c" size:size];
-}
-
-+ (instancetype)dribbbleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf17d" size:size];
-}
-
-+ (instancetype)skypeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf17e" size:size];
-}
-
-+ (instancetype)foursquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf180" size:size];
-}
-
-+ (instancetype)trelloIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf181" size:size];
-}
-
-+ (instancetype)femaleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf182" size:size];
-}
-
-+ (instancetype)maleIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf183" size:size];
-}
-
-+ (instancetype)gittipIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf184" size:size];
-}
-
-+ (instancetype)sunOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf185" size:size];
-}
-
-+ (instancetype)moonOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf186" size:size];
-}
-
-+ (instancetype)archiveIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf187" size:size];
-}
-
-+ (instancetype)bugIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf188" size:size];
-}
-
-+ (instancetype)vkIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf189" size:size];
-}
-
-+ (instancetype)weiboIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf18a" size:size];
-}
-
-+ (instancetype)renrenIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf18b" size:size];
-}
-
-+ (instancetype)pagelinesIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf18c" size:size];
-}
-
-+ (instancetype)stackExchangeIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf18d" size:size];
-}
-
-+ (instancetype)arrowCircleORightIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf18e" size:size];
-}
-
-+ (instancetype)arrowCircleOLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf190" size:size];
-}
-
-+ (instancetype)caretSquareOLeftIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf191" size:size];
-}
-
-+ (instancetype)dotCircleOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf192" size:size];
-}
-
-+ (instancetype)wheelchairIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf193" size:size];
-}
-
-+ (instancetype)vimeoSquareIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf194" size:size];
-}
-
-+ (instancetype)tryIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf195" size:size];
-}
-
-+ (instancetype)plusSquareOIconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"\uf196" size:size];
-}
-
-
-+ (NSDictionary *)allIcons
-{
++ (instancetype)glassIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf000" size:size]; }
++ (instancetype)musicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf001" size:size]; }
++ (instancetype)searchIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf002" size:size]; }
++ (instancetype)envelopeOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf003" size:size]; }
++ (instancetype)heartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf004" size:size]; }
++ (instancetype)starIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf005" size:size]; }
++ (instancetype)starOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf006" size:size]; }
++ (instancetype)userIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf007" size:size]; }
++ (instancetype)filmIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf008" size:size]; }
++ (instancetype)thLargeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf009" size:size]; }
++ (instancetype)thIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00a" size:size]; }
++ (instancetype)thListIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00b" size:size]; }
++ (instancetype)checkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00c" size:size]; }
++ (instancetype)timesIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00d" size:size]; }
++ (instancetype)searchPlusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00e" size:size]; }
++ (instancetype)searchMinusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf010" size:size]; }
++ (instancetype)powerOffIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf011" size:size]; }
++ (instancetype)signalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf012" size:size]; }
++ (instancetype)cogIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf013" size:size]; }
++ (instancetype)trashOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf014" size:size]; }
++ (instancetype)homeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf015" size:size]; }
++ (instancetype)fileOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf016" size:size]; }
++ (instancetype)clockOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf017" size:size]; }
++ (instancetype)roadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf018" size:size]; }
++ (instancetype)downloadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf019" size:size]; }
++ (instancetype)arrowCircleODownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01a" size:size]; }
++ (instancetype)arrowCircleOUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01b" size:size]; }
++ (instancetype)inboxIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01c" size:size]; }
++ (instancetype)playCircleOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01d" size:size]; }
++ (instancetype)repeatIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01e" size:size]; }
++ (instancetype)refreshIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf021" size:size]; }
++ (instancetype)listAltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf022" size:size]; }
++ (instancetype)lockIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf023" size:size]; }
++ (instancetype)flagIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf024" size:size]; }
++ (instancetype)headphonesIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf025" size:size]; }
++ (instancetype)volumeOffIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf026" size:size]; }
++ (instancetype)volumeDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf027" size:size]; }
++ (instancetype)volumeUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf028" size:size]; }
++ (instancetype)qrcodeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf029" size:size]; }
++ (instancetype)barcodeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02a" size:size]; }
++ (instancetype)tagIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02b" size:size]; }
++ (instancetype)tagsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02c" size:size]; }
++ (instancetype)bookIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02d" size:size]; }
++ (instancetype)bookmarkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02e" size:size]; }
++ (instancetype)printIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02f" size:size]; }
++ (instancetype)cameraIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf030" size:size]; }
++ (instancetype)fontIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf031" size:size]; }
++ (instancetype)boldIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf032" size:size]; }
++ (instancetype)italicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf033" size:size]; }
++ (instancetype)textHeightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf034" size:size]; }
++ (instancetype)textWidthIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf035" size:size]; }
++ (instancetype)alignLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf036" size:size]; }
++ (instancetype)alignCenterIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf037" size:size]; }
++ (instancetype)alignRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf038" size:size]; }
++ (instancetype)alignJustifyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf039" size:size]; }
++ (instancetype)listIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03a" size:size]; }
++ (instancetype)outdentIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03b" size:size]; }
++ (instancetype)indentIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03c" size:size]; }
++ (instancetype)videoCameraIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03d" size:size]; }
++ (instancetype)pictureOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03e" size:size]; }
++ (instancetype)pencilIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf040" size:size]; }
++ (instancetype)mapMarkerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf041" size:size]; }
++ (instancetype)adjustIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf042" size:size]; }
++ (instancetype)tintIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf043" size:size]; }
++ (instancetype)pencilSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf044" size:size]; }
++ (instancetype)shareSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf045" size:size]; }
++ (instancetype)checkSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf046" size:size]; }
++ (instancetype)arrowsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf047" size:size]; }
++ (instancetype)stepBackwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf048" size:size]; }
++ (instancetype)fastBackwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf049" size:size]; }
++ (instancetype)backwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04a" size:size]; }
++ (instancetype)playIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04b" size:size]; }
++ (instancetype)pauseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04c" size:size]; }
++ (instancetype)stopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04d" size:size]; }
++ (instancetype)forwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04e" size:size]; }
++ (instancetype)fastForwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf050" size:size]; }
++ (instancetype)stepForwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf051" size:size]; }
++ (instancetype)ejectIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf052" size:size]; }
++ (instancetype)chevronLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf053" size:size]; }
++ (instancetype)chevronRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf054" size:size]; }
++ (instancetype)plusCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf055" size:size]; }
++ (instancetype)minusCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf056" size:size]; }
++ (instancetype)timesCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf057" size:size]; }
++ (instancetype)checkCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf058" size:size]; }
++ (instancetype)questionCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf059" size:size]; }
++ (instancetype)infoCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05a" size:size]; }
++ (instancetype)crosshairsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05b" size:size]; }
++ (instancetype)timesCircleOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05c" size:size]; }
++ (instancetype)checkCircleOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05d" size:size]; }
++ (instancetype)banIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05e" size:size]; }
++ (instancetype)arrowLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf060" size:size]; }
++ (instancetype)arrowRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf061" size:size]; }
++ (instancetype)arrowUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf062" size:size]; }
++ (instancetype)arrowDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf063" size:size]; }
++ (instancetype)shareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf064" size:size]; }
++ (instancetype)expandIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf065" size:size]; }
++ (instancetype)compressIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf066" size:size]; }
++ (instancetype)plusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf067" size:size]; }
++ (instancetype)minusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf068" size:size]; }
++ (instancetype)asteriskIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf069" size:size]; }
++ (instancetype)exclamationCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06a" size:size]; }
++ (instancetype)giftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06b" size:size]; }
++ (instancetype)leafIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06c" size:size]; }
++ (instancetype)fireIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06d" size:size]; }
++ (instancetype)eyeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06e" size:size]; }
++ (instancetype)eyeSlashIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf070" size:size]; }
++ (instancetype)exclamationTriangleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf071" size:size]; }
++ (instancetype)planeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf072" size:size]; }
++ (instancetype)calendarIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf073" size:size]; }
++ (instancetype)randomIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf074" size:size]; }
++ (instancetype)commentIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf075" size:size]; }
++ (instancetype)magnetIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf076" size:size]; }
++ (instancetype)chevronUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf077" size:size]; }
++ (instancetype)chevronDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf078" size:size]; }
++ (instancetype)retweetIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf079" size:size]; }
++ (instancetype)shoppingCartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07a" size:size]; }
++ (instancetype)folderIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07b" size:size]; }
++ (instancetype)folderOpenIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07c" size:size]; }
++ (instancetype)arrowsVIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07d" size:size]; }
++ (instancetype)arrowsHIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07e" size:size]; }
++ (instancetype)barChartOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf080" size:size]; }
++ (instancetype)twitterSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf081" size:size]; }
++ (instancetype)facebookSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf082" size:size]; }
++ (instancetype)cameraRetroIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf083" size:size]; }
++ (instancetype)keyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf084" size:size]; }
++ (instancetype)cogsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf085" size:size]; }
++ (instancetype)commentsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf086" size:size]; }
++ (instancetype)thumbsOUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf087" size:size]; }
++ (instancetype)thumbsODownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf088" size:size]; }
++ (instancetype)starHalfIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf089" size:size]; }
++ (instancetype)heartOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08a" size:size]; }
++ (instancetype)signOutIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08b" size:size]; }
++ (instancetype)linkedinSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08c" size:size]; }
++ (instancetype)thumbTackIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08d" size:size]; }
++ (instancetype)externalLinkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08e" size:size]; }
++ (instancetype)signInIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf090" size:size]; }
++ (instancetype)trophyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf091" size:size]; }
++ (instancetype)githubSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf092" size:size]; }
++ (instancetype)uploadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf093" size:size]; }
++ (instancetype)lemonOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf094" size:size]; }
++ (instancetype)phoneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf095" size:size]; }
++ (instancetype)squareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf096" size:size]; }
++ (instancetype)bookmarkOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf097" size:size]; }
++ (instancetype)phoneSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf098" size:size]; }
++ (instancetype)twitterIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf099" size:size]; }
++ (instancetype)facebookIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09a" size:size]; }
++ (instancetype)githubIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09b" size:size]; }
++ (instancetype)unlockIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09c" size:size]; }
++ (instancetype)creditCardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09d" size:size]; }
++ (instancetype)rssIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09e" size:size]; }
++ (instancetype)hddOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a0" size:size]; }
++ (instancetype)bullhornIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a1" size:size]; }
++ (instancetype)bellIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f3" size:size]; }
++ (instancetype)certificateIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a3" size:size]; }
++ (instancetype)handORightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a4" size:size]; }
++ (instancetype)handOLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a5" size:size]; }
++ (instancetype)handOUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a6" size:size]; }
++ (instancetype)handODownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a7" size:size]; }
++ (instancetype)arrowCircleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a8" size:size]; }
++ (instancetype)arrowCircleRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a9" size:size]; }
++ (instancetype)arrowCircleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0aa" size:size]; }
++ (instancetype)arrowCircleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ab" size:size]; }
++ (instancetype)globeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ac" size:size]; }
++ (instancetype)wrenchIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ad" size:size]; }
++ (instancetype)tasksIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ae" size:size]; }
++ (instancetype)filterIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0b0" size:size]; }
++ (instancetype)briefcaseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0b1" size:size]; }
++ (instancetype)arrowsAltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0b2" size:size]; }
++ (instancetype)usersIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c0" size:size]; }
++ (instancetype)linkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c1" size:size]; }
++ (instancetype)cloudIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c2" size:size]; }
++ (instancetype)flaskIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c3" size:size]; }
++ (instancetype)scissorsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c4" size:size]; }
++ (instancetype)filesOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c5" size:size]; }
++ (instancetype)paperclipIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c6" size:size]; }
++ (instancetype)floppyOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c7" size:size]; }
++ (instancetype)squareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c8" size:size]; }
++ (instancetype)barsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c9" size:size]; }
++ (instancetype)listUlIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ca" size:size]; }
++ (instancetype)listOlIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0cb" size:size]; }
++ (instancetype)strikethroughIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0cc" size:size]; }
++ (instancetype)underlineIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0cd" size:size]; }
++ (instancetype)tableIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ce" size:size]; }
++ (instancetype)magicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d0" size:size]; }
++ (instancetype)truckIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d1" size:size]; }
++ (instancetype)pinterestIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d2" size:size]; }
++ (instancetype)pinterestSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d3" size:size]; }
++ (instancetype)googlePlusSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d4" size:size]; }
++ (instancetype)googlePlusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d5" size:size]; }
++ (instancetype)moneyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d6" size:size]; }
++ (instancetype)caretDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d7" size:size]; }
++ (instancetype)caretUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d8" size:size]; }
++ (instancetype)caretLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d9" size:size]; }
++ (instancetype)caretRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0da" size:size]; }
++ (instancetype)columnsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0db" size:size]; }
++ (instancetype)sortIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dc" size:size]; }
++ (instancetype)sortAscIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dd" size:size]; }
++ (instancetype)sortDescIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0de" size:size]; }
++ (instancetype)envelopeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e0" size:size]; }
++ (instancetype)linkedinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e1" size:size]; }
++ (instancetype)undoIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e2" size:size]; }
++ (instancetype)gavelIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e3" size:size]; }
++ (instancetype)tachometerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e4" size:size]; }
++ (instancetype)commentOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e5" size:size]; }
++ (instancetype)commentsOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e6" size:size]; }
++ (instancetype)boltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e7" size:size]; }
++ (instancetype)sitemapIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e8" size:size]; }
++ (instancetype)umbrellaIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e9" size:size]; }
++ (instancetype)clipboardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ea" size:size]; }
++ (instancetype)lightbulbOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0eb" size:size]; }
++ (instancetype)exchangeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ec" size:size]; }
++ (instancetype)cloudDownloadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ed" size:size]; }
++ (instancetype)cloudUploadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ee" size:size]; }
++ (instancetype)userMdIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f0" size:size]; }
++ (instancetype)stethoscopeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f1" size:size]; }
++ (instancetype)suitcaseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f2" size:size]; }
++ (instancetype)bellOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a2" size:size]; }
++ (instancetype)coffeeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f4" size:size]; }
++ (instancetype)cutleryIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f5" size:size]; }
++ (instancetype)fileTextOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f6" size:size]; }
++ (instancetype)buildingOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f7" size:size]; }
++ (instancetype)hospitalOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f8" size:size]; }
++ (instancetype)ambulanceIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f9" size:size]; }
++ (instancetype)medkitIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fa" size:size]; }
++ (instancetype)fighterJetIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fb" size:size]; }
++ (instancetype)beerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fc" size:size]; }
++ (instancetype)hSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fd" size:size]; }
++ (instancetype)plusSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fe" size:size]; }
++ (instancetype)angleDoubleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf100" size:size]; }
++ (instancetype)angleDoubleRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf101" size:size]; }
++ (instancetype)angleDoubleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf102" size:size]; }
++ (instancetype)angleDoubleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf103" size:size]; }
++ (instancetype)angleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf104" size:size]; }
++ (instancetype)angleRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf105" size:size]; }
++ (instancetype)angleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf106" size:size]; }
++ (instancetype)angleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf107" size:size]; }
++ (instancetype)desktopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf108" size:size]; }
++ (instancetype)laptopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf109" size:size]; }
++ (instancetype)tabletIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf10a" size:size]; }
++ (instancetype)mobileIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf10b" size:size]; }
++ (instancetype)circleOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf10c" size:size]; }
++ (instancetype)quoteLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf10d" size:size]; }
++ (instancetype)quoteRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf10e" size:size]; }
++ (instancetype)spinnerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf110" size:size]; }
++ (instancetype)circleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf111" size:size]; }
++ (instancetype)replyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf112" size:size]; }
++ (instancetype)githubAltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf113" size:size]; }
++ (instancetype)folderOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf114" size:size]; }
++ (instancetype)folderOpenOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf115" size:size]; }
++ (instancetype)smileOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf118" size:size]; }
++ (instancetype)frownOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf119" size:size]; }
++ (instancetype)mehOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11a" size:size]; }
++ (instancetype)gamepadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11b" size:size]; }
++ (instancetype)keyboardOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11c" size:size]; }
++ (instancetype)flagOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11d" size:size]; }
++ (instancetype)flagCheckeredIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11e" size:size]; }
++ (instancetype)terminalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf120" size:size]; }
++ (instancetype)codeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf121" size:size]; }
++ (instancetype)replyAllIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf122" size:size]; }
++ (instancetype)mailReplyAllIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf122" size:size]; }
++ (instancetype)starHalfOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf123" size:size]; }
++ (instancetype)locationArrowIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf124" size:size]; }
++ (instancetype)cropIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf125" size:size]; }
++ (instancetype)codeForkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf126" size:size]; }
++ (instancetype)chainBrokenIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf127" size:size]; }
++ (instancetype)questionIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf128" size:size]; }
++ (instancetype)infoIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf129" size:size]; }
++ (instancetype)exclamationIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf12a" size:size]; }
++ (instancetype)superscriptIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf12b" size:size]; }
++ (instancetype)subscriptIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf12c" size:size]; }
++ (instancetype)eraserIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf12d" size:size]; }
++ (instancetype)puzzlePieceIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf12e" size:size]; }
++ (instancetype)microphoneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf130" size:size]; }
++ (instancetype)microphoneSlashIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf131" size:size]; }
++ (instancetype)shieldIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf132" size:size]; }
++ (instancetype)calendarOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf133" size:size]; }
++ (instancetype)fireExtinguisherIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf134" size:size]; }
++ (instancetype)rocketIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf135" size:size]; }
++ (instancetype)maxcdnIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf136" size:size]; }
++ (instancetype)chevronCircleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf137" size:size]; }
++ (instancetype)chevronCircleRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf138" size:size]; }
++ (instancetype)chevronCircleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf139" size:size]; }
++ (instancetype)chevronCircleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13a" size:size]; }
++ (instancetype)html5IconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13b" size:size]; }
++ (instancetype)css3IconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13c" size:size]; }
++ (instancetype)anchorIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13d" size:size]; }
++ (instancetype)unlockAltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13e" size:size]; }
++ (instancetype)bullseyeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf140" size:size]; }
++ (instancetype)ellipsisHIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf141" size:size]; }
++ (instancetype)ellipsisVIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf142" size:size]; }
++ (instancetype)rssSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf143" size:size]; }
++ (instancetype)playCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf144" size:size]; }
++ (instancetype)ticketIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf145" size:size]; }
++ (instancetype)minusSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf146" size:size]; }
++ (instancetype)minusSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf147" size:size]; }
++ (instancetype)levelUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf148" size:size]; }
++ (instancetype)levelDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf149" size:size]; }
++ (instancetype)checkSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14a" size:size]; }
++ (instancetype)pencilSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14b" size:size]; }
++ (instancetype)externalLinkSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14c" size:size]; }
++ (instancetype)shareSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14d" size:size]; }
++ (instancetype)compassIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14e" size:size]; }
++ (instancetype)caretSquareODownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf150" size:size]; }
++ (instancetype)caretSquareOUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf151" size:size]; }
++ (instancetype)caretSquareORightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf152" size:size]; }
++ (instancetype)eurIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf153" size:size]; }
++ (instancetype)gbpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf154" size:size]; }
++ (instancetype)usdIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf155" size:size]; }
++ (instancetype)inrIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf156" size:size]; }
++ (instancetype)jpyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf157" size:size]; }
++ (instancetype)rubIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf158" size:size]; }
++ (instancetype)krwIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf159" size:size]; }
++ (instancetype)btcIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15a" size:size]; }
++ (instancetype)fileIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15b" size:size]; }
++ (instancetype)fileTextIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15c" size:size]; }
++ (instancetype)sortAlphaAscIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15d" size:size]; }
++ (instancetype)sortAlphaDescIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15e" size:size]; }
++ (instancetype)sortAmountAscIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf160" size:size]; }
++ (instancetype)sortAmountDescIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf161" size:size]; }
++ (instancetype)sortNumericAscIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf162" size:size]; }
++ (instancetype)sortNumericDescIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf163" size:size]; }
++ (instancetype)thumbsUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf164" size:size]; }
++ (instancetype)thumbsDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf165" size:size]; }
++ (instancetype)youtubeSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf166" size:size]; }
++ (instancetype)youtubeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf167" size:size]; }
++ (instancetype)xingIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf168" size:size]; }
++ (instancetype)xingSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf169" size:size]; }
++ (instancetype)youtubePlayIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16a" size:size]; }
++ (instancetype)dropboxIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16b" size:size]; }
++ (instancetype)stackOverflowIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16c" size:size]; }
++ (instancetype)instagramIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16d" size:size]; }
++ (instancetype)flickrIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16e" size:size]; }
++ (instancetype)adnIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf170" size:size]; }
++ (instancetype)bitbucketIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf171" size:size]; }
++ (instancetype)bitbucketSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf172" size:size]; }
++ (instancetype)tumblrIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf173" size:size]; }
++ (instancetype)tumblrSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf174" size:size]; }
++ (instancetype)longArrowDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf175" size:size]; }
++ (instancetype)longArrowUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf176" size:size]; }
++ (instancetype)longArrowLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf177" size:size]; }
++ (instancetype)longArrowRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf178" size:size]; }
++ (instancetype)appleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf179" size:size]; }
++ (instancetype)windowsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17a" size:size]; }
++ (instancetype)androidIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17b" size:size]; }
++ (instancetype)linuxIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17c" size:size]; }
++ (instancetype)dribbbleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17d" size:size]; }
++ (instancetype)skypeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17e" size:size]; }
++ (instancetype)foursquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf180" size:size]; }
++ (instancetype)trelloIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf181" size:size]; }
++ (instancetype)femaleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf182" size:size]; }
++ (instancetype)maleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf183" size:size]; }
++ (instancetype)gittipIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf184" size:size]; }
++ (instancetype)sunOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf185" size:size]; }
++ (instancetype)moonOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf186" size:size]; }
++ (instancetype)archiveIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf187" size:size]; }
++ (instancetype)bugIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf188" size:size]; }
++ (instancetype)vkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf189" size:size]; }
++ (instancetype)weiboIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18a" size:size]; }
++ (instancetype)renrenIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18b" size:size]; }
++ (instancetype)pagelinesIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18c" size:size]; }
++ (instancetype)stackExchangeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18d" size:size]; }
++ (instancetype)arrowCircleORightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18e" size:size]; }
++ (instancetype)arrowCircleOLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf190" size:size]; }
++ (instancetype)caretSquareOLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf191" size:size]; }
++ (instancetype)dotCircleOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf192" size:size]; }
++ (instancetype)wheelchairIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf193" size:size]; }
++ (instancetype)vimeoSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf194" size:size]; }
++ (instancetype)tryIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf195" size:size]; }
++ (instancetype)plusSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf196" size:size]; }
+
++ (NSDictionary *)allIcons {
     return @{
              @"\uf000" : @"glass",
              @"\uf001" : @"music",
@@ -2238,5 +761,4 @@
              
              };
 }
-
 @end

@@ -1,6 +1,6 @@
 require '../CodeGenerator.rb'
 
-names = [];
+names = []
 codes = []
 
 File.read("ionicons.css").each_line do |line| 

@@ -36,11 +36,7 @@ EOT
 
     @names.each_with_index do |name, index|
     implementation_template = <<EOT
-+ (instancetype)#{name}IconWithSize:(CGFloat)size
-{
-    return [self iconWithCode:@"#{@codes[index]}" size:size];
-}
-
++ (instancetype)#{name}IconWithSize:(CGFloat)size { return [self iconWithCode:@"#{@codes[index]}" size:size]; }
 EOT
     implementation << implementation_template
     end
@@ -57,8 +53,7 @@ EOT
       icon_map << icon_map_template
     end
     icon_map = <<EOT
-+ (NSDictionary *)allIcons
-{
++ (NSDictionary *)allIcons {
     return @{
         #{icon_map}
     };
