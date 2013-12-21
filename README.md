@@ -14,7 +14,7 @@ Currently FontAwesomeKit supports **4** different icon fonts.
 - [FontAwesome 4.0.3](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **369** icons
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
-- [ionicons 1.3.4](http://ionicons.com/) Contains **446** icons, lots of iOS 7 style hollow icons.
+- [ionicons 1.4.0](http://ionicons.com/) Contains **525** icons, lots of iOS 7 style hollow icons.
 
 ### API Reforged, Take Advantage of NSAttributedString
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
@@ -97,15 +97,23 @@ These methods in fact are just shorthand versions for the standard `NSAttributed
 After you done setting attributes, you can get the attributed string by calling
 `[starIcon attributedString]`. 
 
-So you can use the icon on a label with one line of code: `self.label.attributedText = [starIcon attributedString];` You don't need to set the label's `font` property, it's already been taken care of.
+So you can use the icon on a label with one line of code:
+
+`self.label.attributedText = [starIcon attributedString];` 
+
+You don't need to set the label's `font` property, it's already been taken care of.
 
 ### Drawing The Icon on Image
 
 #### Basic Drawing
-Instead of getting the attributed string, you can draw the icon onto an image like this: `UIImage *iconImage = [starIcon imageWithSize:CGSizeMake(15, 15)];` This will use the attributes you've set to draw that image, you only need to specify a size for the image.
+Instead of getting the attributed string, you can draw the icon onto an image like this:
+
+`UIImage *iconImage = [starIcon imageWithSize:CGSizeMake(15, 15)];`
+
+This will use the attributes you've set to draw that image, you only need to specify a size for the image.
 
 #### Drawing Offset
-By default the icon will be centered horizontally and vertically. I believe that's 99% what you want. However, if you think it's not centered properly, you can set the `drawingPositionAdjustment` property for the icon, like this:
+By default the icon is centered horizontally and vertically. I believe that's 99% what you want. However, if it's not centered properly, you can set the `drawingPositionAdjustment` property for the icon, like this:
 
 `starIcon.drawingPositionAdjustment = UIOffsetMake(2, 2);`
 
@@ -139,6 +147,9 @@ Same idea can be applied to tab bar or segmented control.
 ### More Examples
 Please clone the master repo and take a look at the example project, everything is in it, all public methods and properties are documented. Feel free to open an issue if you went into trouble.
 
+## Use Custom Icon Font
+You can use some web applications like [fontastic.me](https://fontastic.me) to generate your own icon font to reduce font file size. In this case, you need to implement your own `FAKIcon` subclass, here's a complete demo: [PrideChung / FontAwesomeKitCustomFont](https://github.com/PrideChung/FontAwesomeKitCustomFont)
+
 ## About Gradient Helpers
 If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussion, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
 
@@ -146,6 +157,7 @@ If you noticed, all gradient helpers are gone. I removed gradient helpers in the
 As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.x version is a better choice.
 
 ##Change Log
+- 2.1.3 Add ionicons 1.4.0 support. Compact generated code.
 - 2.1.2 Add ionicons 1.3.5 support. Fixed a bug.
 - 2.1.1 Add Font-Awesome 4.0.3 and ionicons 1.3.4 support.
 - 2.1.0 Add Font-Awesome 4.0.2 support. Add ionicons support.
