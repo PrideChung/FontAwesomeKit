@@ -6,10 +6,12 @@
 
 + (UIFont *)iconFontWithSize:(CGFloat)size
 {
+#ifndef DISABLE_ZOCIAL_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"zocial-regular-webfont" withExtension:@"ttf"]];
     });
+#endif
     
     UIFont *font = [UIFont fontWithName:@"Zocial" size:size];
     NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");

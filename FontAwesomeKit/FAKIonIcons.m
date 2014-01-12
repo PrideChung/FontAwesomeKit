@@ -4,10 +4,12 @@
 
 + (UIFont *)iconFontWithSize:(CGFloat)size
 {
+#ifndef DISABLE_IONICONS_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"ionicons" withExtension:@"ttf"]];
     });
+#endif
     
     UIFont *font = [UIFont fontWithName:@"Ionicons" size:size];
     NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");

@@ -150,6 +150,16 @@ Please clone the master repo and take a look at the example project, everything 
 ## Use Custom Icon Font
 You can use some web applications like [fontastic.me](https://fontastic.me) to generate your own icon font to reduce font file size. In this case, you need to implement your own `FAKIcon` subclass, here's a complete demo: [PrideChung / FontAwesomeKitCustomFont](https://github.com/PrideChung/FontAwesomeKitCustomFont)
 
+## Disabling Icon Font Auto Registration
+This is a workaround for [a strange auto registration issue](https://github.com/PrideChung/FontAwesomeKit/issues/10) I haven't figured it out yet, 99.99% of time you don't need this. The following macros will exclude auto registering code for the corresponding icon font. Define them before importing any FontAwesomeKit class headers, the PCH(precompiled header) file is a nice place to do so. After that, you have to [manually register](http://stackoverflow.com/questions/15984937/adding-custom-fonts-to-ios-app-finding-their-real-names) those icon fonts.
+
+```
+#define DISABLE_FONTAWESOME_AUTO_REGISTRATION
+#define DISABLE_FOUNDATIONICONS_AUTO_REGISTRATION
+#define DISABLE_ZOCIAL_AUTO_REGISTRATION
+#define DISABLE_IONICONS_AUTO_REGISTRATION
+```
+
 ## About Gradient Helpers
 If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussion, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
 
@@ -157,6 +167,7 @@ If you noticed, all gradient helpers are gone. I removed gradient helpers in the
 As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.x version is a better choice.
 
 ##Change Log
+- 2.1.4 Add macros for disabling icon font auto registration.
 - 2.1.3 Add ionicons 1.4.0 support. Compact generated code.
 - 2.1.2 Add ionicons 1.3.5 support. Fixed a bug.
 - 2.1.1 Add Font-Awesome 4.0.3 and ionicons 1.3.4 support.
@@ -171,7 +182,6 @@ As I promised I will keep it maintained, response to Font-Awesome new icon updat
 - [alladinian](https://github.com/alladinian)
 - [Isak Sky](https://github.com/isaksky)
 - [Dominik Grygiel](https://github.com/dominikgrygiel)
-
 
 ##License
 FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Attribution isn't required but is much appreciated.
