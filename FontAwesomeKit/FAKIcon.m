@@ -118,11 +118,7 @@
 	// ---------- begin context ----------
 	CGContextRef context = UIGraphicsGetCurrentContext();
     
-    UIColor *backgroundColor = self.drawingBackgroundColor;
-	if (backgroundColor) {
-		[backgroundColor setFill];
-		CGContextFillRect(context, CGRectMake(0, 0, imageSize.width, imageSize.height));
-	}
+    [self fillBackgroundForContext:context backgroundSize:imageSize];
     
     [self.mutableAttributedString drawInRect:[self drawingRectWithImageSize:imageSize]];	
 	UIImage *iconImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -131,6 +127,14 @@
 	UIGraphicsEndImageContext();
 	
 	return iconImage;
+}
+
+- (void)fillBackgroundForContext:(CGContextRef)context backgroundSize:(CGSize)size
+{
+    if (self.drawingBackgroundColor) {
+		[self.drawingBackgroundColor setFill];
+		CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
+	}
 }
 
 + (UIImage *)stackedImageWithIcons:(NSArray *)icons withSize:(CGSize)imageSize;
