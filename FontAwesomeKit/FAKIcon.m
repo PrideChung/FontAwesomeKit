@@ -137,33 +137,6 @@
 	}
 }
 
-+ (UIImage *)stackedImageWithIcons:(NSArray *)icons withSize:(CGSize)imageSize;
-{
-    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
-	
-	// ---------- begin context ----------
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    for (FAKIcon *icon in icons) {
-        NSAssert([icon isKindOfClass:[FAKIcon class]], @"You can only stack FAKIcon derived objects.");
-        UIColor *backgroundColor = icon.drawingBackgroundColor;
-        if (backgroundColor) {
-            [backgroundColor setFill];
-            CGContextFillRect(context, CGRectMake(0, 0, imageSize.width, imageSize.height));
-        }
-        
-        [icon.mutableAttributedString drawInRect:[icon drawingRectWithImageSize:imageSize]];
-    }
-    
-	UIImage *iconImage = UIGraphicsGetImageFromCurrentImageContext();
-	
-	// ---------- end context ----------
-	UIGraphicsEndImageContext();
-	
-	return iconImage;
-}
-
-
 // Calculate the correct drawing position
 - (CGRect)drawingRectWithImageSize:(CGSize)imageSize
 {
@@ -176,3 +149,31 @@
 }
 
 @end
+
+#pragma mark - Stacked Icons
+
+@implementation UIImage (FAKAddon)
+
++ (UIImage *)imageWithStackedIcons:(NSArray *)icons imageSize:(CGSize)imageSize
+{
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
+	
+	// ---------- begin context ----------
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    for (FAKIcon *icon in icons) {
+        NSAssert([icon isKindOfClass:[FAKIcon class]], @"You can only stack FAKIcon derived objects.");
+        [icon fillBackgroundForContext:context backgroundSize:imageSize];
+        [icon.mutableAttributedString drawInRect:[icon drawingRectWithImageSize:imageSize]];
+    }
+    
+	UIImage *iconImage = UIGraphicsGetImageFromCurrentImageContext();
+	
+	// ---------- end context ----------
+	UIGraphicsEndImageContext();
+	
+	return iconImage;
+}
+
+@end
+

@@ -137,15 +137,18 @@
  */
 - (UIImage *)imageWithSize:(CGSize)imageSize;
 
-/**
- *  Draws an array of icons, one atop the next, on an image. The icons will be centered horizontally and vertically by default. You can set the drawingPostionAdjustment property to adjust drawing offset.
- *
- *  @param icons the FAKIcons to draw into the image
- *  @param imageSize Height and width for the image.
- *
- *  @return An image with the icon.
- */
-+ (UIImage *)stackedImageWithIcons:(NSArray *)icons withSize:(CGSize)imageSize;
+@end
 
+@interface UIImage (FAKAddon)
+
+/**
+ *  Draws the FAKIcons in an array on an image. These icons will be centered horizontally and vertically by default. You can set the drawingPostionAdjustment property to adjust drawing offset for each icon.
+ *
+ *  @param icons The icons to be drawn.
+ *  @param imageSize Height and width for the generated image.
+ *
+ *  @return An image with the icons.
+ */
++ (UIImage *)imageWithStackedIcons:(NSArray *)icons imageSize:(CGSize)imageSize;
 
 @end
