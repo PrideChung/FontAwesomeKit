@@ -45,7 +45,7 @@ Run `pod install` or `pod update` to install selected icon fonts.
 
 #### Importing Headers
 
-`#import FontAwesomeKit/FontAwesomeKit.h` If you installed all available icon fonts.   
+`#import FontAwesomeKit/FontAwesomeKit.h` If you installed all available icon fonts.
 
 Or import icon fonts you installed with sub specs
 
@@ -72,9 +72,9 @@ FAKIonIcons *mailIcon = [FAKIonIcons ios7EmailIconWithSize:48];
 ```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
 
-### Setting Attributes for Icon
+### Setting Attributes for An Icon
 ```objective-c
-[starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor 
+[starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor
 whiteColor]];
 ```
 `NSAttributedString` did all the magics behind the scene. So you can set those attributes supported by `NSAttributedString` to an icon. For all available attributes, see [NSAttributedString UIKit Additions Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)
@@ -95,11 +95,11 @@ These methods in fact are just shorthand versions for the standard `NSAttributed
 
 ### Get The Attributed String
 After you done setting attributes, you can get the attributed string by calling
-`[starIcon attributedString]`. 
+`[starIcon attributedString]`.
 
 So you can use the icon on a label with one line of code:
 
-`self.label.attributedText = [starIcon attributedString];` 
+`self.label.attributedText = [starIcon attributedString];`
 
 You don't need to set the label's `font` property, it's already been taken care of.
 
@@ -128,7 +128,7 @@ By default the background is transparent. As the name implies, this property onl
 
 Some UI elements doesn't have an attributed string property, using images might be a better idea. Take UIBarButtonItem as an example.
 
-```objective-c
+```objc
 FAKFontAwesome *cogIcon = [FAKFontAwesome cogIconWithSize:20];
 [cogIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
 UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
@@ -141,47 +141,38 @@ self.navigationItem.leftBarButtonItem =
                                 target:nil
                                 action:nil];
 ```
-
 Same idea can be applied to tab bar or segmented control.
+
+### Image with Stacked Icons (Since V2.1.5)
+[Stacked icons is a feature of Font-Awesome](http://fortawesome.github.io/Font-Awesome/examples/#stacked) and now has been ported to FontAwesomeKit. You can generate an image with multiple icons stacked together.
+
+```objc
+[UIImage imageWithStackedIcons:@[[FAKFontAwesome twitterIconWithSize:35], [FAKFontAwesome squareOIconWithSize:70]],
+                     imageSize:CGSizeMake(80, 80)];
+```
+
+The first icon in the array will be draw on the bottom.
 
 ### More Examples
 Please clone the master repo and take a look at the example project, everything is in it, all public methods and properties are documented. Feel free to open an issue if you went into trouble.
 
-## Use Custom Icon Font
+## Using Custom Icon Font
 You can use some web applications like [fontastic.me](https://fontastic.me) to generate your own icon font to reduce font file size. In this case, you need to implement your own `FAKIcon` subclass, here's a complete demo: [PrideChung / FontAwesomeKitCustomFont](https://github.com/PrideChung/FontAwesomeKitCustomFont)
 
-## Disabling Icon Font Auto Registration
-This is a workaround for [a strange auto registration issue](https://github.com/PrideChung/FontAwesomeKit/issues/10) I haven't figured it out yet, 99.99% of time you don't need this. The following macros will exclude auto registering code for the corresponding icon font. Define them before importing any FontAwesomeKit class headers, the PCH(precompiled header) file is a nice place to do so. After that, you have to [manually register](http://stackoverflow.com/questions/15984937/adding-custom-fonts-to-ios-app-finding-their-real-names) those icon fonts.
+## Known Issues
 
-```
-#define DISABLE_FONTAWESOME_AUTO_REGISTRATION
-#define DISABLE_FOUNDATIONICONS_AUTO_REGISTRATION
-#define DISABLE_ZOCIAL_AUTO_REGISTRATION
-#define DISABLE_IONICONS_AUTO_REGISTRATION
-```
+Check [Known Issuses](https://github.com/PrideChung/FontAwesomeKit/blob/master/KnownIssues.md) if you ran into strange crashed.
 
-## About Gradient Helpers
-If you noticed, all gradient helpers are gone. I removed gradient helpers in the new version because I think they are useless. I've opened an issue for discussion, [leave a comment if you think otherwise.](https://github.com/PrideChung/FontAwesomeKit/issues/7)
+##Changelog
 
-## About The Old Version
-As I promised I will keep it maintained, response to Font-Awesome new icon updates, but I won't provide any new function. If you must support iOS5 you can keep using it, otherwise 2.x version is a better choice.
+See [CHANGES.md](https://github.com/PrideChung/FontAwesomeKit/blob/master/CHANGES.md)
 
-##Change Log
-- 2.1.4 Add macros for disabling icon font auto registration.
-- 2.1.3 Add ionicons 1.4.0 support. Compact generated code.
-- 2.1.2 Add ionicons 1.3.5 support. Fixed a bug.
-- 2.1.1 Add Font-Awesome 4.0.3 and ionicons 1.3.4 support.
-- 2.1.0 Add Font-Awesome 4.0.2 support. Add ionicons support.
-- 2.0.0 Major update, API changed, added support for new icon fonts.
-- 1.1.4 Update Font-Awesome's font file to 3.2.1, Bug fixes.
-- 1.1.3 Add Font-Awesome 3.2 support. 58 new icon added.
-- 1.1.2 Add Font-Awesome 3.1.1 support. 54 new icon added.
-- 1.1.1 Add Shadows option while drawing icons on image.
-
-##[Contributors](https://github.com/PrideChung/FontAwesomeKit/contributors)
-- [alladinian](https://github.com/alladinian)
+##Contributors
+- [Vasilis Akoinoglou](https://github.com/alladinian)
 - [Isak Sky](https://github.com/isaksky)
 - [Dominik Grygiel](https://github.com/dominikgrygiel)
+- [Alex Shepard](https://github.com/PrideChung/FontAwesomeKit/pull/12)
+
 
 ##License
 FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Attribution isn't required but is much appreciated.
