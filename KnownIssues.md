@@ -2,7 +2,7 @@
 
 ## Displaying A View Containing FAKIcons May Cause Crash
 
-This is likely to be a bug in iOS 7.0 and seems has been fixed in iOS 7.1. FAK use the lazy-load mechanism to delay the icon font registration until it's actually needed, but this will somehow cause an exception in Core Text framework. Currently there're two workaround for this bug.
+This is likely to be a bug in iOS 7.0 and seems has been fixed in iOS 7.1. FAK use the lazy-load mechanism to delay the icon font registration until it's actually needed, but this will somehow cause an exception in Core Text framework. Currently there're two workarounds for this bug.
 
 ### A: Don't Lazy-Load At All (Recommended)
 
