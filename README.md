@@ -63,7 +63,7 @@ Download source code, then drag the folder `FontAwesomeKit` into your project, a
 
 ##Example Usage
 
-### Creating Icon.
+### Creating Icons
 ```objective-c
 FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
 FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
