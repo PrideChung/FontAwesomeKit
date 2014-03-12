@@ -22,7 +22,7 @@ Thanks to `NSAttributedString` the API is more clean and object oriented. All ha
 ### Notes on FontAwesome
 Please notice that FontAwesome has renamed lots of it's icons in the recent 4.0 release, make sure to change you code accordingly if you're using FontAwesomeKit 2.1 version.
 
-##Installation
+## Installation
 ### Requirements
 - Xcode 5
 - iOS 6.0 +
@@ -63,7 +63,7 @@ Download source code, then drag the folder `FontAwesomeKit` into your project, a
 
 ##Example Usage
 
-### Grap An Icon.
+### Creating Icon.
 ```objective-c
 FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
 FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
@@ -124,7 +124,7 @@ You can set the background color for the image like this:
 
 By default the background is transparent. As the name implies, this property only takes effect while drawing on image. You can specify a gradient color to create a gradient background, check the example project for details.
 
-### For Those Controls Doesn't Support Attributed String
+### Those Controls Doesn't Support Attributed String
 
 Some UI elements doesn't have an attributed string property, using images might be a better idea. Take UIBarButtonItem as an example.
 
@@ -143,7 +143,7 @@ self.navigationItem.leftBarButtonItem =
 ```
 Same idea can be applied to tab bar or segmented control.
 
-### Image with Stacked Icons (Since V2.1.5)
+### Generating Image with Stacked Icons (Since V2.1.5)
 [Stacked icons is a feature of Font-Awesome](http://fortawesome.github.io/Font-Awesome/examples/#stacked) and now has been ported to FontAwesomeKit. You can generate an image with multiple icons stacked together.
 
 ```objc
@@ -163,18 +163,18 @@ You can use some web applications like [fontastic.me](https://fontastic.me) to g
 
 Check [Known Issuses](https://github.com/PrideChung/FontAwesomeKit/blob/master/KnownIssues.md) if you ran into strange crashed.
 
-##Changelog
+## Changelog
 
 See [CHANGES.md](https://github.com/PrideChung/FontAwesomeKit/blob/master/CHANGES.md)
 
-##Contributors
+## Contributors
 - [Vasilis Akoinoglou](https://github.com/alladinian)
 - [Isak Sky](https://github.com/isaksky)
 - [Dominik Grygiel](https://github.com/dominikgrygiel)
 - [Alex Shepard](https://github.com/PrideChung/FontAwesomeKit/pull/12)
 
 
-##License
+## License
 FontAwesomeKit is available under the MIT license. See the LICENSE file for more information. Attribution isn't required but is much appreciated.
 
 **Please notice that each icon font has it's own license agreement.**
