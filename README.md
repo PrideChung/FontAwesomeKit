@@ -161,7 +161,7 @@ You can use some web applications like [fontastic.me](https://fontastic.me) to g
 
 ## Known Issues
 
-Check [Known Issuses](https://github.com/PrideChung/FontAwesomeKit/blob/master/KnownIssues.md) if you ran into strange crashed.
+Check [Known Issuses](https://github.com/PrideChung/FontAwesomeKit/blob/master/KnownIssues.md) if you ran into strange crashes.
 
 ## Changelog
 
