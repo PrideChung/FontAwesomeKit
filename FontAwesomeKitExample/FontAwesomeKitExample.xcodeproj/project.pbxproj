@@ -57,7 +57,6 @@
 /* Begin PBXFileReference section */
 		84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontAwesomeKitTests.xcconfig"; path = "Pods/Pods-FontAwesomeKitTests.xcconfig"; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB34CB4A99414B3A9E2FE299 /* Pods-FontAwesomeKitExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontAwesomeKitExample.xcconfig"; path = "Pods/Pods-FontAwesomeKitExample.xcconfig"; sourceTree = "<group>"; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		CC0334E318151CED00CFB044 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		CC0334E418151CED00CFB044 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -201,7 +200,6 @@
 				CC44A85716CD9B3F0039E101 /* Frameworks */,
 				CC44A85616CD9B3F0039E101 /* Products */,
 				84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */,
-				AB34CB4A99414B3A9E2FE299 /* Pods-FontAwesomeKitExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -319,11 +317,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC44A87816CD9B3F0039E101 /* Build configuration list for PBXNativeTarget "FontAwesomeKitExample" */;
 			buildPhases = (
-				71CF9467CF574365B61CC1F3 /* Check Pods Manifest.lock */,
 				CC44A85116CD9B3F0039E101 /* Sources */,
 				CC44A85216CD9B3F0039E101 /* Frameworks */,
 				CC44A85316CD9B3F0039E101 /* Resources */,
-				2E6AF333D7D4477395D5CD65 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,7 +336,7 @@
 		CC44A84D16CD9B3F0039E101 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Pride Chung";
 				TargetAttributes = {
 					CC3F7BEF180DD42C0012A695 = {
@@ -396,36 +392,6 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		19BFF0ECDD9945C2A498F875 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2E6AF333D7D4477395D5CD65 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-FontAwesomeKitExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71CF9467CF574365B61CC1F3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,7 +488,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontAwesomeKitExample.app/FontAwesomeKitExample";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -555,7 +520,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontAwesomeKitExample.app/FontAwesomeKitExample";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -639,7 +603,6 @@
 		};
 		CC44A87916CD9B3F0039E101 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB34CB4A99414B3A9E2FE299 /* Pods-FontAwesomeKitExample.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontAwesomeKitExample/FontAwesomeKitExample-Prefix.pch";
@@ -652,7 +615,6 @@
 		};
 		CC44A87A16CD9B3F0039E101 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB34CB4A99414B3A9E2FE299 /* Pods-FontAwesomeKitExample.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontAwesomeKitExample/FontAwesomeKitExample-Prefix.pch";
