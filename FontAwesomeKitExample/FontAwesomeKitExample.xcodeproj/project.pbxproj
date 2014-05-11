@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA46F55F1A48496AAA766A06 /* libPods-FontAwesomeKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4504DA37DD48B7BEE2C995 /* libPods-FontAwesomeKitTests.a */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
 		CC0334F018151CED00CFB044 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
@@ -16,11 +15,6 @@
 		CC0334F418151CED00CFB044 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */; };
 		CC11876318284A6700A1D5B5 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC11876218284A6700A1D5B5 /* FontAwesome.otf */; };
 		CC2F5BB61813133E002D6C2B /* KitchenSinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2F5BB51813133E002D6C2B /* KitchenSinkViewController.m */; };
-		CC3F7BF1180DD42C0012A695 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF169C7180DCD9C0028F7EB /* XCTest.framework */; };
-		CC3F7BF2180DD42C0012A695 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85A16CD9B3F0039E101 /* Foundation.framework */; };
-		CC3F7BF3180DD42C0012A695 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85816CD9B3F0039E101 /* UIKit.framework */; };
-		CC3F7BF9180DD42C0012A695 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC3F7BF7180DD42C0012A695 /* InfoPlist.strings */; };
-		CC3F7BFB180DD42C0012A695 /* FAKIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3F7BFA180DD42C0012A695 /* FAKIconTests.m */; };
 		CC44A85916CD9B3F0039E101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85816CD9B3F0039E101 /* UIKit.framework */; };
 		CC44A85B16CD9B3F0039E101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85A16CD9B3F0039E101 /* Foundation.framework */; };
 		CC44A85D16CD9B3F0039E101 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85C16CD9B3F0039E101 /* CoreGraphics.framework */; };
@@ -35,7 +29,6 @@
 		CCBC72A618A78A0A0046FDAB /* StackIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC72A518A78A0A0046FDAB /* StackIconCell.m */; };
 		CCC979E418657FFA005E62AF /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC979E318657FFA005E62AF /* ionicons.ttf */; };
 		CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE426381827B6BA00B28889 /* FAKIonIcons.m */; };
-		CCFF2D24180F23450003CFE3 /* FAKMockIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D23180F23450003CFE3 /* FAKMockIcon.m */; };
 		CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFF2D29181144E80003CFE3 /* Main.storyboard */; };
 		CCFF2D2D181148CD0003CFE3 /* AppIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D2C181148CD0003CFE3 /* AppIconCell.m */; };
 		CCFF2D3218114A450003CFE3 /* AppIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D3118114A450003CFE3 /* AppIconViewController.m */; };
@@ -44,18 +37,7 @@
 		CCFF2D421811DD1E0003CFE3 /* IconMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D411811DD1E0003CFE3 /* IconMapViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CC3F7BFD180DD42C0012A695 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC44A84D16CD9B3F0039E101 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC44A85416CD9B3F0039E101;
-			remoteInfo = FontAwesomeKitExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontAwesomeKitTests.xcconfig"; path = "Pods/Pods-FontAwesomeKitTests.xcconfig"; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		CC0334E318151CED00CFB044 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
@@ -71,11 +53,6 @@
 		CC11876218284A6700A1D5B5 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		CC2F5BB41813133E002D6C2B /* KitchenSinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenSinkViewController.h; sourceTree = "<group>"; };
 		CC2F5BB51813133E002D6C2B /* KitchenSinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkViewController.m; sourceTree = "<group>"; };
-		CC3F7BF0180DD42C0012A695 /* FontAwesomeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesomeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC3F7BF6180DD42C0012A695 /* FontAwesomeKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontAwesomeKitTests-Info.plist"; sourceTree = "<group>"; };
-		CC3F7BF8180DD42C0012A695 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC3F7BFA180DD42C0012A695 /* FAKIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAKIconTests.m; sourceTree = "<group>"; };
-		CC3F7BFC180DD42C0012A695 /* FontAwesomeKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeKitTests-Prefix.pch"; sourceTree = "<group>"; };
 		CC44A85516CD9B3F0039E101 /* FontAwesomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontAwesomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC44A85816CD9B3F0039E101 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC44A85A16CD9B3F0039E101 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,8 +76,6 @@
 		CCE426371827B6BA00B28889 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
 		CCE426381827B6BA00B28889 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
 		CCF169C7180DCD9C0028F7EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CCFF2D22180F23450003CFE3 /* FAKMockIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMockIcon.h; sourceTree = "<group>"; };
-		CCFF2D23180F23450003CFE3 /* FAKMockIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMockIcon.m; sourceTree = "<group>"; };
 		CCFF2D29181144E80003CFE3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CCFF2D2B181148CD0003CFE3 /* AppIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppIconCell.h; sourceTree = "<group>"; };
 		CCFF2D2C181148CD0003CFE3 /* AppIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppIconCell.m; sourceTree = "<group>"; };
@@ -114,17 +89,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC3F7BED180DD42C0012A695 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC3F7BF1180DD42C0012A695 /* XCTest.framework in Frameworks */,
-				CC3F7BF3180DD42C0012A695 /* UIKit.framework in Frameworks */,
-				CC3F7BF2180DD42C0012A695 /* Foundation.framework in Frameworks */,
-				AA46F55F1A48496AAA766A06 /* libPods-FontAwesomeKitTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CC44A85216CD9B3F0039E101 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,35 +135,12 @@
 			name = KitchenSink;
 			sourceTree = "<group>";
 		};
-		CC3F7BF4180DD42C0012A695 /* FontAwesomeKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC3F7BF5180DD42C0012A695 /* Supporting Files */,
-				CC3F7BFA180DD42C0012A695 /* FAKIconTests.m */,
-				CCFF2D22180F23450003CFE3 /* FAKMockIcon.h */,
-				CCFF2D23180F23450003CFE3 /* FAKMockIcon.m */,
-			);
-			path = FontAwesomeKitTests;
-			sourceTree = "<group>";
-		};
-		CC3F7BF5180DD42C0012A695 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC3F7BF6180DD42C0012A695 /* FontAwesomeKitTests-Info.plist */,
-				CC3F7BF7180DD42C0012A695 /* InfoPlist.strings */,
-				CC3F7BFC180DD42C0012A695 /* FontAwesomeKitTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		CC44A84C16CD9B3F0039E101 = {
 			isa = PBXGroup;
 			children = (
 				CC44A85E16CD9B3F0039E101 /* FontAwesomeKitExample */,
-				CC3F7BF4180DD42C0012A695 /* FontAwesomeKitTests */,
 				CC44A85716CD9B3F0039E101 /* Frameworks */,
 				CC44A85616CD9B3F0039E101 /* Products */,
-				84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				CC44A85516CD9B3F0039E101 /* FontAwesomeKitExample.app */,
-				CC3F7BF0180DD42C0012A695 /* FontAwesomeKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,26 +233,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC3F7BEF180DD42C0012A695 /* FontAwesomeKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC3F7BFF180DD42C0012A695 /* Build configuration list for PBXNativeTarget "FontAwesomeKitTests" */;
-			buildPhases = (
-				19BFF0ECDD9945C2A498F875 /* Check Pods Manifest.lock */,
-				CC3F7BEC180DD42C0012A695 /* Sources */,
-				CC3F7BED180DD42C0012A695 /* Frameworks */,
-				CC3F7BEE180DD42C0012A695 /* Resources */,
-				9FF41CB8ADE446B3B1514B37 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC3F7BFE180DD42C0012A695 /* PBXTargetDependency */,
-			);
-			name = FontAwesomeKitTests;
-			productName = FontAwesomeKitTests;
-			productReference = CC3F7BF0180DD42C0012A695 /* FontAwesomeKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		CC44A85416CD9B3F0039E101 /* FontAwesomeKitExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC44A87816CD9B3F0039E101 /* Build configuration list for PBXNativeTarget "FontAwesomeKitExample" */;
@@ -338,11 +258,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Pride Chung";
-				TargetAttributes = {
-					CC3F7BEF180DD42C0012A695 = {
-						TestTargetID = CC44A85416CD9B3F0039E101;
-					};
-				};
 			};
 			buildConfigurationList = CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -357,20 +272,11 @@
 			projectRoot = "";
 			targets = (
 				CC44A85416CD9B3F0039E101 /* FontAwesomeKitExample */,
-				CC3F7BEF180DD42C0012A695 /* FontAwesomeKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CC3F7BEE180DD42C0012A695 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC3F7BF9180DD42C0012A695 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CC44A85316CD9B3F0039E101 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,49 +296,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		19BFF0ECDD9945C2A498F875 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9FF41CB8ADE446B3B1514B37 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-FontAwesomeKitTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		CC3F7BEC180DD42C0012A695 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC3F7BFB180DD42C0012A695 /* FAKIconTests.m in Sources */,
-				CCFF2D24180F23450003CFE3 /* FAKMockIcon.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CC44A85116CD9B3F0039E101 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,23 +320,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CC3F7BFE180DD42C0012A695 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC44A85416CD9B3F0039E101 /* FontAwesomeKitExample */;
-			targetProxy = CC3F7BFD180DD42C0012A695 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		CC3F7BF7180DD42C0012A695 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC3F7BF8180DD42C0012A695 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		CC44A86116CD9B3F0039E101 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -484,67 +332,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CC3F7C00180DD42C0012A695 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontAwesomeKitExample.app/FontAwesomeKitExample";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontAwesomeKitTests/FontAwesomeKitTests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "FontAwesomeKitTests/FontAwesomeKitTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CC3F7C01180DD42C0012A695 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84BC902056984BF1BCD676CC /* Pods-FontAwesomeKitTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontAwesomeKitExample.app/FontAwesomeKitExample";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FontAwesomeKitTests/FontAwesomeKitTests-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "FontAwesomeKitTests/FontAwesomeKitTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		CC44A87616CD9B3F0039E101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -628,15 +415,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC3F7BFF180DD42C0012A695 /* Build configuration list for PBXNativeTarget "FontAwesomeKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC3F7C00180DD42C0012A695 /* Debug */,
-				CC3F7C01180DD42C0012A695 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

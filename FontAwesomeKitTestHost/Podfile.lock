@@ -1,0 +1,35 @@
+PODS:
+  - FontAwesomeKit (2.1.5):
+    - FontAwesomeKit/Core
+    - FontAwesomeKit/FontAwesome
+    - FontAwesomeKit/FoundationIcons
+    - FontAwesomeKit/IonIcons
+    - FontAwesomeKit/Zocial
+  - FontAwesomeKit/Core (2.1.5)
+  - FontAwesomeKit/FontAwesome (2.1.5):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.1.5):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.1.5):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.1.5):
+    - FontAwesomeKit/Core
+  - OCHamcrest (3.0.1)
+  - OCMockito (1.2.0):
+    - OCHamcrest (~> 3.0)
+
+DEPENDENCIES:
+  - FontAwesomeKit (from `../FontAwesomeKit.podspec`)
+  - OCHamcrest
+  - OCMockito
+
+EXTERNAL SOURCES:
+  FontAwesomeKit:
+    :podspec: ../FontAwesomeKit.podspec
+
+SPEC CHECKSUMS:
+  FontAwesomeKit: 55c07b037b06671bb437e13c3b9c8a832f8c26ce
+  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
+  OCMockito: 050fca9528760faa8b5fafc82faad9d54f0864c0
+
+COCOAPODS: 0.32.1
