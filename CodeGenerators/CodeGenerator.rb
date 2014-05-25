@@ -46,7 +46,7 @@ class CodeGenerator
   end
 
   def generate_header
-    header = "// Generated Code - do not change\n"
+    header = "#pragma mark Generated method signatures\n// Do no edit\n\n"
 
     @camel_case_names.each do |name|
       header_template = <<EOT
@@ -59,7 +59,7 @@ EOT
   end
 
   def generate_implementation
-    implementation = "// Generated Code\n"
+    implementation = "#pragma mark Generated class method for constructing icon methods\n// Do no edit\n\n"
 
     @camel_case_names.each_with_index do |name, index|
       implementation_template = <<EOT
@@ -81,6 +81,14 @@ EOT
     end
 
     icon_map = <<EOT
+#pragma mark - Generated mapping methods
+// Do not edit
+
+/** method for providing a mapping of all unicode characters being assigned a name -
+ note: duplicate keys may lead to alias names colliding with primary names.
+ @return a NSDictionary containing unicode characters as keys and transformed names as values. names
+ have been stripped of prefixes and are converted to camelCase to maintain compability.
+*/
 + (NSDictionary *)allIcons {
     return @{
         #{icon_map}
@@ -99,6 +107,10 @@ EOT
     end
 
     return <<EOT
+/** method for providing a mapping of names as given by the font
+ creator to the unicode character sequence producing the icon
+    @return a NSDictionary. The keys are the names, the values are the unicode character sequences
+  */
 + (NSDictionary *)allNames {
     return @{
         #{name_map}
