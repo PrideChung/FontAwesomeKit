@@ -1,17 +1,26 @@
 class CodeGenerator
   attr_accessor :font_name, :names, :codes
 
-  def initialize(font_name, names, codes)
+  def initialize(font_name, names, codes, names_are_camel_case:true)
     @font_name = font_name
-    
+
+    if names_are_camel_case
+      @camel_case_names = names
+    else
+      # create a capitalized version of strings
+      @camel_case_names = names.map do |name|
+        name = self.string_to_camel_case(name)
+      end
+    end
+
+    # names get mangled to avoid non-ascii characters
     @names = names.map do |name|
       name.gsub(/[^0-9a-z]/i, '')
     end
-    
     @codes = codes
-  
+
     if names.length != codes.length
-      raise 'names should be match to codes'
+      raise 'names array should be same length as codes array'
     end
   end
   
@@ -20,33 +29,49 @@ class CodeGenerator
     File.open("FAK#{@font_name}.fakgen.m", 'w+') { |f| f.write(generate_implementation) }
   end
 
+  # takes a string like 'fa-bar' and creates a camelCase notation like faBar
+  def string_to_camel_case(string)
+    stringParts = string.split('-')
+    stringParts = stringParts.each_with_index.map do |p, i|
+       if i < 1
+         p
+       else
+         p = p.capitalize
+       end
+     end
+
+    return stringParts.join
+  end
+
   def generate_header
-    header = "// Generated Code\n"
-    @names.each do |name|
+    header = "// Generated Code - do not change\n"
+
+    @camel_case_names.each do |name|
       header_template = <<EOT
 + (instancetype)#{name}IconWithSize:(CGFloat)size;
 EOT
       header << header_template;
     end
+
     return header
   end
-  
+
   def generate_implementation
     implementation = "// Generated Code\n"
 
-    @names.each_with_index do |name, index|
-    implementation_template = <<EOT
+    @camel_case_names.each_with_index do |name, index|
+      implementation_template = <<EOT
 + (instancetype)#{name}IconWithSize:(CGFloat)size { return [self iconWithCode:@"#{@codes[index]}" size:size]; }
 EOT
-    implementation << implementation_template
+      implementation << implementation_template
     end
-    
+
     return implementation + "\n" + generate_icon_map
   end
-  
+
   def generate_icon_map
     icon_map = ''
-    @names.each_with_index do |name, index|
+    @camel_case_names.each_with_index do |name, index|
       icon_map_template = <<EOT 
       @"#{@codes[index]}" : @"#{name}",
 EOT
@@ -59,8 +84,8 @@ EOT
     };
 }
 EOT
-    
+
     return icon_map
   end
-  
+
 end
