@@ -1,7 +1,7 @@
 class CodeGenerator
   attr_accessor :font_name, :names, :codes
 
-  def initialize(font_name, names, codes, names_are_camel_case:true)
+  def initialize(font_name, names, codes, names_are_camel_case:true, prefix:'')
     @font_name = font_name
 
     if names_are_camel_case
@@ -13,9 +13,11 @@ class CodeGenerator
       end
     end
 
+    @prefix = prefix
+
     # names get mangled to avoid non-ascii characters
     @names = names.map do |name|
-      name.gsub(/[^0-9a-z]/i, '')
+      name.gsub(/[^0-9a-z\-]/i, '')
     end
     @codes = codes
 
@@ -29,7 +31,7 @@ class CodeGenerator
     File.open("FAK#{@font_name}.fakgen.m", 'w+') { |f| f.write(generate_implementation) }
   end
 
-  # takes a string like 'fa-bar' and creates a camelCase notation like faBar
+  # takes a string like 'fa-bar' and creates a camelCase notation like 'faBar'
   def string_to_camel_case(string)
     stringParts = string.split('-')
     stringParts = stringParts.each_with_index.map do |p, i|
@@ -66,7 +68,7 @@ EOT
       implementation << implementation_template
     end
 
-    return implementation + "\n" + generate_icon_map
+    return implementation + "\n" + generate_icon_map + "\n" + generate_name_map
   end
 
   def generate_icon_map
@@ -77,6 +79,7 @@ EOT
 EOT
       icon_map << icon_map_template
     end
+
     icon_map = <<EOT
 + (NSDictionary *)allIcons {
     return @{
@@ -84,8 +87,24 @@ EOT
     };
 }
 EOT
+  end
 
-    return icon_map
+  def generate_name_map
+    name_map = ''
+    @names.each_with_index do |name, index|
+      name_map_template = <<EOT
+      @"#{@prefix}#{name}" : @"#{@codes[index]}",
+EOT
+      name_map << name_map_template
+    end
+
+    return <<EOT
++ (NSDictionary *)allNames {
+    return @{
+        #{name_map}
+    };
+}
+EOT
   end
 
 end

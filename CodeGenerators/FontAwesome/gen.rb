@@ -17,6 +17,6 @@ File.read("_variables.scss").each_line do |line|
   codes.push "\\u#{code}"
 end
 
-generator = CodeGenerator.new('FontAwesome', names, codes, names_are_camel_case:false)
+generator = CodeGenerator.new('FontAwesome', names, codes, names_are_camel_case:false, prefix:'fa-')
 generator.generate
 
