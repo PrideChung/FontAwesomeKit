@@ -33,11 +33,16 @@ class CodeGenerator
     if names.length != codes.length
       raise 'names array should be same length as codes array'
     end
+
+    @class_name = "FAK#{@font_name}"
+    @header_file = "#{@class_name}.fakgen.h"
+    @implementation_file = "#{@class_name}.fakgen.m"
+
   end
   
   def generate
-    File.open("FAK#{@font_name}.fakgen.h", 'w+') { |f| f.write(generate_header) }
-    File.open("FAK#{@font_name}.fakgen.m", 'w+') { |f| f.write(generate_implementation) }
+    File.open(@header_file, 'w+') { |f| f.write(generate_header) }
+    File.open(@implementation_file, 'w+') { |f| f.write(generate_implementation) }
   end
 
   # takes a string like 'fa-bar' and creates a camelCase notation like 'faBar'
@@ -60,7 +65,10 @@ class CodeGenerator
   end
 
   def generate_header
-    header = "#pragma mark Generated method signatures\n// Do no edit\n\n"
+    header = "// This file is generated - Do no edit\n\n"
+    header = header << '#import "FAKIcon.h"'
+    header = header << "\n\n@interface #{@class_name}:FAKIcon"
+    header = header << "\n\n#pragma mark Generated method signatures\n"
 
     @camel_case_names.each do |name|
       header_template = <<EOT
@@ -68,6 +76,8 @@ class CodeGenerator
 EOT
       header << header_template;
     end
+
+    header = header << "\n@end\n"
 
     return header
   end
