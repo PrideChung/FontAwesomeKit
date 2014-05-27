@@ -77,7 +77,7 @@ EOT
       header << header_template;
     end
 
-    header = header << "\n@end\n"
+    header = header << "\n\n+ (NSDictionary *)allNames;\n\n@end\n"
 
     return header
   end
