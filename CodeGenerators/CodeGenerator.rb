@@ -19,6 +19,15 @@ class CodeGenerator
     @names = names.map do |name|
       name.gsub(/[^0-9a-z\-]/i, '')
     end
+
+
+    uppercase_prefix = prefix.capitalize.gsub('-', '')
+    @symbols = @camel_case_names.map do |name|
+      ucfirst = name.clone;
+      ucfirst[0] = ucfirst[0,1].upcase 
+      'FAKGlyph' + uppercase_prefix + ucfirst
+    end
+
     @codes = codes
 
     if names.length != codes.length
@@ -45,6 +54,11 @@ class CodeGenerator
     return stringParts.join
   end
 
+  # takes a string like 'bar' and creates a uppercase notation suitable for defines like 'FA_BAR'
+  def string_to_upper_case(string)
+    return @prefix.capitalize.gsub('-', '_')  + string.capitalize.gsub('-', '_')
+  end
+
   def generate_header
     header = "#pragma mark Generated method signatures\n// Do no edit\n\n"
 
@@ -59,11 +73,13 @@ EOT
   end
 
   def generate_implementation
-    implementation = "#pragma mark Generated class method for constructing icon methods\n// Do no edit\n\n"
+
+    implementation = generate_symbols
+    implementation << "\n#pragma mark Generated class method for constructing icon methods\n// Do no edit\n\n"
 
     @camel_case_names.each_with_index do |name, index|
       implementation_template = <<EOT
-+ (instancetype)#{name}IconWithSize:(CGFloat)size { return [self iconWithCode:@"#{@codes[index]}" size:size]; }
++ (instancetype)#{name}IconWithSize:(CGFloat)size { return [self iconWithCode:#{@symbols[index]} size:size]; }
 EOT
       implementation << implementation_template
     end
@@ -71,11 +87,24 @@ EOT
     return implementation + "\n" + generate_icon_map + "\n" + generate_name_map
   end
 
+  def generate_symbols
+    symbols = "#pragma mark Symbol definitions\n\n"
+
+    @symbols.each_with_index do |symbol, index|
+      symbol_template = <<EOT
+static NSString *const #{symbol} = @"#{@codes[index]}";
+EOT
+      symbols << symbol_template
+    end
+
+    return symbols << "\n"
+  end
+
   def generate_icon_map
     icon_map = ''
     @camel_case_names.each_with_index do |name, index|
       icon_map_template = <<EOT 
-      @"#{@codes[index]}" : @"#{name}",
+      #{@symbols[index]} : @"#{name}",
 EOT
       icon_map << icon_map_template
     end
@@ -91,7 +120,7 @@ EOT
 */
 + (NSDictionary *)allIcons {
     return @{
-        #{icon_map}
+#{icon_map}
     };
 }
 EOT
@@ -101,7 +130,7 @@ EOT
     name_map = ''
     @names.each_with_index do |name, index|
       name_map_template = <<EOT
-      @"#{@prefix}#{name}" : @"#{@codes[index]}",
+      @"#{@prefix}#{name}" : #{@symbols[index]},
 EOT
       name_map << name_map_template
     end
@@ -113,7 +142,7 @@ EOT
   */
 + (NSDictionary *)allNames {
     return @{
-        #{name_map}
+#{name_map}
     };
 }
 EOT
