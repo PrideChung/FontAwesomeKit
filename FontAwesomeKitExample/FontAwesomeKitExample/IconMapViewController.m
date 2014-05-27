@@ -55,9 +55,11 @@
 
 - (void)loadFontAwesome
 {
-    NSArray *keys = [[[FAKFontAwesome allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[FAKFontAwesome allNames].allKeys sortedArrayUsingSelector:@selector(compare:)];
+
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKFontAwesome iconWithCode:key size:60]];
+        [self.icons addObject:[FAKFontAwesome iconWithName:key
+                                                      size:60]];
     }
 }
 

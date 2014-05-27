@@ -4,6 +4,7 @@
 @interface FAKIcon ()
 
 @property (strong, nonatomic) NSMutableAttributedString *mutableAttributedString;
+@property (strong, nonatomic) NSString *iconName;
 
 @end
 
@@ -33,9 +34,36 @@
 + (instancetype)iconWithCode:(NSString *)code size:(CGFloat)size
 {
     FAKIcon *icon = [[self alloc] init];
-    icon.mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:code attributes:@{NSFontAttributeName: [self iconFontWithSize:size]}];
-    return icon;
+
+    if (icon) {
+        icon.mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:code
+                                                                              attributes:@{NSFontAttributeName: [self iconFontWithSize:size]}];
+        icon.iconName = nil;
+        return icon;
+    }
+    return nil;
 }
+
++ (instancetype)iconWithName:(NSString *)iconName size:(CGFloat)size
+{
+    FAKIcon *icon = [[self alloc] init];
+
+
+    if (self && [self respondsToSelector:@selector(allNames)]) {
+        NSDictionary *allNames = [self performSelector:@selector(allNames)];
+        NSString *code = [allNames objectForKey:iconName];
+        if (code) {
+            icon.mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:code
+                                                                                  attributes:@{NSFontAttributeName: [self iconFontWithSize:size]}];
+            icon.iconName = nil;
+
+            return icon;
+        }
+
+    }
+    return nil;
+}
+
 
 - (NSAttributedString *)attributedString
 { 
@@ -49,7 +77,8 @@
 
 - (NSString *)iconName
 {
-    return [[self class] allIcons][[self characterCode]];
+    NSString * name = [[self class] allIcons][[self characterCode]];
+    return name;
 }
 
 - (CGFloat)iconFontSize
