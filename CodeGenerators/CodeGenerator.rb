@@ -20,7 +20,6 @@ class CodeGenerator
       name.gsub(/[^0-9a-z\-]/i, '')
     end
 
-
     uppercase_prefix = prefix.capitalize.gsub('-', '')
     @symbols = @camel_case_names.map do |name|
       ucfirst = name.clone;
@@ -35,13 +34,14 @@ class CodeGenerator
     end
 
     @class_name = "FAK#{@font_name}"
-    @header_file = "#{@class_name}.fakgen.h"
+    @header_file = "#{@class_name}.h"
+    @header_file_gen = "#{@class_name}.fakgen.h"
     @implementation_file = "#{@class_name}.fakgen.m"
 
   end
-  
+
   def generate
-    File.open(@header_file, 'w+') { |f| f.write(generate_header) }
+    File.open(@header_file_gen, 'w+') { |f| f.write(generate_header) }
     File.open(@implementation_file, 'w+') { |f| f.write(generate_implementation) }
   end
 
@@ -84,7 +84,34 @@ EOT
 
   def generate_implementation
 
-    implementation = generate_symbols
+    implementation = <<EOT
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "#{@header_file}"
+
+EOT
+    implementation = implementation << generate_symbols
+
+    signature = <<EOT
+@implementation FAKFontAwesome
+
++ (UIFont *)iconFontWithSize:(CGFloat)size
+{
+#ifndef DISABLE_FONTAWESOME_AUTO_REGISTRATION
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self registerIconFontWithURL:[[NSBundle mainBundle] URLForResource:@"#{@font_name}" withExtension:@"otf"]];
+    });
+#endif
+
+    UIFont *font = [UIFont fontWithName:@"#{@font_name}" size:size];
+    NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");
+    return font;
+}
+
+EOT
+
+    implementation = implementation << signature 
     implementation << "\n#pragma mark Generated class method for constructing icon methods\n// Do no edit\n\n"
 
     @camel_case_names.each_with_index do |name, index|
@@ -94,7 +121,7 @@ EOT
       implementation << implementation_template
     end
 
-    return implementation + "\n" + generate_icon_map + "\n" + generate_name_map
+    return implementation + "\n" + generate_icon_map + "\n" + generate_name_map + "\n@end\n"
   end
 
   def generate_symbols
