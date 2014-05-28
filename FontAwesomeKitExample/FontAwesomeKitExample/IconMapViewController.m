@@ -55,9 +55,13 @@
 
 - (void)loadFontAwesome
 {
-    NSArray *keys = [[[FAKFontAwesome allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[FAKFontAwesome allNames].allKeys sortedArrayUsingSelector:@selector(compare:)];
+
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKFontAwesome iconWithCode:key size:60]];
+        // MW: had to reduce the size, because some of the icons don't fit anymore at 60 pixels (e.g. car, cubes)
+        [self.icons addObject:[FAKFontAwesome iconWithName:key
+                                                      size:48]];
+
     }
 }
 
