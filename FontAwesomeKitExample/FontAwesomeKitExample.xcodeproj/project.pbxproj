@@ -13,7 +13,7 @@
 		CC0334F118151CED00CFB044 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E918151CED00CFB044 /* FAKZocial.m */; };
 		CC0334F318151CED00CFB044 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334EC18151CED00CFB044 /* foundation-icons.ttf */; };
 		CC0334F418151CED00CFB044 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */; };
-		CC11876318284A6700A1D5B5 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC11876218284A6700A1D5B5 /* FontAwesome.otf */; };
+		CC2144B219433643004051F6 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC2144B119433643004051F6 /* FontAwesome.otf */; };
 		CC2F5BB61813133E002D6C2B /* KitchenSinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2F5BB51813133E002D6C2B /* KitchenSinkViewController.m */; };
 		CC44A85916CD9B3F0039E101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85816CD9B3F0039E101 /* UIKit.framework */; };
 		CC44A85B16CD9B3F0039E101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC44A85A16CD9B3F0039E101 /* Foundation.framework */; };
@@ -50,7 +50,7 @@
 		CC0334EB18151CED00CFB044 /* FontAwesomeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
 		CC0334EC18151CED00CFB044 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
 		CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
-		CC11876218284A6700A1D5B5 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		CC2144B119433643004051F6 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		CC2F5BB41813133E002D6C2B /* KitchenSinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenSinkViewController.h; sourceTree = "<group>"; };
 		CC2F5BB51813133E002D6C2B /* KitchenSinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkViewController.m; sourceTree = "<group>"; };
 		CC44A85516CD9B3F0039E101 /* FontAwesomeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontAwesomeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +119,7 @@
 				CC0334EB18151CED00CFB044 /* FontAwesomeKit.h */,
 				CC0334EC18151CED00CFB044 /* foundation-icons.ttf */,
 				CCC979E318657FFA005E62AF /* ionicons.ttf */,
-				CC11876218284A6700A1D5B5 /* FontAwesome.otf */,
+				CC2144B119433643004051F6 /* FontAwesome.otf */,
 				CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */,
 			);
 			name = FontAwesomeKit;
@@ -286,8 +286,8 @@
 				CC44A86B16CD9B3F0039E101 /* Default.png in Resources */,
 				CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */,
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
-				CC11876318284A6700A1D5B5 /* FontAwesome.otf in Resources */,
 				CCC979E418657FFA005E62AF /* ionicons.ttf in Resources */,
+				CC2144B219433643004051F6 /* FontAwesome.otf in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC0334F418151CED00CFB044 /* zocial-regular-webfont.ttf in Resources */,
 				CCFF2D3418114C070003CFE3 /* Images.xcassets in Resources */,
