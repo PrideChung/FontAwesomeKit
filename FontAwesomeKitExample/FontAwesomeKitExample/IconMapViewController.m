@@ -57,7 +57,7 @@
 {
     NSArray *keys = [[[FAKFontAwesome allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKFontAwesome iconWithCode:key size:60]];
+        [self.icons addObject:[FAKFontAwesome iconWithCode:key size:50]];
     }
 }
 
@@ -65,7 +65,7 @@
 {
     NSArray *keys = [[[FAKFoundationIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKFoundationIcons iconWithCode:key size:60]];
+        [self.icons addObject:[FAKFoundationIcons iconWithCode:key size:50]];
     }
 }
 
