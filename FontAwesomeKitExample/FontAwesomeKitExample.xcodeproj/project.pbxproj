@@ -25,9 +25,9 @@
 		CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86C16CD9B3F0039E101 /* Default@2x.png */; };
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
 		CC6907F2181407B300FBC2E5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
+		CC7148F919567CC4003A3D23 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC7148F819567CC4003A3D23 /* ionicons.ttf */; };
 		CC7159AD18A784F80033F64A /* StackIconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7159AC18A784F80033F64A /* StackIconsViewController.m */; };
 		CCBC72A618A78A0A0046FDAB /* StackIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC72A518A78A0A0046FDAB /* StackIconCell.m */; };
-		CCC979E418657FFA005E62AF /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC979E318657FFA005E62AF /* ionicons.ttf */; };
 		CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE426381827B6BA00B28889 /* FAKIonIcons.m */; };
 		CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFF2D29181144E80003CFE3 /* Main.storyboard */; };
 		CCFF2D2D181148CD0003CFE3 /* AppIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D2C181148CD0003CFE3 /* AppIconCell.m */; };
@@ -68,11 +68,11 @@
 		CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CC4504DA37DD48B7BEE2C995 /* libPods-FontAwesomeKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5349221721C9010072C49E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CC7148F819567CC4003A3D23 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		CC7159AB18A784F80033F64A /* StackIconsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackIconsViewController.h; sourceTree = "<group>"; };
 		CC7159AC18A784F80033F64A /* StackIconsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackIconsViewController.m; sourceTree = "<group>"; };
 		CCBC72A418A78A0A0046FDAB /* StackIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackIconCell.h; sourceTree = "<group>"; };
 		CCBC72A518A78A0A0046FDAB /* StackIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackIconCell.m; sourceTree = "<group>"; };
-		CCC979E318657FFA005E62AF /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
 		CCE426371827B6BA00B28889 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
 		CCE426381827B6BA00B28889 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
 		CCF169C7180DCD9C0028F7EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -117,8 +117,8 @@
 				CC0334E818151CED00CFB044 /* FAKZocial.h */,
 				CC0334E918151CED00CFB044 /* FAKZocial.m */,
 				CC0334EB18151CED00CFB044 /* FontAwesomeKit.h */,
+				CC7148F819567CC4003A3D23 /* ionicons.ttf */,
 				CC0334EC18151CED00CFB044 /* foundation-icons.ttf */,
-				CCC979E318657FFA005E62AF /* ionicons.ttf */,
 				CC2144B119433643004051F6 /* FontAwesome.otf */,
 				CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */,
 			);
@@ -286,8 +286,8 @@
 				CC44A86B16CD9B3F0039E101 /* Default.png in Resources */,
 				CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */,
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
-				CCC979E418657FFA005E62AF /* ionicons.ttf in Resources */,
 				CC2144B219433643004051F6 /* FontAwesome.otf in Resources */,
+				CC7148F919567CC4003A3D23 /* ionicons.ttf in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC0334F418151CED00CFB044 /* zocial-regular-webfont.ttf in Resources */,
 				CCFF2D3418114C070003CFE3 /* Images.xcassets in Resources */,
