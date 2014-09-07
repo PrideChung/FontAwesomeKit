@@ -11,7 +11,7 @@ Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zo
 
 Currently FontAwesomeKit supports **4** different icon fonts.
 
-- [FontAwesome 4.1](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **439** icons
+- [FontAwesome 4.2](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **479** icons
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
 - [ionicons 1.5.2](http://ionicons.com/) Contains **601** icons, lots of iOS 7 style outlined icons.
