@@ -19,7 +19,6 @@
 }
 
 // Generated Code
-// Generated Code
 + (instancetype)adjustIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf042" size:size]; }
 + (instancetype)adnIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf170" size:size]; }
 + (instancetype)alignCenterIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf037" size:size]; }
@@ -29,6 +28,7 @@
 + (instancetype)ambulanceIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f9" size:size]; }
 + (instancetype)anchorIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13d" size:size]; }
 + (instancetype)androidIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17b" size:size]; }
++ (instancetype)angellistIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf209" size:size]; }
 + (instancetype)angleDoubleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf103" size:size]; }
 + (instancetype)angleDoubleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf100" size:size]; }
 + (instancetype)angleDoubleRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf101" size:size]; }
@@ -39,6 +39,7 @@
 + (instancetype)angleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf106" size:size]; }
 + (instancetype)appleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf179" size:size]; }
 + (instancetype)archiveIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf187" size:size]; }
++ (instancetype)areaChartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1fe" size:size]; }
 + (instancetype)arrowCircleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ab" size:size]; }
 + (instancetype)arrowCircleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a8" size:size]; }
 + (instancetype)arrowCircleODownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01a" size:size]; }
@@ -56,10 +57,12 @@
 + (instancetype)arrowsHIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07e" size:size]; }
 + (instancetype)arrowsVIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07d" size:size]; }
 + (instancetype)asteriskIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf069" size:size]; }
++ (instancetype)atIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1fa" size:size]; }
 + (instancetype)automobileIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1b9" size:size]; }
 + (instancetype)backwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04a" size:size]; }
 + (instancetype)banIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05e" size:size]; }
 + (instancetype)bankIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19c" size:size]; }
++ (instancetype)barChartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf080" size:size]; }
 + (instancetype)barChartOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf080" size:size]; }
 + (instancetype)barcodeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02a" size:size]; }
 + (instancetype)barsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c9" size:size]; }
@@ -68,6 +71,11 @@
 + (instancetype)behanceSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1b5" size:size]; }
 + (instancetype)bellIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f3" size:size]; }
 + (instancetype)bellOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a2" size:size]; }
++ (instancetype)bellSlashIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f6" size:size]; }
++ (instancetype)bellSlashOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f7" size:size]; }
++ (instancetype)bicycleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf206" size:size]; }
++ (instancetype)binocularsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e5" size:size]; }
++ (instancetype)birthdayCakeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1fd" size:size]; }
 + (instancetype)bitbucketIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf171" size:size]; }
 + (instancetype)bitbucketSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf172" size:size]; }
 + (instancetype)bitcoinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15a" size:size]; }
@@ -84,7 +92,9 @@
 + (instancetype)buildingOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f7" size:size]; }
 + (instancetype)bullhornIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a1" size:size]; }
 + (instancetype)bullseyeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf140" size:size]; }
++ (instancetype)busIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf207" size:size]; }
 + (instancetype)cabIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1ba" size:size]; }
++ (instancetype)calculatorIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1ec" size:size]; }
 + (instancetype)calendarIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf073" size:size]; }
 + (instancetype)calendarOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf133" size:size]; }
 + (instancetype)cameraIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf030" size:size]; }
@@ -98,6 +108,13 @@
 + (instancetype)caretSquareORightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf152" size:size]; }
 + (instancetype)caretSquareOUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf151" size:size]; }
 + (instancetype)caretUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d8" size:size]; }
++ (instancetype)ccIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20a" size:size]; }
++ (instancetype)ccAmexIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f3" size:size]; }
++ (instancetype)ccDiscoverIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f2" size:size]; }
++ (instancetype)ccMastercardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f1" size:size]; }
++ (instancetype)ccPaypalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f4" size:size]; }
++ (instancetype)ccStripeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f5" size:size]; }
++ (instancetype)ccVisaIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f0" size:size]; }
 + (instancetype)certificateIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a3" size:size]; }
 + (instancetype)chainIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c1" size:size]; }
 + (instancetype)chainBrokenIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf127" size:size]; }
@@ -121,6 +138,7 @@
 + (instancetype)circleThinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1db" size:size]; }
 + (instancetype)clipboardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ea" size:size]; }
 + (instancetype)clockOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf017" size:size]; }
++ (instancetype)closeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00d" size:size]; }
 + (instancetype)cloudIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c2" size:size]; }
 + (instancetype)cloudDownloadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ed" size:size]; }
 + (instancetype)cloudUploadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ee" size:size]; }
@@ -139,6 +157,7 @@
 + (instancetype)compassIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14e" size:size]; }
 + (instancetype)compressIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf066" size:size]; }
 + (instancetype)copyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c5" size:size]; }
++ (instancetype)copyrightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f9" size:size]; }
 + (instancetype)creditCardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09d" size:size]; }
 + (instancetype)cropIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf125" size:size]; }
 + (instancetype)crosshairsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05b" size:size]; }
@@ -180,6 +199,7 @@
 + (instancetype)externalLinkSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14c" size:size]; }
 + (instancetype)eyeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06e" size:size]; }
 + (instancetype)eyeSlashIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf070" size:size]; }
++ (instancetype)eyedropperIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1fb" size:size]; }
 + (instancetype)facebookIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09a" size:size]; }
 + (instancetype)facebookSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf082" size:size]; }
 + (instancetype)fastBackwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf049" size:size]; }
@@ -225,6 +245,7 @@
 + (instancetype)forwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04e" size:size]; }
 + (instancetype)foursquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf180" size:size]; }
 + (instancetype)frownOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf119" size:size]; }
++ (instancetype)futbolOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e3" size:size]; }
 + (instancetype)gamepadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11b" size:size]; }
 + (instancetype)gavelIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e3" size:size]; }
 + (instancetype)gbpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf154" size:size]; }
@@ -243,6 +264,7 @@
 + (instancetype)googleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1a0" size:size]; }
 + (instancetype)googlePlusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d5" size:size]; }
 + (instancetype)googlePlusSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d4" size:size]; }
++ (instancetype)googleWalletIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1ee" size:size]; }
 + (instancetype)graduationCapIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19d" size:size]; }
 + (instancetype)groupIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c0" size:size]; }
 + (instancetype)hSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fd" size:size]; }
@@ -260,6 +282,7 @@
 + (instancetype)homeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf015" size:size]; }
 + (instancetype)hospitalOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0f8" size:size]; }
 + (instancetype)html5IconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf13b" size:size]; }
++ (instancetype)ilsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20b" size:size]; }
 + (instancetype)imageIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03e" size:size]; }
 + (instancetype)inboxIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01c" size:size]; }
 + (instancetype)indentIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03c" size:size]; }
@@ -268,6 +291,7 @@
 + (instancetype)inrIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf156" size:size]; }
 + (instancetype)instagramIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16d" size:size]; }
 + (instancetype)institutionIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19c" size:size]; }
++ (instancetype)ioxhostIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf208" size:size]; }
 + (instancetype)italicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf033" size:size]; }
 + (instancetype)joomlaIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1aa" size:size]; }
 + (instancetype)jpyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf157" size:size]; }
@@ -277,15 +301,19 @@
 + (instancetype)krwIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf159" size:size]; }
 + (instancetype)languageIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1ab" size:size]; }
 + (instancetype)laptopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf109" size:size]; }
++ (instancetype)lastfmIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf202" size:size]; }
++ (instancetype)lastfmSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf203" size:size]; }
 + (instancetype)leafIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06c" size:size]; }
 + (instancetype)legalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e3" size:size]; }
 + (instancetype)lemonOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf094" size:size]; }
 + (instancetype)levelDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf149" size:size]; }
 + (instancetype)levelUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf148" size:size]; }
 + (instancetype)lifeBouyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1cd" size:size]; }
++ (instancetype)lifeBuoyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1cd" size:size]; }
 + (instancetype)lifeRingIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1cd" size:size]; }
 + (instancetype)lifeSaverIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1cd" size:size]; }
 + (instancetype)lightbulbOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0eb" size:size]; }
++ (instancetype)lineChartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf201" size:size]; }
 + (instancetype)linkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c1" size:size]; }
 + (instancetype)linkedinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e1" size:size]; }
 + (instancetype)linkedinSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08c" size:size]; }
@@ -308,6 +336,7 @@
 + (instancetype)maleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf183" size:size]; }
 + (instancetype)mapMarkerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf041" size:size]; }
 + (instancetype)maxcdnIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf136" size:size]; }
++ (instancetype)meanpathIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20c" size:size]; }
 + (instancetype)medkitIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fa" size:size]; }
 + (instancetype)mehOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf11a" size:size]; }
 + (instancetype)microphoneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf130" size:size]; }
@@ -323,9 +352,11 @@
 + (instancetype)mortarBoardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19d" size:size]; }
 + (instancetype)musicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf001" size:size]; }
 + (instancetype)naviconIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c9" size:size]; }
++ (instancetype)newspaperOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1ea" size:size]; }
 + (instancetype)openidIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19b" size:size]; }
 + (instancetype)outdentIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03b" size:size]; }
 + (instancetype)pagelinesIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18c" size:size]; }
++ (instancetype)paintBrushIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1fc" size:size]; }
 + (instancetype)paperPlaneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1d8" size:size]; }
 + (instancetype)paperPlaneOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1d9" size:size]; }
 + (instancetype)paperclipIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c6" size:size]; }
@@ -333,6 +364,7 @@
 + (instancetype)pasteIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ea" size:size]; }
 + (instancetype)pauseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04c" size:size]; }
 + (instancetype)pawIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1b0" size:size]; }
++ (instancetype)paypalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1ed" size:size]; }
 + (instancetype)pencilIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf040" size:size]; }
 + (instancetype)pencilSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14b" size:size]; }
 + (instancetype)pencilSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf044" size:size]; }
@@ -340,15 +372,16 @@
 + (instancetype)phoneSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf098" size:size]; }
 + (instancetype)photoIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03e" size:size]; }
 + (instancetype)pictureOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03e" size:size]; }
++ (instancetype)pieChartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf200" size:size]; }
 + (instancetype)piedPiperIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1a7" size:size]; }
 + (instancetype)piedPiperAltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1a8" size:size]; }
-+ (instancetype)piedPiperSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1a7" size:size]; }
 + (instancetype)pinterestIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d2" size:size]; }
 + (instancetype)pinterestSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d3" size:size]; }
 + (instancetype)planeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf072" size:size]; }
 + (instancetype)playIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04b" size:size]; }
 + (instancetype)playCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf144" size:size]; }
 + (instancetype)playCircleOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01d" size:size]; }
++ (instancetype)plugIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e6" size:size]; }
 + (instancetype)plusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf067" size:size]; }
 + (instancetype)plusCircleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf055" size:size]; }
 + (instancetype)plusSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0fe" size:size]; }
@@ -369,6 +402,7 @@
 + (instancetype)redditIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1a1" size:size]; }
 + (instancetype)redditSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1a2" size:size]; }
 + (instancetype)refreshIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf021" size:size]; }
++ (instancetype)removeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00d" size:size]; }
 + (instancetype)renrenIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18b" size:size]; }
 + (instancetype)reorderIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c9" size:size]; }
 + (instancetype)repeatIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf01e" size:size]; }
@@ -398,6 +432,8 @@
 + (instancetype)shareAltSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e1" size:size]; }
 + (instancetype)shareSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf14d" size:size]; }
 + (instancetype)shareSquareOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf045" size:size]; }
++ (instancetype)shekelIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20b" size:size]; }
++ (instancetype)sheqelIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20b" size:size]; }
 + (instancetype)shieldIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf132" size:size]; }
 + (instancetype)shoppingCartIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07a" size:size]; }
 + (instancetype)signInIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf090" size:size]; }
@@ -407,7 +443,9 @@
 + (instancetype)skypeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17e" size:size]; }
 + (instancetype)slackIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf198" size:size]; }
 + (instancetype)slidersIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1de" size:size]; }
++ (instancetype)slideshareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e7" size:size]; }
 + (instancetype)smileOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf118" size:size]; }
++ (instancetype)soccerBallOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e3" size:size]; }
 + (instancetype)sortIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dc" size:size]; }
 + (instancetype)sortAlphaAscIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15d" size:size]; }
 + (instancetype)sortAlphaDescIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf15e" size:size]; }
@@ -474,17 +512,22 @@
 + (instancetype)tintIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf043" size:size]; }
 + (instancetype)toggleDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf150" size:size]; }
 + (instancetype)toggleLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf191" size:size]; }
++ (instancetype)toggleOffIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf204" size:size]; }
++ (instancetype)toggleOnIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf205" size:size]; }
 + (instancetype)toggleRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf152" size:size]; }
 + (instancetype)toggleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf151" size:size]; }
++ (instancetype)trashIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1f8" size:size]; }
 + (instancetype)trashOIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf014" size:size]; }
 + (instancetype)treeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1bb" size:size]; }
 + (instancetype)trelloIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf181" size:size]; }
 + (instancetype)trophyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf091" size:size]; }
 + (instancetype)truckIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d1" size:size]; }
 + (instancetype)tryIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf195" size:size]; }
++ (instancetype)ttyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e4" size:size]; }
 + (instancetype)tumblrIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf173" size:size]; }
 + (instancetype)tumblrSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf174" size:size]; }
 + (instancetype)turkishLiraIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf195" size:size]; }
++ (instancetype)twitchIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e8" size:size]; }
 + (instancetype)twitterIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf099" size:size]; }
 + (instancetype)twitterSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf081" size:size]; }
 + (instancetype)umbrellaIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e9" size:size]; }
@@ -512,6 +555,7 @@
 + (instancetype)weiboIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf18a" size:size]; }
 + (instancetype)weixinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1d7" size:size]; }
 + (instancetype)wheelchairIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf193" size:size]; }
++ (instancetype)wifiIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1eb" size:size]; }
 + (instancetype)windowsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf17a" size:size]; }
 + (instancetype)wonIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf159" size:size]; }
 + (instancetype)wordpressIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19a" size:size]; }
@@ -519,6 +563,7 @@
 + (instancetype)xingIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf168" size:size]; }
 + (instancetype)xingSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf169" size:size]; }
 + (instancetype)yahooIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf19e" size:size]; }
++ (instancetype)yelpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf1e9" size:size]; }
 + (instancetype)yenIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf157" size:size]; }
 + (instancetype)youtubeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf167" size:size]; }
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16a" size:size]; }
@@ -535,6 +580,7 @@
              @"\uf0f9" : @"ambulance",
              @"\uf13d" : @"anchor",
              @"\uf17b" : @"android",
+             @"\uf209" : @"angellist",
              @"\uf103" : @"angleDoubleDown",
              @"\uf100" : @"angleDoubleLeft",
              @"\uf101" : @"angleDoubleRight",
@@ -545,6 +591,7 @@
              @"\uf106" : @"angleUp",
              @"\uf179" : @"apple",
              @"\uf187" : @"archive",
+             @"\uf1fe" : @"areaChart",
              @"\uf0ab" : @"arrowCircleDown",
              @"\uf0a8" : @"arrowCircleLeft",
              @"\uf01a" : @"arrowCircleODown",
@@ -562,10 +609,12 @@
              @"\uf07e" : @"arrowsH",
              @"\uf07d" : @"arrowsV",
              @"\uf069" : @"asterisk",
+             @"\uf1fa" : @"at",
              @"\uf1b9" : @"automobile",
              @"\uf04a" : @"backward",
              @"\uf05e" : @"ban",
              @"\uf19c" : @"bank",
+             @"\uf080" : @"barChart",
              @"\uf080" : @"barChartO",
              @"\uf02a" : @"barcode",
              @"\uf0c9" : @"bars",
@@ -574,6 +623,11 @@
              @"\uf1b5" : @"behanceSquare",
              @"\uf0f3" : @"bell",
              @"\uf0a2" : @"bellO",
+             @"\uf1f6" : @"bellSlash",
+             @"\uf1f7" : @"bellSlashO",
+             @"\uf206" : @"bicycle",
+             @"\uf1e5" : @"binoculars",
+             @"\uf1fd" : @"birthdayCake",
              @"\uf171" : @"bitbucket",
              @"\uf172" : @"bitbucketSquare",
              @"\uf15a" : @"bitcoin",
@@ -590,7 +644,9 @@
              @"\uf0f7" : @"buildingO",
              @"\uf0a1" : @"bullhorn",
              @"\uf140" : @"bullseye",
+             @"\uf207" : @"bus",
              @"\uf1ba" : @"cab",
+             @"\uf1ec" : @"calculator",
              @"\uf073" : @"calendar",
              @"\uf133" : @"calendarO",
              @"\uf030" : @"camera",
@@ -604,6 +660,13 @@
              @"\uf152" : @"caretSquareORight",
              @"\uf151" : @"caretSquareOUp",
              @"\uf0d8" : @"caretUp",
+             @"\uf20a" : @"cc",
+             @"\uf1f3" : @"ccAmex",
+             @"\uf1f2" : @"ccDiscover",
+             @"\uf1f1" : @"ccMastercard",
+             @"\uf1f4" : @"ccPaypal",
+             @"\uf1f5" : @"ccStripe",
+             @"\uf1f0" : @"ccVisa",
              @"\uf0a3" : @"certificate",
              @"\uf0c1" : @"chain",
              @"\uf127" : @"chainBroken",
@@ -627,6 +690,7 @@
              @"\uf1db" : @"circleThin",
              @"\uf0ea" : @"clipboard",
              @"\uf017" : @"clockO",
+             @"\uf00d" : @"close",
              @"\uf0c2" : @"cloud",
              @"\uf0ed" : @"cloudDownload",
              @"\uf0ee" : @"cloudUpload",
@@ -645,6 +709,7 @@
              @"\uf14e" : @"compass",
              @"\uf066" : @"compress",
              @"\uf0c5" : @"copy",
+             @"\uf1f9" : @"copyright",
              @"\uf09d" : @"creditCard",
              @"\uf125" : @"crop",
              @"\uf05b" : @"crosshairs",
@@ -686,6 +751,7 @@
              @"\uf14c" : @"externalLinkSquare",
              @"\uf06e" : @"eye",
              @"\uf070" : @"eyeSlash",
+             @"\uf1fb" : @"eyedropper",
              @"\uf09a" : @"facebook",
              @"\uf082" : @"facebookSquare",
              @"\uf049" : @"fastBackward",
@@ -731,6 +797,7 @@
              @"\uf04e" : @"forward",
              @"\uf180" : @"foursquare",
              @"\uf119" : @"frownO",
+             @"\uf1e3" : @"futbolO",
              @"\uf11b" : @"gamepad",
              @"\uf0e3" : @"gavel",
              @"\uf154" : @"gbp",
@@ -749,6 +816,7 @@
              @"\uf1a0" : @"google",
              @"\uf0d5" : @"googlePlus",
              @"\uf0d4" : @"googlePlusSquare",
+             @"\uf1ee" : @"googleWallet",
              @"\uf19d" : @"graduationCap",
              @"\uf0c0" : @"group",
              @"\uf0fd" : @"hSquare",
@@ -766,6 +834,7 @@
              @"\uf015" : @"home",
              @"\uf0f8" : @"hospitalO",
              @"\uf13b" : @"html5",
+             @"\uf20b" : @"ils",
              @"\uf03e" : @"image",
              @"\uf01c" : @"inbox",
              @"\uf03c" : @"indent",
@@ -774,6 +843,7 @@
              @"\uf156" : @"inr",
              @"\uf16d" : @"instagram",
              @"\uf19c" : @"institution",
+             @"\uf208" : @"ioxhost",
              @"\uf033" : @"italic",
              @"\uf1aa" : @"joomla",
              @"\uf157" : @"jpy",
@@ -783,15 +853,19 @@
              @"\uf159" : @"krw",
              @"\uf1ab" : @"language",
              @"\uf109" : @"laptop",
+             @"\uf202" : @"lastfm",
+             @"\uf203" : @"lastfmSquare",
              @"\uf06c" : @"leaf",
              @"\uf0e3" : @"legal",
              @"\uf094" : @"lemonO",
              @"\uf149" : @"levelDown",
              @"\uf148" : @"levelUp",
              @"\uf1cd" : @"lifeBouy",
+             @"\uf1cd" : @"lifeBuoy",
              @"\uf1cd" : @"lifeRing",
              @"\uf1cd" : @"lifeSaver",
              @"\uf0eb" : @"lightbulbO",
+             @"\uf201" : @"lineChart",
              @"\uf0c1" : @"link",
              @"\uf0e1" : @"linkedin",
              @"\uf08c" : @"linkedinSquare",
@@ -814,6 +888,7 @@
              @"\uf183" : @"male",
              @"\uf041" : @"mapMarker",
              @"\uf136" : @"maxcdn",
+             @"\uf20c" : @"meanpath",
              @"\uf0fa" : @"medkit",
              @"\uf11a" : @"mehO",
              @"\uf130" : @"microphone",
@@ -829,9 +904,11 @@
              @"\uf19d" : @"mortarBoard",
              @"\uf001" : @"music",
              @"\uf0c9" : @"navicon",
+             @"\uf1ea" : @"newspaperO",
              @"\uf19b" : @"openid",
              @"\uf03b" : @"outdent",
              @"\uf18c" : @"pagelines",
+             @"\uf1fc" : @"paintBrush",
              @"\uf1d8" : @"paperPlane",
              @"\uf1d9" : @"paperPlaneO",
              @"\uf0c6" : @"paperclip",
@@ -839,6 +916,7 @@
              @"\uf0ea" : @"paste",
              @"\uf04c" : @"pause",
              @"\uf1b0" : @"paw",
+             @"\uf1ed" : @"paypal",
              @"\uf040" : @"pencil",
              @"\uf14b" : @"pencilSquare",
              @"\uf044" : @"pencilSquareO",
@@ -846,15 +924,16 @@
              @"\uf098" : @"phoneSquare",
              @"\uf03e" : @"photo",
              @"\uf03e" : @"pictureO",
+             @"\uf200" : @"pieChart",
              @"\uf1a7" : @"piedPiper",
              @"\uf1a8" : @"piedPiperAlt",
-             @"\uf1a7" : @"piedPiperSquare",
              @"\uf0d2" : @"pinterest",
              @"\uf0d3" : @"pinterestSquare",
              @"\uf072" : @"plane",
              @"\uf04b" : @"play",
              @"\uf144" : @"playCircle",
              @"\uf01d" : @"playCircleO",
+             @"\uf1e6" : @"plug",
              @"\uf067" : @"plus",
              @"\uf055" : @"plusCircle",
              @"\uf0fe" : @"plusSquare",
@@ -875,6 +954,7 @@
              @"\uf1a1" : @"reddit",
              @"\uf1a2" : @"redditSquare",
              @"\uf021" : @"refresh",
+             @"\uf00d" : @"remove",
              @"\uf18b" : @"renren",
              @"\uf0c9" : @"reorder",
              @"\uf01e" : @"repeat",
@@ -904,6 +984,8 @@
              @"\uf1e1" : @"shareAltSquare",
              @"\uf14d" : @"shareSquare",
              @"\uf045" : @"shareSquareO",
+             @"\uf20b" : @"shekel",
+             @"\uf20b" : @"sheqel",
              @"\uf132" : @"shield",
              @"\uf07a" : @"shoppingCart",
              @"\uf090" : @"signIn",
@@ -913,7 +995,9 @@
              @"\uf17e" : @"skype",
              @"\uf198" : @"slack",
              @"\uf1de" : @"sliders",
+             @"\uf1e7" : @"slideshare",
              @"\uf118" : @"smileO",
+             @"\uf1e3" : @"soccerBallO",
              @"\uf0dc" : @"sort",
              @"\uf15d" : @"sortAlphaAsc",
              @"\uf15e" : @"sortAlphaDesc",
@@ -980,17 +1064,22 @@
              @"\uf043" : @"tint",
              @"\uf150" : @"toggleDown",
              @"\uf191" : @"toggleLeft",
+             @"\uf204" : @"toggleOff",
+             @"\uf205" : @"toggleOn",
              @"\uf152" : @"toggleRight",
              @"\uf151" : @"toggleUp",
+             @"\uf1f8" : @"trash",
              @"\uf014" : @"trashO",
              @"\uf1bb" : @"tree",
              @"\uf181" : @"trello",
              @"\uf091" : @"trophy",
              @"\uf0d1" : @"truck",
              @"\uf195" : @"try",
+             @"\uf1e4" : @"tty",
              @"\uf173" : @"tumblr",
              @"\uf174" : @"tumblrSquare",
              @"\uf195" : @"turkishLira",
+             @"\uf1e8" : @"twitch",
              @"\uf099" : @"twitter",
              @"\uf081" : @"twitterSquare",
              @"\uf0e9" : @"umbrella",
@@ -1018,6 +1107,7 @@
              @"\uf18a" : @"weibo",
              @"\uf1d7" : @"weixin",
              @"\uf193" : @"wheelchair",
+             @"\uf1eb" : @"wifi",
              @"\uf17a" : @"windows",
              @"\uf159" : @"won",
              @"\uf19a" : @"wordpress",
@@ -1025,6 +1115,7 @@
              @"\uf168" : @"xing",
              @"\uf169" : @"xingSquare",
              @"\uf19e" : @"yahoo",
+             @"\uf1e9" : @"yelp",
              @"\uf157" : @"yen",
              @"\uf167" : @"youtube",
              @"\uf16a" : @"youtubePlay",
