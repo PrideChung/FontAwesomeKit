@@ -2,9 +2,9 @@ FontAwesomeKit
 ==============
 Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons.
 
-![image](http://i.minus.com/i3vNn0fTwcJeI.png)
+![image](http://i.minus.com/i3vNn0fTwcJeI.png) 
 
-![image](http://i.minus.com/ivKqhOLJLVvmJ.png)
+![image](http://i2.minus.com/ivKqhOLJLVvmJ.png)
 
 ## Version 2.1 Notable Changes
 ### Not Just Awesome. New Icon Fonts Added
@@ -14,7 +14,7 @@ Currently FontAwesomeKit supports **4** different icon fonts.
 - [FontAwesome 4.2](http://fortawesome.github.io/Font-Awesome/) Our old friend, contains **479** icons
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
-- [ionicons 1.5.2](http://ionicons.com/) Contains **601** icons, lots of iOS 7 style outlined icons.
+- [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
 
 ### API Reforged, Take Advantage of NSAttributedString
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
