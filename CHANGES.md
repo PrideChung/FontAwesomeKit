@@ -1,7 +1,9 @@
 #Changelog
 
 ## 2.0
-- 2.1.7 Add Ionicons 1.5.2 support.
+- 2.2.0 Add ionicon 2.0.0 support.
+- 2.1.8 Add Font-Awesome 4.2.0 support.
+- 2.1.7 Add ionicons 1.5.2 support.
 - 2.1.6 Add Font-Awesome 4.1 support.
 - 2.1.5 Add stacked icons generator, add documentation for known issues.
 - 2.1.4 Add macros for disabling icon font auto registration.
