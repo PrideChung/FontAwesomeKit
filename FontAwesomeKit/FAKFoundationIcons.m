@@ -9,7 +9,7 @@
 #ifndef DISABLE_FOUNDATIONICONS_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"foundation-icons" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle bundleForClass:[FAKFoundationIcons class]] URLForResource:@"foundation-icons" withExtension:@"ttf"]];
     });
 #endif
     

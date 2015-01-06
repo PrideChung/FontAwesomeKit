@@ -9,7 +9,7 @@
 #ifndef DISABLE_ZOCIAL_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"zocial-regular-webfont" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle bundleForClass:[FAKZocial class]] URLForResource:@"zocial-regular-webfont" withExtension:@"ttf"]];
     });
 #endif
     

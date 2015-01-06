@@ -7,7 +7,7 @@
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL:[[NSBundle mainBundle] URLForResource:@"FontAwesome" withExtension:@"otf"]];
+        [self registerIconFontWithURL:[[NSBundle bundleForClass:[FAKMockIcon class]] URLForResource:@"FontAwesome" withExtension:@"otf"]];
     });
     
     UIFont *font = [UIFont fontWithName:@"FontAwesome" size:size];
