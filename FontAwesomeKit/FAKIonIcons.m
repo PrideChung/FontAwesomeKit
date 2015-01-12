@@ -7,7 +7,7 @@
 #ifndef DISABLE_IONICONS_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL: [[NSBundle mainBundle] URLForResource:@"ionicons" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle bundleForClass:[FAKIonIcons class]] URLForResource:@"ionicons" withExtension:@"ttf"]];
     });
 #endif
     
