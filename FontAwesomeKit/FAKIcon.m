@@ -15,9 +15,10 @@
     CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)url);
     CGFontRef newFont = CGFontCreateWithDataProvider(fontDataProvider);
     CGDataProviderRelease(fontDataProvider);
-    CFErrorRef error;
+    CFErrorRef error = NULL;
     CTFontManagerRegisterGraphicsFont(newFont, &error);
     CGFontRelease(newFont);
+    CFRelease(error);
 }
 
 + (NSDictionary *)allIcons
