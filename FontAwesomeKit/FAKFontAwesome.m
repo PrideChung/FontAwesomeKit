@@ -575,7 +575,7 @@
 + (instancetype)cartPlusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf217" size:size]; }
 + (instancetype)connectDevelopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20e" size:size]; }
 + (instancetype)dashCubeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf210" size:size]; }
-+ (instancetype)diamondIconIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf219" size:size]; }
++ (instancetype)diamondIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf219" size:size]; }
 + (instancetype)facebookOfficialIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf230" size:size]; }
 + (instancetype)forumBeeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf211" size:size]; }
 + (instancetype)heartBeatIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21e" size:size]; }

@@ -559,7 +559,7 @@
 + (instancetype)cartPlusIconWithSize:(CGFloat)size;
 + (instancetype)connectDevelopIconWithSize:(CGFloat)size;
 + (instancetype)dashCubeIconWithSize:(CGFloat)size;
-+ (instancetype)diamondIconIconWithSize:(CGFloat)size;
++ (instancetype)diamondIconWithSize:(CGFloat)size;
 + (instancetype)facebookOfficialIconWithSize:(CGFloat)size;
 + (instancetype)forumBeeIconWithSize:(CGFloat)size;
 + (instancetype)heartBeatIconWithSize:(CGFloat)size;
