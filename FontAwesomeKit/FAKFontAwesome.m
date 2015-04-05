@@ -568,6 +568,9 @@
 + (instancetype)youtubeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf167" size:size]; }
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16a" size:size]; }
 + (instancetype)youtubeSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf166" size:size]; }
++ (instancetype)bedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf236" size:size]; }
++ (instancetype)diamondIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf219" size:size]; }
++ (instancetype)motorcycleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21c" size:size]; }
 
 + (NSDictionary *)allIcons {
     return @{
@@ -1120,6 +1123,9 @@
              @"\uf167" : @"youtube",
              @"\uf16a" : @"youtubePlay",
              @"\uf166" : @"youtubeSquare",
+             @"\uf236" : @"bed",
+             @"\uf219" : @"diamond",
+             @"\uf21c" : @"motorcycle",
              
              };
 }

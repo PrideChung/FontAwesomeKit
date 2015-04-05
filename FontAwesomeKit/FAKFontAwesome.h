@@ -552,5 +552,8 @@
 + (instancetype)youtubeIconWithSize:(CGFloat)size;
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size;
 + (instancetype)youtubeSquareIconWithSize:(CGFloat)size;
++ (instancetype)bedIconWithSize:(CGFloat)size;
++ (instancetype)diamondIconWithSize:(CGFloat)size;
++ (instancetype)motorcycleIconWithSize:(CGFloat)size;
 
 @end
