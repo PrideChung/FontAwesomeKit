@@ -553,4 +553,46 @@
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size;
 + (instancetype)youtubeSquareIconWithSize:(CGFloat)size;
 
++ (instancetype)bedIconWithSize:(CGFloat)size;
++ (instancetype)buySellAdsIconWithSize:(CGFloat)size;
++ (instancetype)cartArrowDownIconWithSize:(CGFloat)size;
++ (instancetype)cartPlusIconWithSize:(CGFloat)size;
++ (instancetype)connectDevelopIconWithSize:(CGFloat)size;
++ (instancetype)dashCubeIconWithSize:(CGFloat)size;
++ (instancetype)diamondIconWithSize:(CGFloat)size;
++ (instancetype)facebookOfficialIconWithSize:(CGFloat)size;
++ (instancetype)forumBeeIconWithSize:(CGFloat)size;
++ (instancetype)heartBeatIconWithSize:(CGFloat)size;
++ (instancetype)hotelIconWithSize:(CGFloat)size;
++ (instancetype)leanPubIconWithSize:(CGFloat)size;
++ (instancetype)marsIconWithSize:(CGFloat)size;
++ (instancetype)marsDoubleIconWithSize:(CGFloat)size;
++ (instancetype)marsStrokeIconWithSize:(CGFloat)size;
++ (instancetype)marsStrokeHIconWithSize:(CGFloat)size;
++ (instancetype)marsStrokeVIconWithSize:(CGFloat)size;
++ (instancetype)mediumIconWithSize:(CGFloat)size;
++ (instancetype)mercuryIconWithSize:(CGFloat)size;
++ (instancetype)motorcycleIconWithSize:(CGFloat)size;
++ (instancetype)neuterIconWithSize:(CGFloat)size;
++ (instancetype)pinterestPIconWithSize:(CGFloat)size;
++ (instancetype)sellSyIconWithSize:(CGFloat)size;
++ (instancetype)serverIconWithSize:(CGFloat)size;
++ (instancetype)shipIconWithSize:(CGFloat)size;
++ (instancetype)shirtSinBulkIconWithSize:(CGFloat)size;
++ (instancetype)simplyBuiltIconWithSize:(CGFloat)size;
++ (instancetype)skyAtlasIconWithSize:(CGFloat)size;
++ (instancetype)streetViewIconWithSize:(CGFloat)size;
++ (instancetype)subwayIconWithSize:(CGFloat)size;
++ (instancetype)trainIconWithSize:(CGFloat)size;
++ (instancetype)transgenderIconWithSize:(CGFloat)size;
++ (instancetype)transgenderAltIconWithSize:(CGFloat)size;
++ (instancetype)userPlusIconWithSize:(CGFloat)size;
++ (instancetype)userSecretIconWithSize:(CGFloat)size;
++ (instancetype)userTimesIconWithSize:(CGFloat)size;
++ (instancetype)venusIconWithSize:(CGFloat)size;
++ (instancetype)venusDoubleIconWithSize:(CGFloat)size;
++ (instancetype)venusMarsIconWithSize:(CGFloat)size;
++ (instancetype)viaCoinIconWithSize:(CGFloat)size;
++ (instancetype)whatsAppIconWithSize:(CGFloat)size;
+
 @end

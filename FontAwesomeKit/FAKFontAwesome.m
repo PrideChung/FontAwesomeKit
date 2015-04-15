@@ -569,6 +569,48 @@
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf16a" size:size]; }
 + (instancetype)youtubeSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf166" size:size]; }
 
++ (instancetype)bedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf236" size:size]; }
++ (instancetype)buySellAdsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20d" size:size]; }
++ (instancetype)cartArrowDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf218" size:size]; }
++ (instancetype)cartPlusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf217" size:size]; }
++ (instancetype)connectDevelopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf20e" size:size]; }
++ (instancetype)dashCubeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf210" size:size]; }
++ (instancetype)diamondIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf219" size:size]; }
++ (instancetype)facebookOfficialIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf230" size:size]; }
++ (instancetype)forumBeeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf211" size:size]; }
++ (instancetype)heartBeatIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21e" size:size]; }
++ (instancetype)hotelIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf236" size:size]; }
++ (instancetype)leanPubIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf212" size:size]; }
++ (instancetype)marsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf222" size:size]; }
++ (instancetype)marsDoubleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf227" size:size]; }
++ (instancetype)marsStrokeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf229" size:size]; }
++ (instancetype)marsStrokeHIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf22b" size:size]; }
++ (instancetype)marsStrokeVIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf22a" size:size]; }
++ (instancetype)mediumIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf23a" size:size]; }
++ (instancetype)mercuryIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf223" size:size]; }
++ (instancetype)motorcycleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21c" size:size]; }
++ (instancetype)neuterIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf22c" size:size]; }
++ (instancetype)pinterestPIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf231" size:size]; }
++ (instancetype)sellSyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf213" size:size]; }
++ (instancetype)serverIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf233" size:size]; }
++ (instancetype)shipIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21a" size:size]; }
++ (instancetype)shirtSinBulkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf214" size:size]; }
++ (instancetype)simplyBuiltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf215" size:size]; }
++ (instancetype)skyAtlasIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf216" size:size]; }
++ (instancetype)streetViewIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21d" size:size]; }
++ (instancetype)subwayIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf239" size:size]; }
++ (instancetype)trainIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf238" size:size]; }
++ (instancetype)transgenderIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf224" size:size]; }
++ (instancetype)transgenderAltIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf225" size:size]; }
++ (instancetype)userPlusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf234" size:size]; }
++ (instancetype)userSecretIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf21b" size:size]; }
++ (instancetype)userTimesIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf235" size:size]; }
++ (instancetype)venusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf221" size:size]; }
++ (instancetype)venusDoubleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf226" size:size]; }
++ (instancetype)venusMarsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf228" size:size]; }
++ (instancetype)viaCoinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf237" size:size]; }
++ (instancetype)whatsAppIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf232" size:size]; }
+
 + (NSDictionary *)allIcons {
     return @{
              @"\uf042" : @"adjust",
@@ -1121,6 +1163,47 @@
              @"\uf16a" : @"youtubePlay",
              @"\uf166" : @"youtubeSquare",
              
+             @"\uf236" : @"bed",
+             @"\uf20d" : @"buySellAds",
+             @"\uf218" : @"cartArrowDown",
+             @"\uf217" : @"cartPlus",
+             @"\uf20e" : @"connectDevelop",
+             @"\uf210" : @"dashCube",
+             @"\uf219" : @"diamond",
+             @"\uf230" : @"facebookOfficial",
+             @"\uf211" : @"forumBee",
+             @"\uf21e" : @"heartBeat",
+             @"\uf236" : @"hotel",
+             @"\uf212" : @"leanPub",
+             @"\uf222" : @"mars",
+             @"\uf227" : @"marsDouble",
+             @"\uf229" : @"marsStroke",
+             @"\uf22b" : @"marsStrokeH",
+             @"\uf22a" : @"marsStrokeV",
+             @"\uf23a" : @"medium",
+             @"\uf223" : @"mercury",
+             @"\uf21c" : @"motorcycle",
+             @"\uf22c" : @"neuter",
+             @"\uf231" : @"pinterestP",
+             @"\uf213" : @"sellSy",
+             @"\uf233" : @"server",
+             @"\uf21a" : @"ship",
+             @"\uf214" : @"shirtSinBulk",
+             @"\uf215" : @"simplyBuilt",
+             @"\uf216" : @"skyAtlas",
+             @"\uf21d" : @"streetView",
+             @"\uf239" : @"subway",
+             @"\uf238" : @"train",
+             @"\uf224" : @"transgender",
+             @"\uf225" : @"transgenderAlt",
+             @"\uf234" : @"userPlus",
+             @"\uf21b" : @"userSecret",
+             @"\uf235" : @"userTimes",
+             @"\uf221" : @"venus",
+             @"\uf226" : @"venusDouble",
+             @"\uf228" : @"venusMars",
+             @"\uf237" : @"viaCoin",
+             @"\uf232" : @"whatsApp",
              };
 }
 
