@@ -18,7 +18,10 @@
     CFErrorRef error = NULL;
     CTFontManagerRegisterGraphicsFont(newFont, &error);
     CGFontRelease(newFont);
-    CFRelease(error);
+    
+    if (error) {
+        CFRelease(error);
+    }
 }
 
 + (NSDictionary *)allIcons
