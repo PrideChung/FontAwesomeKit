@@ -6,6 +6,9 @@
 
 @property (strong, nonatomic) NSMutableArray *icons;
 
+@property (strong, nonatomic) NSString *iconGroup;
+@property (strong, nonatomic) NSMutableArray *originIcons;
+
 @end
 
 @implementation IconMapViewController
@@ -21,7 +24,8 @@
     [super viewDidLoad];
     
     self.icons = [NSMutableArray array];
-    [self loadFontAwesome];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self segmentChanged:nil];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -36,20 +40,59 @@
     [cell configureCellWithIcon:icon];
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    FAKIcon *icon = self.icons[indexPath.row];
 
+    //added by skyfox
+    NSString *code = [NSString stringWithFormat:@"\n%@ *%@Icon = [%@ %@IconWithSize:30];\n[%@Icon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];\nUIImage *%@IconImage = [%@Icon imageWithSize:CGSizeMake(30, 30)];",self.iconGroup,icon.iconName,self.iconGroup,icon.iconName,icon.iconName,icon.iconName,icon.iconName];
+    NSLog(@"\n\n\n===================Code Autogeneration ===================\n%@\n\n==========================================================\n",code);
+    //end
+    
+}
+//added by skyfox
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.searchBar resignFirstResponder];
+}
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    [self searchResult:searchText];
+}
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+}
+
+-(void)searchResult:(NSString*)keyword{
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"%K contains[cd] %@", @"iconName", keyword];
+    
+    NSMutableArray  *filteredArray = [NSMutableArray arrayWithArray:[self.icons filteredArrayUsingPredicate:pred]];
+    self.icons = filteredArray;
+    
+    if ([keyword isEqualToString:@""] || [self.icons count]==0) {
+        self.icons = _originIcons;
+    }
+    [self.collectionView reloadData];
+}
+//end
 - (IBAction)segmentChanged:(UISegmentedControl *)sender
 {
     [self.icons removeAllObjects];
+    NSArray *groups = @[@"FAKFontAwesome",@"FAKFoundationIcons",@"FAKZocial",@"FAKZocial"];
     if (sender.selectedSegmentIndex == 0) {
         [self loadFontAwesome];
     } else if (sender.selectedSegmentIndex == 1) {
         [self loadFoundation];
     } else if (sender.selectedSegmentIndex == 2) {
         [self loadZocial];
+
     } else if (sender.selectedSegmentIndex == 3) {
         [self loadIonIcons];
     }
-    
+    if (!sender) {
+        [self loadFontAwesome];
+
+    }
+    self.iconGroup = groups[sender.selectedSegmentIndex];
+    self.originIcons = [self.icons mutableCopy];
     [self.collectionView reloadData];
 }
 
