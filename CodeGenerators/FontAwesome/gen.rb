@@ -8,7 +8,10 @@ File.read("_variables.scss").each_line do |line|
   name = parts[0]
   if name && name.start_with?('$fa-var-')
     name = name['$fa-var-'.length..(name.length) -2]
-  
+    if name === '500px'
+      name = 'fivehundredpx'
+    end
+
     nameParts = name.split('-')
     nameParts = nameParts.each_with_index.map do |p, i|
       if i < 1
