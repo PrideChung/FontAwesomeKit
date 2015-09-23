@@ -223,6 +223,111 @@
              
              };
 }
- 
+
++ (instancetype)iconWithIdentifier:(NSString *)identifier size:(CGFloat)size {
+    if ([identifier isEqualToString:@"zocial.acrobat"]) { [self acrobatIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.amazon"]) { [self amazonIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.android"]) { [self androidIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.angellist"]) { [self angellistIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.aol"]) { [self aolIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.appnet"]) { [self appnetIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.appstore"]) { [self appstoreIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.bitbucket"]) { [self bitbucketIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.bitcoin"]) { [self bitcoinIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.blogger"]) { [self bloggerIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.buffer"]) { [self bufferIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.call"]) { [self callIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.cal"]) { [self calIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.cart"]) { [self cartIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.chrome"]) { [self chromeIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.cloudapp"]) { [self cloudappIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.creativecommons"]) { [self creativecommonsIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.delicious"]) { [self deliciousIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.digg"]) { [self diggIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.disqus"]) { [self disqusIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.dribbble"]) { [self dribbbleIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.dropbox"]) { [self dropboxIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.drupal"]) { [self drupalIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.dwolla"]) { [self dwollaIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.email"]) { [self emailIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.eventasaurus"]) { [self eventasaurusIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.eventbrite"]) { [self eventbriteIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.eventful"]) { [self eventfulIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.evernote"]) { [self evernoteIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.facebook"]) { [self facebookIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.fivehundredpx"]) { [self fivehundredpxIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.flattr"]) { [self flattrIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.flickr"]) { [self flickrIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.forrst"]) { [self forrstIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.foursquare"]) { [self foursquareIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.github"]) { [self githubIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.gmail"]) { [self gmailIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.google"]) { [self googleIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.googleplay"]) { [self googleplayIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.googleplus"]) { [self googleplusIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.gowalla"]) { [self gowallaIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.grooveshark"]) { [self groovesharkIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.guest"]) { [self guestIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.html5"]) { [self html5IconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.ie"]) { [self ieIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.instagram"]) { [self instagramIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.instapaper"]) { [self instapaperIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.intensedebate"]) { [self intensedebateIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.itunes"]) { [self itunesIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.klout"]) { [self kloutIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.lanyrd"]) { [self lanyrdIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.lastfm"]) { [self lastfmIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.lego"]) { [self legoIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.linkedin"]) { [self linkedinIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.lkdto"]) { [self lkdtoIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.logmein"]) { [self logmeinIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.macstore"]) { [self macstoreIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.meetup"]) { [self meetupIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.myspace"]) { [self myspaceIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.ninetyninedesigns"]) { [self ninetyninedesignsIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.openid"]) { [self openidIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.opentable"]) { [self opentableIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.paypal"]) { [self paypalIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.pinboard"]) { [self pinboardIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.pinterest"]) { [self pinterestIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.plancast"]) { [self plancastIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.plurk"]) { [self plurkIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.pocket"]) { [self pocketIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.podcast"]) { [self podcastIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.posterous"]) { [self posterousIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.print"]) { [self printIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.quora"]) { [self quoraIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.reddit"]) { [self redditIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.rss"]) { [self rssIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.scribd"]) { [self scribdIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.skype"]) { [self skypeIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.smashing"]) { [self smashingIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.songkick"]) { [self songkickIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.soundcloud"]) { [self soundcloudIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.spotify"]) { [self spotifyIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.stackoverflow"]) { [self stackoverflowIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.statusnet"]) { [self statusnetIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.steam"]) { [self steamIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.stripe"]) { [self stripeIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.stumbleupon"]) { [self stumbleuponIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.tumblr"]) { [self tumblrIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.twitter"]) { [self twitterIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.viadeo"]) { [self viadeoIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.vimeo"]) { [self vimeoIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.vk"]) { [self vkIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.weibo"]) { [self weiboIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.wikipedia"]) { [self wikipediaIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.windows"]) { [self windowsIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.wordpress"]) { [self wordpressIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.xing"]) { [self xingIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.yahoo"]) { [self yahooIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.ycombinator"]) { [self ycombinatorIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.yelp"]) { [self yelpIconWithSize:size];}
+    else if ([identifier isEqualToString:@"zocial.youtube"]) { [self youtubeIconWithSize:size];}
+    
+    return nil;
+}
+
+
 
 @end
