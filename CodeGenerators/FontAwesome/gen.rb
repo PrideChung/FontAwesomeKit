@@ -1,13 +1,15 @@
 require '../CodeGenerator.rb'
 
 names = [];
-codes = []
+codes = [];
+iconNames = [];
 
 File.read("_variables.scss").each_line do |line| 
   parts = line.split(' ')
   name = parts[0]
   if name && name.start_with?('$fa-var-')
     name = name['$fa-var-'.length..(name.length) -2]
+    iconNames.push "fa-#{name}"
     if name === '500px'
       name = 'fivehundredpx'
     end
@@ -30,7 +32,7 @@ File.read("_variables.scss").each_line do |line|
   end
 end
 
-generator = CodeGenerator.new('FontAwesome', names, codes)
+generator = CodeGenerator.new('FontAwesome', names, codes, iconNames)
 generator.generate
 
 

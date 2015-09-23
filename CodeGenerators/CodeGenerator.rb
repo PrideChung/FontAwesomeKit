@@ -1,7 +1,7 @@
 class CodeGenerator
-  attr_accessor :font_name, :names, :codes
+  attr_accessor :font_name, :names, :codes, :iconNames
 
-  def initialize(font_name, names, codes)
+  def initialize(font_name, names, codes, iconNames)
     @font_name = font_name
     
     @names = names.map do |name|
@@ -9,9 +9,13 @@ class CodeGenerator
     end
     
     @codes = codes
+    @iconNames = iconNames
   
     if names.length != codes.length
       raise 'names should be match to codes'
+    end
+    if iconNames.length != names.length
+      raise 'iconNames should match with names'
     end
   end
   
@@ -41,7 +45,7 @@ EOT
     implementation << implementation_template
     end
     
-    return implementation + "\n" + generate_icon_map
+    return implementation + "\n" + generate_icon_map + "\n" + generate_lookup_implementation
   end
   
   def generate_icon_map
@@ -61,6 +65,29 @@ EOT
 EOT
     
     return icon_map
+  end
+
+  def generate_lookup_implementation
+    lookup_method = ''
+    @iconNames.each_with_index do |iconName, index|
+      if index == 0
+        lookup_method_template = <<EOT
+        if ([identifier isEqualToString:@"#{iconName}"]) { [self #{@names[index]}IconWithSize:size];}
+EOT
+      else
+        lookup_method_template = <<EOT
+        else if ([identifier isEqualToString:@"#{iconName}"]) { [self #{@names[index]}IconWithSize:size];}
+EOT
+      end
+      lookup_method << lookup_method_template
+    end
+    lookup_method = <<EOT
++(instancetype)iconWithIdentifier:(NSString *)identifier size:(CGFloat)size {
+    #{lookup_method}
+    return nil;
+}
+EOT
+    return lookup_method
   end
   
 end

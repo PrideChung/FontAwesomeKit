@@ -1,11 +1,13 @@
 require '../CodeGenerator.rb'
 
 names = [];
-codes = []
+codes = [];
+iconNames = [];
 
 File.read("foundation-icons.css").each_line do |line| 
   name = '' 
   line.gsub(/(?<=fi-).*(?=:before)/i) { |match| name = match }
+  iconNames.push "fi-#{name}"
   nameParts = name.split('-')
   nameParts = nameParts.each_with_index.map do |p, i|
     if i < 1
@@ -22,7 +24,7 @@ File.read("foundation-icons.css").each_line do |line|
   codes.push "\\u#{code}"
 end
 
-generator = CodeGenerator.new('Foundation', names, codes)
+generator = CodeGenerator.new('Foundation', names, codes, iconNames)
 generator.generate
 
 
