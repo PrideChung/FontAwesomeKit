@@ -15,6 +15,7 @@ Currently FontAwesomeKit supports **4** different icon fonts.
 - [Foundation icons](http://zurb.com/playground/foundation-icon-fonts-3) Contains **283** icons.
 - [Zocial](http://zocial.smcllns.com/) Contains **99** social icons.
 - [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
+- [Octicons 2.4.1](https://octicons.github.com/) Contains **206** icons, built with love by [Github](https://github.com/).
 
 ### API Reforged, Take Advantage of NSAttributedString
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
@@ -39,7 +40,8 @@ Or select icon fonts with:
 `pod 'FontAwesomeKit/FontAwesome'`  
 `pod 'FontAwesomeKit/FoundationIcons'`  
 `pod 'FontAwesomeKit/Zocial'`  
-`pod 'FontAwesomeKit/IonIcons'`  
+`pod 'FontAwesomeKit/IonIcons'`
+`pod 'FontAwesomeKit/Octicons'`
 
 Run `pod install` or `pod update` to install selected icon fonts.
 
@@ -52,7 +54,8 @@ Or import icon fonts you installed with sub specs
 `#import FontAwesomeKit/FAKFontAwesome.h`  
 `#import FontAwesomeKit/FAKFoundationIcons.h`  
 `#import FontAwesomeKit/FAKZocial.h`  
-`#import FontAwesomeKit/FAKIonIcons.h`  
+`#import FontAwesomeKit/FAKIonIcons.h`
+`#import FontAwesomeKit/FAKOcticons.h`
 
 #####*important:*
 If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
@@ -69,6 +72,8 @@ FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
 FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
 FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];  
 FAKIonIcons *mailIcon = [FAKIonIcons ios7EmailIconWithSize:48];
+FAKOcticons *repoIcon = [FAKOcticons repoIconWithSize:48];
+
 ```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
 

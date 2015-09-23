@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="iqe-Qz-G2b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="iqe-Qz-G2b">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="839" y="-1301"/>
         </scene>
-        <!--App Icon View Controller - App Icons-->
+        <!--App Icons-->
         <scene sceneID="uNC-Wk-deu">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="rbQ-g5-Jee" customClass="AppIconViewController" sceneMemberID="viewController">
@@ -224,6 +224,7 @@
                                 <segment title="Foundation"/>
                                 <segment title="Zocial"/>
                                 <segment title="ion"/>
+                                <segment title="Octicons"/>
                             </segments>
                             <connections>
                                 <action selector="segmentChanged:" destination="7ci-gT-cb7" eventType="valueChanged" id="O4R-eN-CrJ"/>
@@ -235,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="839" y="93"/>
         </scene>
-        <!--Navigation Controller - Icon Map-->
+        <!--Icon Map-->
         <scene sceneID="6zp-hX-d7b">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="crK-dn-2cd" sceneMemberID="viewController">
@@ -254,7 +255,7 @@
             </objects>
             <point key="canvasLocation" x="313" y="101"/>
         </scene>
-        <!--Navigation Controller - Kitchen Sink-->
+        <!--Kitchen Sink-->
         <scene sceneID="EHc-lf-VWm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pg3-1p-4MW" sceneMemberID="viewController">
@@ -273,7 +274,7 @@
             </objects>
             <point key="canvasLocation" x="313" y="-1301"/>
         </scene>
-        <!--Stack Icons View Controller - Stacked Icons-->
+        <!--Stacked Icons-->
         <scene sceneID="Jpl-0n-YXn">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="MRJ-5O-a34" customClass="StackIconsViewController" sceneMemberID="viewController">

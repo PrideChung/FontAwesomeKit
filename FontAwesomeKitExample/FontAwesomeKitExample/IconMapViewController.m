@@ -48,6 +48,8 @@
         [self loadZocial];
     } else if (sender.selectedSegmentIndex == 3) {
         [self loadIonIcons];
+    } else if (sender.selectedSegmentIndex == 4) {
+        [self loadOcticons];
     }
     
     [self.collectionView reloadData];
@@ -82,6 +84,14 @@
     NSArray *keys = [[[FAKIonIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
         [self.icons addObject:[FAKIonIcons iconWithCode:key size:50]];
+    }
+}
+
+- (void)loadOcticons
+{
+    NSArray *keys = [[[FAKOcticons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    for (NSString *key in keys) {
+        [self.icons addObject:[FAKOcticons iconWithCode:key size:48]];
     }
 }
 

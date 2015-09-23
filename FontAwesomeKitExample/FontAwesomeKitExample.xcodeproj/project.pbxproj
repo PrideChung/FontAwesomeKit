@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D44C8F61B20679D00222C47 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D44C8F31B20679D00222C47 /* octicons.ttf */; };
+		2D44C8F71B20679D00222C47 /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D44C8F51B20679D00222C47 /* FAKOcticons.m */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
 		CC0334F018151CED00CFB044 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
@@ -38,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D44C8F31B20679D00222C47 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = "../../HubReactNative/node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit/octicons.ttf"; sourceTree = "<group>"; };
+		2D44C8F41B20679D00222C47 /* FAKOcticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAKOcticons.h; path = "../../HubReactNative/node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit/FAKOcticons.h"; sourceTree = "<group>"; };
+		2D44C8F51B20679D00222C47 /* FAKOcticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAKOcticons.m; path = "../../HubReactNative/node_modules/react-native-icons/ios/ReactNativeIcons/Libraries/FontAwesomeKit/FAKOcticons.m"; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		CC0334E318151CED00CFB044 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 		CC0334E118151CED00CFB044 /* FontAwesomeKit */ = {
 			isa = PBXGroup;
 			children = (
+				2D44C8F31B20679D00222C47 /* octicons.ttf */,
+				2D44C8F41B20679D00222C47 /* FAKOcticons.h */,
+				2D44C8F51B20679D00222C47 /* FAKOcticons.m */,
 				CC0334E218151CED00CFB044 /* FAKFontAwesome.h */,
 				CC0334E318151CED00CFB044 /* FAKFontAwesome.m */,
 				CC0334E418151CED00CFB044 /* FAKFoundationIcons.h */,
@@ -286,6 +294,7 @@
 				CC44A86316CD9B3F0039E101 /* InfoPlist.strings in Resources */,
 				CC44A86B16CD9B3F0039E101 /* Default.png in Resources */,
 				CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */,
+				2D44C8F61B20679D00222C47 /* octicons.ttf in Resources */,
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
 				CC2144B219433643004051F6 /* FontAwesome.otf in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
@@ -312,6 +321,7 @@
 				CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */,
 				CCFF2D2D181148CD0003CFE3 /* AppIconCell.m in Sources */,
 				CC44A86916CD9B3F0039E101 /* AppDelegate.m in Sources */,
+				2D44C8F71B20679D00222C47 /* FAKOcticons.m in Sources */,
 				CC7159AD18A784F80033F64A /* StackIconsViewController.m in Sources */,
 				CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */,
 				CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */,
