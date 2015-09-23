@@ -41,6 +41,11 @@
     return icon;
 }
 
++ (instancetype)iconWithIdentifier:(NSString *)identifier size:(CGFloat)size
+{
+     @throw @"You need to implement this method in subclass.";
+}
+
 - (NSAttributedString *)attributedString
 { 
     return [self.mutableAttributedString copy];
