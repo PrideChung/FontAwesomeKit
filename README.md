@@ -77,6 +77,16 @@ FAKOcticons *repoIcon = [FAKOcticons repoIconWithSize:48];
 ```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
 
+#### Creating icons using identifiers
+It is now possible to use identifiers to create icons. Check each documentation to get the appropriate identifier. Also, make sure you use an existing identifier, else the method will return nil.
+
+```objective-c
+FAKFontAwesome *starIcon = [FAKFontAwesome  iconWithIdentifier:@"fa-star" size:15];
+FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons iconWithIdentifier:@"fi-bookmark" size:15];
+FAKZocial *twitterIcon = [FAKZocial iconWithIdentifier:@"zocial.twitter" size:15];
+FAKIonIcons *mailIcon = [FAKIonIcons iconWithIdentifier:@"ion-ios-email" size:48];
+```
+
 ### Setting Attributes for An Icon
 ```objective-c
 [starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor
