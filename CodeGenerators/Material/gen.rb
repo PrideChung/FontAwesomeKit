@@ -1,7 +1,8 @@
 require '../CodeGenerator.rb'
 
-names = [];
+names = []
 codes = []
+iconNames = []
 
 class String
   def numeric?
@@ -15,6 +16,7 @@ File.read("_icons.scss").each_line do |line|
   name = parts[0]
   if name && name.start_with?('$zmdi-var-')
     name = name['$zmdi-var-'.length..(name.length) -2]
+    iconNames.push "zmdi-var-#{name}"
 
     if name === '3d-rotation'
       name = 'three-d-rotation'
@@ -41,7 +43,7 @@ end
 
 puts names.count
 
-generator = CodeGenerator.new('Material', names, codes)
+generator = CodeGenerator.new('Material', names, codes, iconNames)
 generator.generate
 
 
