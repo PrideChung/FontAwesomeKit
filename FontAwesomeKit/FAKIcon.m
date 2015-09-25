@@ -41,6 +41,21 @@
     return icon;
 }
 
++ (instancetype)iconWithIdentifier:(NSString *)identifier size:(CGFloat)size error:(NSError **)error
+{
+    NSString *iconCode = [[self allIcons] objectForKey:identifier];
+    
+    // If iconCode does not exist, return an error
+    if (!iconCode) {
+        NSDictionary *errorDetail = @{ NSLocalizedDescriptionKey: @"Invalid identifier."};
+        *error = [NSError errorWithDomain:@"FontAwesomeKit"
+                                     code:-100
+                                 userInfo:errorDetail];
+        return nil;
+    }
+    return [self iconWithCode:iconCode size:size];
+}
+
 - (NSAttributedString *)attributedString
 { 
     return [self.mutableAttributedString copy];
