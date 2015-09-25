@@ -76,6 +76,7 @@ FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
 FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];  
 FAKIonIcons *mailIcon = [FAKIonIcons ios7EmailIconWithSize:48];
 FAKOcticons *repoIcon = [FAKOcticons repoIconWithSize:48];
+FAKMaterialIcons *androidIcon = [FAKMaterialIcons androidIconWithSize:48];
 
 ```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
