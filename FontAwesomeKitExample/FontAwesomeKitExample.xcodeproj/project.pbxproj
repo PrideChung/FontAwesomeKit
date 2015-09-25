@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F615A2A1B69884E004A7B1D /* FAKMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterial.m */; };
+		2F615A2A1B69884E004A7B1D /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; };
 		2F615A2B1B69884E004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
@@ -42,8 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F615A271B69884E004A7B1D /* FAKMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMaterial.m; sourceTree = "<group>"; };
-		2F615A281B69884E004A7B1D /* FAKMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMaterial.h; sourceTree = "<group>"; };
+		2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMaterialIcons.m; sourceTree = "<group>"; };
+		2F615A281B69884E004A7B1D /* FAKMaterialIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMaterialIcons.h; sourceTree = "<group>"; };
 		2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 				CC785E111BB31140001A143F /* FAKOcticons.h */,
 				CC785E121BB31140001A143F /* FAKOcticons.m */,
 				CC785E131BB31140001A143F /* octicons.ttf */,
-				2F615A271B69884E004A7B1D /* FAKMaterial.m */,
-				2F615A281B69884E004A7B1D /* FAKMaterial.h */,
+				2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */,
+				2F615A281B69884E004A7B1D /* FAKMaterialIcons.h */,
 				2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */,
 				CC0334E218151CED00CFB044 /* FAKFontAwesome.h */,
 				CC0334E318151CED00CFB044 /* FAKFontAwesome.m */,
@@ -334,7 +334,7 @@
 				CC7159AD18A784F80033F64A /* StackIconsViewController.m in Sources */,
 				CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */,
 				CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */,
-				2F615A2A1B69884E004A7B1D /* FAKMaterial.m in Sources */,
+				2F615A2A1B69884E004A7B1D /* FAKMaterialIcons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
