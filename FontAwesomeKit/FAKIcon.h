@@ -62,8 +62,8 @@
  *      Foundation icons identifier should look like "fi-{icon}"
  *      Ion icons identifier should look like "ion-{icon}"
  *      Zocial icons identifier should look like "zocial.{icon}"
- *
- *
+ *      Material icons identifier should look like "zmdi-var-{icon}"
+ *      Octicons icons identifier should look like "octicon-{icon}"
  *  @param size     The desired size (in points) of the icon font that will be used for the icon. This value must be greater than 0.0.
  *  @param error    Returns an error in case the identifier does not exist.
  *
