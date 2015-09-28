@@ -1,6 +1,6 @@
 #import "FAKIcon.h"
 
-@interface FAKMaterial : FAKIcon
+@interface FAKMaterialIcons : FAKIcon
 
 // Generated Code
 + (instancetype)threeDRotationIconWithSize:(CGFloat)size;

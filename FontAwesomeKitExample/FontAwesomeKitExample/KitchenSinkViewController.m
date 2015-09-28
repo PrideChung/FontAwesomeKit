@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     // UIBarbuttonItem
-    FAKMaterial *cogIcon = [FAKMaterial settingsIconWithSize:20];
+    FAKMaterialIcons *cogIcon = [FAKMaterialIcons settingsIconWithSize:20];
     [cogIcon addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor]];
     UIImage *leftImage = [cogIcon imageWithSize:CGSizeMake(20, 20)];
     cogIcon.iconFontSize = 15;
