@@ -1,15 +1,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "FAKMaterial.h"
+#import "FAKMaterialIcons.h"
 
-@implementation FAKMaterial
+@implementation FAKMaterialIcons
 
 + (UIFont *)iconFontWithSize:(CGFloat)size
 {
 #ifndef DISABLE_MATERIAL_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL:[[NSBundle bundleForClass:[FAKMaterial class]] URLForResource:@"Material-Design-Iconic-Font" withExtension:@"ttf"]];
+        [self registerIconFontWithURL:[[NSBundle bundleForClass:[FAKMaterialIcons class]] URLForResource:@"Material-Design-Iconic-Font" withExtension:@"ttf"]];
     });
 #endif
 
