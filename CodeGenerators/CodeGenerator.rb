@@ -1,7 +1,7 @@
 class CodeGenerator
-  attr_accessor :font_name, :names, :codes
+  attr_accessor :font_name, :names, :codes, :iconNames
 
-  def initialize(font_name, names, codes)
+  def initialize(font_name, names, codes, iconNames)
     @font_name = font_name
     
     @names = names.map do |name|
@@ -9,9 +9,13 @@ class CodeGenerator
     end
     
     @codes = codes
+    @iconNames = iconNames
   
     if names.length != codes.length
       raise 'names should be match to codes'
+    end
+    if iconNames.length != names.length
+      raise 'iconNames should match with names'
     end
   end
   
@@ -46,9 +50,9 @@ EOT
   
   def generate_icon_map
     icon_map = ''
-    @names.each_with_index do |name, index|
+    @iconNames.each_with_index do |iconName, index|
       icon_map_template = <<EOT 
-      @"#{@codes[index]}" : @"#{name}",
+      @"#{iconName}" : @"#{@codes[index]}",
 EOT
       icon_map << icon_map_template
     end

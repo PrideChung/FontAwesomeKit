@@ -55,6 +55,23 @@
 + (instancetype)iconWithCode:(NSString *)code size:(CGFloat)size;
 
 /**
+ *  Creates and returns a FAKIcon object for the specified identifier and size
+ *
+ *  @param identifier A string that represents the icon.
+ *      FontAwesome icons identifier should look like "fa-{icon}"
+ *      Foundation icons identifier should look like "fi-{icon}"
+ *      Ion icons identifier should look like "ion-{icon}"
+ *      Zocial icons identifier should look like "zocial.{icon}"
+ *      Material icons identifier should look like "zmdi-var-{icon}"
+ *      Octicons icons identifier should look like "octicon-{icon}"
+ *  @param size     The desired size (in points) of the icon font that will be used for the icon. This value must be greater than 0.0.
+ *  @param error    Returns an error in case the identifier does not exist.
+ *
+ *  @return Returns a FAKIcon object if lookup strings exists, returns nil otherwise.
+ */
++ (instancetype)iconWithIdentifier:(NSString *)identifier size:(CGFloat)size error:(NSError **)error;
+
+/**
  *  Adds an attribute with the given name and value to the icon.
  *
  *  @param attrs A dictionary containing the text attributes to set. These attributes will be used to create attributedString when you call -attributedString on the receiver. For information about system-supplied attribute keys, See NSAttributedString UIKit Additions Reference (https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)

@@ -1,13 +1,14 @@
 require '../CodeGenerator.rb'
 
 names = [];
-codes = []
-
+codes = [];
+iconNames = [];
 
 # .zocial.macstore:before {content: "^";}
 File.read("zocial.css").each_line do |line| 
   name = '' 
   line.gsub(/(?<=\.zocial\.).*(?=:before)/i) { |match| name = match }
+  iconNames.push "zocial.#{name}"
   nameParts = name.split('-')
   nameParts = nameParts.each_with_index.map do |p, i|
     if i < 1
@@ -25,7 +26,7 @@ File.read("zocial.css").each_line do |line|
   codes.push code
 end
 
-generator = CodeGenerator.new('Zocial', names, codes)
+generator = CodeGenerator.new('Zocial', names, codes, iconNames)
 generator.generate
 
 

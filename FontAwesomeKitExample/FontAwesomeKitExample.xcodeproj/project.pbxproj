@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F615A2A1B69884E004A7B1D /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; };
 		2F615A2B1B69884E004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
@@ -39,6 +38,7 @@
 		CCFF2D3418114C070003CFE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFF2D3318114C070003CFE3 /* Images.xcassets */; };
 		CCFF2D3F1811DBC60003CFE3 /* IconMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D3E1811DBC60003CFE3 /* IconMapCell.m */; };
 		CCFF2D421811DD1E0003CFE3 /* IconMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D411811DD1E0003CFE3 /* IconMapViewController.m */; };
+		D8806BD81BC5BFEB005E1440 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -329,12 +329,12 @@
 				CC44A86516CD9B3F0039E101 /* main.m in Sources */,
 				CC785E141BB31140001A143F /* FAKOcticons.m in Sources */,
 				CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */,
+				D8806BD81BC5BFEB005E1440 /* FAKMaterialIcons.m in Sources */,
 				CCFF2D2D181148CD0003CFE3 /* AppIconCell.m in Sources */,
 				CC44A86916CD9B3F0039E101 /* AppDelegate.m in Sources */,
 				CC7159AD18A784F80033F64A /* StackIconsViewController.m in Sources */,
 				CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */,
 				CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */,
-				2F615A2A1B69884E004A7B1D /* FAKMaterialIcons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

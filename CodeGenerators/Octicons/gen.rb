@@ -2,10 +2,12 @@ require '../CodeGenerator.rb'
 
 names = []
 codes = []
+iconNames = []
 
 File.read("octicons.css").each_line do |line| 
   name = '' 
   line.gsub(/(?<=octicon-).*(?=:before)/i) { |match| name = match }
+  iconNames.push "octicon-#{name}"
   nameParts = name.split('-')
   nameParts = nameParts.each_with_index.map do |p, i|
     if i < 1
@@ -22,7 +24,7 @@ File.read("octicons.css").each_line do |line|
   codes.push "\\u#{code}"
 end
 
-generator = CodeGenerator.new('Octicons', names, codes)
+generator = CodeGenerator.new('Octicons', names, codes, iconNames)
 generator.generate
 
 
