@@ -1,14 +1,16 @@
 Pod::Spec.new do |s|
   s.name         = "FontAwesomeKit"
-  s.version      = "2.1.9"
+  s.version      = "2.2.1"
   s.summary      = "Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons"
   s.homepage     = "https://github.com/PrideChung/FontAwesomeKit"
   s.screenshots  = "http://i.minus.com/i3vNn0fTwcJeI.png", "http://i.minus.com/ivKqhOLJLVvmJ.png"
   s.license      = 'MIT'
   s.author       = { "Pride Chung" => "pride.chung@gmail.com" }
-  s.source       = { :git => "https://github.com/PrideChung/FontAwesomeKit.git", :tag => '2.1.8' }
+  s.source       = { :git => "https://github.com/PrideChung/FontAwesomeKit.git", :branch => 'tvOS' }
   s.platform     = :ios, '6.0'
+  s.platform     = :tvos, '9.0'
   s.ios.frameworks = 'UIKit', 'CoreText'
+  s.tvos.frameworks = 'UIKit', 'CoreText'
   s.source_files = 'FontAwesomeKit/FontAwesomeKit.h'
   s.requires_arc = true
 
