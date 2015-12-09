@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2F615A2B1B69884E004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */; };
+		63C94B331BD6DDB400C5EFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C94B321BD6DDB400C5EFE5 /* main.m */; };
+		63C94B361BD6DDB400C5EFE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C94B351BD6DDB400C5EFE5 /* AppDelegate.m */; };
+		63C94B391BD6DDB400C5EFE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C94B381BD6DDB400C5EFE5 /* ViewController.m */; };
+		63C94B3C1BD6DDB400C5EFE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C94B3A1BD6DDB400C5EFE5 /* Main.storyboard */; };
+		63C94B3E1BD6DDB400C5EFE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C94B3D1BD6DDB400C5EFE5 /* Assets.xcassets */; };
+		63C94B431BD6DDD800C5EFE5 /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC785E121BB31140001A143F /* FAKOcticons.m */; };
+		63C94B441BD6DDD800C5EFE5 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC785E131BB31140001A143F /* octicons.ttf */; };
+		63C94B451BD6DDD800C5EFE5 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; };
+		63C94B461BD6DDD800C5EFE5 /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */; };
+		63C94B471BD6DDD800C5EFE5 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
+		63C94B481BD6DDD800C5EFE5 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
+		63C94B491BD6DDD800C5EFE5 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
+		63C94B4A1BD6DDD800C5EFE5 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE426381827B6BA00B28889 /* FAKIonIcons.m */; };
+		63C94B4B1BD6DDD800C5EFE5 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E918151CED00CFB044 /* FAKZocial.m */; };
+		63C94B4C1BD6DDD800C5EFE5 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCDC73451A3ED97C006B3E68 /* ionicons.ttf */; };
+		63C94B4D1BD6DDD800C5EFE5 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334EC18151CED00CFB044 /* foundation-icons.ttf */; };
+		63C94B4E1BD6DDD800C5EFE5 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC2144B119433643004051F6 /* FontAwesome.otf */; };
+		63C94B4F1BD6DDD800C5EFE5 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
 		CC0334F018151CED00CFB044 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
@@ -27,8 +45,8 @@
 		CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC44A86E16CD9B3F0039E101 /* Default-568h@2x.png */; };
 		CC6907F2181407B300FBC2E5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5349221721C9010072C49E /* CoreText.framework */; };
 		CC7159AD18A784F80033F64A /* StackIconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7159AC18A784F80033F64A /* StackIconsViewController.m */; };
-		CC785E141BB31140001A143F /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC785E121BB31140001A143F /* FAKOcticons.m */; settings = {ASSET_TAGS = (); }; };
-		CC785E151BB31140001A143F /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC785E131BB31140001A143F /* octicons.ttf */; settings = {ASSET_TAGS = (); }; };
+		CC785E141BB31140001A143F /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC785E121BB31140001A143F /* FAKOcticons.m */; };
+		CC785E151BB31140001A143F /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC785E131BB31140001A143F /* octicons.ttf */; };
 		CCBC72A618A78A0A0046FDAB /* StackIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC72A518A78A0A0046FDAB /* StackIconCell.m */; };
 		CCDC73461A3ED9D9006B3E68 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCDC73451A3ED97C006B3E68 /* ionicons.ttf */; };
 		CCE426391827B6BA00B28889 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE426381827B6BA00B28889 /* FAKIonIcons.m */; };
@@ -38,13 +56,22 @@
 		CCFF2D3418114C070003CFE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFF2D3318114C070003CFE3 /* Images.xcassets */; };
 		CCFF2D3F1811DBC60003CFE3 /* IconMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D3E1811DBC60003CFE3 /* IconMapCell.m */; };
 		CCFF2D421811DD1E0003CFE3 /* IconMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF2D411811DD1E0003CFE3 /* IconMapViewController.m */; };
-		D8806BD81BC5BFEB005E1440 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; settings = {ASSET_TAGS = (); }; };
+		D8806BD81BC5BFEB005E1440 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMaterialIcons.m; sourceTree = "<group>"; };
 		2F615A281B69884E004A7B1D /* FAKMaterialIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMaterialIcons.h; sourceTree = "<group>"; };
 		2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
+		63C94B2F1BD6DDB400C5EFE5 /* FontAwesome tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FontAwesome tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C94B321BD6DDB400C5EFE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63C94B341BD6DDB400C5EFE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63C94B351BD6DDB400C5EFE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63C94B371BD6DDB400C5EFE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63C94B381BD6DDB400C5EFE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63C94B3B1BD6DDB400C5EFE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63C94B3D1BD6DDB400C5EFE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C94B3F1BD6DDB400C5EFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		CC0334E318151CED00CFB044 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
@@ -99,6 +126,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		63C94B2C1BD6DDB400C5EFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC44A85216CD9B3F0039E101 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,6 +147,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63C94B301BD6DDB400C5EFE5 /* FontAwesome tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				63C94B341BD6DDB400C5EFE5 /* AppDelegate.h */,
+				63C94B351BD6DDB400C5EFE5 /* AppDelegate.m */,
+				63C94B371BD6DDB400C5EFE5 /* ViewController.h */,
+				63C94B381BD6DDB400C5EFE5 /* ViewController.m */,
+				63C94B3A1BD6DDB400C5EFE5 /* Main.storyboard */,
+				63C94B3D1BD6DDB400C5EFE5 /* Assets.xcassets */,
+				63C94B3F1BD6DDB400C5EFE5 /* Info.plist */,
+				63C94B311BD6DDB400C5EFE5 /* Supporting Files */,
+			);
+			path = "FontAwesome tvOS";
+			sourceTree = "<group>";
+		};
+		63C94B311BD6DDB400C5EFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63C94B321BD6DDB400C5EFE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CC0334E118151CED00CFB044 /* FontAwesomeKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				CC44A85E16CD9B3F0039E101 /* FontAwesomeKitExample */,
+				63C94B301BD6DDB400C5EFE5 /* FontAwesome tvOS */,
 				CC44A85716CD9B3F0039E101 /* Frameworks */,
 				CC44A85616CD9B3F0039E101 /* Products */,
 			);
@@ -164,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				CC44A85516CD9B3F0039E101 /* FontAwesomeKitExample.app */,
+				63C94B2F1BD6DDB400C5EFE5 /* FontAwesome tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,6 +308,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		63C94B2E1BD6DDB400C5EFE5 /* FontAwesome tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C94B421BD6DDB400C5EFE5 /* Build configuration list for PBXNativeTarget "FontAwesome tvOS" */;
+			buildPhases = (
+				63C94B2B1BD6DDB400C5EFE5 /* Sources */,
+				63C94B2C1BD6DDB400C5EFE5 /* Frameworks */,
+				63C94B2D1BD6DDB400C5EFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FontAwesome tvOS";
+			productName = "FontAwesome tvOS";
+			productReference = 63C94B2F1BD6DDB400C5EFE5 /* FontAwesome tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CC44A85416CD9B3F0039E101 /* FontAwesomeKitExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC44A87816CD9B3F0039E101 /* Build configuration list for PBXNativeTarget "FontAwesomeKitExample" */;
@@ -274,6 +350,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Pride Chung";
+				TargetAttributes = {
+					63C94B2E1BD6DDB400C5EFE5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
 			};
 			buildConfigurationList = CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -281,6 +362,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CC44A84C16CD9B3F0039E101;
 			productRefGroup = CC44A85616CD9B3F0039E101 /* Products */;
@@ -288,11 +370,27 @@
 			projectRoot = "";
 			targets = (
 				CC44A85416CD9B3F0039E101 /* FontAwesomeKitExample */,
+				63C94B2E1BD6DDB400C5EFE5 /* FontAwesome tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		63C94B2D1BD6DDB400C5EFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C94B3E1BD6DDB400C5EFE5 /* Assets.xcassets in Resources */,
+				63C94B4F1BD6DDD800C5EFE5 /* zocial-regular-webfont.ttf in Resources */,
+				63C94B4C1BD6DDD800C5EFE5 /* ionicons.ttf in Resources */,
+				63C94B441BD6DDD800C5EFE5 /* octicons.ttf in Resources */,
+				63C94B4E1BD6DDD800C5EFE5 /* FontAwesome.otf in Resources */,
+				63C94B3C1BD6DDB400C5EFE5 /* Main.storyboard in Resources */,
+				63C94B4D1BD6DDD800C5EFE5 /* foundation-icons.ttf in Resources */,
+				63C94B461BD6DDD800C5EFE5 /* Material-Design-Iconic-Font.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC44A85316CD9B3F0039E101 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +413,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		63C94B2B1BD6DDB400C5EFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C94B431BD6DDD800C5EFE5 /* FAKOcticons.m in Sources */,
+				63C94B481BD6DDD800C5EFE5 /* FAKFoundationIcons.m in Sources */,
+				63C94B451BD6DDD800C5EFE5 /* FAKMaterialIcons.m in Sources */,
+				63C94B391BD6DDB400C5EFE5 /* ViewController.m in Sources */,
+				63C94B361BD6DDB400C5EFE5 /* AppDelegate.m in Sources */,
+				63C94B331BD6DDB400C5EFE5 /* main.m in Sources */,
+				63C94B471BD6DDD800C5EFE5 /* FAKFontAwesome.m in Sources */,
+				63C94B491BD6DDD800C5EFE5 /* FAKIcon.m in Sources */,
+				63C94B4B1BD6DDD800C5EFE5 /* FAKZocial.m in Sources */,
+				63C94B4A1BD6DDD800C5EFE5 /* FAKIonIcons.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC44A85116CD9B3F0039E101 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +456,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		63C94B3A1BD6DDB400C5EFE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C94B3B1BD6DDB400C5EFE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		CC44A86116CD9B3F0039E101 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,6 +475,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		63C94B401BD6DDB400C5EFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "FontAwesome tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david.demo.FontAwesome-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		63C94B411BD6DDB400C5EFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "FontAwesome tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david.demo.FontAwesome-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		CC44A87616CD9B3F0039E101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,6 +619,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		63C94B421BD6DDB400C5EFE5 /* Build configuration list for PBXNativeTarget "FontAwesome tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C94B401BD6DDB400C5EFE5 /* Debug */,
+				63C94B411BD6DDB400C5EFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
