@@ -6,7 +6,7 @@ Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zo
 
 ![image](http://i2.minus.com/ivKqhOLJLVvmJ.png)
 
-## Version 2.1 Notable Changes
+## Version 2.2 Notable Changes
 ### Not Just Awesome. New Icon Fonts Added
 
 Currently FontAwesomeKit supports **6** different icon fonts.
@@ -35,7 +35,7 @@ Please notice that FontAwesome has renamed lots of it's icons in the recent 4.0 
 ### Install with CocoaPods (Strongly Recommended)
 FontAwesomeKit now supports sub spec, only get the fonts you need.
 
-Add `pod 'FontAwesomeKit', '~> 2.1.0'` to Podfile to install all icon fonts.
+Add `pod 'FontAwesomeKit', '~> 2.2.0'` to Podfile to install all icon fonts.
 
 Or select icon fonts with:  
 
