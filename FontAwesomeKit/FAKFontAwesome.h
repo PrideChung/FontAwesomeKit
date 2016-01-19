@@ -78,6 +78,8 @@
 + (instancetype)bitbucketSquareIconWithSize:(CGFloat)size;
 + (instancetype)bitcoinIconWithSize:(CGFloat)size;
 + (instancetype)blackTieIconWithSize:(CGFloat)size;
++ (instancetype)bluetoothIconWithSize:(CGFloat)size;
++ (instancetype)bluetoothBIconWithSize:(CGFloat)size;
 + (instancetype)boldIconWithSize:(CGFloat)size;
 + (instancetype)boltIconWithSize:(CGFloat)size;
 + (instancetype)bombIconWithSize:(CGFloat)size;
@@ -156,6 +158,7 @@
 + (instancetype)codeIconWithSize:(CGFloat)size;
 + (instancetype)codeForkIconWithSize:(CGFloat)size;
 + (instancetype)codepenIconWithSize:(CGFloat)size;
++ (instancetype)codiepieIconWithSize:(CGFloat)size;
 + (instancetype)coffeeIconWithSize:(CGFloat)size;
 + (instancetype)cogIconWithSize:(CGFloat)size;
 + (instancetype)cogsIconWithSize:(CGFloat)size;
@@ -174,6 +177,7 @@
 + (instancetype)copyrightIconWithSize:(CGFloat)size;
 + (instancetype)creativeCommonsIconWithSize:(CGFloat)size;
 + (instancetype)creditCardIconWithSize:(CGFloat)size;
++ (instancetype)creditCardAltIconWithSize:(CGFloat)size;
 + (instancetype)cropIconWithSize:(CGFloat)size;
 + (instancetype)crosshairsIconWithSize:(CGFloat)size;
 + (instancetype)css3IconWithSize:(CGFloat)size;
@@ -196,6 +200,7 @@
 + (instancetype)dribbbleIconWithSize:(CGFloat)size;
 + (instancetype)dropboxIconWithSize:(CGFloat)size;
 + (instancetype)drupalIconWithSize:(CGFloat)size;
++ (instancetype)edgeIconWithSize:(CGFloat)size;
 + (instancetype)editIconWithSize:(CGFloat)size;
 + (instancetype)ejectIconWithSize:(CGFloat)size;
 + (instancetype)ellipsisHIconWithSize:(CGFloat)size;
@@ -265,6 +270,7 @@
 + (instancetype)folderOpenOIconWithSize:(CGFloat)size;
 + (instancetype)fontIconWithSize:(CGFloat)size;
 + (instancetype)fonticonsIconWithSize:(CGFloat)size;
++ (instancetype)fortAwesomeIconWithSize:(CGFloat)size;
 + (instancetype)forumbeeIconWithSize:(CGFloat)size;
 + (instancetype)forwardIconWithSize:(CGFloat)size;
 + (instancetype)foursquareIconWithSize:(CGFloat)size;
@@ -311,6 +317,7 @@
 + (instancetype)handScissorsOIconWithSize:(CGFloat)size;
 + (instancetype)handSpockOIconWithSize:(CGFloat)size;
 + (instancetype)handStopOIconWithSize:(CGFloat)size;
++ (instancetype)hashtagIconWithSize:(CGFloat)size;
 + (instancetype)hddOIconWithSize:(CGFloat)size;
 + (instancetype)headerIconWithSize:(CGFloat)size;
 + (instancetype)headphonesIconWithSize:(CGFloat)size;
@@ -410,8 +417,10 @@
 + (instancetype)minusCircleIconWithSize:(CGFloat)size;
 + (instancetype)minusSquareIconWithSize:(CGFloat)size;
 + (instancetype)minusSquareOIconWithSize:(CGFloat)size;
++ (instancetype)mixcloudIconWithSize:(CGFloat)size;
 + (instancetype)mobileIconWithSize:(CGFloat)size;
 + (instancetype)mobilePhoneIconWithSize:(CGFloat)size;
++ (instancetype)modxIconWithSize:(CGFloat)size;
 + (instancetype)moneyIconWithSize:(CGFloat)size;
 + (instancetype)moonOIconWithSize:(CGFloat)size;
 + (instancetype)mortarBoardIconWithSize:(CGFloat)size;
@@ -438,11 +447,14 @@
 + (instancetype)paragraphIconWithSize:(CGFloat)size;
 + (instancetype)pasteIconWithSize:(CGFloat)size;
 + (instancetype)pauseIconWithSize:(CGFloat)size;
++ (instancetype)pauseCircleIconWithSize:(CGFloat)size;
++ (instancetype)pauseCircleOIconWithSize:(CGFloat)size;
 + (instancetype)pawIconWithSize:(CGFloat)size;
 + (instancetype)paypalIconWithSize:(CGFloat)size;
 + (instancetype)pencilIconWithSize:(CGFloat)size;
 + (instancetype)pencilSquareIconWithSize:(CGFloat)size;
 + (instancetype)pencilSquareOIconWithSize:(CGFloat)size;
++ (instancetype)percentIconWithSize:(CGFloat)size;
 + (instancetype)phoneIconWithSize:(CGFloat)size;
 + (instancetype)phoneSquareIconWithSize:(CGFloat)size;
 + (instancetype)photoIconWithSize:(CGFloat)size;
@@ -464,6 +476,7 @@
 + (instancetype)plusSquareOIconWithSize:(CGFloat)size;
 + (instancetype)powerOffIconWithSize:(CGFloat)size;
 + (instancetype)printIconWithSize:(CGFloat)size;
++ (instancetype)productHuntIconWithSize:(CGFloat)size;
 + (instancetype)puzzlePieceIconWithSize:(CGFloat)size;
 + (instancetype)qqIconWithSize:(CGFloat)size;
 + (instancetype)qrcodeIconWithSize:(CGFloat)size;
@@ -476,6 +489,7 @@
 + (instancetype)rebelIconWithSize:(CGFloat)size;
 + (instancetype)recycleIconWithSize:(CGFloat)size;
 + (instancetype)redditIconWithSize:(CGFloat)size;
++ (instancetype)redditAlienIconWithSize:(CGFloat)size;
 + (instancetype)redditSquareIconWithSize:(CGFloat)size;
 + (instancetype)refreshIconWithSize:(CGFloat)size;
 + (instancetype)registeredIconWithSize:(CGFloat)size;
@@ -500,6 +514,7 @@
 + (instancetype)safariIconWithSize:(CGFloat)size;
 + (instancetype)saveIconWithSize:(CGFloat)size;
 + (instancetype)scissorsIconWithSize:(CGFloat)size;
++ (instancetype)scribdIconWithSize:(CGFloat)size;
 + (instancetype)searchIconWithSize:(CGFloat)size;
 + (instancetype)searchMinusIconWithSize:(CGFloat)size;
 + (instancetype)searchPlusIconWithSize:(CGFloat)size;
@@ -517,6 +532,8 @@
 + (instancetype)shieldIconWithSize:(CGFloat)size;
 + (instancetype)shipIconWithSize:(CGFloat)size;
 + (instancetype)shirtsinbulkIconWithSize:(CGFloat)size;
++ (instancetype)shoppingBagIconWithSize:(CGFloat)size;
++ (instancetype)shoppingBasketIconWithSize:(CGFloat)size;
 + (instancetype)shoppingCartIconWithSize:(CGFloat)size;
 + (instancetype)signInIconWithSize:(CGFloat)size;
 + (instancetype)signOutIconWithSize:(CGFloat)size;
@@ -564,6 +581,8 @@
 + (instancetype)stickyNoteIconWithSize:(CGFloat)size;
 + (instancetype)stickyNoteOIconWithSize:(CGFloat)size;
 + (instancetype)stopIconWithSize:(CGFloat)size;
++ (instancetype)stopCircleIconWithSize:(CGFloat)size;
++ (instancetype)stopCircleOIconWithSize:(CGFloat)size;
 + (instancetype)streetViewIconWithSize:(CGFloat)size;
 + (instancetype)strikethroughIconWithSize:(CGFloat)size;
 + (instancetype)stumbleuponIconWithSize:(CGFloat)size;
@@ -634,6 +653,7 @@
 + (instancetype)unlockAltIconWithSize:(CGFloat)size;
 + (instancetype)unsortedIconWithSize:(CGFloat)size;
 + (instancetype)uploadIconWithSize:(CGFloat)size;
++ (instancetype)usbIconWithSize:(CGFloat)size;
 + (instancetype)usdIconWithSize:(CGFloat)size;
 + (instancetype)userIconWithSize:(CGFloat)size;
 + (instancetype)userMdIconWithSize:(CGFloat)size;
