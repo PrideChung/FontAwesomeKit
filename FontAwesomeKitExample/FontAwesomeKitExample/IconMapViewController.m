@@ -100,7 +100,7 @@
 
 - (void)loadFontAwesome
 {
-    NSArray *keys = [[[FAKFontAwesome allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[[FAKFontAwesome allIcons] allValues] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
         [self.icons addObject:[FAKFontAwesome iconWithCode:key size:50]];
     }
@@ -108,7 +108,7 @@
 
 - (void)loadFoundation
 {
-    NSArray *keys = [[[FAKFoundationIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[[FAKFoundationIcons allIcons] allValues] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
         [self.icons addObject:[FAKFoundationIcons iconWithCode:key size:50]];
     }
@@ -116,7 +116,7 @@
 
 - (void)loadZocial
 {
-    NSArray *keys = [[[FAKZocial allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[[FAKZocial allIcons] allValues] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
         [self.icons addObject:[FAKZocial iconWithCode:key size:40]];
     }
@@ -124,7 +124,7 @@
 
 - (void)loadIonIcons
 {
-    NSArray *keys = [[[FAKIonIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[[FAKIonIcons allIcons] allValues] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
         [self.icons addObject:[FAKIonIcons iconWithCode:key size:50]];
     }
@@ -132,7 +132,7 @@
 
 - (void)loadOcticons
 {
-    NSArray *keys = [[[FAKOcticons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    NSArray *keys = [[[FAKOcticons allIcons] allValues] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
         [self.icons addObject:[FAKOcticons iconWithCode:key size:48]];
     }
