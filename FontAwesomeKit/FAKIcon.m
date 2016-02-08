@@ -68,7 +68,9 @@
 
 - (NSString *)iconName
 {
-    return [[self class] allIcons][[self characterCode]];
+    NSDictionary *allIcons = [[self class] allIcons];
+    NSUInteger index = [[allIcons allValues] indexOfObject:[self characterCode]];
+    return [allIcons allKeys][index];
 }
 
 - (CGFloat)iconFontSize
