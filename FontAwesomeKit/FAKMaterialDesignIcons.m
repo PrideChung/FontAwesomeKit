@@ -11,7 +11,7 @@
     });
 #endif
 
-    UIFont *font = [UIFont fontWithName:@"materialdesignicons-webfont" size:size];
+    UIFont *font = [UIFont fontWithName:@"Material Design Icons" size:size];
     NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");
     return font;
 }
