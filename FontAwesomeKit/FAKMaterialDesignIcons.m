@@ -1,3 +1,26 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "FAKMaterialDesignIcons.h"
+
+@implementation FAKMaterialDesignIcons
+
++ (UIFont *)iconFontWithSize:(CGFloat)size
+{
+#ifndef DISABLE_MATERIAL_DESIGN_AUTO_REGISTRATION
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self registerIconFontWithURL:[[NSBundle bundleForClass:[FAKMaterialDesignIcons class]] URLForResource:@"materialdesignicons-webfont" withExtension:@"ttf"]];
+    });
+#endif
+
+
+    UIFont *font = [UIFont fontWithName:@"materialdesignicons-webfont" size:size];
+    NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");
+    return font;
+}
+
+
+
 // Generated Code
 + (instancetype)accessPointIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uF002" size:size]; }
 + (instancetype)accessPointNetworkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uF003" size:size]; }

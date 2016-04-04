@@ -1,3 +1,7 @@
+#import "FAKIcon.h"
+
+@interface FAKMaterialDesignIcons : FAKIcon
+
 // Generated Code
 + (instancetype)accessPointIconWithSize:(CGFloat)size;
 + (instancetype)accessPointNetworkIconWithSize:(CGFloat)size;
