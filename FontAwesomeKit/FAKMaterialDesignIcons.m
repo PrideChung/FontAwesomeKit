@@ -7,7 +7,7 @@
 #ifndef DISABLE_MATERIAL_DESIGN_AUTO_REGISTRATION
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self registerIconFontWithURL:[[NSBundle bundleForClass:[FAKMaterialDesignIcons class]] URLForResource:@"materialdesignicons-webfont" withExtension:@"ttf"]];
+        [self registerIconFontWithURL: [[NSBundle bundleForClass:[FAKMaterialDesignIcons class]] URLForResource:@"materialdesignicons-webfont" withExtension:@"ttf"]];
     });
 #endif
 
@@ -15,8 +15,6 @@
     NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");
     return font;
 }
-
-
 
 // Generated Code
 + (instancetype)accessPointIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uF002" size:size]; }
@@ -3133,3 +3131,5 @@
 
     };
 }
+
+@end

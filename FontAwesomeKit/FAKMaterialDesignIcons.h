@@ -1557,3 +1557,5 @@
 + (instancetype)yelpIconWithSize:(CGFloat)size;
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size;
 + (instancetype)zipBoxIconWithSize:(CGFloat)size;
+
+@end
