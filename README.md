@@ -17,6 +17,7 @@ Currently FontAwesomeKit supports **6** different icon fonts.
 - [ionicons 2.0.0](http://ionicons.com/) Contains **733** icons, lots of iOS 7 style outlined icons.
 - [Octicons 2.4.1](https://octicons.github.com/) Contains **206** icons, built with love by [Github](https://github.com/).
 - [Material 2.0.0](https://google.github.io/material-design-icons/) Contains **743** icons, built by Google for Material design.
+- [Material Design Icons 1.5.54](https://materialdesignicons.com/) Contains **1554** icons, based on Google's Material and community additions.
 
 ### API Reforged, Take Advantage of NSAttributedString
 Thanks to `NSAttributedString` the API is more clean and object oriented. All hail `NSAttributedString`!
@@ -37,14 +38,15 @@ FontAwesomeKit now supports sub spec, only get the fonts you need.
 
 Add `pod 'FontAwesomeKit', '~> 2.2.0'` to Podfile to install all icon fonts.
 
-Or select icon fonts with:  
+Or select icon fonts with:
 
-`pod 'FontAwesomeKit/FontAwesome'`  
-`pod 'FontAwesomeKit/FoundationIcons'`  
-`pod 'FontAwesomeKit/Zocial'`  
+`pod 'FontAwesomeKit/FontAwesome'`
+`pod 'FontAwesomeKit/FoundationIcons'`
+`pod 'FontAwesomeKit/Zocial'`
 `pod 'FontAwesomeKit/IonIcons'`
 `pod 'FontAwesomeKit/Octicons'`
 `pod 'FontAwesomeKit/Material'`
+`pod 'FontAwesomeKit/MaterialDesignIcons'`
 
 Run `pod install` or `pod update` to install selected icon fonts.
 
@@ -54,12 +56,13 @@ Run `pod install` or `pod update` to install selected icon fonts.
 
 Or import icon fonts you installed with sub specs
 
-`#import FontAwesomeKit/FAKFontAwesome.h`  
-`#import FontAwesomeKit/FAKFoundationIcons.h`  
-`#import FontAwesomeKit/FAKZocial.h`  
+`#import FontAwesomeKit/FAKFontAwesome.h`
+`#import FontAwesomeKit/FAKFoundationIcons.h`
+`#import FontAwesomeKit/FAKZocial.h`
 `#import FontAwesomeKit/FAKIonIcons.h`
 `#import FontAwesomeKit/FAKOcticons.h`
 `#import FontAwesomeKit/FAKMaterialIcons.h`
+`#import FontAwesomeKit/FAKMaterialDesignIcons.h`
 
 #####*important:*
 If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
@@ -74,10 +77,11 @@ Download source code, then drag the folder `FontAwesomeKit` into your project, a
 ```objective-c
 FAKFontAwesome *starIcon = [FAKFontAwesome starIconWithSize:15];
 FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons bookmarkIconWithSize:15];
-FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];  
+FAKZocial *twitterIcon = [FAKZocial twitterIconWithSize:15];
 FAKIonIcons *mailIcon = [FAKIonIcons ios7EmailIconWithSize:48];
 FAKOcticons *repoIcon = [FAKOcticons repoIconWithSize:48];
 FAKMaterialIcons *androidIcon = [FAKMaterialIcons androidIconWithSize:48];
+FAKMaterialDesignIcons *cameraTimerIcon = [FAKMaterialIcons cameraTimerIconWithSize:36];
 
 ```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
