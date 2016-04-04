@@ -64,6 +64,7 @@
  *      Zocial icons identifier should look like "zocial.{icon}"
  *      Material icons identifier should look like "zmdi-var-{icon}"
  *      Octicons icons identifier should look like "octicon-{icon}"
+ *      Material Design icons identifier should look like "mdi-{icon}"
  *  @param size     The desired size (in points) of the icon font that will be used for the icon. This value must be greater than 0.0.
  *  @param error    Returns an error in case the identifier does not exist.
  *
@@ -82,7 +83,7 @@
 /**
  *  Adds an attribute with the given name and value to the icon.
  *
- *  @param name  A string specifying the attribute name. 
+ *  @param name  A string specifying the attribute name.
  *  @param value Adds an attribute with the given name and value to the icon.
  */
 - (void)addAttribute:(NSString *)name value:(id)value;
