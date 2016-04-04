@@ -1,5 +1,3 @@
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "FAKMaterialDesignIcons.h"
 
 @implementation FAKMaterialDesignIcons
@@ -12,7 +10,6 @@
         [self registerIconFontWithURL:[[NSBundle bundleForClass:[FAKMaterialDesignIcons class]] URLForResource:@"materialdesignicons-webfont" withExtension:@"ttf"]];
     });
 #endif
-
 
     UIFont *font = [UIFont fontWithName:@"materialdesignicons-webfont" size:size];
     NSAssert(font, @"UIFont object should not be nil, check if the font file is added to the application bundle and you're using the correct font name.");
