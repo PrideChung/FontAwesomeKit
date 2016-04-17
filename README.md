@@ -2,10 +2,6 @@ FontAwesomeKit ![Cocoapods Version](https://img.shields.io/cocoapods/v/FontAweso
 ==============
 Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons.
 
-![image](http://i.minus.com/i3vNn0fTwcJeI.png)
-
-![image](http://i2.minus.com/ivKqhOLJLVvmJ.png)
-
 ## Version 2.2 Notable Changes
 ### Not Just Awesome. New Icon Fonts Added
 
