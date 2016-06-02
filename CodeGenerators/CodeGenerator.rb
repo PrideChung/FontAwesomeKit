@@ -52,7 +52,7 @@ EOT
     icon_map = ''
     @iconNames.each_with_index do |iconName, index|
       icon_map_template = <<EOT 
-      @"#{iconName}" : @"#{@codes[index]}",
+      @"#{@codes[index]}" : @"#{iconName}",
 EOT
       icon_map << icon_map_template
     end

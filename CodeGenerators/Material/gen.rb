@@ -16,7 +16,9 @@ File.read("codepoints").each_line do |line|
   name = parts[0]
 
   if name 
-    iconNames.push "#{name}"
+    iconNamesParts = name.split('_')
+    iconName = iconNamesParts.join(' ')
+    iconNames.push "#{iconName}"
 
     if name === '3d_rotation'
       name = 'three_d_rotation'
