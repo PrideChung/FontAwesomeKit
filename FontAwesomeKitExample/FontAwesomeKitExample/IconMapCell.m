@@ -13,7 +13,7 @@
 - (void)configureCellWithIcon:(FAKIcon *)icon
 {
     self.iconLabel.attributedText = [icon attributedString];
-    self.iconNameLabel.text = [icon iconName];
+    self.iconNameLabel.text = [[icon iconName] stringByReplacingOccurrencesOfString:@"-" withString:@" "];
 }
 
 @end
