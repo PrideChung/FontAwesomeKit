@@ -18,9 +18,6 @@
 
 // Generated Code
 + (instancetype)alertIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02d" size:size]; }
-+ (instancetype)alignmentAlignIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08a" size:size]; }
-+ (instancetype)alignmentAlignedToIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08e" size:size]; }
-+ (instancetype)alignmentUnalignIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08b" size:size]; }
 + (instancetype)arrowDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03f" size:size]; }
 + (instancetype)arrowLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf040" size:size]; }
 + (instancetype)arrowRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03e" size:size]; }
@@ -29,7 +26,10 @@
 + (instancetype)arrowSmallRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf071" size:size]; }
 + (instancetype)arrowSmallUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09f" size:size]; }
 + (instancetype)arrowUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03d" size:size]; }
-+ (instancetype)beerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf069" size:size]; }
++ (instancetype)microscopeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dd" size:size]; }
++ (instancetype)beakerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dd" size:size]; }
++ (instancetype)bellIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0de" size:size]; }
++ (instancetype)boldIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e2" size:size]; }
 + (instancetype)bookIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf007" size:size]; }
 + (instancetype)bookmarkIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07b" size:size]; }
 + (instancetype)briefcaseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d3" size:size]; }
@@ -50,7 +50,6 @@
 + (instancetype)cloudDownloadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00b" size:size]; }
 + (instancetype)cloudUploadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00c" size:size]; }
 + (instancetype)codeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05f" size:size]; }
-+ (instancetype)colorModeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf065" size:size]; }
 + (instancetype)commentAddIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02b" size:size]; }
 + (instancetype)commentIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02b" size:size]; }
 + (instancetype)commentDiscussionIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf04f" size:size]; }
@@ -58,6 +57,8 @@
 + (instancetype)dashIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ca" size:size]; }
 + (instancetype)dashboardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07d" size:size]; }
 + (instancetype)databaseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf096" size:size]; }
++ (instancetype)cloneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dc" size:size]; }
++ (instancetype)desktopDownloadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0dc" size:size]; }
 + (instancetype)deviceCameraIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf056" size:size]; }
 + (instancetype)deviceCameraVideoIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf057" size:size]; }
 + (instancetype)deviceDesktopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf27c" size:size]; }
@@ -102,18 +103,14 @@
 + (instancetype)historyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07e" size:size]; }
 + (instancetype)homeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08d" size:size]; }
 + (instancetype)horizontalRuleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf070" size:size]; }
-+ (instancetype)hourglassIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09e" size:size]; }
 + (instancetype)hubotIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09d" size:size]; }
 + (instancetype)inboxIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0cf" size:size]; }
 + (instancetype)infoIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf059" size:size]; }
 + (instancetype)issueClosedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf028" size:size]; }
 + (instancetype)issueOpenedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf026" size:size]; }
 + (instancetype)issueReopenedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf027" size:size]; }
++ (instancetype)italicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e4" size:size]; }
 + (instancetype)jerseyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf019" size:size]; }
-+ (instancetype)jumpDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf072" size:size]; }
-+ (instancetype)jumpLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a5" size:size]; }
-+ (instancetype)jumpRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a6" size:size]; }
-+ (instancetype)jumpUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf073" size:size]; }
 + (instancetype)keyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf049" size:size]; }
 + (instancetype)keyboardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf00d" size:size]; }
 + (instancetype)lawIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d8" size:size]; }
@@ -127,6 +124,7 @@
 + (instancetype)mirrorPrivateIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06a" size:size]; }
 + (instancetype)gitForkPrivateIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06a" size:size]; }
 + (instancetype)lockIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf06a" size:size]; }
++ (instancetype)logoGistIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ad" size:size]; }
 + (instancetype)logoGithubIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf092" size:size]; }
 + (instancetype)mailIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03b" size:size]; }
 + (instancetype)mailReadIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf03c" size:size]; }
@@ -135,15 +133,10 @@
 + (instancetype)markdownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c9" size:size]; }
 + (instancetype)megaphoneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf077" size:size]; }
 + (instancetype)mentionIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0be" size:size]; }
-+ (instancetype)microscopeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf089" size:size]; }
 + (instancetype)milestoneIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf075" size:size]; }
 + (instancetype)mirrorPublicIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf024" size:size]; }
 + (instancetype)mirrorIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf024" size:size]; }
 + (instancetype)mortarBoardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d7" size:size]; }
-+ (instancetype)moveDownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a8" size:size]; }
-+ (instancetype)moveLeftIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf074" size:size]; }
-+ (instancetype)moveRightIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a9" size:size]; }
-+ (instancetype)moveUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0a7" size:size]; }
 + (instancetype)muteIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf080" size:size]; }
 + (instancetype)noNewlineIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf09c" size:size]; }
 + (instancetype)octofaceIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf008" size:size]; }
@@ -155,21 +148,15 @@
 + (instancetype)personFollowIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf018" size:size]; }
 + (instancetype)personIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf018" size:size]; }
 + (instancetype)pinIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf041" size:size]; }
-+ (instancetype)playbackFastForwardIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0bd" size:size]; }
-+ (instancetype)playbackPauseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0bb" size:size]; }
-+ (instancetype)playbackPlayIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0bf" size:size]; }
-+ (instancetype)playbackRewindIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0bc" size:size]; }
 + (instancetype)plugIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0d4" size:size]; }
 + (instancetype)repoCreateIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05d" size:size]; }
 + (instancetype)gistNewIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05d" size:size]; }
 + (instancetype)fileDirectoryCreateIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05d" size:size]; }
 + (instancetype)fileAddIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05d" size:size]; }
 + (instancetype)plusIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05d" size:size]; }
-+ (instancetype)podiumIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0af" size:size]; }
 + (instancetype)primitiveDotIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf052" size:size]; }
 + (instancetype)primitiveSquareIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf053" size:size]; }
 + (instancetype)pulseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf085" size:size]; }
-+ (instancetype)puzzleIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c0" size:size]; }
 + (instancetype)questionIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02c" size:size]; }
 + (instancetype)quoteIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf063" size:size]; }
 + (instancetype)radioTowerIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf030" size:size]; }
@@ -184,30 +171,30 @@
 + (instancetype)rocketIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf033" size:size]; }
 + (instancetype)rssIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf034" size:size]; }
 + (instancetype)rubyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf047" size:size]; }
-+ (instancetype)screenFullIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf066" size:size]; }
-+ (instancetype)screenNormalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf067" size:size]; }
 + (instancetype)searchSaveIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02e" size:size]; }
 + (instancetype)searchIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02e" size:size]; }
 + (instancetype)serverIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf097" size:size]; }
 + (instancetype)settingsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf07c" size:size]; }
++ (instancetype)shieldIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e1" size:size]; }
 + (instancetype)logInIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf036" size:size]; }
 + (instancetype)signInIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf036" size:size]; }
 + (instancetype)logOutIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf032" size:size]; }
 + (instancetype)signOutIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf032" size:size]; }
-+ (instancetype)splitIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c6" size:size]; }
++ (instancetype)smileyIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e7" size:size]; }
 + (instancetype)squirrelIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0b2" size:size]; }
 + (instancetype)starAddIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02a" size:size]; }
 + (instancetype)starDeleteIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02a" size:size]; }
 + (instancetype)starIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf02a" size:size]; }
-+ (instancetype)stepsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c7" size:size]; }
 + (instancetype)stopIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf08f" size:size]; }
 + (instancetype)repoSyncIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf087" size:size]; }
 + (instancetype)syncIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf087" size:size]; }
 + (instancetype)tagRemoveIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf015" size:size]; }
 + (instancetype)tagAddIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf015" size:size]; }
 + (instancetype)tagIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf015" size:size]; }
++ (instancetype)tasklistIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e5" size:size]; }
 + (instancetype)telescopeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf088" size:size]; }
 + (instancetype)terminalIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0c8" size:size]; }
++ (instancetype)textSizeIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e3" size:size]; }
 + (instancetype)threeBarsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf05e" size:size]; }
 + (instancetype)thumbsdownIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0db" size:size]; }
 + (instancetype)thumbsupIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0da" size:size]; }
@@ -219,219 +206,212 @@
 + (instancetype)triangleUpIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0aa" size:size]; }
 + (instancetype)unfoldIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf039" size:size]; }
 + (instancetype)unmuteIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0ba" size:size]; }
++ (instancetype)unverifiedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e8" size:size]; }
++ (instancetype)verifiedIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e6" size:size]; }
 + (instancetype)versionsIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf064" size:size]; }
++ (instancetype)watchIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf0e0" size:size]; }
 + (instancetype)removeCloseIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf081" size:size]; }
 + (instancetype)xIconWithSize:(CGFloat)size { return [self iconWithCode:@"\uf081" size:size]; }
 + (instancetype)zapIconWithSize:(CGFloat)size { return [self iconWithCode:@"\u26A1" size:size]; }
 
 + (NSDictionary *)allIcons {
     return @{
-             @"octicon-alert" : @"\uf02d",
-             @"octicon-alignment-align" : @"\uf08a",
-             @"octicon-alignment-aligned-to" : @"\uf08e",
-             @"octicon-alignment-unalign" : @"\uf08b",
-             @"octicon-arrow-down" : @"\uf03f",
-             @"octicon-arrow-left" : @"\uf040",
-             @"octicon-arrow-right" : @"\uf03e",
-             @"octicon-arrow-small-down" : @"\uf0a0",
-             @"octicon-arrow-small-left" : @"\uf0a1",
-             @"octicon-arrow-small-right" : @"\uf071",
-             @"octicon-arrow-small-up" : @"\uf09f",
-             @"octicon-arrow-up" : @"\uf03d",
-             @"octicon-beer" : @"\uf069",
-             @"octicon-book" : @"\uf007",
-             @"octicon-bookmark" : @"\uf07b",
-             @"octicon-briefcase" : @"\uf0d3",
-             @"octicon-broadcast" : @"\uf048",
-             @"octicon-browser" : @"\uf0c5",
-             @"octicon-bug" : @"\uf091",
-             @"octicon-calendar" : @"\uf068",
-             @"octicon-check" : @"\uf03a",
-             @"octicon-checklist" : @"\uf076",
-             @"octicon-chevron-down" : @"\uf0a3",
-             @"octicon-chevron-left" : @"\uf0a4",
-             @"octicon-chevron-right" : @"\uf078",
-             @"octicon-chevron-up" : @"\uf0a2",
-             @"octicon-circle-slash" : @"\uf084",
-             @"octicon-circuit-board" : @"\uf0d6",
-             @"octicon-clippy" : @"\uf035",
-             @"octicon-clock" : @"\uf046",
-             @"octicon-cloud-download" : @"\uf00b",
-             @"octicon-cloud-upload" : @"\uf00c",
-             @"octicon-code" : @"\uf05f",
-             @"octicon-color-mode" : @"\uf065",
-             @"octicon-comment-add" : @"\uf02b",
-             @"octicon-comment" : @"\uf02b",
-             @"octicon-comment-discussion" : @"\uf04f",
-             @"octicon-credit-card" : @"\uf045",
-             @"octicon-dash" : @"\uf0ca",
-             @"octicon-dashboard" : @"\uf07d",
-             @"octicon-database" : @"\uf096",
-             @"octicon-device-camera" : @"\uf056",
-             @"octicon-device-camera-video" : @"\uf057",
-             @"octicon-device-desktop" : @"\uf27c",
-             @"octicon-device-mobile" : @"\uf038",
-             @"octicon-diff" : @"\uf04d",
-             @"octicon-diff-added" : @"\uf06b",
-             @"octicon-diff-ignored" : @"\uf099",
-             @"octicon-diff-modified" : @"\uf06d",
-             @"octicon-diff-removed" : @"\uf06c",
-             @"octicon-diff-renamed" : @"\uf06e",
-             @"octicon-ellipsis" : @"\uf09a",
-             @"octicon-eye-unwatch" : @"\uf04e",
-             @"octicon-eye-watch" : @"\uf04e",
-             @"octicon-eye" : @"\uf04e",
-             @"octicon-file-binary" : @"\uf094",
-             @"octicon-file-code" : @"\uf010",
-             @"octicon-file-directory" : @"\uf016",
-             @"octicon-file-media" : @"\uf012",
-             @"octicon-file-pdf" : @"\uf014",
-             @"octicon-file-submodule" : @"\uf017",
-             @"octicon-file-symlink-directory" : @"\uf0b1",
-             @"octicon-file-symlink-file" : @"\uf0b0",
-             @"octicon-file-text" : @"\uf011",
-             @"octicon-file-zip" : @"\uf013",
-             @"octicon-flame" : @"\uf0d2",
-             @"octicon-fold" : @"\uf0cc",
-             @"octicon-gear" : @"\uf02f",
-             @"octicon-gift" : @"\uf042",
-             @"octicon-gist" : @"\uf00e",
-             @"octicon-gist-secret" : @"\uf08c",
-             @"octicon-git-branch-create" : @"\uf020",
-             @"octicon-git-branch-delete" : @"\uf020",
-             @"octicon-git-branch" : @"\uf020",
-             @"octicon-git-commit" : @"\uf01f",
-             @"octicon-git-compare" : @"\uf0ac",
-             @"octicon-git-merge" : @"\uf023",
-             @"octicon-git-pull-request-abandoned" : @"\uf009",
-             @"octicon-git-pull-request" : @"\uf009",
-             @"octicon-globe" : @"\uf0b6",
-             @"octicon-graph" : @"\uf043",
-             @"octicon-heart" : @"\u2665",
-             @"octicon-history" : @"\uf07e",
-             @"octicon-home" : @"\uf08d",
-             @"octicon-horizontal-rule" : @"\uf070",
-             @"octicon-hourglass" : @"\uf09e",
-             @"octicon-hubot" : @"\uf09d",
-             @"octicon-inbox" : @"\uf0cf",
-             @"octicon-info" : @"\uf059",
-             @"octicon-issue-closed" : @"\uf028",
-             @"octicon-issue-opened" : @"\uf026",
-             @"octicon-issue-reopened" : @"\uf027",
-             @"octicon-jersey" : @"\uf019",
-             @"octicon-jump-down" : @"\uf072",
-             @"octicon-jump-left" : @"\uf0a5",
-             @"octicon-jump-right" : @"\uf0a6",
-             @"octicon-jump-up" : @"\uf073",
-             @"octicon-key" : @"\uf049",
-             @"octicon-keyboard" : @"\uf00d",
-             @"octicon-law" : @"\uf0d8",
-             @"octicon-light-bulb" : @"\uf000",
-             @"octicon-link" : @"\uf05c",
-             @"octicon-link-external" : @"\uf07f",
-             @"octicon-list-ordered" : @"\uf062",
-             @"octicon-list-unordered" : @"\uf061",
-             @"octicon-location" : @"\uf060",
-             @"octicon-gist-private" : @"\uf06a",
-             @"octicon-mirror-private" : @"\uf06a",
-             @"octicon-git-fork-private" : @"\uf06a",
-             @"octicon-lock" : @"\uf06a",
-             @"octicon-logo-github" : @"\uf092",
-             @"octicon-mail" : @"\uf03b",
-             @"octicon-mail-read" : @"\uf03c",
-             @"octicon-mail-reply" : @"\uf051",
-             @"octicon-mark-github" : @"\uf00a",
-             @"octicon-markdown" : @"\uf0c9",
-             @"octicon-megaphone" : @"\uf077",
-             @"octicon-mention" : @"\uf0be",
-             @"octicon-microscope" : @"\uf089",
-             @"octicon-milestone" : @"\uf075",
-             @"octicon-mirror-public" : @"\uf024",
-             @"octicon-mirror" : @"\uf024",
-             @"octicon-mortar-board" : @"\uf0d7",
-             @"octicon-move-down" : @"\uf0a8",
-             @"octicon-move-left" : @"\uf074",
-             @"octicon-move-right" : @"\uf0a9",
-             @"octicon-move-up" : @"\uf0a7",
-             @"octicon-mute" : @"\uf080",
-             @"octicon-no-newline" : @"\uf09c",
-             @"octicon-octoface" : @"\uf008",
-             @"octicon-organization" : @"\uf037",
-             @"octicon-package" : @"\uf0c4",
-             @"octicon-paintcan" : @"\uf0d1",
-             @"octicon-pencil" : @"\uf058",
-             @"octicon-person-add" : @"\uf018",
-             @"octicon-person-follow" : @"\uf018",
-             @"octicon-person" : @"\uf018",
-             @"octicon-pin" : @"\uf041",
-             @"octicon-playback-fast-forward" : @"\uf0bd",
-             @"octicon-playback-pause" : @"\uf0bb",
-             @"octicon-playback-play" : @"\uf0bf",
-             @"octicon-playback-rewind" : @"\uf0bc",
-             @"octicon-plug" : @"\uf0d4",
-             @"octicon-repo-create" : @"\uf05d",
-             @"octicon-gist-new" : @"\uf05d",
-             @"octicon-file-directory-create" : @"\uf05d",
-             @"octicon-file-add" : @"\uf05d",
-             @"octicon-plus" : @"\uf05d",
-             @"octicon-podium" : @"\uf0af",
-             @"octicon-primitive-dot" : @"\uf052",
-             @"octicon-primitive-square" : @"\uf053",
-             @"octicon-pulse" : @"\uf085",
-             @"octicon-puzzle" : @"\uf0c0",
-             @"octicon-question" : @"\uf02c",
-             @"octicon-quote" : @"\uf063",
-             @"octicon-radio-tower" : @"\uf030",
-             @"octicon-repo-delete" : @"\uf001",
-             @"octicon-repo" : @"\uf001",
-             @"octicon-repo-clone" : @"\uf04c",
-             @"octicon-repo-force-push" : @"\uf04a",
-             @"octicon-gist-fork" : @"\uf002",
-             @"octicon-repo-forked" : @"\uf002",
-             @"octicon-repo-pull" : @"\uf006",
-             @"octicon-repo-push" : @"\uf005",
-             @"octicon-rocket" : @"\uf033",
-             @"octicon-rss" : @"\uf034",
-             @"octicon-ruby" : @"\uf047",
-             @"octicon-screen-full" : @"\uf066",
-             @"octicon-screen-normal" : @"\uf067",
-             @"octicon-search-save" : @"\uf02e",
-             @"octicon-search" : @"\uf02e",
-             @"octicon-server" : @"\uf097",
-             @"octicon-settings" : @"\uf07c",
-             @"octicon-log-in" : @"\uf036",
-             @"octicon-sign-in" : @"\uf036",
-             @"octicon-log-out" : @"\uf032",
-             @"octicon-sign-out" : @"\uf032",
-             @"octicon-split" : @"\uf0c6",
-             @"octicon-squirrel" : @"\uf0b2",
-             @"octicon-star-add" : @"\uf02a",
-             @"octicon-star-delete" : @"\uf02a",
-             @"octicon-star" : @"\uf02a",
-             @"octicon-steps" : @"\uf0c7",
-             @"octicon-stop" : @"\uf08f",
-             @"octicon-repo-sync" : @"\uf087",
-             @"octicon-sync" : @"\uf087",
-             @"octicon-tag-remove" : @"\uf015",
-             @"octicon-tag-add" : @"\uf015",
-             @"octicon-tag" : @"\uf015",
-             @"octicon-telescope" : @"\uf088",
-             @"octicon-terminal" : @"\uf0c8",
-             @"octicon-three-bars" : @"\uf05e",
-             @"octicon-thumbsdown" : @"\uf0db",
-             @"octicon-thumbsup" : @"\uf0da",
-             @"octicon-tools" : @"\uf031",
-             @"octicon-trashcan" : @"\uf0d0",
-             @"octicon-triangle-down" : @"\uf05b",
-             @"octicon-triangle-left" : @"\uf044",
-             @"octicon-triangle-right" : @"\uf05a",
-             @"octicon-triangle-up" : @"\uf0aa",
-             @"octicon-unfold" : @"\uf039",
-             @"octicon-unmute" : @"\uf0ba",
-             @"octicon-versions" : @"\uf064",
-             @"octicon-remove-close" : @"\uf081",
-             @"octicon-x" : @"\uf081",
-             @"octicon-zap" : @"\u26A1",
+             @"\uf02d" : @"octicon-alert",
+             @"\uf03f" : @"octicon-arrow-down",
+             @"\uf040" : @"octicon-arrow-left",
+             @"\uf03e" : @"octicon-arrow-right",
+             @"\uf0a0" : @"octicon-arrow-small-down",
+             @"\uf0a1" : @"octicon-arrow-small-left",
+             @"\uf071" : @"octicon-arrow-small-right",
+             @"\uf09f" : @"octicon-arrow-small-up",
+             @"\uf03d" : @"octicon-arrow-up",
+             @"\uf0dd" : @"octicon-microscope",
+             @"\uf0dd" : @"octicon-beaker",
+             @"\uf0de" : @"octicon-bell",
+             @"\uf0e2" : @"octicon-bold",
+             @"\uf007" : @"octicon-book",
+             @"\uf07b" : @"octicon-bookmark",
+             @"\uf0d3" : @"octicon-briefcase",
+             @"\uf048" : @"octicon-broadcast",
+             @"\uf0c5" : @"octicon-browser",
+             @"\uf091" : @"octicon-bug",
+             @"\uf068" : @"octicon-calendar",
+             @"\uf03a" : @"octicon-check",
+             @"\uf076" : @"octicon-checklist",
+             @"\uf0a3" : @"octicon-chevron-down",
+             @"\uf0a4" : @"octicon-chevron-left",
+             @"\uf078" : @"octicon-chevron-right",
+             @"\uf0a2" : @"octicon-chevron-up",
+             @"\uf084" : @"octicon-circle-slash",
+             @"\uf0d6" : @"octicon-circuit-board",
+             @"\uf035" : @"octicon-clippy",
+             @"\uf046" : @"octicon-clock",
+             @"\uf00b" : @"octicon-cloud-download",
+             @"\uf00c" : @"octicon-cloud-upload",
+             @"\uf05f" : @"octicon-code",
+             @"\uf02b" : @"octicon-comment-add",
+             @"\uf02b" : @"octicon-comment",
+             @"\uf04f" : @"octicon-comment-discussion",
+             @"\uf045" : @"octicon-credit-card",
+             @"\uf0ca" : @"octicon-dash",
+             @"\uf07d" : @"octicon-dashboard",
+             @"\uf096" : @"octicon-database",
+             @"\uf0dc" : @"octicon-clone",
+             @"\uf0dc" : @"octicon-desktop-download",
+             @"\uf056" : @"octicon-device-camera",
+             @"\uf057" : @"octicon-device-camera-video",
+             @"\uf27c" : @"octicon-device-desktop",
+             @"\uf038" : @"octicon-device-mobile",
+             @"\uf04d" : @"octicon-diff",
+             @"\uf06b" : @"octicon-diff-added",
+             @"\uf099" : @"octicon-diff-ignored",
+             @"\uf06d" : @"octicon-diff-modified",
+             @"\uf06c" : @"octicon-diff-removed",
+             @"\uf06e" : @"octicon-diff-renamed",
+             @"\uf09a" : @"octicon-ellipsis",
+             @"\uf04e" : @"octicon-eye-unwatch",
+             @"\uf04e" : @"octicon-eye-watch",
+             @"\uf04e" : @"octicon-eye",
+             @"\uf094" : @"octicon-file-binary",
+             @"\uf010" : @"octicon-file-code",
+             @"\uf016" : @"octicon-file-directory",
+             @"\uf012" : @"octicon-file-media",
+             @"\uf014" : @"octicon-file-pdf",
+             @"\uf017" : @"octicon-file-submodule",
+             @"\uf0b1" : @"octicon-file-symlink-directory",
+             @"\uf0b0" : @"octicon-file-symlink-file",
+             @"\uf011" : @"octicon-file-text",
+             @"\uf013" : @"octicon-file-zip",
+             @"\uf0d2" : @"octicon-flame",
+             @"\uf0cc" : @"octicon-fold",
+             @"\uf02f" : @"octicon-gear",
+             @"\uf042" : @"octicon-gift",
+             @"\uf00e" : @"octicon-gist",
+             @"\uf08c" : @"octicon-gist-secret",
+             @"\uf020" : @"octicon-git-branch-create",
+             @"\uf020" : @"octicon-git-branch-delete",
+             @"\uf020" : @"octicon-git-branch",
+             @"\uf01f" : @"octicon-git-commit",
+             @"\uf0ac" : @"octicon-git-compare",
+             @"\uf023" : @"octicon-git-merge",
+             @"\uf009" : @"octicon-git-pull-request-abandoned",
+             @"\uf009" : @"octicon-git-pull-request",
+             @"\uf0b6" : @"octicon-globe",
+             @"\uf043" : @"octicon-graph",
+             @"\u2665" : @"octicon-heart",
+             @"\uf07e" : @"octicon-history",
+             @"\uf08d" : @"octicon-home",
+             @"\uf070" : @"octicon-horizontal-rule",
+             @"\uf09d" : @"octicon-hubot",
+             @"\uf0cf" : @"octicon-inbox",
+             @"\uf059" : @"octicon-info",
+             @"\uf028" : @"octicon-issue-closed",
+             @"\uf026" : @"octicon-issue-opened",
+             @"\uf027" : @"octicon-issue-reopened",
+             @"\uf0e4" : @"octicon-italic",
+             @"\uf019" : @"octicon-jersey",
+             @"\uf049" : @"octicon-key",
+             @"\uf00d" : @"octicon-keyboard",
+             @"\uf0d8" : @"octicon-law",
+             @"\uf000" : @"octicon-light-bulb",
+             @"\uf05c" : @"octicon-link",
+             @"\uf07f" : @"octicon-link-external",
+             @"\uf062" : @"octicon-list-ordered",
+             @"\uf061" : @"octicon-list-unordered",
+             @"\uf060" : @"octicon-location",
+             @"\uf06a" : @"octicon-gist-private",
+             @"\uf06a" : @"octicon-mirror-private",
+             @"\uf06a" : @"octicon-git-fork-private",
+             @"\uf06a" : @"octicon-lock",
+             @"\uf0ad" : @"octicon-logo-gist",
+             @"\uf092" : @"octicon-logo-github",
+             @"\uf03b" : @"octicon-mail",
+             @"\uf03c" : @"octicon-mail-read",
+             @"\uf051" : @"octicon-mail-reply",
+             @"\uf00a" : @"octicon-mark-github",
+             @"\uf0c9" : @"octicon-markdown",
+             @"\uf077" : @"octicon-megaphone",
+             @"\uf0be" : @"octicon-mention",
+             @"\uf075" : @"octicon-milestone",
+             @"\uf024" : @"octicon-mirror-public",
+             @"\uf024" : @"octicon-mirror",
+             @"\uf0d7" : @"octicon-mortar-board",
+             @"\uf080" : @"octicon-mute",
+             @"\uf09c" : @"octicon-no-newline",
+             @"\uf008" : @"octicon-octoface",
+             @"\uf037" : @"octicon-organization",
+             @"\uf0c4" : @"octicon-package",
+             @"\uf0d1" : @"octicon-paintcan",
+             @"\uf058" : @"octicon-pencil",
+             @"\uf018" : @"octicon-person-add",
+             @"\uf018" : @"octicon-person-follow",
+             @"\uf018" : @"octicon-person",
+             @"\uf041" : @"octicon-pin",
+             @"\uf0d4" : @"octicon-plug",
+             @"\uf05d" : @"octicon-repo-create",
+             @"\uf05d" : @"octicon-gist-new",
+             @"\uf05d" : @"octicon-file-directory-create",
+             @"\uf05d" : @"octicon-file-add",
+             @"\uf05d" : @"octicon-plus",
+             @"\uf052" : @"octicon-primitive-dot",
+             @"\uf053" : @"octicon-primitive-square",
+             @"\uf085" : @"octicon-pulse",
+             @"\uf02c" : @"octicon-question",
+             @"\uf063" : @"octicon-quote",
+             @"\uf030" : @"octicon-radio-tower",
+             @"\uf001" : @"octicon-repo-delete",
+             @"\uf001" : @"octicon-repo",
+             @"\uf04c" : @"octicon-repo-clone",
+             @"\uf04a" : @"octicon-repo-force-push",
+             @"\uf002" : @"octicon-gist-fork",
+             @"\uf002" : @"octicon-repo-forked",
+             @"\uf006" : @"octicon-repo-pull",
+             @"\uf005" : @"octicon-repo-push",
+             @"\uf033" : @"octicon-rocket",
+             @"\uf034" : @"octicon-rss",
+             @"\uf047" : @"octicon-ruby",
+             @"\uf02e" : @"octicon-search-save",
+             @"\uf02e" : @"octicon-search",
+             @"\uf097" : @"octicon-server",
+             @"\uf07c" : @"octicon-settings",
+             @"\uf0e1" : @"octicon-shield",
+             @"\uf036" : @"octicon-log-in",
+             @"\uf036" : @"octicon-sign-in",
+             @"\uf032" : @"octicon-log-out",
+             @"\uf032" : @"octicon-sign-out",
+             @"\uf0e7" : @"octicon-smiley",
+             @"\uf0b2" : @"octicon-squirrel",
+             @"\uf02a" : @"octicon-star-add",
+             @"\uf02a" : @"octicon-star-delete",
+             @"\uf02a" : @"octicon-star",
+             @"\uf08f" : @"octicon-stop",
+             @"\uf087" : @"octicon-repo-sync",
+             @"\uf087" : @"octicon-sync",
+             @"\uf015" : @"octicon-tag-remove",
+             @"\uf015" : @"octicon-tag-add",
+             @"\uf015" : @"octicon-tag",
+             @"\uf0e5" : @"octicon-tasklist",
+             @"\uf088" : @"octicon-telescope",
+             @"\uf0c8" : @"octicon-terminal",
+             @"\uf0e3" : @"octicon-text-size",
+             @"\uf05e" : @"octicon-three-bars",
+             @"\uf0db" : @"octicon-thumbsdown",
+             @"\uf0da" : @"octicon-thumbsup",
+             @"\uf031" : @"octicon-tools",
+             @"\uf0d0" : @"octicon-trashcan",
+             @"\uf05b" : @"octicon-triangle-down",
+             @"\uf044" : @"octicon-triangle-left",
+             @"\uf05a" : @"octicon-triangle-right",
+             @"\uf0aa" : @"octicon-triangle-up",
+             @"\uf039" : @"octicon-unfold",
+             @"\uf0ba" : @"octicon-unmute",
+             @"\uf0e8" : @"octicon-unverified",
+             @"\uf0e6" : @"octicon-verified",
+             @"\uf064" : @"octicon-versions",
+             @"\uf0e0" : @"octicon-watch",
+             @"\uf081" : @"octicon-remove-close",
+             @"\uf081" : @"octicon-x",
+             @"\u26A1" : @"octicon-zap",
              
              };
 }

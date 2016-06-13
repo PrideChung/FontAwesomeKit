@@ -12,6 +12,7 @@
 + (instancetype)alignRightIconWithSize:(CGFloat)size;
 + (instancetype)amazonIconWithSize:(CGFloat)size;
 + (instancetype)ambulanceIconWithSize:(CGFloat)size;
++ (instancetype)americanSignLanguageInterpretingIconWithSize:(CGFloat)size;
 + (instancetype)anchorIconWithSize:(CGFloat)size;
 + (instancetype)androidIconWithSize:(CGFloat)size;
 + (instancetype)angellistIconWithSize:(CGFloat)size;
@@ -42,8 +43,11 @@
 + (instancetype)arrowsAltIconWithSize:(CGFloat)size;
 + (instancetype)arrowsHIconWithSize:(CGFloat)size;
 + (instancetype)arrowsVIconWithSize:(CGFloat)size;
++ (instancetype)aslInterpretingIconWithSize:(CGFloat)size;
++ (instancetype)assistiveListeningSystemsIconWithSize:(CGFloat)size;
 + (instancetype)asteriskIconWithSize:(CGFloat)size;
 + (instancetype)atIconWithSize:(CGFloat)size;
++ (instancetype)audioDescriptionIconWithSize:(CGFloat)size;
 + (instancetype)automobileIconWithSize:(CGFloat)size;
 + (instancetype)backwardIconWithSize:(CGFloat)size;
 + (instancetype)balanceScaleIconWithSize:(CGFloat)size;
@@ -78,6 +82,7 @@
 + (instancetype)bitbucketSquareIconWithSize:(CGFloat)size;
 + (instancetype)bitcoinIconWithSize:(CGFloat)size;
 + (instancetype)blackTieIconWithSize:(CGFloat)size;
++ (instancetype)blindIconWithSize:(CGFloat)size;
 + (instancetype)bluetoothIconWithSize:(CGFloat)size;
 + (instancetype)bluetoothBIconWithSize:(CGFloat)size;
 + (instancetype)boldIconWithSize:(CGFloat)size;
@@ -86,6 +91,7 @@
 + (instancetype)bookIconWithSize:(CGFloat)size;
 + (instancetype)bookmarkIconWithSize:(CGFloat)size;
 + (instancetype)bookmarkOIconWithSize:(CGFloat)size;
++ (instancetype)brailleIconWithSize:(CGFloat)size;
 + (instancetype)briefcaseIconWithSize:(CGFloat)size;
 + (instancetype)btcIconWithSize:(CGFloat)size;
 + (instancetype)bugIconWithSize:(CGFloat)size;
@@ -188,6 +194,8 @@
 + (instancetype)dashboardIconWithSize:(CGFloat)size;
 + (instancetype)dashcubeIconWithSize:(CGFloat)size;
 + (instancetype)databaseIconWithSize:(CGFloat)size;
++ (instancetype)deafIconWithSize:(CGFloat)size;
++ (instancetype)deafnessIconWithSize:(CGFloat)size;
 + (instancetype)dedentIconWithSize:(CGFloat)size;
 + (instancetype)deliciousIconWithSize:(CGFloat)size;
 + (instancetype)desktopIconWithSize:(CGFloat)size;
@@ -209,6 +217,7 @@
 + (instancetype)envelopeIconWithSize:(CGFloat)size;
 + (instancetype)envelopeOIconWithSize:(CGFloat)size;
 + (instancetype)envelopeSquareIconWithSize:(CGFloat)size;
++ (instancetype)enviraIconWithSize:(CGFloat)size;
 + (instancetype)eraserIconWithSize:(CGFloat)size;
 + (instancetype)eurIconWithSize:(CGFloat)size;
 + (instancetype)euroIconWithSize:(CGFloat)size;
@@ -223,6 +232,7 @@
 + (instancetype)eyeIconWithSize:(CGFloat)size;
 + (instancetype)eyeSlashIconWithSize:(CGFloat)size;
 + (instancetype)eyedropperIconWithSize:(CGFloat)size;
++ (instancetype)faIconWithSize:(CGFloat)size;
 + (instancetype)facebookIconWithSize:(CGFloat)size;
 + (instancetype)facebookFIconWithSize:(CGFloat)size;
 + (instancetype)facebookOfficialIconWithSize:(CGFloat)size;
@@ -257,6 +267,7 @@
 + (instancetype)fireIconWithSize:(CGFloat)size;
 + (instancetype)fireExtinguisherIconWithSize:(CGFloat)size;
 + (instancetype)firefoxIconWithSize:(CGFloat)size;
++ (instancetype)firstOrderIconWithSize:(CGFloat)size;
 + (instancetype)flagIconWithSize:(CGFloat)size;
 + (instancetype)flagCheckeredIconWithSize:(CGFloat)size;
 + (instancetype)flagOIconWithSize:(CGFloat)size;
@@ -269,6 +280,7 @@
 + (instancetype)folderOpenIconWithSize:(CGFloat)size;
 + (instancetype)folderOpenOIconWithSize:(CGFloat)size;
 + (instancetype)fontIconWithSize:(CGFloat)size;
++ (instancetype)fontAwesomeIconWithSize:(CGFloat)size;
 + (instancetype)fonticonsIconWithSize:(CGFloat)size;
 + (instancetype)fortAwesomeIconWithSize:(CGFloat)size;
 + (instancetype)forumbeeIconWithSize:(CGFloat)size;
@@ -292,11 +304,16 @@
 + (instancetype)githubIconWithSize:(CGFloat)size;
 + (instancetype)githubAltIconWithSize:(CGFloat)size;
 + (instancetype)githubSquareIconWithSize:(CGFloat)size;
++ (instancetype)gitlabIconWithSize:(CGFloat)size;
 + (instancetype)gittipIconWithSize:(CGFloat)size;
 + (instancetype)glassIconWithSize:(CGFloat)size;
++ (instancetype)glideIconWithSize:(CGFloat)size;
++ (instancetype)glideGIconWithSize:(CGFloat)size;
 + (instancetype)globeIconWithSize:(CGFloat)size;
 + (instancetype)googleIconWithSize:(CGFloat)size;
 + (instancetype)googlePlusIconWithSize:(CGFloat)size;
++ (instancetype)googlePlusCircleIconWithSize:(CGFloat)size;
++ (instancetype)googlePlusOfficialIconWithSize:(CGFloat)size;
 + (instancetype)googlePlusSquareIconWithSize:(CGFloat)size;
 + (instancetype)googleWalletIconWithSize:(CGFloat)size;
 + (instancetype)graduationCapIconWithSize:(CGFloat)size;
@@ -317,6 +334,7 @@
 + (instancetype)handScissorsOIconWithSize:(CGFloat)size;
 + (instancetype)handSpockOIconWithSize:(CGFloat)size;
 + (instancetype)handStopOIconWithSize:(CGFloat)size;
++ (instancetype)hardOfHearingIconWithSize:(CGFloat)size;
 + (instancetype)hashtagIconWithSize:(CGFloat)size;
 + (instancetype)hddOIconWithSize:(CGFloat)size;
 + (instancetype)headerIconWithSize:(CGFloat)size;
@@ -389,6 +407,7 @@
 + (instancetype)longArrowLeftIconWithSize:(CGFloat)size;
 + (instancetype)longArrowRightIconWithSize:(CGFloat)size;
 + (instancetype)longArrowUpIconWithSize:(CGFloat)size;
++ (instancetype)lowVisionIconWithSize:(CGFloat)size;
 + (instancetype)magicIconWithSize:(CGFloat)size;
 + (instancetype)magnetIconWithSize:(CGFloat)size;
 + (instancetype)mailForwardIconWithSize:(CGFloat)size;
@@ -462,6 +481,7 @@
 + (instancetype)pieChartIconWithSize:(CGFloat)size;
 + (instancetype)piedPiperIconWithSize:(CGFloat)size;
 + (instancetype)piedPiperAltIconWithSize:(CGFloat)size;
++ (instancetype)piedPiperPpIconWithSize:(CGFloat)size;
 + (instancetype)pinterestIconWithSize:(CGFloat)size;
 + (instancetype)pinterestPIconWithSize:(CGFloat)size;
 + (instancetype)pinterestSquareIconWithSize:(CGFloat)size;
@@ -482,6 +502,7 @@
 + (instancetype)qrcodeIconWithSize:(CGFloat)size;
 + (instancetype)questionIconWithSize:(CGFloat)size;
 + (instancetype)questionCircleIconWithSize:(CGFloat)size;
++ (instancetype)questionCircleOIconWithSize:(CGFloat)size;
 + (instancetype)quoteLeftIconWithSize:(CGFloat)size;
 + (instancetype)quoteRightIconWithSize:(CGFloat)size;
 + (instancetype)raIconWithSize:(CGFloat)size;
@@ -499,6 +520,7 @@
 + (instancetype)repeatIconWithSize:(CGFloat)size;
 + (instancetype)replyIconWithSize:(CGFloat)size;
 + (instancetype)replyAllIconWithSize:(CGFloat)size;
++ (instancetype)resistanceIconWithSize:(CGFloat)size;
 + (instancetype)retweetIconWithSize:(CGFloat)size;
 + (instancetype)rmbIconWithSize:(CGFloat)size;
 + (instancetype)roadIconWithSize:(CGFloat)size;
@@ -536,8 +558,10 @@
 + (instancetype)shoppingBasketIconWithSize:(CGFloat)size;
 + (instancetype)shoppingCartIconWithSize:(CGFloat)size;
 + (instancetype)signInIconWithSize:(CGFloat)size;
++ (instancetype)signLanguageIconWithSize:(CGFloat)size;
 + (instancetype)signOutIconWithSize:(CGFloat)size;
 + (instancetype)signalIconWithSize:(CGFloat)size;
++ (instancetype)signingIconWithSize:(CGFloat)size;
 + (instancetype)simplybuiltIconWithSize:(CGFloat)size;
 + (instancetype)sitemapIconWithSize:(CGFloat)size;
 + (instancetype)skyatlasIconWithSize:(CGFloat)size;
@@ -546,6 +570,9 @@
 + (instancetype)slidersIconWithSize:(CGFloat)size;
 + (instancetype)slideshareIconWithSize:(CGFloat)size;
 + (instancetype)smileOIconWithSize:(CGFloat)size;
++ (instancetype)snapchatIconWithSize:(CGFloat)size;
++ (instancetype)snapchatGhostIconWithSize:(CGFloat)size;
++ (instancetype)snapchatSquareIconWithSize:(CGFloat)size;
 + (instancetype)soccerBallOIconWithSize:(CGFloat)size;
 + (instancetype)sortIconWithSize:(CGFloat)size;
 + (instancetype)sortAlphaAscIconWithSize:(CGFloat)size;
@@ -608,6 +635,7 @@
 + (instancetype)thIconWithSize:(CGFloat)size;
 + (instancetype)thLargeIconWithSize:(CGFloat)size;
 + (instancetype)thListIconWithSize:(CGFloat)size;
++ (instancetype)themeisleIconWithSize:(CGFloat)size;
 + (instancetype)thumbTackIconWithSize:(CGFloat)size;
 + (instancetype)thumbsDownIconWithSize:(CGFloat)size;
 + (instancetype)thumbsODownIconWithSize:(CGFloat)size;
@@ -647,6 +675,7 @@
 + (instancetype)umbrellaIconWithSize:(CGFloat)size;
 + (instancetype)underlineIconWithSize:(CGFloat)size;
 + (instancetype)undoIconWithSize:(CGFloat)size;
++ (instancetype)universalAccessIconWithSize:(CGFloat)size;
 + (instancetype)universityIconWithSize:(CGFloat)size;
 + (instancetype)unlinkIconWithSize:(CGFloat)size;
 + (instancetype)unlockIconWithSize:(CGFloat)size;
@@ -665,11 +694,14 @@
 + (instancetype)venusDoubleIconWithSize:(CGFloat)size;
 + (instancetype)venusMarsIconWithSize:(CGFloat)size;
 + (instancetype)viacoinIconWithSize:(CGFloat)size;
++ (instancetype)viadeoIconWithSize:(CGFloat)size;
++ (instancetype)viadeoSquareIconWithSize:(CGFloat)size;
 + (instancetype)videoCameraIconWithSize:(CGFloat)size;
 + (instancetype)vimeoIconWithSize:(CGFloat)size;
 + (instancetype)vimeoSquareIconWithSize:(CGFloat)size;
 + (instancetype)vineIconWithSize:(CGFloat)size;
 + (instancetype)vkIconWithSize:(CGFloat)size;
++ (instancetype)volumeControlPhoneIconWithSize:(CGFloat)size;
 + (instancetype)volumeDownIconWithSize:(CGFloat)size;
 + (instancetype)volumeOffIconWithSize:(CGFloat)size;
 + (instancetype)volumeUpIconWithSize:(CGFloat)size;
@@ -679,11 +711,14 @@
 + (instancetype)weixinIconWithSize:(CGFloat)size;
 + (instancetype)whatsappIconWithSize:(CGFloat)size;
 + (instancetype)wheelchairIconWithSize:(CGFloat)size;
++ (instancetype)wheelchairAltIconWithSize:(CGFloat)size;
 + (instancetype)wifiIconWithSize:(CGFloat)size;
 + (instancetype)wikipediaWIconWithSize:(CGFloat)size;
 + (instancetype)windowsIconWithSize:(CGFloat)size;
 + (instancetype)wonIconWithSize:(CGFloat)size;
 + (instancetype)wordpressIconWithSize:(CGFloat)size;
++ (instancetype)wpbeginnerIconWithSize:(CGFloat)size;
++ (instancetype)wpformsIconWithSize:(CGFloat)size;
 + (instancetype)wrenchIconWithSize:(CGFloat)size;
 + (instancetype)xingIconWithSize:(CGFloat)size;
 + (instancetype)xingSquareIconWithSize:(CGFloat)size;
@@ -694,6 +729,7 @@
 + (instancetype)ycSquareIconWithSize:(CGFloat)size;
 + (instancetype)yelpIconWithSize:(CGFloat)size;
 + (instancetype)yenIconWithSize:(CGFloat)size;
++ (instancetype)yoastIconWithSize:(CGFloat)size;
 + (instancetype)youtubeIconWithSize:(CGFloat)size;
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size;
 + (instancetype)youtubeSquareIconWithSize:(CGFloat)size;

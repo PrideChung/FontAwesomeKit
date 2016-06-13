@@ -51,6 +51,6 @@ Pod::Spec.new do |s|
   s.subspec 'Material' do |ss|
     ss.dependency 'FontAwesomeKit/Core'
     ss.source_files = 'FontAwesomeKit/FAKMaterialIcons.{h,m}'
-    ss.resource  = 'FontAwesomeKit/Material-Design-Iconic-Font.ttf'
+    ss.resource  = 'FontAwesomeKit/MaterialIcons-Regular.ttf'
   end
 end

@@ -76,7 +76,7 @@
 - (IBAction)segmentChanged:(UISegmentedControl *)sender
 {
     [self.icons removeAllObjects];
-    NSArray *groups = @[@"FAKFontAwesome",@"FAKFoundationIcons",@"FAKZocial",@"FAKIonIcons", @"FAKOcticons"];
+    NSArray *groups = @[@"FAKFontAwesome",@"FAKFoundationIcons",@"FAKZocial",@"FAKIonIcons", @"FAKOcticons", @"FAKMaterialIcons"];
     if (sender.selectedSegmentIndex == 0) {
         [self loadFontAwesome];
     } else if (sender.selectedSegmentIndex == 1) {
@@ -88,6 +88,8 @@
         [self loadIonIcons];
     } else if (sender.selectedSegmentIndex == 4) {
         [self loadOcticons];
+    } else if (sender.selectedSegmentIndex == 5) {
+        [self loadMaterialIcons];
     }
     if (!sender) {
         [self loadFontAwesome];
@@ -102,7 +104,7 @@
 {
     NSArray *keys = [[[FAKFontAwesome allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKFontAwesome iconWithCode:key size:50]];
+        [self.icons addObject:[FAKFontAwesome iconWithCode:key size:44]];
     }
 }
 
@@ -110,7 +112,7 @@
 {
     NSArray *keys = [[[FAKFoundationIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKFoundationIcons iconWithCode:key size:50]];
+        [self.icons addObject:[FAKFoundationIcons iconWithCode:key size:44]];
     }
 }
 
@@ -118,7 +120,7 @@
 {
     NSArray *keys = [[[FAKZocial allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKZocial iconWithCode:key size:40]];
+        [self.icons addObject:[FAKZocial iconWithCode:key size:44]];
     }
 }
 
@@ -126,7 +128,7 @@
 {
     NSArray *keys = [[[FAKIonIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKIonIcons iconWithCode:key size:50]];
+        [self.icons addObject:[FAKIonIcons iconWithCode:key size:44]];
     }
 }
 
@@ -134,7 +136,15 @@
 {
     NSArray *keys = [[[FAKOcticons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
     for (NSString *key in keys) {
-        [self.icons addObject:[FAKOcticons iconWithCode:key size:48]];
+        [self.icons addObject:[FAKOcticons iconWithCode:key size:44]];
+    }
+}
+
+- (void)loadMaterialIcons
+{
+    NSArray *keys = [[[FAKMaterialIcons allIcons] allKeys] sortedArrayUsingSelector:@selector(compare:)];
+    for (NSString *key in keys) {
+        [self.icons addObject:[FAKMaterialIcons iconWithCode:key size:44]];
     }
 }
 

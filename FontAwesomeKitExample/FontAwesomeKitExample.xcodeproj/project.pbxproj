@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F615A2B1B69884E004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */; };
 		63C94B331BD6DDB400C5EFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C94B321BD6DDB400C5EFE5 /* main.m */; };
 		63C94B361BD6DDB400C5EFE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C94B351BD6DDB400C5EFE5 /* AppDelegate.m */; };
 		63C94B391BD6DDB400C5EFE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C94B381BD6DDB400C5EFE5 /* ViewController.m */; };
@@ -16,7 +15,6 @@
 		63C94B431BD6DDD800C5EFE5 /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC785E121BB31140001A143F /* FAKOcticons.m */; };
 		63C94B441BD6DDD800C5EFE5 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC785E131BB31140001A143F /* octicons.ttf */; };
 		63C94B451BD6DDD800C5EFE5 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */; };
-		63C94B461BD6DDD800C5EFE5 /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */; };
 		63C94B471BD6DDD800C5EFE5 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		63C94B481BD6DDD800C5EFE5 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
 		63C94B491BD6DDD800C5EFE5 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
@@ -26,6 +24,7 @@
 		63C94B4D1BD6DDD800C5EFE5 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334EC18151CED00CFB044 /* foundation-icons.ttf */; };
 		63C94B4E1BD6DDD800C5EFE5 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC2144B119433643004051F6 /* FontAwesome.otf */; };
 		63C94B4F1BD6DDD800C5EFE5 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC0334ED18151CED00CFB044 /* zocial-regular-webfont.ttf */; };
+		ACDD3B661CFFFA3400CD8B98 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDD3B651CFFFA3400CD8B98 /* MaterialIcons-Regular.ttf */; };
 		CC0334EE18151CED00CFB044 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E318151CED00CFB044 /* FAKFontAwesome.m */; };
 		CC0334EF18151CED00CFB044 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E518151CED00CFB044 /* FAKFoundationIcons.m */; };
 		CC0334F018151CED00CFB044 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0334E718151CED00CFB044 /* FAKIcon.m */; };
@@ -62,7 +61,6 @@
 /* Begin PBXFileReference section */
 		2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMaterialIcons.m; sourceTree = "<group>"; };
 		2F615A281B69884E004A7B1D /* FAKMaterialIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMaterialIcons.h; sourceTree = "<group>"; };
-		2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
 		63C94B2F1BD6DDB400C5EFE5 /* FontAwesome tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FontAwesome tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C94B321BD6DDB400C5EFE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63C94B341BD6DDB400C5EFE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +71,7 @@
 		63C94B3D1BD6DDB400C5EFE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C94B3F1BD6DDB400C5EFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE9E62E8A19471282938E14 /* libPods-FontAwesomeKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontAwesomeKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDD3B651CFFFA3400CD8B98 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
 		CC0334E218151CED00CFB044 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		CC0334E318151CED00CFB044 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		CC0334E418151CED00CFB044 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -173,12 +172,12 @@
 		CC0334E118151CED00CFB044 /* FontAwesomeKit */ = {
 			isa = PBXGroup;
 			children = (
+				ACDD3B651CFFFA3400CD8B98 /* MaterialIcons-Regular.ttf */,
 				CC785E111BB31140001A143F /* FAKOcticons.h */,
 				CC785E121BB31140001A143F /* FAKOcticons.m */,
 				CC785E131BB31140001A143F /* octicons.ttf */,
 				2F615A271B69884E004A7B1D /* FAKMaterialIcons.m */,
 				2F615A281B69884E004A7B1D /* FAKMaterialIcons.h */,
-				2F615A291B69884E004A7B1D /* Material-Design-Iconic-Font.ttf */,
 				CC0334E218151CED00CFB044 /* FAKFontAwesome.h */,
 				CC0334E318151CED00CFB044 /* FAKFontAwesome.m */,
 				CC0334E418151CED00CFB044 /* FAKFoundationIcons.h */,
@@ -387,7 +386,6 @@
 				63C94B4E1BD6DDD800C5EFE5 /* FontAwesome.otf in Resources */,
 				63C94B3C1BD6DDB400C5EFE5 /* Main.storyboard in Resources */,
 				63C94B4D1BD6DDD800C5EFE5 /* foundation-icons.ttf in Resources */,
-				63C94B461BD6DDD800C5EFE5 /* Material-Design-Iconic-Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,11 +396,11 @@
 				CCDC73461A3ED9D9006B3E68 /* ionicons.ttf in Resources */,
 				CC0334F318151CED00CFB044 /* foundation-icons.ttf in Resources */,
 				CC44A86316CD9B3F0039E101 /* InfoPlist.strings in Resources */,
-				2F615A2B1B69884E004A7B1D /* Material-Design-Iconic-Font.ttf in Resources */,
 				CC44A86B16CD9B3F0039E101 /* Default.png in Resources */,
 				CCFF2D2A181144E80003CFE3 /* Main.storyboard in Resources */,
 				CC785E151BB31140001A143F /* octicons.ttf in Resources */,
 				CC44A86D16CD9B3F0039E101 /* Default@2x.png in Resources */,
+				ACDD3B661CFFFA3400CD8B98 /* MaterialIcons-Regular.ttf in Resources */,
 				CC2144B219433643004051F6 /* FontAwesome.otf in Resources */,
 				CC44A86F16CD9B3F0039E101 /* Default-568h@2x.png in Resources */,
 				CC0334F418151CED00CFB044 /* zocial-regular-webfont.ttf in Resources */,
@@ -626,6 +624,7 @@
 				63C94B411BD6DDB400C5EFE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC44A85016CD9B3F0039E101 /* Build configuration list for PBXProject "FontAwesomeKitExample" */ = {
 			isa = XCConfigurationList;
