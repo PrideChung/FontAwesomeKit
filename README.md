@@ -1,4 +1,4 @@
-FontAwesomeKit ![Cocoapods Version](https://img.shields.io/cocoapods/v/FontAwesomeKit.svg?style=flat) ![Platform](https://img.shields.io/cocoapods/p/FontAwesomeKit.svg?style=flat) ![License](https://img.shields.io/cocoapods/l/FontAwesomeKit.svg?style=flat)
+FontAwesomeKit ![Cocoapods Version](https://img.shields.io/cocoapods/v/FontAwesomeKit.svg?style=flat) ![Platform](https://img.shields.io/cocoapods/p/FontAwesomeKit.svg?style=flat) ![License](https://img.shields.io/cocoapods/l/FontAwesomeKit.svg?style=flat) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ==============
 Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons.
 
@@ -59,6 +59,9 @@ Or import icon fonts you installed with sub specs
 
 #####*important:*
 If you deleted a sub spec in Podfile, please delete Xcode's derived data in organizer(command+shift+2 to bring up). Otherwise Xcode will keep copying font files those supposed to be deleted to the app bundle.
+
+### Install with Carthage
+Add `github "PrideChung/FontAwesomeKit"` to Cartfile to install all icon fonts.
 
 ### Install Manually
 
