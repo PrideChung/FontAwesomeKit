@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		AD6F202F1D6896B800DEF1F0 /* FontAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F202D1D6896B800DEF1F0 /* FontAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD6F204A1D68970600DEF1F0 /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20351D68970600DEF1F0 /* FAKFontAwesome.h */; };
+		AD6F204A1D68970600DEF1F0 /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20351D68970600DEF1F0 /* FAKFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F204B1D68970600DEF1F0 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20361D68970600DEF1F0 /* FAKFontAwesome.m */; };
-		AD6F204C1D68970600DEF1F0 /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20371D68970600DEF1F0 /* FAKFoundationIcons.h */; };
+		AD6F204C1D68970600DEF1F0 /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20371D68970600DEF1F0 /* FAKFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F204D1D68970600DEF1F0 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20381D68970600DEF1F0 /* FAKFoundationIcons.m */; };
-		AD6F204E1D68970600DEF1F0 /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20391D68970600DEF1F0 /* FAKIcon.h */; };
+		AD6F204E1D68970600DEF1F0 /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20391D68970600DEF1F0 /* FAKIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F204F1D68970600DEF1F0 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F203A1D68970600DEF1F0 /* FAKIcon.m */; };
-		AD6F20501D68970600DEF1F0 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203B1D68970600DEF1F0 /* FAKIonIcons.h */; };
+		AD6F20501D68970600DEF1F0 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203B1D68970600DEF1F0 /* FAKIonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F20511D68970600DEF1F0 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F203C1D68970600DEF1F0 /* FAKIonIcons.m */; };
-		AD6F20521D68970600DEF1F0 /* FAKMaterialIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203D1D68970600DEF1F0 /* FAKMaterialIcons.h */; };
+		AD6F20521D68970600DEF1F0 /* FAKMaterialIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203D1D68970600DEF1F0 /* FAKMaterialIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F20531D68970600DEF1F0 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F203E1D68970600DEF1F0 /* FAKMaterialIcons.m */; };
-		AD6F20541D68970600DEF1F0 /* FAKOcticons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203F1D68970600DEF1F0 /* FAKOcticons.h */; };
+		AD6F20541D68970600DEF1F0 /* FAKOcticons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203F1D68970600DEF1F0 /* FAKOcticons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F20551D68970600DEF1F0 /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20401D68970600DEF1F0 /* FAKOcticons.m */; };
-		AD6F20561D68970600DEF1F0 /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20411D68970600DEF1F0 /* FAKZocial.h */; };
+		AD6F20561D68970600DEF1F0 /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20411D68970600DEF1F0 /* FAKZocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6F20571D68970600DEF1F0 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20421D68970600DEF1F0 /* FAKZocial.m */; };
 		AD6F20581D68970600DEF1F0 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20431D68970600DEF1F0 /* FontAwesome.otf */; };
 		AD6F20591D68970600DEF1F0 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20441D68970600DEF1F0 /* foundation-icons.ttf */; };
