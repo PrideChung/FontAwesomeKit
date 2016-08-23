@@ -79,6 +79,16 @@ FAKOcticons *repoIcon = [FAKOcticons repoIconWithSize:48];
 FAKMaterialIcons *androidIcon = [FAKMaterialIcons androidIconWithSize:48];
 
 ```
+
+```swift
+let starIcon = FAKFontAwesome.starIcon(withSize: 15)
+let bookmarkIcon = FAKFoundationIcons.bookmarkIcon(withSize: 15)
+let twitterIcon = FAKZocial.twitterIcon(withSize: 15)
+let mailIcon = FAKIonIcons.ios7EmailIcon(withSize: 48)
+let repoIcon = FAKOcticons.repoIcon(withSize: 48)
+let androidIcon = FAKMaterialIcons.androidIcon(withSize: 48)
+
+```
 Now you can use these class methods and pass in the font size instead of finding an icon with constants. Corresponding icon fonts will automatically setup for you.
 
 #### Creating icons using identifiers
@@ -92,10 +102,27 @@ FAKZocial *twitterIcon = [FAKZocial iconWithIdentifier:@"zocial.twitter" size:15
 FAKIonIcons *mailIcon = [FAKIonIcons iconWithIdentifier:@"ion-ios-email" size:48 error:error];
 ```
 
+```swift
+let error = NSError()
+let starIcon = FAKFontAwesome.starIcon(withSize: 15, error: error)
+let bookmarkIcon = FAKFoundationIcons.bookmarkIcon(withSize: 15, error: error)
+let twitterIcon = FAKZocial.twitterIcon(withSize: 15, error: error)
+let mailIcon = FAKIonIcons.ios7EmailIcon(withSize: 48, error: error)
+
+```
 ### Setting Attributes for An Icon
 ```objective-c
 [starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor
 whiteColor]];
+```
+
+```swift
+let starIcon: FAKFontAwesome?
+do {
+  starIcon = try FAKFontAwesome.init(identifier: "er", size: 15)
+} catch let error as NSError {
+  print(error.localizedDescription)
+}
 ```
 `NSAttributedString` did all the magics behind the scene. So you can set those attributes supported by `NSAttributedString` to an icon. For all available attributes, see [NSAttributedString UIKit Additions Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)
 
@@ -105,21 +132,28 @@ Some attributes apparently makes no sense for icon fonts, like `NSLigatureAttrib
 ### Other Methods for Setting or Getting Attributes
 These methods in fact are just shorthand versions for the standard `NSAttributedString` API, should be pretty straightforward.
 
-`[starIcon setAttributes:attributes];` *Sets attributes with a dictionary, will override current attribute if there're different values for a same key.*
+`[starIcon setAttributes:attributes];` `starIcon.setAttributes(attributes)`
+*Sets attributes with a dictionary, will override current attribute if there're different values for a same key.*
 
-`[starIcon removeAttribute:NSForegroundColorAttributeName];` *Removes an attribute by name.*
 
-`[starIcon attributes];` *Returns an dictionary contains the attribute values for the icon.*
+`[starIcon removeAttribute:NSForegroundColorAttributeName];` `starIcon.removeAttribute(NSForegroundColorAttributeName)`
+*Removes an attribute by name.*
 
-`[starIcon attribute:NSForegroundColorAttributeName];` *Returns the attribute value for a given key.*
+
+`[starIcon attributes];` `starIcon.attributes()`
+*Returns an dictionary contains the attribute values for the icon.*
+
+
+`[starIcon attribute:NSForegroundColorAttributeName];` `starIcon.attribute(NSForegroundColorAttributeName)`
+*Returns the attribute value for a given key.*
 
 ### Get The Attributed String
 After you done setting attributes, you can get the attributed string by calling
-`[starIcon attributedString]`.
+`[starIcon attributedString]` `starIcon.attributedString()`.
 
 So you can use the icon on a label with one line of code:
 
-`self.label.attributedText = [starIcon attributedString];`
+`self.label.attributedText = [starIcon attributedString];` `self.label.attributedText = starIcon.attributedString()`
 
 You don't need to set the label's `font` property, it's already been taken care of.
 
@@ -129,6 +163,8 @@ You don't need to set the label's `font` property, it's already been taken care 
 Instead of getting the attributed string, you can draw the icon onto an image like this:
 
 `UIImage *iconImage = [starIcon imageWithSize:CGSizeMake(15, 15)];`
+
+`let iconImage = starIcon.image(with: CGSize(width: 15, height: 15))`
 
 This will use the attributes you've set to draw that image, you only need to specify a size for the image.
 
@@ -141,6 +177,8 @@ By default the icon is centered horizontally and vertically. I believe that's 99
 You can set the background color for the image like this:
 
 `starIcon.drawingBackgroundColor = [UIColor blackColor];`
+
+`starIcon.drawingBackgroundColor = UIColor.black`
 
 By default the background is transparent. As the name implies, this property only takes effect while drawing on image. You can specify a gradient color to create a gradient background, check the example project for details.
 
@@ -161,6 +199,20 @@ self.navigationItem.leftBarButtonItem =
                                 target:nil
                                 action:nil];
 ```
+
+```swift
+let cogIcon = FAKFontAwesome.cogIcon(withSize: 20)
+cogIcon?.addAttribute(NSForegroundColorAttributeName, value: UIColor.white)
+let leftImage = cogIcon?.image(with: CGSize(width: 20, height: 20))
+cogIcon?.iconFontSize = 15
+let leftLandscapeImage = cogIcon?.image(with: CGSize(width: 15, height: 15))
+self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+  image: leftImage,
+  landscapeImagePhone: leftLandscapeImage,
+  style: .plain,
+  target: nil,
+  action: nil)
+```
 Same idea can be applied to tab bar or segmented control.
 
 ### Generating Image with Stacked Icons (Since V2.1.5)
@@ -169,6 +221,10 @@ Same idea can be applied to tab bar or segmented control.
 ```objc
 [UIImage imageWithStackedIcons:@[[FAKFontAwesome twitterIconWithSize:35], [FAKFontAwesome squareOIconWithSize:70]],
                      imageSize:CGSizeMake(80, 80)];
+```
+
+```swift
+let image = UIImage(stackedIcons: [FAKFontAwesome.twitterIcon(withSize: 35), FAKFontAwesome.squareOIcon(withSize: 70)], imageSize: CGSize(width: 80, height: 80))
 ```
 
 The first icon in the array will be draw on the bottom.
