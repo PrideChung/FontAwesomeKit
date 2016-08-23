@@ -2,7 +2,6 @@
 
 @interface FAKFontAwesome : FAKIcon
 
-// Generated Code
 + (instancetype)fivehundredpxIconWithSize:(CGFloat)size;
 + (instancetype)adjustIconWithSize:(CGFloat)size;
 + (instancetype)adnIconWithSize:(CGFloat)size;
@@ -697,5 +696,6 @@
 + (instancetype)youtubeIconWithSize:(CGFloat)size;
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size;
 + (instancetype)youtubeSquareIconWithSize:(CGFloat)size;
+
 
 @end
