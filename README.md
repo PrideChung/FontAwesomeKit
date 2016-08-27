@@ -101,21 +101,6 @@ FAKFoundationIcons *bookmarkIcon = [FAKFoundationIcons iconWithIdentifier:@"fi-b
 FAKZocial *twitterIcon = [FAKZocial iconWithIdentifier:@"zocial.twitter" size:15 error:error];
 FAKIonIcons *mailIcon = [FAKIonIcons iconWithIdentifier:@"ion-ios-email" size:48 error:error];
 ```
-
-```swift
-let error = NSError()
-let starIcon = FAKFontAwesome.starIcon(withSize: 15, error: error)
-let bookmarkIcon = FAKFoundationIcons.bookmarkIcon(withSize: 15, error: error)
-let twitterIcon = FAKZocial.twitterIcon(withSize: 15, error: error)
-let mailIcon = FAKIonIcons.ios7EmailIcon(withSize: 48, error: error)
-
-```
-### Setting Attributes for An Icon
-```objective-c
-[starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor
-whiteColor]];
-```
-
 ```swift
 let starIcon: FAKFontAwesome?
 do {
@@ -123,6 +108,15 @@ do {
 } catch let error as NSError {
   print(error.localizedDescription)
 }
+```
+
+### Setting Attributes for An Icon
+```objective-c
+[starIcon addAttribute:NSForegroundColorAttributeName value:[UIColor
+whiteColor]];
+```
+```swift
+starIcon.addAttribute(NSForegroundColorAttributeName, UIColor.white)
 ```
 `NSAttributedString` did all the magics behind the scene. So you can set those attributes supported by `NSAttributedString` to an icon. For all available attributes, see [NSAttributedString UIKit Additions Reference](https://developer.apple.com/library/ios/documentation/UIKit/Reference/NSAttributedString_UIKit_Additions/Reference/Reference.html#//apple_ref/doc/uid/TP40011688-CH1-SW16)
 
