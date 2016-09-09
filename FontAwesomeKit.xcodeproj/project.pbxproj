@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD6F202F1D6896B800DEF1F0 /* FontAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F202D1D6896B800DEF1F0 /* FontAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F204A1D68970600DEF1F0 /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20351D68970600DEF1F0 /* FAKFontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F204B1D68970600DEF1F0 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20361D68970600DEF1F0 /* FAKFontAwesome.m */; };
+		AD6F204C1D68970600DEF1F0 /* FAKFoundationIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20371D68970600DEF1F0 /* FAKFoundationIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F204D1D68970600DEF1F0 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20381D68970600DEF1F0 /* FAKFoundationIcons.m */; };
+		AD6F204E1D68970600DEF1F0 /* FAKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20391D68970600DEF1F0 /* FAKIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F204F1D68970600DEF1F0 /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F203A1D68970600DEF1F0 /* FAKIcon.m */; };
+		AD6F20501D68970600DEF1F0 /* FAKIonIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203B1D68970600DEF1F0 /* FAKIonIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F20511D68970600DEF1F0 /* FAKIonIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F203C1D68970600DEF1F0 /* FAKIonIcons.m */; };
+		AD6F20521D68970600DEF1F0 /* FAKMaterialIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203D1D68970600DEF1F0 /* FAKMaterialIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F20531D68970600DEF1F0 /* FAKMaterialIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F203E1D68970600DEF1F0 /* FAKMaterialIcons.m */; };
+		AD6F20541D68970600DEF1F0 /* FAKOcticons.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F203F1D68970600DEF1F0 /* FAKOcticons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F20551D68970600DEF1F0 /* FAKOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20401D68970600DEF1F0 /* FAKOcticons.m */; };
+		AD6F20561D68970600DEF1F0 /* FAKZocial.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6F20411D68970600DEF1F0 /* FAKZocial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6F20571D68970600DEF1F0 /* FAKZocial.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F20421D68970600DEF1F0 /* FAKZocial.m */; };
+		AD6F20581D68970600DEF1F0 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20431D68970600DEF1F0 /* FontAwesome.otf */; };
+		AD6F20591D68970600DEF1F0 /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20441D68970600DEF1F0 /* foundation-icons.ttf */; };
+		AD6F205B1D68970600DEF1F0 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20461D68970600DEF1F0 /* ionicons.ttf */; };
+		AD6F205C1D68970600DEF1F0 /* Material-Design-Iconic-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20471D68970600DEF1F0 /* Material-Design-Iconic-Font.ttf */; };
+		AD6F205D1D68970600DEF1F0 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20481D68970600DEF1F0 /* octicons.ttf */; };
+		AD6F205E1D68970600DEF1F0 /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6F20491D68970600DEF1F0 /* zocial-regular-webfont.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD6F202A1D6896B700DEF1F0 /* FontAwesomeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesomeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6F202D1D6896B800DEF1F0 /* FontAwesomeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesomeKit.h; sourceTree = "<group>"; };
+		AD6F20351D68970600DEF1F0 /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
+		AD6F20361D68970600DEF1F0 /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
+		AD6F20371D68970600DEF1F0 /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
+		AD6F20381D68970600DEF1F0 /* FAKFoundationIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFoundationIcons.m; sourceTree = "<group>"; };
+		AD6F20391D68970600DEF1F0 /* FAKIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIcon.h; sourceTree = "<group>"; };
+		AD6F203A1D68970600DEF1F0 /* FAKIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIcon.m; sourceTree = "<group>"; };
+		AD6F203B1D68970600DEF1F0 /* FAKIonIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKIonIcons.h; sourceTree = "<group>"; };
+		AD6F203C1D68970600DEF1F0 /* FAKIonIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKIonIcons.m; sourceTree = "<group>"; };
+		AD6F203D1D68970600DEF1F0 /* FAKMaterialIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKMaterialIcons.h; sourceTree = "<group>"; };
+		AD6F203E1D68970600DEF1F0 /* FAKMaterialIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKMaterialIcons.m; sourceTree = "<group>"; };
+		AD6F203F1D68970600DEF1F0 /* FAKOcticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKOcticons.h; sourceTree = "<group>"; };
+		AD6F20401D68970600DEF1F0 /* FAKOcticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKOcticons.m; sourceTree = "<group>"; };
+		AD6F20411D68970600DEF1F0 /* FAKZocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKZocial.h; sourceTree = "<group>"; };
+		AD6F20421D68970600DEF1F0 /* FAKZocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKZocial.m; sourceTree = "<group>"; };
+		AD6F20431D68970600DEF1F0 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		AD6F20441D68970600DEF1F0 /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "foundation-icons.ttf"; sourceTree = "<group>"; };
+		AD6F20451D68970600DEF1F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6F20461D68970600DEF1F0 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		AD6F20471D68970600DEF1F0 /* Material-Design-Iconic-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Material-Design-Iconic-Font.ttf"; sourceTree = "<group>"; };
+		AD6F20481D68970600DEF1F0 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
+		AD6F20491D68970600DEF1F0 /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD6F20261D6896B700DEF1F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD6F20201D6896B700DEF1F0 = {
+			isa = PBXGroup;
+			children = (
+				AD6F202C1D6896B700DEF1F0 /* FontAwesomeKit */,
+				AD6F202B1D6896B700DEF1F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD6F202B1D6896B700DEF1F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD6F202A1D6896B700DEF1F0 /* FontAwesomeKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD6F202C1D6896B700DEF1F0 /* FontAwesomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD6F20351D68970600DEF1F0 /* FAKFontAwesome.h */,
+				AD6F20371D68970600DEF1F0 /* FAKFoundationIcons.h */,
+				AD6F20391D68970600DEF1F0 /* FAKIcon.h */,
+				AD6F203B1D68970600DEF1F0 /* FAKIonIcons.h */,
+				AD6F203D1D68970600DEF1F0 /* FAKMaterialIcons.h */,
+				AD6F203F1D68970600DEF1F0 /* FAKOcticons.h */,
+				AD6F20411D68970600DEF1F0 /* FAKZocial.h */,
+				AD6F202D1D6896B800DEF1F0 /* FontAwesomeKit.h */,
+				AD6F20361D68970600DEF1F0 /* FAKFontAwesome.m */,
+				AD6F20381D68970600DEF1F0 /* FAKFoundationIcons.m */,
+				AD6F203A1D68970600DEF1F0 /* FAKIcon.m */,
+				AD6F203C1D68970600DEF1F0 /* FAKIonIcons.m */,
+				AD6F203E1D68970600DEF1F0 /* FAKMaterialIcons.m */,
+				AD6F20401D68970600DEF1F0 /* FAKOcticons.m */,
+				AD6F20421D68970600DEF1F0 /* FAKZocial.m */,
+				AD6F20431D68970600DEF1F0 /* FontAwesome.otf */,
+				AD6F20451D68970600DEF1F0 /* Info.plist */,
+				AD6F20441D68970600DEF1F0 /* foundation-icons.ttf */,
+				AD6F20461D68970600DEF1F0 /* ionicons.ttf */,
+				AD6F20471D68970600DEF1F0 /* Material-Design-Iconic-Font.ttf */,
+				AD6F20481D68970600DEF1F0 /* octicons.ttf */,
+				AD6F20491D68970600DEF1F0 /* zocial-regular-webfont.ttf */,
+			);
+			path = FontAwesomeKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AD6F20271D6896B700DEF1F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6F20501D68970600DEF1F0 /* FAKIonIcons.h in Headers */,
+				AD6F20541D68970600DEF1F0 /* FAKOcticons.h in Headers */,
+				AD6F204A1D68970600DEF1F0 /* FAKFontAwesome.h in Headers */,
+				AD6F204C1D68970600DEF1F0 /* FAKFoundationIcons.h in Headers */,
+				AD6F204E1D68970600DEF1F0 /* FAKIcon.h in Headers */,
+				AD6F20561D68970600DEF1F0 /* FAKZocial.h in Headers */,
+				AD6F202F1D6896B800DEF1F0 /* FontAwesomeKit.h in Headers */,
+				AD6F20521D68970600DEF1F0 /* FAKMaterialIcons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AD6F20291D6896B700DEF1F0 /* FontAwesomeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6F20321D6896B800DEF1F0 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */;
+			buildPhases = (
+				AD6F20251D6896B700DEF1F0 /* Sources */,
+				AD6F20261D6896B700DEF1F0 /* Frameworks */,
+				AD6F20271D6896B700DEF1F0 /* Headers */,
+				AD6F20281D6896B700DEF1F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontAwesomeKit;
+			productName = FontAwesomeKit;
+			productReference = AD6F202A1D6896B700DEF1F0 /* FontAwesomeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD6F20211D6896B700DEF1F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Rémy DA COSTA FARO";
+				TargetAttributes = {
+					AD6F20291D6896B700DEF1F0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 767R4Y4A3U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AD6F20241D6896B700DEF1F0 /* Build configuration list for PBXProject "FontAwesomeKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AD6F20201D6896B700DEF1F0;
+			productRefGroup = AD6F202B1D6896B700DEF1F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD6F20291D6896B700DEF1F0 /* FontAwesomeKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD6F20281D6896B700DEF1F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6F20591D68970600DEF1F0 /* foundation-icons.ttf in Resources */,
+				AD6F20581D68970600DEF1F0 /* FontAwesome.otf in Resources */,
+				AD6F205B1D68970600DEF1F0 /* ionicons.ttf in Resources */,
+				AD6F205E1D68970600DEF1F0 /* zocial-regular-webfont.ttf in Resources */,
+				AD6F205D1D68970600DEF1F0 /* octicons.ttf in Resources */,
+				AD6F205C1D68970600DEF1F0 /* Material-Design-Iconic-Font.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD6F20251D6896B700DEF1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6F20511D68970600DEF1F0 /* FAKIonIcons.m in Sources */,
+				AD6F20531D68970600DEF1F0 /* FAKMaterialIcons.m in Sources */,
+				AD6F20571D68970600DEF1F0 /* FAKZocial.m in Sources */,
+				AD6F20551D68970600DEF1F0 /* FAKOcticons.m in Sources */,
+				AD6F204D1D68970600DEF1F0 /* FAKFoundationIcons.m in Sources */,
+				AD6F204B1D68970600DEF1F0 /* FAKFontAwesome.m in Sources */,
+				AD6F204F1D68970600DEF1F0 /* FAKIcon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD6F20301D6896B800DEF1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos9.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD6F20311D6896B800DEF1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos9.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD6F20331D6896B800DEF1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767R4Y4A3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FontAwesomeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dacostafaro.FontAwesomeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AD6F20341D6896B800DEF1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 767R4Y4A3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FontAwesomeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dacostafaro.FontAwesomeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD6F20241D6896B700DEF1F0 /* Build configuration list for PBXProject "FontAwesomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6F20301D6896B800DEF1F0 /* Debug */,
+				AD6F20311D6896B800DEF1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6F20321D6896B800DEF1F0 /* Build configuration list for PBXNativeTarget "FontAwesomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6F20331D6896B800DEF1F0 /* Debug */,
+				AD6F20341D6896B800DEF1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD6F20211D6896B700DEF1F0 /* Project object */;
+}
