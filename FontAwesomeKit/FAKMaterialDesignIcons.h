@@ -2050,3 +2050,5 @@
 + (instancetype)youtubePlayIconWithSize:(CGFloat)size;
 + (instancetype)zipBoxIconWithSize:(CGFloat)size;
 + (instancetype)blankIconWithSize:(CGFloat)size;
+
+@end

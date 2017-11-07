@@ -1,3 +1,5 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "FAKMaterialDesignIcons.h"
 
 @implementation FAKMaterialDesignIcons
@@ -4117,3 +4119,5 @@
 
     };
 }
+
+@end
