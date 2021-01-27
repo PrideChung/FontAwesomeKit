@@ -13,6 +13,10 @@
 {
     NSAssert([[NSFileManager defaultManager] fileExistsAtPath:[url path]], @"Font file doesn't exist");
     CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)url);
+    
+    //Allows bypassing a semaphore loop when CGFontCreateWithDataProvider is called in appDidFinishLaunchingWithOptions
+    [UIFont familyNames];
+    
     CGFontRef newFont = CGFontCreateWithDataProvider(fontDataProvider);
     CGDataProviderRelease(fontDataProvider);
     CFErrorRef error = NULL;
