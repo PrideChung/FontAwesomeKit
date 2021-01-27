@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FontAwesomeKit"
-  s.version      = "2.2.1"
+  s.version      = "2.2.5"
   s.summary      = "Icon font library for iOS. Currently supports Font-Awesome, Foundation icons, Zocial, and ionicons"
   s.homepage     = "https://github.com/PrideChung/FontAwesomeKit"
   s.screenshots  = "http://i.minus.com/i3vNn0fTwcJeI.png", "http://i.minus.com/ivKqhOLJLVvmJ.png"
@@ -52,5 +52,11 @@ Pod::Spec.new do |s|
     ss.dependency 'FontAwesomeKit/Core'
     ss.source_files = 'FontAwesomeKit/FAKMaterialIcons.{h,m}'
     ss.resource  = 'FontAwesomeKit/Material-Design-Iconic-Font.ttf'
+  end
+
+  s.subspec 'MaterialDesignIcons' do |ss|
+    ss.dependency 'FontAwesomeKit/Core'
+    ss.source_files = 'FontAwesomeKit/FAKMaterialDesignIcons.{h,m}'
+    ss.resource  = 'FontAwesomeKit/materialdesignicons-webfont.ttf'
   end
 end
